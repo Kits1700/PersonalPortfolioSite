@@ -67,12 +67,12 @@ export default function Projects() {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section header */}
-        <div className="text-center mb-12">
-          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
+        <div className="text-center mb-16">
+          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <div className={`w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-4 ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
-          <p className={`text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
+          <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6 ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
+          <p className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
             A selection of projects that demonstrate my approach to human-centered technology design.
           </p>
         </div>
@@ -108,10 +108,10 @@ export default function Projects() {
 
               {/* Project content */}
               <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-3 leading-relaxed text-xs">
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 
