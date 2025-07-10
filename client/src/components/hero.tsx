@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Dribbble, ArrowDown, Sparkles } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,12 +68,7 @@ export default function Hero() {
       <div className="text-center max-w-5xl mx-auto px-6 relative z-10">
         {/* Main heading with staggered animation */}
         <div className="mb-8">
-          <div className={`inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            <Sparkles className="w-4 h-4 text-primary animate-pulse-subtle" />
-            <span className="text-primary font-medium">Available for work</span>
-          </div>
-          
-          <h1 className={`text-6xl md:text-8xl font-bold mb-6 leading-tight ${isVisible ? 'animate-fadeInUp animate-delay-100' : 'opacity-0'}`}>
+          <h1 className={`text-6xl md:text-8xl font-bold mb-6 leading-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
             <span className="gradient-text">Sai Keerthana</span>
             <br />
             <span className="text-foreground">Arun</span>
@@ -81,7 +76,7 @@ export default function Hero() {
         </div>
 
         {/* Role titles with typewriter effect */}
-        <div className={`mb-8 ${isVisible ? 'animate-slideInRight animate-delay-200' : 'opacity-0'}`}>
+        <div className={`mb-8 ${isVisible ? 'animate-slideInRight animate-delay-100' : 'opacity-0'}`}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <h2 className="text-3xl md:text-4xl font-semibold text-primary">
               UX Researcher
@@ -94,17 +89,16 @@ export default function Hero() {
         </div>
 
         {/* Description with improved typography */}
-        <div className={`mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-300' : 'opacity-0'}`}>
+        <div className={`mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
-            I specialize in developing beautiful interfaces and crafting intuitive user experiences. 
-            I transform digital experiences to create delightful solutions that are both 
-            <span className="text-primary font-medium"> functional</span> and 
-            <span className="text-secondary font-medium"> aesthetically pleasing</span>.
+            I tell the story of technology through people. By weaving together UX research and software development, 
+            I create digital experiences that are <span className="text-primary font-medium">intuitive</span>, 
+            <span className="text-secondary font-medium">purposeful</span>, and rooted in real human needs.
           </p>
         </div>
 
         {/* Enhanced social links */}
-        <div className={`flex justify-center space-x-8 mb-12 ${isVisible ? 'animate-scaleIn animate-delay-400' : 'opacity-0'}`}>
+        <div className={`flex justify-center space-x-8 mb-12 ${isVisible ? 'animate-scaleIn animate-delay-300' : 'opacity-0'}`}>
           <a
             href="https://linkedin.com"
             target="_blank"
@@ -122,17 +116,15 @@ export default function Hero() {
             <Github className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
           <a
-            href="https://dribbble.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:your.email@example.com"
             className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
           >
-            <Dribbble className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+            <Mail className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
         </div>
 
         {/* Call to action buttons */}
-        <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 ${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
+        <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 ${isVisible ? 'animate-fadeInUp animate-delay-400' : 'opacity-0'}`}>
           <button
             onClick={() => handleNavClick('#projects')}
             className="group px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover-lift hover:shadow-lg hover:shadow-primary/25"
@@ -150,7 +142,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className={`animate-bounce ${isVisible ? 'animate-fadeInUp animate-delay-600' : 'opacity-0'}`}>
+        <div className={`animate-bounce ${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
           <button
             onClick={() => handleNavClick('#about')}
             className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors duration-300 group"

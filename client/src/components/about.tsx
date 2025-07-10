@@ -90,14 +90,17 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Left: Description */}
           <div className={`space-y-6 ${isVisible ? 'animate-slideInLeft animate-delay-200' : 'opacity-0'}`}>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              I am a passionate <span className="text-primary font-semibold">UX Researcher</span> and <span className="text-secondary font-semibold">Software Developer</span> with expertise in creating intuitive and engaging digital experiences.
+            <p className="text-lg md:text-xl text-primary font-semibold leading-relaxed">
+              I design technology that listens, adapts, and respects the people who use it.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My work goes beyond creating beautiful interfaces. I believe in understanding user behavior, conducting thorough research, and translating insights into design solutions that solve real problems.
+              With a background in <span className="text-primary font-semibold">Computer Science</span> and a <span className="text-secondary font-semibold">Master's in Human-Computer Interaction</span>, I work at the intersection of UX research, software development, machine learning, and IoT, bridging the human and technical to build systems that are not only functional but also deeply intentional.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As a creative problem-solver, I enjoy working on projects that challenge me to think differently and push the boundaries of what's possible in web development and user experience design.
+              My work spans interactive language learning platforms, immersive VR experiences, IoT-based safety systems, and explainable AI interfaces. I've led mixed-methods research, modelled user behaviour, and developed feedback pipelines that embed human insight into every stage of design and development.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
             </p>
           </div>
 
