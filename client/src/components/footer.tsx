@@ -1,4 +1,4 @@
-import { Github, Linkedin, Dribbble } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,12 +26,10 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="https://dribbble.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:your.email@example.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
-              <Dribbble size={20} />
+              <Mail size={20} />
             </a>
           </div>
         </div>
