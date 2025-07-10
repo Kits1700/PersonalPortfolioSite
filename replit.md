@@ -22,8 +22,9 @@ Preferred communication style: Simple, everyday language.
 - **Runtime**: Node.js with Express.js
 - **Language**: TypeScript with ES modules
 - **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (serverless PostgreSQL)
+- **Database Provider**: Replit PostgreSQL (managed database)
 - **Session Management**: PostgreSQL-backed sessions
+- **Data Storage**: DatabaseStorage class with full PostgreSQL integration
 
 ### Development Setup
 - **Monorepo Structure**: Shared code between client and server
@@ -42,7 +43,8 @@ Preferred communication style: Simple, everyday language.
 ### Backend Components
 - **API Routes**: RESTful endpoints for contact form submission
 - **Database Models**: User and contact message schemas
-- **Storage Layer**: Abstracted storage interface with in-memory fallback
+- **Storage Layer**: DatabaseStorage class with PostgreSQL integration
+- **Database Connection**: Neon serverless PostgreSQL driver
 - **Error Handling**: Comprehensive error handling and logging
 
 ### UI Components
@@ -73,9 +75,10 @@ Preferred communication style: Simple, everyday language.
 ## External Dependencies
 
 ### Database
-- **Neon Database**: Serverless PostgreSQL for production
-- **Drizzle ORM**: Type-safe database operations
+- **Replit PostgreSQL**: Managed PostgreSQL database
+- **Drizzle ORM**: Type-safe database operations with Neon serverless driver
 - **Connection**: Environment-based DATABASE_URL configuration
+- **Tables**: Users and contact_messages tables with proper relationships
 
 ### UI Libraries
 - **Radix UI**: Accessible component primitives
