@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ExternalLink, Github, Eye, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ export default function Projects() {
       tags: ["UX Research", "Human-AI Interaction", "Thesis"],
       gradient: "from-primary via-primary/80 to-primary/60",
       icon: "🧠",
-      link: "#case-study-1",
+      link: "/case-study/llm",
       github: "#",
       preview: "#"
     },
@@ -40,17 +41,17 @@ export default function Projects() {
       tags: ["VR/AR", "Game Design", "Unity"],
       gradient: "from-purple-500 via-violet-500 to-indigo-500",
       icon: "🎮",
-      link: "#case-study-2",
+      link: "/case-study/vr",
       github: "#",
       preview: "#"
     },
     {
-      title: "Smart Electricity, Water and Air Quality Monitoring System",
+      title: "Smart Environmental Monitoring System",
       description: "IoT-based environmental monitoring system providing real-time data and insights for sustainable resource management.",
       tags: ["IoT", "Environmental Tech", "Data Analytics"],
       gradient: "from-secondary via-secondary/80 to-secondary/60",
       icon: "🌱",
-      link: "#case-study-3",
+      link: "/case-study/iot",
       github: "#",
       preview: "#"
     }
@@ -97,15 +98,11 @@ export default function Projects() {
                 
                 {/* Hover overlay with case study link */}
                 <div className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-all duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
-                  <button
-                    onClick={() => {
-                      // Create dummy case study modal or page
-                      alert(`Opening case study for: ${project.title}\n\nThis is a placeholder - case study content will be added here.`);
-                    }}
-                    className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors hover:scale-105 transform duration-200"
-                  >
-                    View Case Study
-                  </button>
+                  <Link href={project.link}>
+                    <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors hover:scale-105 transform duration-200">
+                      View Case Study
+                    </button>
+                  </Link>
                 </div>
               </div>
 
