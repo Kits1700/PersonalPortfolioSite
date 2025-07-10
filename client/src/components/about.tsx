@@ -98,9 +98,8 @@ export default function About() {
         </div>
 
         {/* Main content */}
-        <div className="grid lg:grid-cols-3 gap-12 mb-16">
-          {/* Left: Bio */}
-          <div className={`lg:col-span-2 space-y-6 ${isVisible ? 'animate-slideInLeft animate-delay-300' : 'opacity-0'}`}>
+        <div className={`mb-16 ${isVisible ? 'animate-slideInLeft animate-delay-300' : 'opacity-0'}`}>
+          <div className="max-w-4xl mx-auto space-y-8">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary mb-4">Background</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -120,26 +119,6 @@ export default function About() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
               </p>
-            </div>
-          </div>
-
-          {/* Right: Approach card */}
-          <div className={`${isVisible ? 'animate-slideInRight animate-delay-400' : 'opacity-0'}`}>
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border hover-glow h-fit sticky top-8">
-              <h3 className="text-xl font-bold mb-6 text-center">My Approach</h3>
-              <div className="space-y-4">
-                {highlights.map((highlight, index) => (
-                  <div
-                    key={index}
-                    className={`flex items-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-primary/10 border border-border/50 hover:border-primary/30 transition-all duration-300 group ${isVisible ? `animate-fadeInUp animate-delay-${400 + index * 100}` : 'opacity-0'}`}
-                  >
-                    <div className="text-primary group-hover:scale-110 transition-transform duration-300">
-                      {highlight.icon}
-                    </div>
-                    <span className="text-sm font-medium group-hover:text-primary transition-colors duration-300">{highlight.text}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
