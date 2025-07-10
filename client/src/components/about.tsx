@@ -25,28 +25,28 @@ export default function About() {
 
   const skills = [
     {
-      icon: <Search className="w-6 h-6" />,
-      title: "UX Research",
-      description: "User interviews, surveys, usability testing",
+      icon: "🧠",
+      title: "UX Research & Human-Centered Design",
+      description: "Mixed-methods research and intuitive design that puts people first",
       color: "hsl(158, 64%, 70%)"
     },
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Frontend Development",
-      description: "React, JavaScript, HTML, CSS",
+      icon: "🤖",
+      title: "Human-AI Interaction",
+      description: "Designing transparent, safe, and human-aligned AI experiences",
+      color: "hsl(45, 93%, 58%)"
+    },
+    {
+      icon: "💻",
+      title: "Prototyping & Development",
+      description: "Turning ideas into reality with full-stack code and functional systems",
+      color: "hsl(220, 13%, 50%)"
+    },
+    {
+      icon: "🌐",
+      title: "ML & IoT Systems",
+      description: "Building smart, responsive systems with real-world impact",
       color: "hsl(195, 100%, 85%)"
-    },
-    {
-      icon: <Palette className="w-6 h-6" />,
-      title: "UI/UX Design",
-      description: "Figma, Sketch, Adobe Creative Suite",
-      color: "hsl(0, 0%, 96%)"
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Data Analysis",
-      description: "Analytics, A/B testing, insights",
-      color: "hsl(158, 64%, 70%)"
     }
   ];
 
@@ -156,7 +156,7 @@ export default function About() {
                     className="p-4 rounded-full transition-all duration-300 group-hover:scale-110 mb-4 mx-auto w-fit"
                     style={{ backgroundColor: `${skill.color}20` }}
                   >
-                    <div style={{ color: skill.color }}>{skill.icon}</div>
+                    <div className="text-3xl">{skill.icon}</div>
                   </div>
                   <h3 className="text-lg font-semibold group-hover:text-primary transition-colors mb-2">
                     {skill.title}
