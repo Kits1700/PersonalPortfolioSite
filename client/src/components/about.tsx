@@ -71,10 +71,12 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 bg-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
+      {/* Enhanced background decoration */}
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary/20 animate-float" />
         <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-secondary/20 animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 w-16 h-16 rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 animate-morph" />
+        <div className="absolute top-1/4 right-1/4 w-20 h-20 rounded-full bg-gradient-to-bl from-secondary/20 to-primary/20 animate-morph-reverse" />
       </div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -86,38 +88,55 @@ export default function About() {
           <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
         </div>
 
-        {/* Content grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left: Description */}
-          <div className={`space-y-6 ${isVisible ? 'animate-slideInLeft animate-delay-200' : 'opacity-0'}`}>
-            <p className="text-lg md:text-xl text-primary font-semibold leading-relaxed">
-              I design technology that listens, adapts, and respects the people who use it.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With a background in <span className="text-primary font-semibold">Computer Science</span> and a <span className="text-secondary font-semibold">Master's in Human-Computer Interaction</span>, I work at the intersection of UX research, software development, machine learning, and IoT, bridging the human and technical to build systems that are not only functional but also deeply intentional.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My work spans interactive language learning platforms, immersive VR experiences, IoT-based safety systems, and explainable AI interfaces. I've led mixed-methods research, modelled user behaviour, and developed feedback pipelines that embed human insight into every stage of design and development.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
-            </p>
+        {/* Hero quote */}
+        <div className={`mb-16 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
+          <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-2xl p-8 border border-primary/20 backdrop-blur-sm">
+            <blockquote className="text-2xl md:text-3xl font-light text-center italic leading-relaxed">
+              "I design technology that listens, adapts, and respects the people who use it."
+            </blockquote>
+          </div>
+        </div>
+
+        {/* Main content */}
+        <div className="grid lg:grid-cols-3 gap-12 mb-16">
+          {/* Left: Bio */}
+          <div className={`lg:col-span-2 space-y-6 ${isVisible ? 'animate-slideInLeft animate-delay-300' : 'opacity-0'}`}>
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-primary mb-4">Background</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                With a background in <span className="text-primary font-semibold">Computer Science</span> and a <span className="text-secondary font-semibold">Master's in Human-Computer Interaction</span>, I work at the intersection of UX research, software development, machine learning, and IoT, bridging the human and technical to build systems that are not only functional but also deeply intentional.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-primary mb-4">Experience</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                My work spans interactive language learning platforms, immersive VR experiences, IoT-based safety systems, and explainable AI interfaces. I've led mixed-methods research, modelled user behaviour, and developed feedback pipelines that embed human insight into every stage of design and development.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-primary mb-4">Philosophy</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
+              </p>
+            </div>
           </div>
 
-          {/* Right: Highlights */}
-          <div className={`${isVisible ? 'animate-slideInRight animate-delay-300' : 'opacity-0'}`}>
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border hover-glow">
-              <h3 className="text-2xl font-bold mb-6 text-center">My Approach</h3>
-              <div className="grid grid-cols-2 gap-4">
+          {/* Right: Approach card */}
+          <div className={`${isVisible ? 'animate-slideInRight animate-delay-400' : 'opacity-0'}`}>
+            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border hover-glow h-fit sticky top-8">
+              <h3 className="text-xl font-bold mb-6 text-center">My Approach</h3>
+              <div className="space-y-4">
                 {highlights.map((highlight, index) => (
                   <div
                     key={index}
-                    className={`flex items-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-primary/10 transition-all duration-300 ${isVisible ? `animate-fadeInUp animate-delay-${400 + index * 100}` : 'opacity-0'}`}
+                    className={`flex items-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-primary/10 border border-border/50 hover:border-primary/30 transition-all duration-300 group ${isVisible ? `animate-fadeInUp animate-delay-${400 + index * 100}` : 'opacity-0'}`}
                   >
-                    <div className="text-primary">
+                    <div className="text-primary group-hover:scale-110 transition-transform duration-300">
                       {highlight.icon}
                     </div>
-                    <span className="text-sm font-medium">{highlight.text}</span>
+                    <span className="text-sm font-medium group-hover:text-primary transition-colors duration-300">{highlight.text}</span>
                   </div>
                 ))}
               </div>
@@ -125,41 +144,51 @@ export default function About() {
           </div>
         </div>
 
-        {/* Skills grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className={`group relative bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border hover:border-primary transition-all duration-300 hover-lift cursor-pointer ${isVisible ? `animate-scaleIn animate-delay-${500 + index * 100}` : 'opacity-0'}`}
-              onMouseEnter={() => setActiveSkill(index)}
-              onMouseLeave={() => setActiveSkill(null)}
-            >
-              {/* Gradient background on hover */}
-              <div 
-                className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                style={{ 
-                  background: `linear-gradient(135deg, ${skill.color} 0%, transparent 100%)` 
-                }}
-              />
-              
-              <div className="relative z-10 text-center">
-                <div 
-                  className="mb-4 flex justify-center transition-all duration-300 group-hover:scale-110"
-                  style={{ 
-                    color: activeSkill === index ? skill.color : 'hsl(var(--primary))' 
-                  }}
-                >
-                  {skill.icon}
+        {/* Skills section */}
+        <div className={`${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold mb-4">
+              Core <span className="gradient-text">Competencies</span>
+            </h3>
+            <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className={`group relative bg-card/30 backdrop-blur-sm p-6 rounded-2xl border border-border hover:border-primary/50 transition-all duration-500 hover-lift cursor-pointer ${isVisible ? `animate-scaleIn animate-delay-${600 + index * 100}` : 'opacity-0'}`}
+                onMouseEnter={() => setActiveSkill(index)}
+                onMouseLeave={() => setActiveSkill(null)}
+              >
+                {/* Animated background */}
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div 
+                    className="absolute inset-0 rounded-2xl animate-pulse-slow"
+                    style={{ 
+                      background: `linear-gradient(135deg, ${skill.color}15, transparent)`,
+                      border: `1px solid ${skill.color}30`
+                    }}
+                  />
                 </div>
-                <h3 className="font-semibold mb-2 group-hover:text-foreground transition-colors duration-300">
-                  {skill.title}
-                </h3>
-                <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/80 transition-colors duration-300">
-                  {skill.description}
-                </p>
+                
+                <div className="relative z-10 text-center">
+                  <div 
+                    className="p-4 rounded-full transition-all duration-300 group-hover:scale-110 mb-4 mx-auto w-fit"
+                    style={{ backgroundColor: `${skill.color}20` }}
+                  >
+                    <div style={{ color: skill.color }}>{skill.icon}</div>
+                  </div>
+                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors mb-2">
+                    {skill.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    {skill.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
