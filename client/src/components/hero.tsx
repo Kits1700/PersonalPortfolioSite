@@ -4,6 +4,16 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+
+  const typingTexts = [
+    "UX Researcher",
+    "Software Developer",
+    "Human-Centered Designer",
+    "Technology Storyteller"
+  ];
 
   useEffect(() => {
     setIsVisible(true);
@@ -16,6 +26,25 @@ export default function Hero() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  useEffect(() => {
+    const typingInterval = setInterval(() => {
+      if (isTyping) {
+        if (charIndex < typingTexts[textIndex].length) {
+          setCharIndex(charIndex + 1);
+        } else {
+          setIsTyping(false);
+          setTimeout(() => {
+            setIsTyping(true);
+            setCharIndex(0);
+            setTextIndex((prev) => (prev + 1) % typingTexts.length);
+          }, 2000);
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, [charIndex, textIndex, isTyping, typingTexts]);
+
   const handleNavClick = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -25,43 +54,92 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Animated background elements */}
+      {/* Enhanced animated background elements */}
       <div className="absolute inset-0 z-0">
-        {/* Gradient orbs */}
+        {/* Dynamic gradient mesh */}
+        <div className="absolute inset-0 opacity-30">
+          <div 
+            className="absolute w-96 h-96 rounded-full animate-pulse-slow"
+            style={{
+              background: 'radial-gradient(circle, hsl(158, 64%, 70%) 0%, hsl(158, 64%, 70%, 0.5) 30%, transparent 70%)',
+              left: `${20 + mousePosition.x * 0.03}px`,
+              top: `${20 + mousePosition.y * 0.03}px`,
+              transform: 'translate(-50%, -50%)',
+              filter: 'blur(1px)'
+            }}
+          />
+          <div 
+            className="absolute w-80 h-80 rounded-full animate-pulse-slow"
+            style={{
+              background: 'radial-gradient(circle, hsl(195, 100%, 85%) 0%, hsl(195, 100%, 85%, 0.4) 40%, transparent 70%)',
+              right: `${20 + mousePosition.x * 0.02}px`,
+              top: `${40 + mousePosition.y * 0.02}px`,
+              transform: 'translate(50%, -50%)',
+              animationDelay: '1s',
+              filter: 'blur(2px)'
+            }}
+          />
+          <div 
+            className="absolute w-64 h-64 rounded-full animate-pulse-slow"
+            style={{
+              background: 'radial-gradient(circle, hsl(270, 50%, 60%) 0%, hsl(270, 50%, 60%, 0.3) 50%, transparent 70%)',
+              left: `${50 + mousePosition.x * 0.01}%`,
+              bottom: `${20 + mousePosition.y * 0.01}px`,
+              transform: 'translate(-50%, 50%)',
+              animationDelay: '2s',
+              filter: 'blur(3px)'
+            }}
+          />
+        </div>
+        
+        {/* Animated grid pattern */}
         <div 
-          className="absolute w-96 h-96 rounded-full opacity-20 animate-float"
+          className="absolute inset-0 opacity-10"
           style={{
-            background: 'radial-gradient(circle, hsl(158, 64%, 70%) 0%, transparent 70%)',
-            left: `${mousePosition.x * 0.02}px`,
-            top: `${mousePosition.y * 0.02}px`,
-            transform: 'translate(-50%, -50%)'
-          }}
-        />
-        <div 
-          className="absolute w-64 h-64 rounded-full opacity-15 animate-float"
-          style={{
-            background: 'radial-gradient(circle, hsl(195, 100%, 85%) 0%, transparent 70%)',
-            right: `${mousePosition.x * 0.01}px`,
-            top: `${mousePosition.y * 0.01}px`,
-            transform: 'translate(50%, -50%)',
-            animationDelay: '1s'
+            backgroundImage: `
+              linear-gradient(hsl(158, 64%, 70%, 0.3) 1px, transparent 1px),
+              linear-gradient(90deg, hsl(158, 64%, 70%, 0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`,
+            animation: 'grid-move 20s linear infinite'
           }}
         />
         
-        {/* Floating particles */}
+        {/* Floating geometric shapes */}
         <div className="absolute inset-0">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-2 h-2 bg-primary/30 rounded-full animate-float"
+              className={`absolute animate-float ${i % 2 === 0 ? 'animate-spin-slow' : 'animate-reverse-spin'}`}
               style={{
-                left: `${20 + i * 15}%`,
-                top: `${30 + i * 10}%`,
-                animationDelay: `${i * 0.5}s`,
-                animationDuration: `${3 + i * 0.5}s`
+                left: `${10 + i * 12}%`,
+                top: `${20 + (i * 8) % 60}%`,
+                animationDelay: `${i * 0.8}s`,
+                animationDuration: `${4 + i * 0.3}s`
               }}
-            />
+            >
+              {i % 3 === 0 && (
+                <div className="w-3 h-3 bg-primary/40 rounded-full blur-sm" />
+              )}
+              {i % 3 === 1 && (
+                <div className="w-2 h-2 bg-secondary/40 rotate-45 blur-sm" />
+              )}
+              {i % 3 === 2 && (
+                <div className="w-1 h-4 bg-gradient-to-t from-primary/40 to-secondary/40 blur-sm" />
+              )}
+            </div>
           ))}
+        </div>
+        
+        {/* Morphing blob animations */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 opacity-20 animate-morph">
+            <div className="w-full h-full bg-gradient-to-br from-primary/60 to-secondary/60 rounded-full blur-xl" />
+          </div>
+          <div className="absolute bottom-1/3 right-1/3 w-24 h-24 opacity-15 animate-morph-reverse">
+            <div className="w-full h-full bg-gradient-to-bl from-secondary/60 to-primary/60 rounded-full blur-xl" />
+          </div>
         </div>
       </div>
 
@@ -69,22 +147,21 @@ export default function Hero() {
         {/* Main heading with staggered animation */}
         <div className="mb-8">
           <h1 className={`text-6xl md:text-8xl font-bold mb-6 leading-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            <span className="gradient-text">Sai Keerthana</span>
+            <span className="gradient-text animate-text-glow">Sai Keerthana</span>
             <br />
             <span className="text-foreground">Arun</span>
           </h1>
         </div>
 
-        {/* Role titles with typewriter effect */}
+        {/* Dynamic typewriter effect */}
         <div className={`mb-8 ${isVisible ? 'animate-slideInRight animate-delay-100' : 'opacity-0'}`}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <h2 className="text-3xl md:text-4xl font-semibold text-primary">
-              UX Researcher
-            </h2>
-            <span className="text-4xl md:text-5xl font-light text-muted-foreground">×</span>
-            <p className="text-3xl md:text-4xl text-secondary font-semibold">
-              Software Developer
-            </p>
+            <div className="text-3xl md:text-4xl font-semibold text-primary min-h-[48px] flex items-center">
+              <span className="typewriter-text">
+                {typingTexts[textIndex].slice(0, charIndex)}
+              </span>
+              <span className="animate-pulse text-primary">|</span>
+            </div>
           </div>
         </div>
 
