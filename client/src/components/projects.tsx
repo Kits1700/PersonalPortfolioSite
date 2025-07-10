@@ -25,42 +25,32 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "UX Research & Human-Centered Design",
-      description: "Mixed-methods research and intuitive design that puts people first",
-      tags: ["UX Research", "User Interviews", "Design Thinking"],
-      gradient: "from-pink-500 via-rose-500 to-red-500",
+      title: "UX Human LLM Overreliance Thesis",
+      description: "Research investigating user overreliance on large language models and designing interventions to promote more balanced human-AI collaboration.",
+      tags: ["UX Research", "Human-AI Interaction", "Thesis"],
+      gradient: "from-primary via-primary/80 to-primary/60",
       icon: "🧠",
-      link: "#",
+      link: "#case-study-1",
       github: "#",
       preview: "#"
     },
     {
-      title: "Human-AI Interaction",
-      description: "Designing transparent, safe, and human-aligned AI experiences",
-      tags: ["AI/ML", "Ethics", "Explainable AI"],
-      gradient: "from-yellow-500 via-orange-500 to-amber-500",
-      icon: "🤖",
-      link: "#",
+      title: "VR Game: Survival of the Fittest",
+      description: "Immersive virtual reality game exploring evolutionary concepts through interactive gameplay and user-centered design principles.",
+      tags: ["VR/AR", "Game Design", "Unity"],
+      gradient: "from-purple-500 via-violet-500 to-indigo-500",
+      icon: "🎮",
+      link: "#case-study-2",
       github: "#",
       preview: "#"
     },
     {
-      title: "Prototyping & Development",
-      description: "Turning ideas into reality with full-stack code and functional systems",
-      tags: ["Full-Stack", "React", "Node.js"],
-      gradient: "from-gray-600 via-gray-700 to-gray-800",
-      icon: "💻",
-      link: "#",
-      github: "#",
-      preview: "#"
-    },
-    {
-      title: "ML & IoT Systems",
-      description: "Building smart, responsive systems with real-world impact",
-      tags: ["IoT", "Machine Learning", "Systems"],
-      gradient: "from-teal-500 via-cyan-500 to-blue-500",
-      icon: "🌐",
-      link: "#",
+      title: "Smart Electricity, Water and Air Quality Monitoring System",
+      description: "IoT-based environmental monitoring system providing real-time data and insights for sustainable resource management.",
+      tags: ["IoT", "Environmental Tech", "Data Analytics"],
+      gradient: "from-secondary via-secondary/80 to-secondary/60",
+      icon: "🌱",
+      link: "#case-study-3",
       github: "#",
       preview: "#"
     }
@@ -78,16 +68,16 @@ export default function Projects() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            My <span className="gradient-text">Expertise</span>
+            Featured <span className="gradient-text">Projects</span>
           </h2>
           <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6 ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
           <p className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
-            My core areas of focus where I bridge human insight with technical innovation.
+            A selection of projects that demonstrate my approach to human-centered technology design.
           </p>
         </div>
 
         {/* Projects grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -95,15 +85,36 @@ export default function Projects() {
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              {/* Project header with icon */}
-              <div className="p-6 pb-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="text-3xl">{project.icon}</div>
-                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
-                    {project.title}
-                  </h3>
+              {/* Project preview */}
+              <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+                {/* Icon overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-6xl opacity-80">{project.icon}</div>
                 </div>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500" />
+                
+                {/* Hover overlay with case study link */}
+                <div className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-all duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
+                  <button
+                    onClick={() => {
+                      // Create dummy case study modal or page
+                      alert(`Opening case study for: ${project.title}\n\nThis is a placeholder - case study content will be added here.`);
+                    }}
+                    className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors hover:scale-105 transform duration-200"
+                  >
+                    View Case Study
+                  </button>
+                </div>
+              </div>
+
+              {/* Project content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 
@@ -113,13 +124,11 @@ export default function Projects() {
                     <span
                       key={tagIndex}
                       className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 ${
-                        tag === "UX Research" || tag === "User Interviews" || tag === "Design Thinking"
+                        tag === "UX Research" || tag === "Human-AI Interaction" || tag === "Thesis"
                           ? "bg-primary/20 text-primary hover:bg-primary/30"
-                          : tag === "AI/ML" || tag === "Ethics" || tag === "Explainable AI"
-                          ? "bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30"
-                          : tag === "Full-Stack" || tag === "React" || tag === "Node.js"
-                          ? "bg-gray-500/20 text-gray-400 hover:bg-gray-500/30"
-                          : tag === "IoT" || tag === "Machine Learning" || tag === "Systems"
+                          : tag === "VR/AR" || tag === "Game Design" || tag === "Unity"
+                          ? "bg-purple-500/20 text-purple-400 hover:bg-purple-500/30"
+                          : tag === "IoT" || tag === "Environmental Tech" || tag === "Data Analytics"
                           ? "bg-secondary/20 text-secondary hover:bg-secondary/30"
                           : "bg-muted/20 text-muted-foreground hover:bg-muted/30"
                       }`}
