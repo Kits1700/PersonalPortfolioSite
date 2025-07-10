@@ -25,28 +25,41 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A comprehensive user research study and interface design for a modern e-commerce platform, focusing on conversion optimization and user journey mapping.",
-      tags: ["UX Research", "React", "Figma"],
-      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      title: "UX Research & Human-Centered Design",
+      description: "Mixed-methods research and intuitive design that puts people first",
+      tags: ["UX Research", "User Interviews", "Design Thinking"],
+      gradient: "from-pink-500 via-rose-500 to-red-500",
+      icon: "🧠",
       link: "#",
       github: "#",
       preview: "#"
     },
     {
-      title: "Mobile Health App",
-      description: "User-centered design approach for a health tracking application, including user interviews, persona development, and prototype testing.",
-      tags: ["User Research", "Figma", "Prototyping"],
-      gradient: "from-blue-500 via-purple-500 to-pink-500",
+      title: "Human-AI Interaction",
+      description: "Designing transparent, safe, and human-aligned AI experiences",
+      tags: ["AI/ML", "Ethics", "Explainable AI"],
+      gradient: "from-yellow-500 via-orange-500 to-amber-500",
+      icon: "🤖",
       link: "#",
       github: "#",
       preview: "#"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Data-driven interface design for a business analytics platform, featuring complex data visualization and user workflow optimization.",
-      tags: ["Data Viz", "D3.js", "React"],
-      gradient: "from-orange-500 via-red-500 to-pink-500",
+      title: "Prototyping & Development",
+      description: "Turning ideas into reality with full-stack code and functional systems",
+      tags: ["Full-Stack", "React", "Node.js"],
+      gradient: "from-gray-600 via-gray-700 to-gray-800",
+      icon: "💻",
+      link: "#",
+      github: "#",
+      preview: "#"
+    },
+    {
+      title: "ML & IoT Systems",
+      description: "Building smart, responsive systems with real-world impact",
+      tags: ["IoT", "Machine Learning", "Systems"],
+      gradient: "from-teal-500 via-cyan-500 to-blue-500",
+      icon: "🌐",
       link: "#",
       github: "#",
       preview: "#"
@@ -65,16 +78,16 @@ export default function Projects() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            Relevant <span className="gradient-text">Projects</span>
+            My <span className="gradient-text">Expertise</span>
           </h2>
           <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6 ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
           <p className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
-            A showcase of my work spanning UX research, web development, and UI applications.
+            My core areas of focus where I bridge human insight with technical innovation.
           </p>
         </div>
 
         {/* Projects grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -82,101 +95,38 @@ export default function Projects() {
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              {/* Project preview */}
-              <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                {/* Animated background pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute inset-0 animate-pulse" style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-                  }} />
+              {/* Project header with icon */}
+              <div className="p-6 pb-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="text-3xl">{project.icon}</div>
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
                 </div>
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500" />
-                
-                {/* Browser mockup */}
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="flex space-x-2">
-                        <div className="w-3 h-3 bg-red-400 rounded-full animate-pulse" />
-                        <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
-                      </div>
-                      <div className="w-4 h-4 border-2 border-white/40 rounded animate-spin" />
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-2 bg-white/40 rounded w-3/4 animate-shimmer" />
-                      <div className="h-2 bg-white/30 rounded w-1/2 animate-shimmer" style={{ animationDelay: '0.5s' }} />
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Hover overlay with actions */}
-                <div className={`absolute inset-0 bg-black/60 flex items-center justify-center gap-4 transition-all duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
-                  <a
-                    href={project.preview}
-                    className="p-3 bg-primary rounded-full text-primary-foreground hover:bg-primary/90 transition-colors hover:scale-110 transform duration-200"
-                  >
-                    <Eye className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.github}
-                    className="p-3 bg-card rounded-full text-foreground hover:bg-card/80 transition-colors hover:scale-110 transform duration-200"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.link}
-                    className="p-3 bg-secondary rounded-full text-secondary-foreground hover:bg-secondary/90 transition-colors hover:scale-110 transform duration-200"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-
-              {/* Project content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
                 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
                       className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 ${
-                        tag === "UX Research" || tag === "User Research"
+                        tag === "UX Research" || tag === "User Interviews" || tag === "Design Thinking"
                           ? "bg-primary/20 text-primary hover:bg-primary/30"
-                          : tag === "React"
-                          ? "bg-blue-500/20 text-blue-400 hover:bg-blue-500/30"
-                          : tag === "Figma"
-                          ? "bg-purple-500/20 text-purple-400 hover:bg-purple-500/30"
-                          : tag === "Data Viz"
-                          ? "bg-orange-500/20 text-orange-400 hover:bg-orange-500/30"
-                          : tag === "D3.js"
-                          ? "bg-green-500/20 text-green-400 hover:bg-green-500/30"
-                          : "bg-secondary/20 text-secondary hover:bg-secondary/30"
+                          : tag === "AI/ML" || tag === "Ethics" || tag === "Explainable AI"
+                          ? "bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30"
+                          : tag === "Full-Stack" || tag === "React" || tag === "Node.js"
+                          ? "bg-gray-500/20 text-gray-400 hover:bg-gray-500/30"
+                          : tag === "IoT" || tag === "Machine Learning" || tag === "Systems"
+                          ? "bg-secondary/20 text-secondary hover:bg-secondary/30"
+                          : "bg-muted/20 text-muted-foreground hover:bg-muted/30"
                       }`}
                     >
                       {tag}
                     </span>
                   ))}
-                </div>
-                
-                {/* Learn more link */}
-                <div className="flex items-center justify-between">
-                  <a
-                    href={project.link}
-                    className="group/link flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
-                  >
-                    <span>Learn more</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-                  </a>
                 </div>
               </div>
             </div>
