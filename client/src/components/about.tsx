@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Code, Palette, TrendingUp, Users, Brain, Zap, Target } from "lucide-react";
+import { Search, Code, Palette, TrendingUp, Users, Brain, Zap, Target, Microscope, Bot, Laptop, Network } from "lucide-react";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,25 +25,25 @@ export default function About() {
 
   const skills = [
     {
-      icon: "🧠",
+      icon: <Microscope className="w-8 h-8" />,
       title: "UX Research & Human-Centered Design",
       description: "Mixed-methods research and intuitive design that puts people first",
       color: "hsl(158, 64%, 70%)"
     },
     {
-      icon: "🤖",
+      icon: <Bot className="w-8 h-8" />,
       title: "Human-AI Interaction",
       description: "Designing transparent, safe, and human-aligned AI experiences",
       color: "hsl(45, 93%, 58%)"
     },
     {
-      icon: "💻",
+      icon: <Laptop className="w-8 h-8" />,
       title: "Prototyping & Development",
       description: "Turning ideas into reality with full-stack code and functional systems",
       color: "hsl(220, 13%, 50%)"
     },
     {
-      icon: "🌐",
+      icon: <Network className="w-8 h-8" />,
       title: "ML & IoT Systems",
       description: "Building smart, responsive systems with real-world impact",
       color: "hsl(195, 100%, 85%)"
@@ -156,7 +156,7 @@ export default function About() {
                     className="p-4 rounded-full transition-all duration-300 group-hover:scale-110 mb-4 mx-auto w-fit"
                     style={{ backgroundColor: `${skill.color}20` }}
                   >
-                    <div className="text-3xl">{skill.icon}</div>
+                    <div style={{ color: skill.color }}>{skill.icon}</div>
                   </div>
                   <h3 className="text-lg font-semibold group-hover:text-primary transition-colors mb-2">
                     {skill.title}

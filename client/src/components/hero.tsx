@@ -219,7 +219,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className={`animate-bounce ${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
+        <div className={`flex justify-center animate-bounce ${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
           <button
             onClick={() => handleNavClick('#about')}
             className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors duration-300 group"
