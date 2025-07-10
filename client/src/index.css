@@ -391,3 +391,77 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(142, 69%, 58%);
 }
+
+/* Tech-specific styles */
+.tech-grid {
+  background-image: 
+    linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+.terminal-window {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid hsl(158, 64%, 70%);
+  border-radius: 6px;
+  position: relative;
+}
+
+.terminal-header {
+  background: linear-gradient(90deg, #ff5f57, #ffbd2e, #28ca42);
+  height: 16px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+
+.terminal-header::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #ff5f57;
+  border-radius: 50%;
+  box-shadow: 12px 0 0 #ffbd2e, 24px 0 0 #28ca42;
+}
+
+.code-block {
+  font-family: 'Courier New', 'Fira Code', monospace;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid hsl(158, 64%, 70%);
+  border-radius: 4px;
+  padding: 8px;
+  color: hsl(158, 64%, 70%);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.matrix-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-effect::before {
+  content: '01001001 01001100 01001111 01010110 01000101 01000011 01001111 01000100 01000101';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: hsl(158, 64%, 70%);
+  font-family: 'Courier New', monospace;
+  font-size: 6px;
+  opacity: 0.05;
+  white-space: pre-wrap;
+  word-break: break-all;
+  animation: matrix-rain 20s linear infinite;
+}
+
+.binary-text {
+  font-family: 'Courier New', monospace;
+  color: hsl(158, 64%, 70%);
+  font-size: 10px;
+  opacity: 0.3;
+}

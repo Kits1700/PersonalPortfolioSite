@@ -81,42 +81,57 @@ export default function About() {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section header */}
-        <div className="mb-16 text-center">
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
+        <div className="mb-12 text-center">
+          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
             About <span className="gradient-text">Me</span>
           </h2>
-          <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
+          <div className={`w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
         </div>
 
         {/* Hero quote */}
-        <div className={`mb-16 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
-          <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-2xl p-8 border border-primary/20 backdrop-blur-sm">
-            <blockquote className="text-2xl md:text-3xl font-light text-center italic leading-relaxed">
-              "I design technology that listens, adapts, and respects the people who use it."
-            </blockquote>
+        <div className={`mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
+          <div className="max-w-3xl mx-auto terminal-window p-6">
+            <div className="terminal-header"></div>
+            <div className="pt-4">
+              <blockquote className="text-lg md:text-xl font-light text-center italic leading-relaxed">
+                "I design technology that listens, adapts, and respects the people who use it."
+              </blockquote>
+            </div>
           </div>
         </div>
 
         {/* Main content */}
-        <div className={`mb-16 ${isVisible ? 'animate-slideInLeft animate-delay-300' : 'opacity-0'}`}>
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-primary mb-4">Background</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+        <div className={`mb-12 ${isVisible ? 'animate-slideInLeft animate-delay-300' : 'opacity-0'}`}>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="code-block">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-secondary">$</span>
+                <span className="text-primary">whoami</span>
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Background</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 With a background in <span className="text-primary font-semibold">Computer Science</span> and a <span className="text-secondary font-semibold">Master's in Human-Computer Interaction</span>, I work at the intersection of UX research, software development, machine learning, and IoT, bridging the human and technical to build systems that are not only functional but also deeply intentional.
               </p>
             </div>
             
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-primary mb-4">Experience</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            <div className="code-block">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-secondary">$</span>
+                <span className="text-primary">cat experience.md</span>
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Experience</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 My work spans interactive language learning platforms, immersive VR experiences, IoT-based safety systems, and explainable AI interfaces. I've led mixed-methods research, modelled user behaviour, and developed feedback pipelines that embed human insight into every stage of design and development.
               </p>
             </div>
             
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-primary mb-4">Philosophy</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            <div className="code-block">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-secondary">$</span>
+                <span className="text-primary">grep -r "philosophy" ~/mindset/</span>
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Philosophy</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
               </p>
             </div>
@@ -125,11 +140,11 @@ export default function About() {
 
         {/* Skills section */}
         <div className={`${isVisible ? 'animate-fadeInUp animate-delay-500' : 'opacity-0'}`}>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold mb-3">
               Core <span className="gradient-text">Competencies</span>
             </h3>
-            <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+            <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -158,10 +173,10 @@ export default function About() {
                   >
                     <div style={{ color: skill.color }}>{skill.icon}</div>
                   </div>
-                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors mb-2">
+                  <h3 className="text-base font-semibold group-hover:text-primary transition-colors mb-2">
                     {skill.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                     {skill.description}
                   </p>
                 </div>

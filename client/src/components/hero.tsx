@@ -92,19 +92,17 @@ export default function Hero() {
           />
         </div>
         
-        {/* Animated grid pattern */}
+        {/* Tech grid pattern */}
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-20 tech-grid"
           style={{
-            backgroundImage: `
-              linear-gradient(hsl(158, 64%, 70%, 0.3) 1px, transparent 1px),
-              linear-gradient(90deg, hsl(158, 64%, 70%, 0.3) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px',
             transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`,
             animation: 'grid-move 20s linear infinite'
           }}
         />
+        
+        {/* Binary code rain effect */}
+        <div className="absolute inset-0 matrix-effect" />
         
         {/* Floating geometric shapes */}
         <div className="absolute inset-0">
@@ -145,8 +143,8 @@ export default function Hero() {
 
       <div className="text-center max-w-5xl mx-auto px-6 relative z-10">
         {/* Main heading with staggered animation */}
-        <div className="mb-8">
-          <h1 className={`text-6xl md:text-8xl font-bold mb-6 leading-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
+        <div className="mb-6">
+          <h1 className={`text-4xl md:text-6xl font-bold mb-4 leading-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
             <span className="gradient-text animate-text-glow">Sai Keerthana</span>
             <br />
             <span className="text-foreground">Arun</span>
@@ -154,9 +152,10 @@ export default function Hero() {
         </div>
 
         {/* Dynamic typewriter effect */}
-        <div className={`mb-8 ${isVisible ? 'animate-slideInRight animate-delay-100' : 'opacity-0'}`}>
+        <div className={`mb-6 ${isVisible ? 'animate-slideInRight animate-delay-100' : 'opacity-0'}`}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <div className="text-3xl md:text-4xl font-semibold text-primary min-h-[48px] flex items-center">
+            <div className="text-xl md:text-2xl font-semibold text-primary min-h-[32px] flex items-center terminal-window px-4 py-2">
+              <span className="text-secondary/60 mr-2">$</span>
               <span className="typewriter-text">
                 {typingTexts[textIndex].slice(0, charIndex)}
               </span>
@@ -166,8 +165,8 @@ export default function Hero() {
         </div>
 
         {/* Description with improved typography */}
-        <div className={`mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
+        <div className={`mb-8 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
             I tell the story of technology through people. By weaving together UX research and software development, 
             I create digital experiences that are <span className="text-primary font-medium">intuitive</span>, 
             <span className="text-secondary font-medium">purposeful</span>, and rooted in real human needs.
@@ -175,43 +174,43 @@ export default function Hero() {
         </div>
 
         {/* Enhanced social links */}
-        <div className={`flex justify-center space-x-8 mb-12 ${isVisible ? 'animate-scaleIn animate-delay-300' : 'opacity-0'}`}>
+        <div className={`flex justify-center space-x-6 mb-8 ${isVisible ? 'animate-scaleIn animate-delay-300' : 'opacity-0'}`}>
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
+            className="group p-3 rounded-lg bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
           >
-            <Linkedin className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+            <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
           <a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
+            className="group p-3 rounded-lg bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
           >
-            <Github className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+            <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
           <a
             href="mailto:your.email@example.com"
-            className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
+            className="group p-3 rounded-lg bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
           >
-            <Mail className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+            <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
         </div>
 
         {/* Call to action buttons */}
-        <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 ${isVisible ? 'animate-fadeInUp animate-delay-400' : 'opacity-0'}`}>
+        <div className={`flex flex-col sm:flex-row gap-3 justify-center items-center mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-400' : 'opacity-0'}`}>
           <button
             onClick={() => handleNavClick('#projects')}
-            className="group px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover-lift hover:shadow-lg hover:shadow-primary/25"
+            className="group px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all duration-300 hover-lift hover:shadow-lg hover:shadow-primary/25"
           >
             View My Work
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
           </button>
           <button
             onClick={() => handleNavClick('#contact')}
-            className="group px-8 py-4 bg-transparent border-2 border-primary text-primary rounded-full font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="group px-6 py-3 bg-transparent border border-primary text-primary rounded-lg font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
           >
             Get In Touch
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
