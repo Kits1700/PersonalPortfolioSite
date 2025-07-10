@@ -34,13 +34,13 @@ export default function About() {
       icon: <Bot className="w-8 h-8" />,
       title: "Human-AI Interaction",
       description: "Designing transparent, safe, and human-aligned AI experiences",
-      color: "hsl(45, 93%, 58%)"
+      color: "hsl(195, 100%, 85%)"
     },
     {
       icon: <Laptop className="w-8 h-8" />,
       title: "Prototyping & Development",
       description: "Turning ideas into reality with full-stack code and functional systems",
-      color: "hsl(220, 13%, 50%)"
+      color: "hsl(158, 64%, 70%)"
     },
     {
       icon: <Network className="w-8 h-8" />,
