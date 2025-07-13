@@ -22,14 +22,14 @@ export default function CaseStudyVR() {
               VR Game: Survival of the Fittest
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              An immersive virtual reality survival game with adaptive AI and realistic physics
+              Physically interactive VR fitness experience transforming everyday movement into a game-like mission
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
                 VR Development
               </span>
               <span className="px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
-                Game Design
+                Fitness Gamification
               </span>
               <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">
                 Unity 3D
@@ -47,20 +47,24 @@ export default function CaseStudyVR() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Survival of the Fittest is an immersive VR survival game that challenges players to survive in a hostile environment using realistic physics simulation and adaptive AI enemies. The game features dynamic weather systems, resource management, and intelligent NPCs that learn from player behavior.
+                  This project began with a constraint — designing for a narrow domestic passageway. Instead of 
+                  seeing this as a limitation, I saw it as an opportunity to reimagine fitness and presence in VR. 
+                  The result was a physically interactive experience that transforms everyday movement into a 
+                  game-like mission, motivating users to jump, squat, and push their way through a suspenseful, 
+                  apocalyptic hallway — all from the comfort (and constraints) of their own home.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Calendar className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Duration: 6 months</span>
+                    <span className="text-muted-foreground">Duration: 3 months</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Team: 4 developers</span>
+                    <span className="text-muted-foreground">Team: Solo project</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Target className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Role: Lead Developer & UX Designer</span>
+                    <span className="text-muted-foreground">Role: VR Developer & UX Designer</span>
                   </div>
                 </div>
               </div>

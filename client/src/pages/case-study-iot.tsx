@@ -19,20 +19,20 @@ export default function CaseStudyIoT() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
-              Smart Environmental Monitoring
+              Smart Electricity, Water and Air Quality Monitoring System
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              IoT-based intelligent monitoring system for environmental safety and sustainability
+              Affordable IoT system empowering households to monitor resource consumption and environmental impact
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
-                IoT Development
+                IoT Hardware
               </span>
               <span className="px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
                 Machine Learning
               </span>
               <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">
-                Data Analytics
+                UX Design
               </span>
             </div>
           </div>
@@ -47,41 +47,49 @@ export default function CaseStudyIoT() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  A comprehensive IoT-based environmental monitoring system that combines sensor networks, machine learning, and real-time analytics to track air quality, noise levels, and environmental hazards. The system provides predictive insights and automated alerts for environmental safety management.
+                  As cities grow and urban living becomes the norm, the pressure on our natural resources is increasing. 
+                  I noticed a lack of accessible tools that empower individuals to track their own environmental impact. 
+                  With this in mind, I designed and built a system that monitors electricity usage and the quality of air 
+                  and water in real time using affordable IoT hardware and interprets it using machine learning. It wasn't 
+                  just about building a system—it was about helping people stay informed and make better daily decisions.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Calendar className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Duration: 10 months</span>
+                    <span className="text-muted-foreground">Duration: 6 months</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Team: 6 engineers</span>
+                    <span className="text-muted-foreground">Team: Solo project</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Target className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Role: System Architect & ML Engineer</span>
+                    <span className="text-muted-foreground">Role: Full system design & development</span>
                   </div>
                 </div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border">
-                <h3 className="text-xl font-semibold mb-4">System Capabilities</h3>
+                <h3 className="text-xl font-semibold mb-4">Project Goals</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Real-time air quality monitoring across multiple locations</span>
+                    <span>Monitor air, water, and electricity usage in real-time</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Predictive modeling for environmental hazards</span>
+                    <span>Predict air and water quality for the next 7 days</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Automated alert system for safety thresholds</span>
+                    <span>Alert users when thresholds are exceeded</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Machine learning-driven anomaly detection</span>
+                    <span>Design a dashboard that's simple, clear, and meaningful</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Keep hardware and implementation affordable</span>
                   </li>
                 </ul>
               </div>
