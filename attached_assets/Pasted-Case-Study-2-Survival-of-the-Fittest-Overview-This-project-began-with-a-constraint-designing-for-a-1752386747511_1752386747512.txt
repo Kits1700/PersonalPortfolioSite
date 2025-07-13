@@ -1,0 +1,76 @@
+Case Study 2: Survival of the Fittest
+Overview
+This project began with a constraint: designing for a narrow domestic passageway. Instead of seeing this as a limitation, I saw it as an opportunity to reimagine fitness and presence in VR. The result was a physically interactive experience that transforms everyday movement into a game-like mission, motivating users to jump, squat, and push their way through a suspenseful, apocalyptic hallway, all from the comfort (and constraints) of their own home.
+▭▭▭ (Insert image of in-game hallway scene)
+The Problem
+Most VR fitness experiences assume a large play area, yet the average home doesn’t offer that. My goal was to create an immersive VR experience that fits within a 3.2 ft wide × 10 ft long hallway, a ubiquitous, often overlooked space in many homes. It needed to feel purposeful, cinematic, and physical, all within a tight physical footprint.
+Design Goals
+Use limited physical space to inspire movement and immersion
+Make players feel like they are progressing forward through action
+Create spatial tension that reinforces narrative urgency
+Keep the experience intuitive without needing visual explanations
+Motivate through embodiment rather than gamified scoring alone
+Setting & Spatial Constraints
+Width: ~1m (3.2 ft)
+Length: ~3m (10 ft)
+Ceiling: ~2.4m (8 ft)
+Rationale:
+Found in most homes
+Safe to use for in-place movement
+Allows for seated, standing, or squat-based input
+▭▭▭ (Insert sketch or dimensions layout of hallway)
+Movement as Input
+The design mapped specific physical actions to movement in the virtual world:
+Jumping Jacks → 0.8m forward
+Bodyweight Squats → 1.5m forward
+Shadow Boxing → breaks through virtual walls
+Each movement served as a mechanic, not just a fitness goal. The goal was to make actions feel like progression, not repetition.
+▭▭▭ (Insert image showing avatar actions or animation triggers)
+Prototype Design
+The experience was broken into 3 distinct scenes:
+Scene 1: Warm-Up
+Light jumping jacks and squats
+Orientation to space and controls
+Scene 2: Main Mission
+Use squats and jumping jacks to escape a collapsing hallway
+Must shadow-box through debris and locked barriers
+Scene 3: Mission Accomplished
+Breathing space, cool down visuals, and light feedback
+▭▭▭ (Insert story flow or scene diagram)
+Tools Used
+Engine: Unity 2021.3.45f1
+VR Headset: Meta Quest 2
+Toolkit: XR Interaction Toolkit
+Animation: Mixamo
+Assets: Unity Asset Store
+User Testing
+Two users tested the experience in similar hallway conditions. Both scored 87.5/100 on the System Usability Scale (SUS).
+Key Feedback:
+“I felt exhausted, but in a good way.”
+“I forgot I was working out.”
+“Captions would help, especially in noisy homes.”
+“The hallway felt suspenseful, not restrictive.”
+▭▭▭ (Insert quote cards or SUS bar chart)
+Design Learnings
+Context-aware spatial mapping: The real hallway shaped the virtual one.
+Embodied interaction: Users were more engaged when they forgot it was exercise.
+Minimalist HUDs: Audio worked well, but captions improved accessibility.
+Post-Test Improvements
+Added captions to support noisy environments
+Improved cue clarity with timed animations
+Considered adding leaderboards and timers to support replayability
+Revised punch interaction for better responsiveness
+What I Learned
+Design thrives under constraints. By designing for tight spaces, I was forced to prioritise clarity, movement, and immersion. The hallway became more than a backdrop; it was a co-actor, shaping the pace, tension, and physicality of the story.
+Reflection
+Design doesn’t begin with a feature list; it begins with what the space allows.
+Motivation doesn’t always come from scores; it can come from embodiment.
+Simple mechanics like squats and punches can be deeply immersive when framed within urgency and story.
+▭▭▭ (Insert before/after improvements or user reaction photos)
+Vision
+This prototype lays the groundwork for home-based mixed reality experiences that are compact, embodied, and emotionally engaging. With minor adjustments, it could be scaled for:
+Apartments or dorms
+Fitness routines disguised as missions
+Therapy or rehab gamification
+I’d love to expand this into a multi-chapter fitness story, designed entirely for overlooked corners of our homes, such as hallways, landings, and bedrooms, transforming daily spaces into stages for presence and play.
+

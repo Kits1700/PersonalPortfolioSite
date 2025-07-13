@@ -53,6 +53,42 @@ export default function CaseStudyVR() {
                   game-like mission, motivating users to jump, squat, and push their way through a suspenseful, 
                   apocalyptic hallway — all from the comfort (and constraints) of their own home.
                 </p>
+                
+                {/* In-game hallway scene placeholder */}
+                <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mb-6">
+                  <svg viewBox="0 0 800 400" className="w-full h-64 rounded-lg">
+                    <defs>
+                      <linearGradient id="hallwayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#1a1a1a" />
+                        <stop offset="100%" stopColor="#0a0a0a" />
+                      </linearGradient>
+                    </defs>
+                    <rect width="800" height="400" fill="url(#hallwayGradient)" />
+                    
+                    {/* Hallway perspective */}
+                    <polygon points="50,100 750,100 650,300 150,300" fill="#2a2a2a" opacity="0.8" />
+                    <polygon points="50,300 750,300 750,350 50,350" fill="#1a1a1a" />
+                    
+                    {/* VR player silhouette */}
+                    <circle cx="400" cy="280" r="25" fill="#6366f1" opacity="0.8" />
+                    <rect x="390" y="305" width="20" height="40" fill="#6366f1" opacity="0.8" />
+                    <rect x="375" y="315" width="15" height="25" fill="#6366f1" opacity="0.6" />
+                    <rect x="410" y="315" width="15" height="25" fill="#6366f1" opacity="0.6" />
+                    
+                    {/* Debris and obstacles */}
+                    <rect x="200" y="250" width="30" height="30" fill="#ef4444" opacity="0.7" transform="rotate(15 215 265)" />
+                    <rect x="600" y="220" width="25" height="25" fill="#ef4444" opacity="0.7" transform="rotate(-20 612 232)" />
+                    
+                    {/* Motion lines */}
+                    <line x1="350" y1="290" x2="320" y2="290" stroke="#10b981" strokeWidth="2" opacity="0.8" />
+                    <line x1="450" y1="290" x2="480" y2="290" stroke="#10b981" strokeWidth="2" opacity="0.8" />
+                    
+                    <text x="400" y="380" textAnchor="middle" fill="#9ca3af" fontSize="14">
+                      In-game hallway scene with player navigating through obstacles
+                    </text>
+                  </svg>
+                </div>
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Calendar className="w-5 h-5 text-primary" />
@@ -128,6 +164,74 @@ export default function CaseStudyVR() {
                 </p>
               </div>
             </div>
+            
+            {/* Hallway dimensions layout placeholder */}
+            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-12">
+              <svg viewBox="0 0 800 500" className="w-full h-80 rounded-lg">
+                <defs>
+                  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#374151" strokeWidth="0.5" opacity="0.3"/>
+                  </pattern>
+                </defs>
+                <rect width="800" height="500" fill="#111827" />
+                <rect width="800" height="500" fill="url(#grid)" />
+                
+                {/* Top view of hallway */}
+                <rect x="300" y="150" width="200" height="300" fill="#1f2937" stroke="#6366f1" strokeWidth="2" />
+                
+                {/* Dimension lines and labels */}
+                <line x1="280" y1="150" x2="280" y2="450" stroke="#10b981" strokeWidth="2" />
+                <line x1="275" y1="150" x2="285" y2="150" stroke="#10b981" strokeWidth="2" />
+                <line x1="275" y1="450" x2="285" y2="450" stroke="#10b981" strokeWidth="2" />
+                <text x="260" y="305" textAnchor="middle" fill="#10b981" fontSize="12" transform="rotate(-90 260 305)">
+                  3m (10 ft)
+                </text>
+                
+                <line x1="300" y1="470" x2="500" y2="470" stroke="#10b981" strokeWidth="2" />
+                <line x1="300" y1="465" x2="300" y2="475" stroke="#10b981" strokeWidth="2" />
+                <line x1="500" y1="465" x2="500" y2="475" stroke="#10b981" strokeWidth="2" />
+                <text x="400" y="485" textAnchor="middle" fill="#10b981" fontSize="12">
+                  1m (3.2 ft)
+                </text>
+                
+                {/* Player position */}
+                <circle cx="400" cy="300" r="15" fill="#6366f1" opacity="0.8" />
+                <text x="400" y="330" textAnchor="middle" fill="#9ca3af" fontSize="10">
+                  Player
+                </text>
+                
+                {/* Movement indicators */}
+                <polygon points="400,200 410,220 390,220" fill="#f59e0b" opacity="0.7" />
+                <text x="400" y="190" textAnchor="middle" fill="#f59e0b" fontSize="10">
+                  Forward
+                </text>
+                
+                <text x="400" y="50" textAnchor="middle" fill="#e5e7eb" fontSize="16" fontWeight="bold">
+                  Hallway Spatial Constraints (Top View)
+                </text>
+                
+                {/* Additional annotations */}
+                <text x="150" y="100" fill="#9ca3af" fontSize="12">
+                  • Found in most homes
+                </text>
+                <text x="150" y="120" fill="#9ca3af" fontSize="12">
+                  • Safe for in-place movement
+                </text>
+                <text x="150" y="140" fill="#9ca3af" fontSize="12">
+                  • Standing/seated/squat input
+                </text>
+                
+                <text x="550" y="100" fill="#9ca3af" fontSize="12">
+                  Ceiling: 2.4m (8 ft)
+                </text>
+                <text x="550" y="120" fill="#9ca3af" fontSize="12">
+                  Width: 1m (3.2 ft)
+                </text>
+                <text x="550" y="140" fill="#9ca3af" fontSize="12">
+                  Length: 3m (10 ft)
+                </text>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -138,6 +242,83 @@ export default function CaseStudyVR() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">Development Process</h2>
             <div className="space-y-8">
+              {/* Avatar actions/movement animations placeholder */}
+              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mb-8">
+                <svg viewBox="0 0 900 300" className="w-full h-64 rounded-lg">
+                  <rect width="900" height="300" fill="#0f172a" />
+                  
+                  {/* Jumping Jacks */}
+                  <g transform="translate(100, 50)">
+                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
+                    <rect x="45" y="45" width="10" height="25" fill="#6366f1" opacity="0.8" />
+                    <rect x="30" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    <rect x="58" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    <rect x="25" y="35" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    <rect x="63" y="35" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    
+                    <text x="50" y="100" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="bold">
+                      Jumping Jacks
+                    </text>
+                    <text x="50" y="115" textAnchor="middle" fill="#10b981" fontSize="10">
+                      → 0.8m forward
+                    </text>
+                    
+                    <polygon points="50,130 60,145 40,145" fill="#10b981" opacity="0.7" />
+                    <line x1="50" y1="145" x2="50" y2="165" stroke="#10b981" strokeWidth="2" />
+                  </g>
+                  
+                  {/* Bodyweight Squats */}
+                  <g transform="translate(350, 50)">
+                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
+                    <rect x="45" y="45" width="10" height="20" fill="#6366f1" opacity="0.8" />
+                    <rect x="35" y="65" width="15" height="15" fill="#6366f1" opacity="0.6" />
+                    <rect x="50" y="65" width="15" height="15" fill="#6366f1" opacity="0.6" />
+                    <rect x="40" y="35" width="8" height="15" fill="#6366f1" opacity="0.6" />
+                    <rect x="52" y="35" width="8" height="15" fill="#6366f1" opacity="0.6" />
+                    
+                    <text x="50" y="100" textAnchor="middle" fill="#f59e0b" fontSize="12" fontWeight="bold">
+                      Bodyweight Squats
+                    </text>
+                    <text x="50" y="115" textAnchor="middle" fill="#f59e0b" fontSize="10">
+                      → 1.5m forward
+                    </text>
+                    
+                    <polygon points="50,130 60,145 40,145" fill="#f59e0b" opacity="0.7" />
+                    <line x1="50" y1="145" x2="50" y2="180" stroke="#f59e0b" strokeWidth="2" />
+                  </g>
+                  
+                  {/* Shadow Boxing */}
+                  <g transform="translate(650, 50)">
+                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
+                    <rect x="45" y="45" width="10" height="25" fill="#6366f1" opacity="0.8" />
+                    <rect x="35" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    <rect x="53" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
+                    <rect x="20" y="40" width="15" height="8" fill="#6366f1" opacity="0.6" />
+                    <rect x="65" y="40" width="15" height="8" fill="#6366f1" opacity="0.6" />
+                    
+                    {/* Breaking effect */}
+                    <rect x="85" y="45" width="20" height="15" fill="#ef4444" opacity="0.4" />
+                    <rect x="88" y="48" width="14" height="9" fill="#ef4444" opacity="0.6" />
+                    <polygon points="105,52 115,48 115,57" fill="#ef4444" opacity="0.7" />
+                    
+                    <text x="50" y="100" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="bold">
+                      Shadow Boxing
+                    </text>
+                    <text x="50" y="115" textAnchor="middle" fill="#ef4444" fontSize="10">
+                      → breaks walls
+                    </text>
+                  </g>
+                  
+                  <text x="450" y="230" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
+                    Movement as Input: Avatar Actions and Animation Triggers
+                  </text>
+                  
+                  <text x="450" y="250" textAnchor="middle" fill="#9ca3af" fontSize="12">
+                    Each movement serves as a mechanic, not just a fitness goal
+                  </text>
+                </svg>
+              </div>
+              
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold mb-4">User Testing Results</h3>
                 <p className="text-muted-foreground mb-4">
@@ -148,34 +329,77 @@ export default function CaseStudyVR() {
                 <ul className="space-y-2 text-muted-foreground mb-4">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"I felt exhausted — but in a good way."</span>
+                    <span>"I felt exhausted — but in a good way. It actually motivated me to keep going, like a real workout."</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"I forgot I was working out."</span>
+                    <span>"I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"Captions would help, especially in noisy homes."</span>
+                    <span>"It didn't feel limiting — it was designed to work with the space. It felt intentional, not restrictive."</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"The hallway felt suspenseful, not restrictive."</span>
+                    <span>"The confined space made it feel suspenseful, like I had to escape quickly."</span>
                   </li>
                 </ul>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold mb-2 text-primary">Prototyping</h4>
-                    <p className="text-muted-foreground">
-                      Rapid prototyping of VR interactions using Unity XR Toolkit
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-primary">User Testing</h4>
-                    <p className="text-muted-foreground">
-                      Iterative testing with 30+ users to refine gameplay mechanics
-                    </p>
-                  </div>
+                {/* SUS Score and Quote Cards placeholder */}
+                <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-6">
+                  <svg viewBox="0 0 800 300" className="w-full h-64 rounded-lg">
+                    <rect width="800" height="300" fill="#0f172a" />
+                    
+                    {/* SUS Score Display */}
+                    <rect x="50" y="50" width="300" height="200" fill="#10b981" opacity="0.1" stroke="#10b981" strokeWidth="2" rx="10" />
+                    <text x="200" y="80" textAnchor="middle" fill="#10b981" fontSize="16" fontWeight="bold">
+                      System Usability Scale
+                    </text>
+                    <text x="200" y="130" textAnchor="middle" fill="#10b981" fontSize="48" fontWeight="bold">
+                      87.5
+                    </text>
+                    <text x="200" y="160" textAnchor="middle" fill="#10b981" fontSize="24">
+                      / 100
+                    </text>
+                    <text x="200" y="185" textAnchor="middle" fill="#9ca3af" fontSize="12">
+                      Both testers scored identically
+                    </text>
+                    <text x="200" y="200" textAnchor="middle" fill="#9ca3af" fontSize="12">
+                      High usability rating
+                    </text>
+                    
+                    {/* Quote Cards */}
+                    <rect x="400" y="50" width="350" height="90" fill="#6366f1" opacity="0.1" stroke="#6366f1" strokeWidth="1" rx="8" />
+                    <text x="410" y="70" fill="#6366f1" fontSize="12" fontWeight="bold">
+                      Tester 1:
+                    </text>
+                    <text x="410" y="88" fill="#e5e7eb" fontSize="11">
+                      "I felt exhausted — but in a good way. It actually
+                    </text>
+                    <text x="410" y="103" fill="#e5e7eb" fontSize="11">
+                      motivated me to keep going, like a real workout."
+                    </text>
+                    <text x="410" y="125" fill="#9ca3af" fontSize="10">
+                      Focus: Physical engagement and motivation
+                    </text>
+                    
+                    <rect x="400" y="160" width="350" height="90" fill="#f59e0b" opacity="0.1" stroke="#f59e0b" strokeWidth="1" rx="8" />
+                    <text x="410" y="180" fill="#f59e0b" fontSize="12" fontWeight="bold">
+                      Tester 2:
+                    </text>
+                    <text x="410" y="198" fill="#e5e7eb" fontSize="11">
+                      "I didn't feel like exercise because I was so engrossed
+                    </text>
+                    <text x="410" y="213" fill="#e5e7eb" fontSize="11">
+                      in the environment. I forgot I was moving that much."
+                    </text>
+                    <text x="410" y="235" fill="#9ca3af" fontSize="10">
+                      Focus: Immersion and embodiment
+                    </text>
+                    
+                    <text x="400" y="280" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
+                      User Testing Results: SUS Scores and Key Feedback
+                    </text>
+                  </svg>
                 </div>
               </div>
               
@@ -225,23 +449,34 @@ export default function CaseStudyVR() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold mb-4">What I Learned</h3>
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 mb-6">
+                  <h4 className="text-lg font-semibold mb-3 text-primary">Key Insight: Embodiment & Presence</h4>
+                  <blockquote className="text-lg italic text-center mb-4">
+                    "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
+                  </blockquote>
+                  <p className="text-muted-foreground text-center">
+                    The most powerful feedback came from users who forgot they were exercising - 
+                    true embodiment through immersive design.
+                  </p>
+                </div>
+                
                 <p className="text-muted-foreground mb-4">
-                  Design thrives under constraints. By designing for tight spaces, I was forced to prioritize clarity, 
+                  Design is often born out of limitations, not just possibilities. By designing for tight spaces, I was forced to prioritize clarity, 
                   movement, and immersion. The hallway became more than a backdrop — it was a co-actor, shaping the 
                   pace, tension, and physicality of the story.
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Context-aware spatial mapping: The real hallway shaped the virtual one</span>
+                    <span>Context-aware spatial mapping: Physical space inspired virtual constraints + expansions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Mixed reality architecture: Real environment becomes stage for performance</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <span>Embodied interaction: Users were more engaged when they forgot it was exercise</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Minimalist HUDs: Audio worked well, but captions improved accessibility</span>
                   </li>
                 </ul>
               </div>
