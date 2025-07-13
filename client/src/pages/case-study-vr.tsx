@@ -525,6 +525,91 @@ export default function CaseStudyVR() {
                 of our homes — hallways, landings, bedrooms — transforming daily space into stages for presence and play.
               </p>
             </div>
+            
+            {/* Before/After improvements placeholder */}
+            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-8">
+              <svg viewBox="0 0 900 350" className="w-full h-80 rounded-lg">
+                <rect width="900" height="350" fill="#0f172a" />
+                
+                {/* Before section */}
+                <rect x="50" y="50" width="350" height="250" fill="#ef4444" opacity="0.1" stroke="#ef4444" strokeWidth="2" rx="10" />
+                <text x="225" y="80" textAnchor="middle" fill="#ef4444" fontSize="16" fontWeight="bold">
+                  Before: Initial Challenges
+                </text>
+                
+                {/* Issues list */}
+                <text x="70" y="110" fill="#9ca3af" fontSize="12">
+                  • Audio-only cues unclear in noisy environments
+                </text>
+                <text x="70" y="130" fill="#9ca3af" fontSize="12">
+                  • Punch interactions felt unresponsive
+                </text>
+                <text x="70" y="150" fill="#9ca3af" fontSize="12">
+                  • No progress tracking or replayability
+                </text>
+                <text x="70" y="170" fill="#9ca3af" fontSize="12">
+                  • Limited accessibility features
+                </text>
+                
+                {/* User feedback */}
+                <rect x="70" y="190" width="280" height="80" fill="#374151" opacity="0.3" rx="5" />
+                <text x="80" y="210" fill="#f87171" fontSize="11" fontWeight="bold">
+                  User Feedback:
+                </text>
+                <text x="80" y="228" fill="#e5e7eb" fontSize="10">
+                  "Captions would help, especially in noisy homes"
+                </text>
+                <text x="80" y="243" fill="#e5e7eb" fontSize="10">
+                  "Maybe adding a leaderboard or countdown clock"
+                </text>
+                <text x="80" y="258" fill="#e5e7eb" fontSize="10">
+                  "Better cues would help"
+                </text>
+                
+                {/* Arrow */}
+                <polygon points="430,170 460,165 460,175" fill="#6366f1" opacity="0.7" />
+                <line x1="400" y1="170" x2="460" y2="170" stroke="#6366f1" strokeWidth="2" />
+                
+                {/* After section */}
+                <rect x="500" y="50" width="350" height="250" fill="#10b981" opacity="0.1" stroke="#10b981" strokeWidth="2" rx="10" />
+                <text x="675" y="80" textAnchor="middle" fill="#10b981" fontSize="16" fontWeight="bold">
+                  After: Design Improvements
+                </text>
+                
+                {/* Improvements list */}
+                <text x="520" y="110" fill="#9ca3af" fontSize="12">
+                  ✓ Added subtitle support for accessibility
+                </text>
+                <text x="520" y="130" fill="#9ca3af" fontSize="12">
+                  ✓ Improved cue clarity with timed animations
+                </text>
+                <text x="520" y="150" fill="#9ca3af" fontSize="12">
+                  ✓ Enhanced punch interaction responsiveness
+                </text>
+                <text x="520" y="170" fill="#9ca3af" fontSize="12">
+                  ✓ Considered leaderboard and progress tracking
+                </text>
+                
+                {/* Results */}
+                <rect x="520" y="190" width="280" height="80" fill="#374151" opacity="0.3" rx="5" />
+                <text x="530" y="210" fill="#10b981" fontSize="11" fontWeight="bold">
+                  Impact:
+                </text>
+                <text x="530" y="228" fill="#e5e7eb" fontSize="10">
+                  Better accessibility for diverse environments
+                </text>
+                <text x="530" y="243" fill="#e5e7eb" fontSize="10">
+                  Improved user engagement and clarity
+                </text>
+                <text x="530" y="258" fill="#e5e7eb" fontSize="10">
+                  Enhanced replayability potential
+                </text>
+                
+                <text x="450" y="330" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
+                  Before/After: User-Driven Design Improvements
+                </text>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
