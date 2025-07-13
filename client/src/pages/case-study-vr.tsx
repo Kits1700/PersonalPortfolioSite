@@ -142,9 +142,27 @@ export default function CaseStudyVR() {
                 <h3 className="text-2xl font-semibold mb-4">User Testing Results</h3>
                 <p className="text-muted-foreground mb-4">
                   Two users tested the experience in similar hallway conditions. Both scored 87.5/100 on the 
-                  System Usability Scale (SUS). Key feedback included: "I felt exhausted — but in a good way," 
-                  "I forgot I was working out," and "The hallway felt suspenseful, not restrictive."
+                  System Usability Scale (SUS). 
                 </p>
+                <h4 className="text-lg font-semibold mb-3">Key Feedback:</h4>
+                <ul className="space-y-2 text-muted-foreground mb-4">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"I felt exhausted — but in a good way."</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"I forgot I was working out."</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"Captions would help, especially in noisy homes."</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"The hallway felt suspenseful, not restrictive."</span>
+                  </li>
+                </ul>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-2 text-primary">Prototyping</h4>
@@ -162,22 +180,33 @@ export default function CaseStudyVR() {
               </div>
               
               <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Technical Challenges</h3>
+                <h3 className="text-2xl font-semibold mb-4">Post-Test Improvements</h3>
                 <p className="text-muted-foreground mb-4">
-                  Overcame significant technical hurdles including VR performance optimization, AI pathfinding in 3D space, 
-                  and creating realistic physics interactions that feel natural in virtual reality.
+                  Based on user feedback, I made several key improvements to enhance the experience:
                 </p>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Performance</h4>
+                    <h4 className="font-semibold mb-2 text-secondary">Added Captions</h4>
                     <p className="text-muted-foreground">
-                      Achieved 90+ FPS on VR headsets through optimization techniques
+                      Added captions to support noisy environments and improve accessibility
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Physics</h4>
+                    <h4 className="font-semibold mb-2 text-secondary">Improved Cue Clarity</h4>
                     <p className="text-muted-foreground">
-                      Implemented realistic physics simulation for tools and environment
+                      Enhanced visual cues with timed animations for better user understanding
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 text-secondary">Replayability Features</h4>
+                    <p className="text-muted-foreground">
+                      Considered adding leaderboards and timers to support replayability
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 text-secondary">Interaction Refinement</h4>
+                    <p className="text-muted-foreground">
+                      Revised punch interaction for better responsiveness
                     </p>
                   </div>
                 </div>
@@ -187,27 +216,79 @@ export default function CaseStudyVR() {
         </div>
       </section>
 
-      {/* Results & Impact */}
+      {/* Reflections & Impact */}
       <section className="py-16 bg-card/20">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12">Results & Impact</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">Design Learnings & Vision</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                <div className="text-lg font-semibold mb-2">User Satisfaction</div>
-                <p className="text-muted-foreground">Players rated the VR experience as highly immersive and engaging</p>
+                <h3 className="text-2xl font-semibold mb-4">What I Learned</h3>
+                <p className="text-muted-foreground mb-4">
+                  Design thrives under constraints. By designing for tight spaces, I was forced to prioritize clarity, 
+                  movement, and immersion. The hallway became more than a backdrop — it was a co-actor, shaping the 
+                  pace, tension, and physicality of the story.
+                </p>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Context-aware spatial mapping: The real hallway shaped the virtual one</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Embodied interaction: Users were more engaged when they forgot it was exercise</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Minimalist HUDs: Audio worked well, but captions improved accessibility</span>
+                  </li>
+                </ul>
               </div>
+              
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <div className="text-4xl font-bold text-secondary mb-2">90+</div>
-                <div className="text-lg font-semibold mb-2">FPS Performance</div>
-                <p className="text-muted-foreground">Consistent high frame rate for smooth VR experience</p>
+                <h3 className="text-2xl font-semibold mb-4">Key Reflections</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Design doesn't begin with a feature list; it begins with what the space allows</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Motivation doesn't always come from scores — it can come from embodiment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Simple mechanics like squats and punches can be deeply immersive when framed within urgency and story</span>
+                  </li>
+                </ul>
               </div>
-              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <div className="text-4xl font-bold text-accent mb-2">50+</div>
-                <div className="text-lg font-semibold mb-2">AI Behaviors</div>
-                <p className="text-muted-foreground">Unique AI behaviors that adapt to player strategies</p>
-              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8">
+              <h3 className="text-2xl font-semibold mb-4">Vision</h3>
+              <p className="text-muted-foreground mb-4">
+                This prototype lays the groundwork for home-based mixed reality experiences that are compact, 
+                embodied, and emotionally engaging. With minor adjustments, it could be scaled for:
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>Apartments or dorms</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>Fitness routines disguised as missions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>Therapy or rehab gamification</span>
+                </li>
+              </ul>
+              <p className="text-muted-foreground mt-4">
+                I'd love to expand this into a multi-chapter fitness story designed entirely for overlooked corners 
+                of our homes — hallways, landings, bedrooms — transforming daily space into stages for presence and play.
+              </p>
             </div>
           </div>
         </div>

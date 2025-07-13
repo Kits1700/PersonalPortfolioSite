@@ -69,6 +69,14 @@ export default function CaseStudyIoT() {
                 </div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border">
+                <h3 className="text-xl font-semibold mb-4">The Problem</h3>
+                <p className="text-muted-foreground mb-6">
+                  In most Indian homes, we only become aware of our electricity usage when the monthly bill arrives. 
+                  There is little visibility into how we consume vital resources like electricity, water, and clean air. 
+                  Worse, there are no predictive systems in place for households to anticipate problems before they happen. 
+                  Existing solutions are expensive, fragmented (focused on a single resource), and don't empower users 
+                  with meaningful insights.
+                </p>
                 <h3 className="text-xl font-semibold mb-4">Project Goals</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -81,7 +89,7 @@ export default function CaseStudyIoT() {
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Alert users when thresholds are exceeded</span>
+                    <span>Alert users when thresholds are exceeded (pollution, usage, etc.)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
@@ -89,7 +97,7 @@ export default function CaseStudyIoT() {
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Keep hardware and implementation affordable</span>
+                    <span>Keep hardware and implementation affordable for everyday homes</span>
                   </li>
                 </ul>
               </div>
@@ -232,6 +240,24 @@ export default function CaseStudyIoT() {
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
+                <h3 className="text-2xl font-semibold mb-4">Testing & Feedback</h3>
+                <p className="text-muted-foreground mb-4">
+                  I tested the dashboard with my family and a few neighbors. Initial feedback included:
+                </p>
+                <ul className="space-y-3 text-muted-foreground mb-6">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"The numbers are useful, but what do they mean?"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>"I didn't realize our water quality changed so much after rain."</span>
+                  </li>
+                </ul>
+                <p className="text-muted-foreground mb-6">
+                  Based on this, I added color-coded ranges and simple tooltips explaining what each reading meant. 
+                  I also ensured that the dashboard was mobile-friendly so users could check updates anytime.
+                </p>
                 <h3 className="text-2xl font-semibold mb-4">What I Learned</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -241,6 +267,10 @@ export default function CaseStudyIoT() {
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>Forecasting environmental data with small datasets is hard—but doable with the right ML model.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Hardware debugging and circuit stability matter just as much as code or model performance.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
@@ -265,6 +295,38 @@ export default function CaseStudyIoT() {
                   </li>
                 </ul>
               </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 mt-8">
+              <h3 className="text-2xl font-semibold mb-4">If I Did It Again</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>I would design a mobile-first version of the dashboard with voice alerts for elderly users.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>I'd add noise and gas sensors to track more pollution metrics.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>I'd collaborate with more families across income brackets to improve inclusivity.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <span>I'd explore adding an assistant to give tips based on the forecasts.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl p-8 mt-8">
+              <h3 className="text-2xl font-semibold mb-4">Vision</h3>
+              <p className="text-muted-foreground">
+                I envision this system being adopted in housing colonies, schools, and rural communities where 
+                resource awareness is critical but access to smart technology is limited. With multilingual support 
+                and localized alerts, it can become a true community-level monitoring tool that empowers people to 
+                protect their health and reduce waste.
+              </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
