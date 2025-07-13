@@ -69,23 +69,23 @@ export default function CaseStudyVR() {
                 </div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border">
-                <h3 className="text-xl font-semibold mb-4">Key Features</h3>
+                <h3 className="text-xl font-semibold mb-4">Design Goals</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Immersive VR experience with haptic feedback</span>
+                    <span>Use limited physical space to inspire movement and immersion</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Adaptive AI enemies that learn player patterns</span>
+                    <span>Make players feel like they are progressing forward through action</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Dynamic weather and day/night cycle</span>
+                    <span>Create spatial tension that reinforces narrative urgency</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Realistic physics-based interactions</span>
+                    <span>Motivate through embodiment rather than gamified scoring</span>
                   </li>
                 </ul>
               </div>
@@ -104,27 +104,27 @@ export default function CaseStudyVR() {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Gamepad2 className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">VR Interaction System</h3>
+                <h3 className="text-xl font-semibold mb-3">Movement as Input</h3>
                 <p className="text-muted-foreground">
-                  Custom interaction framework for natural hand movements and object manipulation in VR
+                  Jumping Jacks → 0.8m forward, Bodyweight Squats → 1.5m forward, Shadow Boxing → breaks walls
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">AI Behavior Trees</h3>
+                <h3 className="text-xl font-semibold mb-3">Spatial Constraints</h3>
                 <p className="text-muted-foreground">
-                  Sophisticated AI system using behavior trees and machine learning for adaptive gameplay
+                  Designed for 3.2ft wide × 10ft long hallways - a space found in most homes
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Headphones className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Spatial Audio</h3>
+                <h3 className="text-xl font-semibold mb-3">Unity & Quest 2</h3>
                 <p className="text-muted-foreground">
-                  3D spatial audio system for immersive sound design and environmental audio cues
+                  Built with Unity 2021.3.45f1, XR Interaction Toolkit, and Meta Quest 2
                 </p>
               </div>
             </div>
@@ -139,10 +139,11 @@ export default function CaseStudyVR() {
             <h2 className="text-3xl font-bold mb-12 text-center">Development Process</h2>
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">User Experience Design</h3>
+                <h3 className="text-2xl font-semibold mb-4">User Testing Results</h3>
                 <p className="text-muted-foreground mb-4">
-                  Conducted extensive user testing to ensure comfortable VR interactions and minimize motion sickness. 
-                  Designed intuitive gesture-based controls and implemented comfort features like teleportation movement.
+                  Two users tested the experience in similar hallway conditions. Both scored 87.5/100 on the 
+                  System Usability Scale (SUS). Key feedback included: "I felt exhausted — but in a good way," 
+                  "I forgot I was working out," and "The hallway felt suspenseful, not restrictive."
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>

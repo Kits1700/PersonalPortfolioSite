@@ -110,34 +110,34 @@ export default function CaseStudyIoT() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Sensor Network</h3>
                 <p className="text-muted-foreground">
-                  Distributed IoT sensors collecting environmental data via LoRaWAN
+                  Arduino Uno + NodeMCU collecting data from MQ135, ACS712, DHT11, pH sensors
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Cpu className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Edge Computing</h3>
+                <h3 className="text-xl font-semibold mb-3">Data Processing</h3>
                 <p className="text-muted-foreground">
-                  Local processing units for real-time data analysis and preprocessing
+                  Python scripts for data cleaning, transformation, and ML model training
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BarChart3 className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Analytics Platform</h3>
+                <h3 className="text-xl font-semibold mb-3">Dashboard</h3>
                 <p className="text-muted-foreground">
-                  Cloud-based analytics with ML models for pattern recognition
+                  Web application with Google Sheets API and Adafruit IO integration
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-green-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Security Layer</h3>
+                <h3 className="text-xl font-semibold mb-3">Machine Learning</h3>
                 <p className="text-muted-foreground">
-                  End-to-end encryption and secure communication protocols
+                  Random Forest Regressor for 7-day air and water quality forecasting
                 </p>
               </div>
             </div>
@@ -154,56 +154,56 @@ export default function CaseStudyIoT() {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold mb-4">Hardware Development</h3>
                 <p className="text-muted-foreground mb-4">
-                  Designed custom IoT devices using ESP32 microcontrollers with multiple environmental sensors including 
-                  PM2.5, CO2, temperature, humidity, and noise level sensors. Each device features low-power design 
-                  for extended battery life and weather-resistant enclosures.
+                  I connected sensors to an Arduino Uno and used a NodeMCU for WiFi connectivity. The system monitors 
+                  three key areas: electricity consumption via ACS712 current sensor, air quality using MQ135 gas sensor 
+                  for CO2, NOx, and ammonia detection, and water quality through turbidity, pH, and temperature sensors.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Sensor Suite</h4>
+                    <h4 className="font-semibold mb-2 text-primary">Electricity Monitoring</h4>
                     <p className="text-muted-foreground">
-                      PM2.5, CO2, temperature, humidity, noise, and light sensors
+                      ACS712 current sensor measuring amperes consumption
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Connectivity</h4>
+                    <h4 className="font-semibold mb-2 text-primary">Air Quality</h4>
                     <p className="text-muted-foreground">
-                      LoRaWAN for long-range, low-power wireless communication
+                      MQ135 sensor detecting CO2, NOx, and ammonia levels
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Power Management</h4>
+                    <h4 className="font-semibold mb-2 text-primary">Water Quality</h4>
                     <p className="text-muted-foreground">
-                      Solar charging with battery backup for 24/7 operation
+                      pH sensors, turbidity measurement, and DHT11 temperature
                     </p>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Software Architecture</h3>
+                <h3 className="text-2xl font-semibold mb-4">Machine Learning & Data Pipeline</h3>
                 <p className="text-muted-foreground mb-4">
-                  Built a scalable microservices architecture with real-time data processing, machine learning pipeline, 
-                  and web-based dashboard. The system processes thousands of sensor readings per hour and provides 
-                  predictive analytics for environmental trends.
+                  Real-time data was pushed to Google Sheets and Adafruit dashboards. I used Python for data cleaning 
+                  and transformation, then trained multiple ML models including LSTM, ARIMA, and Random Forest Regressor 
+                  for forecasting air and water quality. Random Forest achieved the lowest RMSE of 23.94.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Backend</h4>
+                    <h4 className="font-semibold mb-2 text-secondary">Data Storage</h4>
                     <p className="text-muted-foreground">
-                      Node.js microservices with MongoDB for data storage
+                      Google Sheets API integration for real-time data collection
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-secondary">ML Pipeline</h4>
+                    <h4 className="font-semibold mb-2 text-secondary">ML Models</h4>
                     <p className="text-muted-foreground">
-                      Python-based ML models for anomaly detection and prediction
+                      Random Forest Regressor (best), LSTM, and ARIMA for forecasting
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Frontend</h4>
+                    <h4 className="font-semibold mb-2 text-secondary">Dashboard</h4>
                     <p className="text-muted-foreground">
-                      React dashboard with real-time visualizations and alerts
+                      HTML/CSS/JS web interface with Adafruit IO visualization
                     </p>
                   </div>
                 </div>
@@ -213,43 +213,55 @@ export default function CaseStudyIoT() {
         </div>
       </section>
 
-      {/* Impact & Results */}
+      {/* Personal Impact */}
       <section className="py-16 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Impact & Results</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Personal Impact & Motivation</h2>
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12">
+              <blockquote className="text-lg italic text-center mb-6">
+                "I grew up watching my parents worry about high electricity bills and poor water quality, 
+                especially during the summer months. This project was my way of giving back—to design 
+                something that not only works but feels accessible and impactful for families like mine."
+              </blockquote>
+              <p className="text-muted-foreground text-center">
+                While testing the system at home, we noticed how poor the air quality was during cooking hours 
+                and how much electricity the refrigerator consumed overnight. My family began using the dashboard 
+                daily, and my parents were proud of what I built. That shift in behavior was the most rewarding part.
+              </p>
+            </div>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Environmental Impact</h3>
+                <h3 className="text-2xl font-semibold mb-4">What I Learned</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>25% reduction in environmental incidents through early detection</span>
+                    <span>Designing for real users changes everything. Real impact comes from empathy, not features.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Real-time monitoring across 50+ locations</span>
+                    <span>Forecasting environmental data with small datasets is hard—but doable with the right ML model.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Improved response time to environmental hazards by 60%</span>
+                    <span>People don't want data; they want meaning. The dashboard had to explain, not just display.</span>
                   </li>
                 </ul>
               </div>
               <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Technical Achievements</h3>
+                <h3 className="text-2xl font-semibold mb-4">Tools & Technologies</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>99.5% system uptime with fault-tolerant architecture</span>
+                    <span>Arduino Uno, NodeMCU, MQ135, ACS712, DHT11, pH sensors</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>95% accuracy in environmental hazard prediction</span>
+                    <span>Python (Pandas, Scikit-learn), Google Sheets API, Adafruit IO</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Processing 10,000+ sensor readings per hour</span>
+                    <span>Random Forest Regressor, ARIMA, LSTM models</span>
                   </li>
                 </ul>
               </div>
