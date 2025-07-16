@@ -83,9 +83,9 @@ export default function CaseStudyVR() {
               "Survival of the Fittest" is a mixed reality exergaming prototype designed to transform a common household space – specifically a narrow domestic hallway – into an immersive, fitness-driven survival experience. The primary goal was to demonstrate how the physical constraints of a limited indoor environment could be leveraged, rather than overcome, to create an engaging and physically demanding virtual reality workout.
             </p>
             
-            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
-              <h3 className="text-xl font-semibold mb-3">Elevator Pitch</h3>
-              <p className="text-muted-foreground italic">
+            <div className="bg-primary/10 border-l-4 border-primary rounded-r-lg p-6 mb-8">
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Elevator Pitch</h3>
+              <p className="text-foreground/80 italic text-lg">
                 "Train Hard. Outlast the Apocalypse. Experience a high-intensity, narrative-driven workout where your real-world hallway becomes the last stand against a collapsing city, pushing you to move, punch, and squat your way to survival."
               </p>
             </div>
