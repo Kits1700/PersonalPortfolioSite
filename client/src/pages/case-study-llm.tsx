@@ -15,42 +15,42 @@ export default function CaseStudyLLM() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 gradient-text leading-tight">
               Encouraging Thought Before Completion
             </h1>
-            <p className="text-xl md:text-2xl text-foreground mb-6">
+            <p className="text-2xl md:text-3xl text-foreground mb-8 max-w-4xl mx-auto">
               The Role of Selective Friction in AI-Assisted Tasks
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
-              <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <span className="px-6 py-3 bg-primary/20 text-primary rounded-full font-medium">
                 UX Research
               </span>
-              <span className="px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
+              <span className="px-6 py-3 bg-secondary/20 text-secondary rounded-full font-medium">
                 Human-AI Interaction
               </span>
-              <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">
+              <span className="px-6 py-3 bg-accent/20 text-accent rounded-full font-medium">
                 Thesis Project
               </span>
-              <span className="px-4 py-2 bg-green-500/20 text-green-500 rounded-full text-sm font-medium">
+              <span className="px-6 py-3 bg-green-500/20 text-green-500 rounded-full font-medium">
                 Behavioral Research
               </span>
             </div>
-            <div className="text-center mb-6">
-              <p className="text-foreground font-medium">
+            <div className="text-center mb-10">
+              <p className="text-foreground font-medium text-lg">
                 COMP4031 Human Computer Interaction | Student ID: 20700267
               </p>
             </div>
             
             {/* Hero Image Placeholder */}
-            <div className="bg-card/30 rounded-2xl p-6 border border-border/50 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-48 flex items-center justify-center">
+            <div className="bg-card/30 rounded-3xl p-8 border border-border/50 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl h-64 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">🧠</div>
-                  <p className="text-foreground font-medium">Custom Web Application Interface</p>
-                  <p className="text-foreground/70 text-sm">Selective friction research platform</p>
+                  <div className="text-6xl mb-4">🧠</div>
+                  <p className="text-foreground font-semibold text-xl">Custom Web Application Interface</p>
+                  <p className="text-foreground/70 text-lg">Selective friction research platform</p>
                 </div>
               </div>
             </div>
@@ -59,74 +59,84 @@ export default function CaseStudyLLM() {
       </section>
 
       {/* Project Overview */}
-      <section className="py-12">
+      <section className="py-16 bg-gradient-to-b from-background to-card/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 mb-12">
-              <div className="space-y-6">
-                <div>
-                  <h2 className="text-3xl font-bold mb-6 text-center md:text-left">Project Overview</h2>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    This thesis research investigates how strategically designed "selective friction" within AI-assisted interfaces 
-                    can mitigate passive acceptance of AI outputs, thereby fostering deeper critical engagement and thoughtful human cognition. 
-                    Through a mixed-methods user study utilizing a custom-built web application, this research addresses the critical challenge 
-                    of user overreliance on Large Language Models in professional and academic workflows.
-                  </p>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Project Overview</h2>
+              <p className="text-xl text-foreground/80 max-w-5xl mx-auto leading-relaxed">
+                This thesis research investigates how strategically designed "selective friction" within AI-assisted interfaces 
+                can mitigate passive acceptance of AI outputs, thereby fostering deeper critical engagement and thoughtful human cognition.
+              </p>
+            </div>
+            
+            {/* Project Details Cards */}
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Calendar className="w-10 h-10 text-primary" />
                 </div>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Duration</h3>
+                <p className="text-foreground/80">Full semester thesis project</p>
+              </div>
+              
+              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+                <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-10 h-10 text-secondary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Team</h3>
+                <p className="text-foreground/80">Individual research</p>
+              </div>
+              
+              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+                <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="w-10 h-10 text-accent" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Role</h3>
+                <p className="text-foreground/80">UX Researcher & Interaction Designer</p>
+              </div>
+            </div>
+
+            {/* Problem & Solution */}
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="bg-gradient-to-br from-red-500/10 to-red-600/5 rounded-3xl p-10 border border-red-500/20">
+                <h3 className="text-3xl font-bold mb-6 text-foreground">The Challenge</h3>
+                <p className="text-foreground mb-8 leading-relaxed text-lg">
+                  The proliferation of powerful general-purpose LLMs has revolutionized how individuals approach cognitively demanding tasks 
+                  such as academic writing, argument development, and information synthesis. While offering unprecedented efficiency, 
+                  this convenience has inadvertently cultivated a pervasive issue: user overreliance and automation bias.
+                </p>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Calendar className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground">Duration: Full semester thesis project</span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Diminished Critical Thinking: Users may cede their analytical faculties to the AI</span>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Users className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground">Team: Individual research</span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Reduced Contextualization: Nuanced reasoning and understanding may suffer</span>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Target className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-foreground">Role: UX Researcher & Interaction Designer</span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Uncritical Acceptance of Errors: Increased likelihood of integrating incorrect AI suggestions</span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Gap in open-ended, creative knowledge work contexts vs. specialized domains</span>
                   </div>
                 </div>
               </div>
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
-                <div>
-                  <h3 className="text-2xl font-semibold mb-6 text-foreground">The Challenge</h3>
-                  <p className="text-foreground mb-6 leading-relaxed">
-                    The proliferation of powerful general-purpose LLMs has revolutionized how individuals approach cognitively demanding tasks 
-                    such as academic writing, argument development, and information synthesis. While offering unprecedented efficiency, 
-                    this convenience has inadvertently cultivated a pervasive issue: user overreliance and automation bias.
-                  </p>
-                  <ul className="space-y-3 text-foreground">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Diminished Critical Thinking: Users may cede their analytical faculties to the AI</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Reduced Contextualization: Nuanced reasoning and understanding may suffer</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Uncritical Acceptance of Errors: Increased likelihood of integrating incorrect AI suggestions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Gap in open-ended, creative knowledge work contexts vs. specialized domains</span>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-foreground">The Solution: Selective Friction</h3>
-                  <p className="text-foreground leading-relaxed">
-                    Introduce "selective friction" — small, purposeful interaction barriers embedded directly into the user interface 
-                    before AI-generated content is displayed. Unlike generic hurdles, these frictions are meticulously designed to be 
-                    task-relevant, guiding users toward active cognitive engagement rather than mere passive consumption.
+              
+              <div className="bg-gradient-to-br from-primary/10 to-secondary/5 rounded-3xl p-10 border border-primary/20">
+                <h3 className="text-3xl font-bold mb-6 text-foreground">The Solution: Selective Friction</h3>
+                <p className="text-foreground leading-relaxed text-lg mb-8">
+                  Introduce "selective friction" — small, purposeful interaction barriers embedded directly into the user interface 
+                  before AI-generated content is displayed. Unlike generic hurdles, these frictions are meticulously designed to be 
+                  task-relevant, guiding users toward active cognitive engagement rather than mere passive consumption.
+                </p>
+                <div className="bg-card/30 rounded-2xl p-6 border border-border/30">
+                  <p className="text-foreground/80 italic text-center">
+                    "The goal is not to limit AI's power, but to design interfaces that empower users to engage with it critically, 
+                    ensuring that human cognition remains central to the decision-making process."
                   </p>
                 </div>
               </div>
@@ -136,10 +146,15 @@ export default function CaseStudyLLM() {
       </section>
 
       {/* Core Design Principles */}
-      <section className="py-12">
+      <section className="py-16 bg-gradient-to-b from-card/5 to-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 text-center">Core Design Principles of Selective Friction</h2>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Core Design Principles</h2>
+              <p className="text-xl text-foreground/80 max-w-4xl mx-auto">
+                Selective friction is grounded in fundamental principles that guide the creation of meaningful, productive user interactions with AI systems.
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
@@ -233,10 +248,15 @@ export default function CaseStudyLLM() {
       </section>
 
       {/* Research Methodology */}
-      <section className="py-12 bg-card/20">
+      <section className="py-16 bg-gradient-to-b from-background to-card/10">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 text-center">Research Methodology</h2>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Research Methodology</h2>
+              <p className="text-xl text-foreground/80 max-w-4xl mx-auto">
+                A mixed-methods approach combining quantitative behavioral analysis with qualitative user insights to comprehensively evaluate selective friction interventions.
+              </p>
+            </div>
             
             {/* Methodology Overview */}
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-10">
