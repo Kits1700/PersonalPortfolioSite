@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import gamePosterImage from "@assets/Group 12_1752654046089.png";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -60,13 +61,16 @@ export default function CaseStudyVR() {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="relative bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-16 mb-8">
-            <div className="text-center">
-              <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Target className="w-12 h-12 text-primary" />
-              </div>
-              <p className="text-lg text-muted-foreground">"Survival of the Fittest" - Core Concept Poster</p>
+          {/* Hero Image */}
+          <div className="relative rounded-2xl overflow-hidden mb-8">
+            <img 
+              src={gamePosterImage} 
+              alt="Survival of the Fittest - Mixed Reality Exergame showing a silhouette of a person in action pose against an apocalyptic cityscape"
+              className="w-full h-auto object-cover rounded-2xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
+            <div className="absolute bottom-4 left-4 right-4 text-white">
+              <p className="text-lg font-medium">"Survival of the Fittest" - Core Concept Poster</p>
             </div>
           </div>
         </div>
