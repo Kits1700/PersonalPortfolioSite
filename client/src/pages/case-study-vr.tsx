@@ -276,6 +276,17 @@ export default function CaseStudyVR() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-card rounded-lg p-6 border">
               <h4 className="font-semibold mb-3 text-foreground">Scene 1: Warm-up Sequence</h4>
+              
+              {/* Video Placeholder */}
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-primary/30 mb-4">
+                <div className="text-center">
+                  <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                  <p className="text-xs text-foreground/60">Scene 1 Video</p>
+                </div>
+              </div>
+              
               <p className="text-foreground/80 text-sm mb-3">Introduction to the apocalyptic scenario with gentle movement prompts</p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -291,6 +302,17 @@ export default function CaseStudyVR() {
             
             <div className="bg-card rounded-lg p-6 border">
               <h4 className="font-semibold mb-3 text-foreground">Scene 2: Main Mission</h4>
+              
+              {/* Video Placeholder */}
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-secondary/30 mb-4">
+                <div className="text-center">
+                  <svg className="w-8 h-8 text-secondary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                  <p className="text-xs text-foreground/60">Scene 2 Video</p>
+                </div>
+              </div>
+              
               <p className="text-foreground/80 text-sm mb-3">High-intensity survival sequence with wall-breaking mechanics</p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -306,6 +328,17 @@ export default function CaseStudyVR() {
             
             <div className="bg-card rounded-lg p-6 border">
               <h4 className="font-semibold mb-3 text-foreground">Scene 3: Mission Accomplished</h4>
+              
+              {/* Video Placeholder */}
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-primary/30 mb-4">
+                <div className="text-center">
+                  <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                  <p className="text-xs text-foreground/60">Scene 3 Video</p>
+                </div>
+              </div>
+              
               <p className="text-foreground/80 text-sm mb-3">Successful escape sequence with celebratory feedback</p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
