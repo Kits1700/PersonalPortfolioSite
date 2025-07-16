@@ -38,11 +38,7 @@ export default function CaseStudyLLM() {
                 Behavioral Research
               </span>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-foreground font-medium text-lg">
-                COMP4031 Human Computer Interaction | Student ID: 20700267
-              </p>
-            </div>
+
             
             {/* Hero Image Placeholder */}
             <div className="bg-card/30 rounded-3xl p-8 border border-border/50 max-w-4xl mx-auto">
