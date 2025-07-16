@@ -137,22 +137,36 @@ export default function Navigation() {
   };
 
   const stopAmbientSound = () => {
+    // Stop all oscillators
     oscillatorsRef.current.forEach(osc => {
       try {
         osc.stop();
+        osc.disconnect();
       } catch (e) {
         // Oscillator might already be stopped
       }
     });
     oscillatorsRef.current = [];
 
+    // Stop noise source
     if (noiseNodeRef.current) {
       try {
         noiseNodeRef.current.stop();
+        noiseNodeRef.current.disconnect();
       } catch (e) {
         // Source might already be stopped
       }
       noiseNodeRef.current = null;
+    }
+
+    // Reset gain to ensure silence
+    if (gainNodeRef.current) {
+      gainNodeRef.current.gain.setValueAtTime(0, audioContextRef.current?.currentTime || 0);
+      setTimeout(() => {
+        if (gainNodeRef.current) {
+          gainNodeRef.current.gain.setValueAtTime(audioVolume, audioContextRef.current?.currentTime || 0);
+        }
+      }, 100);
     }
 
     setIsAudioPlaying(false);
@@ -163,31 +177,19 @@ export default function Navigation() {
       stopAmbientSound();
     } else {
       initAudioContext();
-      startAmbientSound();
+      // Small delay to ensure audio context is ready
+      setTimeout(() => {
+        startAmbientSound();
+      }, 50);
     }
   };
 
-  // Initialize audio on user interaction
+  // Cleanup audio on unmount
   useEffect(() => {
-    const handleUserInteraction = () => {
-      initAudioContext();
-      startAmbientSound();
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('keydown', handleUserInteraction);
-      document.removeEventListener('touchstart', handleUserInteraction);
-    };
-
-    document.addEventListener('click', handleUserInteraction);
-    document.addEventListener('keydown', handleUserInteraction);
-    document.addEventListener('touchstart', handleUserInteraction);
-
     return () => {
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('keydown', handleUserInteraction);
-      document.removeEventListener('touchstart', handleUserInteraction);
       stopAmbientSound();
     };
-  }, [audioVolume]);
+  }, []);
 
   return (
     <>
