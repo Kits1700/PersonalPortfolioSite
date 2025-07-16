@@ -1,640 +1,378 @@
-import { ArrowLeft, ExternalLink, Github, Calendar, Users, Target, Gamepad2, Headphones, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle } from "lucide-react";
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export default function CaseStudyVR() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            Back to Portfolio
-          </Link>
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="max-w-4xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/">
+              <button className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <ArrowLeft className="w-5 h-5" />
+                Back to Portfolio
+              </button>
+            </Link>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={scrollToTop}
+                className="p-2 rounded-lg hover:bg-card transition-colors"
+              >
+                <ArrowRight className="w-5 h-5 rotate-[-90deg]" />
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-background to-secondary/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
-              VR Game: Survival of the Fittest
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        {/* Hero Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+              Survival of the Fittest
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Physically interactive VR fitness experience transforming everyday movement into a game-like mission
+            <p className="text-xl text-muted-foreground mb-8">
+              Mixed Reality Exergame - Transforming Constraint into Opportunity
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
-                VR Development
-              </span>
-              <span className="px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
-                Fitness Gamification
-              </span>
-              <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">
-                Unity 3D
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Project Overview */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  This project began with a constraint — designing for a narrow domestic passageway. Instead of 
-                  seeing this as a limitation, I saw it as an opportunity to reimagine fitness and presence in VR. 
-                  The result was a physically interactive experience that transforms everyday movement into a 
-                  game-like mission, motivating users to jump, squat, and push their way through a suspenseful, 
-                  apocalyptic hallway — all from the comfort (and constraints) of their own home.
-                </p>
-                
-                {/* In-game hallway scene placeholder */}
-                <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mb-6">
-                  <svg viewBox="0 0 800 400" className="w-full h-64 rounded-lg">
-                    <defs>
-                      <linearGradient id="hallwayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#1a1a1a" />
-                        <stop offset="100%" stopColor="#0a0a0a" />
-                      </linearGradient>
-                    </defs>
-                    <rect width="800" height="400" fill="url(#hallwayGradient)" />
-                    
-                    {/* Hallway perspective */}
-                    <polygon points="50,100 750,100 650,300 150,300" fill="#2a2a2a" opacity="0.8" />
-                    <polygon points="50,300 750,300 750,350 50,350" fill="#1a1a1a" />
-                    
-                    {/* VR player silhouette */}
-                    <circle cx="400" cy="280" r="25" fill="#6366f1" opacity="0.8" />
-                    <rect x="390" y="305" width="20" height="40" fill="#6366f1" opacity="0.8" />
-                    <rect x="375" y="315" width="15" height="25" fill="#6366f1" opacity="0.6" />
-                    <rect x="410" y="315" width="15" height="25" fill="#6366f1" opacity="0.6" />
-                    
-                    {/* Debris and obstacles */}
-                    <rect x="200" y="250" width="30" height="30" fill="#ef4444" opacity="0.7" transform="rotate(15 215 265)" />
-                    <rect x="600" y="220" width="25" height="25" fill="#ef4444" opacity="0.7" transform="rotate(-20 612 232)" />
-                    
-                    {/* Motion lines */}
-                    <line x1="350" y1="290" x2="320" y2="290" stroke="#10b981" strokeWidth="2" opacity="0.8" />
-                    <line x1="450" y1="290" x2="480" y2="290" stroke="#10b981" strokeWidth="2" opacity="0.8" />
-                    
-                    <text x="400" y="380" textAnchor="middle" fill="#9ca3af" fontSize="14">
-                      In-game hallway scene with player navigating through obstacles
-                    </text>
-                  </svg>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Duration: 3 months</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Team: Solo project</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Target className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Role: VR Developer & UX Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border">
-                <h3 className="text-xl font-semibold mb-4">Design Goals</h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Use limited physical space to inspire movement and immersion</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Make players feel like they are progressing forward through action</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Create spatial tension that reinforces narrative urgency</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Motivate through embodiment rather than gamified scoring</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Technical Implementation */}
-      <section className="py-16 bg-card/20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Technical Implementation</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Gamepad2 className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Movement as Input</h3>
-                <p className="text-muted-foreground">
-                  Jumping Jacks → 0.8m forward, Bodyweight Squats → 1.5m forward, Shadow Boxing → breaks walls
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-8 h-8 text-secondary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Spatial Constraints</h3>
-                <p className="text-muted-foreground">
-                  Designed for 3.2ft wide × 10ft long hallways - a space found in most homes
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Headphones className="w-8 h-8 text-accent" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Unity & Quest 2</h3>
-                <p className="text-muted-foreground">
-                  Built with Unity 2021.3.45f1, XR Interaction Toolkit, and Meta Quest 2
-                </p>
-              </div>
-            </div>
             
-            {/* Hallway dimensions layout placeholder */}
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-12">
-              <svg viewBox="0 0 800 500" className="w-full h-80 rounded-lg">
-                <defs>
-                  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#374151" strokeWidth="0.5" opacity="0.3"/>
-                  </pattern>
-                </defs>
-                <rect width="800" height="500" fill="#111827" />
-                <rect width="800" height="500" fill="url(#grid)" />
-                
-                {/* Top view of hallway */}
-                <rect x="300" y="150" width="200" height="300" fill="#1f2937" stroke="#6366f1" strokeWidth="2" />
-                
-                {/* Dimension lines and labels */}
-                <line x1="280" y1="150" x2="280" y2="450" stroke="#10b981" strokeWidth="2" />
-                <line x1="275" y1="150" x2="285" y2="150" stroke="#10b981" strokeWidth="2" />
-                <line x1="275" y1="450" x2="285" y2="450" stroke="#10b981" strokeWidth="2" />
-                <text x="260" y="305" textAnchor="middle" fill="#10b981" fontSize="12" transform="rotate(-90 260 305)">
-                  3m (10 ft)
-                </text>
-                
-                <line x1="300" y1="470" x2="500" y2="470" stroke="#10b981" strokeWidth="2" />
-                <line x1="300" y1="465" x2="300" y2="475" stroke="#10b981" strokeWidth="2" />
-                <line x1="500" y1="465" x2="500" y2="475" stroke="#10b981" strokeWidth="2" />
-                <text x="400" y="485" textAnchor="middle" fill="#10b981" fontSize="12">
-                  1m (3.2 ft)
-                </text>
-                
-                {/* Player position */}
-                <circle cx="400" cy="300" r="15" fill="#6366f1" opacity="0.8" />
-                <text x="400" y="330" textAnchor="middle" fill="#9ca3af" fontSize="10">
-                  Player
-                </text>
-                
-                {/* Movement indicators */}
-                <polygon points="400,200 410,220 390,220" fill="#f59e0b" opacity="0.7" />
-                <text x="400" y="190" textAnchor="middle" fill="#f59e0b" fontSize="10">
-                  Forward
-                </text>
-                
-                <text x="400" y="50" textAnchor="middle" fill="#e5e7eb" fontSize="16" fontWeight="bold">
-                  Hallway Spatial Constraints (Top View)
-                </text>
-                
-                {/* Additional annotations */}
-                <text x="150" y="100" fill="#9ca3af" fontSize="12">
-                  • Found in most homes
-                </text>
-                <text x="150" y="120" fill="#9ca3af" fontSize="12">
-                  • Safe for in-place movement
-                </text>
-                <text x="150" y="140" fill="#9ca3af" fontSize="12">
-                  • Standing/seated/squat input
-                </text>
-                
-                <text x="550" y="100" fill="#9ca3af" fontSize="12">
-                  Ceiling: 2.4m (8 ft)
-                </text>
-                <text x="550" y="120" fill="#9ca3af" fontSize="12">
-                  Width: 1m (3.2 ft)
-                </text>
-                <text x="550" y="140" fill="#9ca3af" fontSize="12">
-                  Length: 3m (10 ft)
-                </text>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Development Process */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Development Process</h2>
-            <div className="space-y-8">
-              {/* Avatar actions/movement animations placeholder */}
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mb-8">
-                <svg viewBox="0 0 900 300" className="w-full h-64 rounded-lg">
-                  <rect width="900" height="300" fill="#0f172a" />
-                  
-                  {/* Jumping Jacks */}
-                  <g transform="translate(100, 50)">
-                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
-                    <rect x="45" y="45" width="10" height="25" fill="#6366f1" opacity="0.8" />
-                    <rect x="30" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    <rect x="58" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    <rect x="25" y="35" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    <rect x="63" y="35" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    
-                    <text x="50" y="100" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="bold">
-                      Jumping Jacks
-                    </text>
-                    <text x="50" y="115" textAnchor="middle" fill="#10b981" fontSize="10">
-                      → 0.8m forward
-                    </text>
-                    
-                    <polygon points="50,130 60,145 40,145" fill="#10b981" opacity="0.7" />
-                    <line x1="50" y1="145" x2="50" y2="165" stroke="#10b981" strokeWidth="2" />
-                  </g>
-                  
-                  {/* Bodyweight Squats */}
-                  <g transform="translate(350, 50)">
-                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
-                    <rect x="45" y="45" width="10" height="20" fill="#6366f1" opacity="0.8" />
-                    <rect x="35" y="65" width="15" height="15" fill="#6366f1" opacity="0.6" />
-                    <rect x="50" y="65" width="15" height="15" fill="#6366f1" opacity="0.6" />
-                    <rect x="40" y="35" width="8" height="15" fill="#6366f1" opacity="0.6" />
-                    <rect x="52" y="35" width="8" height="15" fill="#6366f1" opacity="0.6" />
-                    
-                    <text x="50" y="100" textAnchor="middle" fill="#f59e0b" fontSize="12" fontWeight="bold">
-                      Bodyweight Squats
-                    </text>
-                    <text x="50" y="115" textAnchor="middle" fill="#f59e0b" fontSize="10">
-                      → 1.5m forward
-                    </text>
-                    
-                    <polygon points="50,130 60,145 40,145" fill="#f59e0b" opacity="0.7" />
-                    <line x1="50" y1="145" x2="50" y2="180" stroke="#f59e0b" strokeWidth="2" />
-                  </g>
-                  
-                  {/* Shadow Boxing */}
-                  <g transform="translate(650, 50)">
-                    <circle cx="50" cy="30" r="15" fill="#6366f1" opacity="0.8" />
-                    <rect x="45" y="45" width="10" height="25" fill="#6366f1" opacity="0.8" />
-                    <rect x="35" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    <rect x="53" y="55" width="12" height="20" fill="#6366f1" opacity="0.6" />
-                    <rect x="20" y="40" width="15" height="8" fill="#6366f1" opacity="0.6" />
-                    <rect x="65" y="40" width="15" height="8" fill="#6366f1" opacity="0.6" />
-                    
-                    {/* Breaking effect */}
-                    <rect x="85" y="45" width="20" height="15" fill="#ef4444" opacity="0.4" />
-                    <rect x="88" y="48" width="14" height="9" fill="#ef4444" opacity="0.6" />
-                    <polygon points="105,52 115,48 115,57" fill="#ef4444" opacity="0.7" />
-                    
-                    <text x="50" y="100" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="bold">
-                      Shadow Boxing
-                    </text>
-                    <text x="50" y="115" textAnchor="middle" fill="#ef4444" fontSize="10">
-                      → breaks walls
-                    </text>
-                  </g>
-                  
-                  <text x="450" y="230" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
-                    Movement as Input: Avatar Actions and Animation Triggers
-                  </text>
-                  
-                  <text x="450" y="250" textAnchor="middle" fill="#9ca3af" fontSize="12">
-                    Each movement serves as a mechanic, not just a fitness goal
-                  </text>
-                </svg>
+            {/* Project Details */}
+            <div className="flex flex-wrap justify-center gap-6 mb-8">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Calendar className="w-4 h-4" />
+                <span>8 Weeks</span>
               </div>
-              
-              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">User Testing Results</h3>
-                <p className="text-muted-foreground mb-4">
-                  Two users tested the experience in similar hallway conditions. Both scored 87.5/100 on the 
-                  System Usability Scale (SUS). 
-                </p>
-                <h4 className="text-lg font-semibold mb-3">Key Feedback:</h4>
-                <ul className="space-y-2 text-muted-foreground mb-4">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"I felt exhausted — but in a good way. It actually motivated me to keep going, like a real workout."</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"It didn't feel limiting — it was designed to work with the space. It felt intentional, not restrictive."</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>"The confined space made it feel suspenseful, like I had to escape quickly."</span>
-                  </li>
-                </ul>
-                {/* SUS Score and Quote Cards placeholder */}
-                <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-6">
-                  <svg viewBox="0 0 800 300" className="w-full h-64 rounded-lg">
-                    <rect width="800" height="300" fill="#0f172a" />
-                    
-                    {/* SUS Score Display */}
-                    <rect x="50" y="50" width="300" height="200" fill="#10b981" opacity="0.1" stroke="#10b981" strokeWidth="2" rx="10" />
-                    <text x="200" y="80" textAnchor="middle" fill="#10b981" fontSize="16" fontWeight="bold">
-                      System Usability Scale
-                    </text>
-                    <text x="200" y="130" textAnchor="middle" fill="#10b981" fontSize="48" fontWeight="bold">
-                      87.5
-                    </text>
-                    <text x="200" y="160" textAnchor="middle" fill="#10b981" fontSize="24">
-                      / 100
-                    </text>
-                    <text x="200" y="185" textAnchor="middle" fill="#9ca3af" fontSize="12">
-                      Both testers scored identically
-                    </text>
-                    <text x="200" y="200" textAnchor="middle" fill="#9ca3af" fontSize="12">
-                      High usability rating
-                    </text>
-                    
-                    {/* Quote Cards */}
-                    <rect x="400" y="50" width="350" height="90" fill="#6366f1" opacity="0.1" stroke="#6366f1" strokeWidth="1" rx="8" />
-                    <text x="410" y="70" fill="#6366f1" fontSize="12" fontWeight="bold">
-                      Tester 1:
-                    </text>
-                    <text x="410" y="88" fill="#e5e7eb" fontSize="11">
-                      "I felt exhausted — but in a good way. It actually
-                    </text>
-                    <text x="410" y="103" fill="#e5e7eb" fontSize="11">
-                      motivated me to keep going, like a real workout."
-                    </text>
-                    <text x="410" y="125" fill="#9ca3af" fontSize="10">
-                      Focus: Physical engagement and motivation
-                    </text>
-                    
-                    <rect x="400" y="160" width="350" height="90" fill="#f59e0b" opacity="0.1" stroke="#f59e0b" strokeWidth="1" rx="8" />
-                    <text x="410" y="180" fill="#f59e0b" fontSize="12" fontWeight="bold">
-                      Tester 2:
-                    </text>
-                    <text x="410" y="198" fill="#e5e7eb" fontSize="11">
-                      "I didn't feel like exercise because I was so engrossed
-                    </text>
-                    <text x="410" y="213" fill="#e5e7eb" fontSize="11">
-                      in the environment. I forgot I was moving that much."
-                    </text>
-                    <text x="410" y="235" fill="#9ca3af" fontSize="10">
-                      Focus: Immersion and embodiment
-                    </text>
-                    
-                    <text x="400" y="280" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
-                      User Testing Results: SUS Scores and Key Feedback
-                    </text>
-                  </svg>
-                </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Users className="w-4 h-4" />
+                <span>UX Designer, XR Developer</span>
               </div>
-              
-              <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Post-Test Improvements</h3>
-                <p className="text-muted-foreground mb-4">
-                  Based on user feedback, I made several key improvements to enhance the experience:
-                </p>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Added Captions</h4>
-                    <p className="text-muted-foreground">
-                      Added captions to support noisy environments and improve accessibility
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Improved Cue Clarity</h4>
-                    <p className="text-muted-foreground">
-                      Enhanced visual cues with timed animations for better user understanding
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Replayability Features</h4>
-                    <p className="text-muted-foreground">
-                      Considered adding leaderboards and timers to support replayability
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-secondary">Interaction Refinement</h4>
-                    <p className="text-muted-foreground">
-                      Revised punch interaction for better responsiveness
-                    </p>
-                  </div>
-                </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Wrench className="w-4 h-4" />
+                <span>Unity 2021.3.45f1, Meta Quest 2</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Reflections & Impact */}
-      <section className="py-16 bg-card/20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Design Learnings & Vision</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">What I Learned</h3>
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 mb-6">
-                  <h4 className="text-lg font-semibold mb-3 text-primary">Key Insight: Embodiment & Presence</h4>
-                  <blockquote className="text-lg italic text-center mb-4">
-                    "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
-                  </blockquote>
-                  <p className="text-muted-foreground text-center">
-                    The most powerful feedback came from users who forgot they were exercising - 
-                    true embodiment through immersive design.
-                  </p>
-                </div>
-                
-                <p className="text-muted-foreground mb-4">
-                  Design is often born out of limitations, not just possibilities. By designing for tight spaces, I was forced to prioritize clarity, 
-                  movement, and immersion. The hallway became more than a backdrop — it was a co-actor, shaping the 
-                  pace, tension, and physicality of the story.
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Context-aware spatial mapping: Physical space inspired virtual constraints + expansions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Mixed reality architecture: Real environment becomes stage for performance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Embodied interaction: Users were more engaged when they forgot it was exercise</span>
-                  </li>
-                </ul>
+          {/* Hero Image Placeholder */}
+          <div className="relative bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-16 mb-8">
+            <div className="text-center">
+              <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Target className="w-12 h-12 text-primary" />
               </div>
-              
-              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4">Key Reflections</h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Design doesn't begin with a feature list; it begins with what the space allows</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Motivation doesn't always come from scores — it can come from embodiment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Simple mechanics like squats and punches can be deeply immersive when framed within urgency and story</span>
-                  </li>
-                </ul>
-              </div>
+              <p className="text-lg text-muted-foreground">"Survival of the Fittest" - Core Concept Poster</p>
             </div>
+          </div>
+        </div>
+
+        {/* Overview Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Overview & Project Goal</h2>
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              "Survival of the Fittest" is a mixed reality exergaming prototype designed to transform a common household space – specifically a narrow domestic hallway – into an immersive, fitness-driven survival experience. The primary goal was to demonstrate how the physical constraints of a limited indoor environment could be leveraged, rather than overcome, to create an engaging and physically demanding virtual reality workout.
+            </p>
             
-            <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold mb-4">Vision</h3>
-              <p className="text-muted-foreground mb-4">
-                This prototype lays the groundwork for home-based mixed reality experiences that are compact, 
-                embodied, and emotionally engaging. With minor adjustments, it could be scaled for:
+            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6 mb-8">
+              <h3 className="text-xl font-semibold mb-3">Elevator Pitch</h3>
+              <p className="text-muted-foreground italic">
+                "Train Hard. Outlast the Apocalypse. Experience a high-intensity, narrative-driven workout where your real-world hallway becomes the last stand against a collapsing city, pushing you to move, punch, and squat your way to survival."
               </p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Apartments or dorms</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Fitness routines disguised as missions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Therapy or rehab gamification</span>
-                </li>
+            </div>
+          </div>
+        </section>
+
+        {/* Challenge Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">The Challenge: Transforming Constraint into Opportunity</h2>
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Traditional VR experiences often require large, unobstructed play spaces, limiting accessibility for users in smaller homes. My initial research focused on a ubiquitous yet spatially limited environment: the narrow domestic passage.
+            </p>
+            
+            {/* Hallway Analysis Image */}
+            <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-2xl p-8 mb-8">
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Spatial Constraints</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>• Width: 3.2 ft (1m)</li>
+                    <li>• Length: 10 ft (3m)</li>
+                    <li>• Height: 8 ft (2.4m)</li>
+                    <li>• Heavily restricted movement</li>
+                    <li>• No space for lateral movements</li>
+                  </ul>
+                </div>
+                <div className="text-center">
+                  <div className="w-32 h-48 bg-muted/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-16 h-32 bg-primary/20 rounded"></div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Hallway Dimensions & Analysis</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-secondary/5 border-l-4 border-secondary rounded-r-lg p-6">
+              <h3 className="text-xl font-semibold mb-3">The Opportunity</h3>
+              <p className="text-muted-foreground">
+                Instead of seeing these as barriers, I aimed to design for these limitations. Could a constrained space enhance immersion and encourage specific, impactful physical interactions? This led to the core concept: a mixed reality experience that uses the hallway as a stage for a high-intensity, forward-only progression game.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Process Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Design Process & Ideation</h2>
+          
+          {/* Ideation Cards */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Core Opportunities</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-muted-foreground">Virtual Reality (VR)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-secondary rounded-full"></div>
+                  <span className="text-muted-foreground">Strong Narrative</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-muted-foreground">Compelling Audio</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-secondary rounded-full"></div>
+                  <span className="text-muted-foreground">Standing / Exergaming</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Key Questions</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <AlertCircle className="w-4 h-4 text-orange-500" />
+                  <span className="text-muted-foreground">Theme & Story</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <AlertCircle className="w-4 h-4 text-orange-500" />
+                  <span className="text-muted-foreground">Experience Flow</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <AlertCircle className="w-4 h-4 text-orange-500" />
+                  <span className="text-muted-foreground">Camera Viewpoint</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <AlertCircle className="w-4 h-4 text-orange-500" />
+                  <span className="text-muted-foreground">Role of Physicality</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Player Actions */}
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
+            <h3 className="text-xl font-semibold mb-6 text-center">Core Player Actions</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary/40 rounded"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Bodyweight Squats</h4>
+                <p className="text-sm text-muted-foreground">Propel forward 1.5m in virtual world</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-secondary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-8 h-8 bg-secondary/40 rounded-full"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Shadow Boxing</h4>
+                <p className="text-sm text-muted-foreground">Break through collapsed walls</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary/40 rounded-lg"></div>
+                </div>
+                <h4 className="font-semibold mb-2">Jumping Jacks</h4>
+                <p className="text-sm text-muted-foreground">Move forward 0.8m quickly</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Solution Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Solution: The Prototype</h2>
+          
+          {/* Transformation Visual */}
+          <div className="bg-gradient-to-r from-muted/20 to-primary/10 rounded-2xl p-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="text-center">
+                <div className="w-full h-32 bg-muted/30 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-muted-foreground">Real Hallway</span>
+                </div>
+                <h4 className="font-semibold">Physical Space</h4>
+                <p className="text-sm text-muted-foreground">Narrow domestic hallway</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-32 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-muted-foreground">Apocalyptic Scene</span>
+                </div>
+                <h4 className="font-semibold">Virtual Environment</h4>
+                <p className="text-sm text-muted-foreground">Collapsing city survival scenario</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Implementation Details */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Technical Implementation</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>• Environment mapping aligned with hallway dimensions</li>
+                <li>• Meta Quest 2 head and controller tracking</li>
+                <li>• XR Interaction Toolkit for robust interactions</li>
+                <li>• Mixamo for character animations</li>
+                <li>• Unity Asset Store for environmental assets</li>
               </ul>
-              <p className="text-muted-foreground mt-4">
-                I'd love to expand this into a multi-chapter fitness story designed entirely for overlooked corners 
-                of our homes — hallways, landings, bedrooms — transforming daily space into stages for presence and play.
-              </p>
             </div>
             
-            {/* Before/After improvements placeholder */}
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border mt-8">
-              <svg viewBox="0 0 900 350" className="w-full h-80 rounded-lg">
-                <rect width="900" height="350" fill="#0f172a" />
-                
-                {/* Before section */}
-                <rect x="50" y="50" width="350" height="250" fill="#ef4444" opacity="0.1" stroke="#ef4444" strokeWidth="2" rx="10" />
-                <text x="225" y="80" textAnchor="middle" fill="#ef4444" fontSize="16" fontWeight="bold">
-                  Before: Initial Challenges
-                </text>
-                
-                {/* Issues list */}
-                <text x="70" y="110" fill="#9ca3af" fontSize="12">
-                  • Audio-only cues unclear in noisy environments
-                </text>
-                <text x="70" y="130" fill="#9ca3af" fontSize="12">
-                  • Punch interactions felt unresponsive
-                </text>
-                <text x="70" y="150" fill="#9ca3af" fontSize="12">
-                  • No progress tracking or replayability
-                </text>
-                <text x="70" y="170" fill="#9ca3af" fontSize="12">
-                  • Limited accessibility features
-                </text>
-                
-                {/* User feedback */}
-                <rect x="70" y="190" width="280" height="80" fill="#374151" opacity="0.3" rx="5" />
-                <text x="80" y="210" fill="#f87171" fontSize="11" fontWeight="bold">
-                  User Feedback:
-                </text>
-                <text x="80" y="228" fill="#e5e7eb" fontSize="10">
-                  "Captions would help, especially in noisy homes"
-                </text>
-                <text x="80" y="243" fill="#e5e7eb" fontSize="10">
-                  "Maybe adding a leaderboard or countdown clock"
-                </text>
-                <text x="80" y="258" fill="#e5e7eb" fontSize="10">
-                  "Better cues would help"
-                </text>
-                
-                {/* Arrow */}
-                <polygon points="430,170 460,165 460,175" fill="#6366f1" opacity="0.7" />
-                <line x1="400" y1="170" x2="460" y2="170" stroke="#6366f1" strokeWidth="2" />
-                
-                {/* After section */}
-                <rect x="500" y="50" width="350" height="250" fill="#10b981" opacity="0.1" stroke="#10b981" strokeWidth="2" rx="10" />
-                <text x="675" y="80" textAnchor="middle" fill="#10b981" fontSize="16" fontWeight="bold">
-                  After: Design Improvements
-                </text>
-                
-                {/* Improvements list */}
-                <text x="520" y="110" fill="#9ca3af" fontSize="12">
-                  ✓ Added subtitle support for accessibility
-                </text>
-                <text x="520" y="130" fill="#9ca3af" fontSize="12">
-                  ✓ Improved cue clarity with timed animations
-                </text>
-                <text x="520" y="150" fill="#9ca3af" fontSize="12">
-                  ✓ Enhanced punch interaction responsiveness
-                </text>
-                <text x="520" y="170" fill="#9ca3af" fontSize="12">
-                  ✓ Considered leaderboard and progress tracking
-                </text>
-                
-                {/* Results */}
-                <rect x="520" y="190" width="280" height="80" fill="#374151" opacity="0.3" rx="5" />
-                <text x="530" y="210" fill="#10b981" fontSize="11" fontWeight="bold">
-                  Impact:
-                </text>
-                <text x="530" y="228" fill="#e5e7eb" fontSize="10">
-                  Better accessibility for diverse environments
-                </text>
-                <text x="530" y="243" fill="#e5e7eb" fontSize="10">
-                  Improved user engagement and clarity
-                </text>
-                <text x="530" y="258" fill="#e5e7eb" fontSize="10">
-                  Enhanced replayability potential
-                </text>
-                
-                <text x="450" y="330" textAnchor="middle" fill="#e5e7eb" fontSize="14" fontWeight="bold">
-                  Before/After: User-Driven Design Improvements
-                </text>
-              </svg>
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Core Features</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>• Dynamic environment changes with progression</li>
+                <li>• Mobile soundtrack and narrative voiceovers</li>
+                <li>• Real-time movement interpretation</li>
+                <li>• Performance metrics tracking</li>
+                <li>• Linear, forward-only progression design</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-border/50">
-        <div className="container mx-auto px-6 text-center">
-          <div className="flex justify-center gap-6">
-            <Link 
-              href="/" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Portfolio
-            </Link>
-            <a 
-              href="#" 
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:bg-card/50 transition-colors"
-            >
-              <Github className="w-4 h-4" />
-              View on GitHub
-            </a>
+        {/* User Testing Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">User Testing & Validation</h2>
+          
+          {/* SUS Score Highlight */}
+          <div className="bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-2xl p-8 mb-8 text-center">
+            <div className="inline-flex items-center gap-4 mb-4">
+              <CheckCircle className="w-12 h-12 text-green-500" />
+              <div>
+                <div className="text-4xl font-bold text-green-600">87.5/100</div>
+                <div className="text-sm text-muted-foreground">System Usability Scale (SUS) Score</div>
+              </div>
+            </div>
+            <p className="text-muted-foreground">Exceptionally good usability and user satisfaction</p>
           </div>
+
+          {/* User Feedback */}
+          <div className="space-y-6">
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Physical Movements</h3>
+              <div className="space-y-4">
+                <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
+                  "I felt exhausted — but in a good way. It actually motivated me to keep going, like a real workout."
+                </blockquote>
+                <blockquote className="border-l-4 border-secondary pl-4 italic text-muted-foreground">
+                  "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
+                </blockquote>
+              </div>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-xl font-semibold mb-4">Hallway Setting & Immersion</h3>
+              <div className="space-y-4">
+                <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
+                  "It didn't feel limiting – it was designed to work with the space. It felt intentional, not restrictive."
+                </blockquote>
+                <blockquote className="border-l-4 border-secondary pl-4 italic text-muted-foreground">
+                  "It added to the overall excitement. The confined space made it feel suspenseful, like I had to escape quickly."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Recommendations */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Design Recommendations</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-lg font-semibold mb-3">Immediate Improvements</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Enhance visual and audio cues for actions</li>
+                <li>• Add subtitle support for accessibility</li>
+                <li>• Refine punch interaction haptic feedback</li>
+                <li>• Implement more explicit voice prompts</li>
+              </ul>
+            </div>
+            
+            <div className="bg-card rounded-lg p-6 border">
+              <h3 className="text-lg font-semibold mb-3">Future Enhancements</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Add leaderboard and progress tracking</li>
+                <li>• Include competitive elements</li>
+                <li>• Implement countdown timers</li>
+                <li>• Expand exercise variety</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Insights */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Key Insights</h2>
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Target className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Constraint as Feature</h3>
+                <p className="text-sm text-muted-foreground">Physical limitations can enhance rather than hinder immersive experiences</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-secondary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <CheckCircle className="w-8 h-8 text-secondary" />
+                </div>
+                <h3 className="font-semibold mb-2">Gamified Exercise</h3>
+                <p className="text-sm text-muted-foreground">Immersive context successfully masks strenuous exercise perception</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Users className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Accessibility Focus</h3>
+                <p className="text-sm text-muted-foreground">Clear audio cues and visual feedback are essential for user success</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Navigation */}
+        <div className="flex justify-between items-center pt-8 border-t border-border">
+          <Link href="/case-study-iot">
+            <Button variant="outline" className="flex items-center gap-2">
+              <ArrowLeft className="w-4 h-4" />
+              IoT Case Study
+            </Button>
+          </Link>
+          <Link href="/case-study-llm">
+            <Button variant="outline" className="flex items-center gap-2">
+              LLM Case Study
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
         </div>
-      </footer>
+      </main>
     </div>
   );
 }
