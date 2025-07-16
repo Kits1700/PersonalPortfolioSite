@@ -10,7 +10,7 @@ const AmbientAudio = () => {
   const oscillatorsRef = useRef<OscillatorNode[]>([]);
   const noiseNodeRef = useRef<AudioBufferSourceNode | null>(null);
 
-  // Initialize Web Audio API
+  // Initialize Web Audio API and start automatically
   useEffect(() => {
     const initAudioContext = () => {
       if (!audioContextRef.current) {
@@ -21,19 +21,23 @@ const AmbientAudio = () => {
       }
     };
 
-    // Initialize on user interaction
+    // Initialize and start audio on user interaction
     const handleUserInteraction = () => {
       initAudioContext();
+      startAmbientSound();
       document.removeEventListener('click', handleUserInteraction);
       document.removeEventListener('keydown', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
     };
 
     document.addEventListener('click', handleUserInteraction);
     document.addEventListener('keydown', handleUserInteraction);
+    document.addEventListener('touchstart', handleUserInteraction);
 
     return () => {
       document.removeEventListener('click', handleUserInteraction);
       document.removeEventListener('keydown', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
       stopAmbientSound();
     };
   }, [volume]);
@@ -179,7 +183,7 @@ const AmbientAudio = () => {
         <button
           onClick={togglePlayPause}
           className="p-2 rounded-full hover:bg-accent transition-colors"
-          title={isPlaying ? 'Pause ambient sound' : 'Play ambient sound'}
+          title={isPlaying ? 'Pause ambient sound' : 'Resume ambient sound'}
         >
           {isPlaying ? (
             <Pause size={16} className="text-foreground" />
@@ -211,7 +215,10 @@ const AmbientAudio = () => {
           title="Volume"
         />
         
-        <span className="text-xs text-foreground/70 font-medium">
+        <span className="text-xs text-foreground/70 font-medium flex items-center gap-1">
+          {isPlaying && (
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+          )}
           {isPlaying ? 'Ocean' : 'Silent'}
         </span>
       </div>
