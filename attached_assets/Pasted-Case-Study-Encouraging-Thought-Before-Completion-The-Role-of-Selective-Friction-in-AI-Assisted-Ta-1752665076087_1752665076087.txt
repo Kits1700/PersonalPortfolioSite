@@ -1,0 +1,104 @@
+Case Study: Encouraging Thought Before Completion – The Role of Selective Friction in AI-Assisted Tasks
+Project Title: Encouraging Thought Before Completion: The Role of Friction in AI-Assisted Tasks
+My Role: [Your Specific Role(s) in the Thesis, e.g., UX Researcher, Interaction Designer, Software Developer]
+Project Type: Thesis Research & Interactive Prototype Development (Human-AI Interaction, UX Design, Web Application Development)
+Course: COMP4031 Human Computer Interaction
+Student ID: 20700267
+1. Executive Summary
+In an era of rapidly integrating Large Language Models (LLMs) like ChatGPT into professional and academic workflows, a critical challenge has emerged: user overreliance. This project investigates how strategically designed "selective friction" within AI-assisted interfaces can mitigate passive acceptance of AI outputs, thereby fostering deeper critical engagement and thoughtful human cognition. Through a mixed-methods user study utilizing a custom-built web application, this research aims to demonstrate that subtle, task-relevant interactive barriers, implemented before AI-generated content is revealed, can enhance analytical thinking, maintain user trust, and increase productive cognitive effort, ultimately leading to more informed and higher-quality human-AI collaboration.
+2. The Challenge: Mitigating Overreliance on AI
+The proliferation of powerful general-purpose LLMs has revolutionized how individuals approach cognitively demanding tasks such as academic writing, argument development, and information synthesis. While offering unprecedented efficiency, this convenience has inadvertently cultivated a pervasive issue: user overreliance.
+Users increasingly tend to passively accept AI-generated content without sufficient critical engagement, reflection, or contextualization. This automated bias carries significant risks:
+Diminished Critical Thinking: Users may cede their analytical faculties to the AI, reducing their ability to scrutinize or question information.
+Reduced Contextualization: Nuanced reasoning and understanding of complex information may suffer if users do not actively connect AI outputs to broader contexts.
+Uncritical Acceptance of Errors: There is an increased likelihood of uncritically integrating incorrect or suboptimal AI suggestions.
+While prior research has explored "cognitive forcing functions" (CFFs) – deliberate interaction hurdles designed to promote critical thinking – these interventions have largely been confined to specialized, domain-specific contexts (e.g., medical diagnosis). A significant gap exists in understanding how these mechanisms translate to the open-ended, creative, and knowledge-work tasks now commonly assisted by general-purpose LLMs. Furthermore, a persistent design tension has been identified: generic frictions, while potentially reducing overreliance, can paradoxically erode user trust and increase cognitive load, hindering adoption.
+This project addresses this critical challenge by seeking to design friction that is not merely an interruption, but a constructive and task-relevant scaffold for human cognition.
+3. The Solution: Selective Friction for Enhanced Engagement
+To counteract AI overreliance, our project introduces the concept of selective friction: small, purposeful interaction barriers embedded directly into the user interface before AI-generated content is displayed. Unlike generic hurdles, these frictions are meticulously designed to be task-relevant, guiding users toward active cognitive engagement rather than mere passive consumption.
+A. Core Design Principles of Selective Friction:
+Task-Relevant: Frictions are directly related to the cognitive task at hand, making them feel integral rather than arbitrary.
+Scaffolding, Not Hindering: The barriers are intended to support and guide users' thought processes, prompting reflection and analysis.
+Embedded in Workflow: Frictions are seamlessly integrated into the natural flow of the AI-assisted task, minimizing disruption.
+Promotes Critical Engagement: By requiring a preparatory cognitive task, users are compelled to actively engage with the problem space before seeing AI's solution.
+Mitigates Automation Bias: Encourages users to evaluate AI output with a more critical lens, reducing uncritical acceptance.
+B. System Implementation & Prototype:
+The core of this research is a custom-built web application designed for experimental control, which is not available in commercial LLM interfaces. This platform is being developed using Figma (for design prototyping) and Replit (for web application development), integrated with the OpenAI GPT-4 API for powerful language model capabilities.
+[Image Placeholder: App Design - Initial State (No AI Output Yet)]
+Suggestion: A screenshot of your web application interface just before the user requests AI assistance, showing the task prompt.
+Caption: The custom web application interface at the start of a task, prior to any AI interaction.
+C. Friction Intervention Examples:
+The prototype will feature two distinct cognitive domains, each with specific friction interventions:
+Literature Review Generation:
+Friction Task: Users are required to rank abstracts or engage with source material before accessing the AI-generated literature review.
+Goal: To encourage pre-computation, familiarization with content, and a more critical evaluation of AI's synthesis.
+Argument Brainstorming:
+Friction Task: Users must actively formulate a counterargument or consider an opposing viewpoint before the AI provides its suggested arguments.
+Goal: To stimulate dialectical thinking and prevent confirmation bias from immediately accepting the AI's first suggestions.
+[Image Placeholder: App Design - Friction Intervention in Progress]
+Suggestion: A screenshot showing the selective friction in action. E.g., the user is presented with abstracts to rank, or a text box prompting a counterargument before the main AI output appears.
+Caption: A "selective friction" intervention: requiring the user to rank abstracts before receiving AI-generated content.
+[Image Placeholder: App Design - Post-Friction (AI Output Displayed)]
+Suggestion: A screenshot showing the AI-generated content displayed after the user has completed the friction task.
+Caption: AI-generated output displayed after the user has actively engaged with the friction task, promoting critical evaluation.
+4. Methodology: A Rigorous Mixed-Methods User Study
+To rigorously test the hypotheses and explore the nuanced impact of selective friction, this project employs a robust mixed-methods user study.
+A. Research Design:
+Approach: Mixed-methods, combining quantitative analysis with qualitative insights.
+Core Design: Counterbalanced within-subjects design. Each participant experiences both friction and no-friction conditions across different tasks, serving as their own control. This minimizes the impact of individual differences in AI literacy and attitudes.
+B. Participants & Recruitment:
+Target: At least 25 participants.
+Criteria: Individuals with regular and demonstrable experience using LLMs for substantive knowledge work (e.g., academic research, content creation). This purposive sampling ensures participants are familiar with baseline AI interaction models.
+C. Experimental Procedure:
+Each participant will complete four tasks (two literature review generation, two argument brainstorming), experiencing both no-friction (control) and friction (experimental) conditions. The sequence of conditions will be fully counterbalanced to eliminate order effects.
+Onboarding & Pre-Study: Informed consent and a pre-study questionnaire (including dispositional trust measures).
+Task Completion: Four experimental tasks, each followed by a post-task questionnaire.
+Post-Study: Final overall questionnaire and a brief, semi-structured interview.
+[Image Placeholder: User Testing Session Photo 1 - Setup/Participant View]
+Suggestion: A photo of your testing setup or a blurred image of a participant engaging with the web application on a computer, conveying the real-world testing context.
+Caption: Participant engaging with the custom web application during a user study session.
+[Image Placeholder: User Testing Session Photo 2 - Different Angle/Interaction]
+Suggestion: Another photo, perhaps showing the participant's interaction or screen, again, respecting privacy if needed.
+Caption: Observing user interaction with the prototype's interface elements.
+D. Data Collection & Measures:
+A multi-faceted approach will capture both behavioral and perceptual data:
+Behavioral Logs: Automatically recorded interaction metrics from the platform, including time spent on friction tasks and LLM usage patterns.
+Self-Report Questionnaires:
+Task-Specific Trust: Using items from the Trust between People and Automation (TPA) scale.
+Dispositional Trust: Measured at baseline using the General Trust Scale.
+Cognitive Effort: Captured using the validated NASA Task Load Index (NASA TLX).
+Critical Engagement & Overreliance: Custom items informed by automation bias and human-AI interaction literature.
+Qualitative Interviews: Semi-structured interviews exploring user strategies, system understanding, and experiences with friction.
+5. Results & Validation (Future Content)
+Following the completion of participant recruitment and data collection, a rigorous analysis will be performed to evaluate the impact of selective friction.
+A. Quantitative Analysis:
+Primary Technique: Repeated measures ANOVA will be applied to analyze differences in self-report and behavioral metrics across friction and no-friction conditions.
+Hypotheses to Test:
+H1: Friction will reduce overreliance on AI and increase critical engagement with AI-generated outputs.
+H2: Friction will maintain or enhance perceived trustworthiness and usefulness of the AI.
+H3: Friction will increase productive cognitive effort.
+[Image Placeholder: Key Quantitative Result Chart/Screenshot (Future)]
+Suggestion: A mock-up or placeholder for a bar chart or line graph comparing a key metric (e.g., "Critical Engagement Score" or "Time Spent Editing AI Output") between the friction and no-friction conditions.
+Caption: [Placeholder: Quantitative comparison of critical engagement between friction and no-friction conditions.]
+B. Qualitative Analysis:
+Method: Thematic analysis using Braun & Clarke's six-phase framework will be applied to interview transcripts and open-text responses. This will identify emergent themes relating to user strategies, system understanding, and experiences with friction.
+[Image Placeholder: Key Qualitative Finding Highlight/Quote (Future)]
+Suggestion: A text box with a compelling, anonymized quote from a participant about their experience with or without friction, or a word cloud of key themes.
+Caption: [Placeholder: Representative user feedback highlighting the impact of friction on critical thinking.]
+C. Triangulation:
+The strength of this mixed-methods approach lies in its ability to triangulate findings. Quantitative results ("the what") will be synthesized with qualitative themes ("the why") to provide a robust, defensible, and impactful interpretation of how task-specific friction mediates human-AI collaboration.
+6. Key Learnings & Future Directions (Future Content)
+This thesis project is anticipated to yield significant insights into the design of responsible and effective human-AI collaboration.
+A. Expected Key Learnings:
+Nuanced Friction Design: Insights into how to design friction that is constructive rather than disruptive, balancing cognitive load with critical engagement.
+Supporting Human Cognition: A deeper understanding of how AI tools can be designed to support and enhance, rather than replace, human critical thinking and decision-making.
+Practical Design Recommendations: Concrete guidelines for developers and designers on implementing selective friction in future AI-assisted applications.
+Addressing Automation Bias: Empirical evidence on the effectiveness of specific UI interventions in mitigating automation bias in real-world-like tasks.
+B. Future Directions:
+Longitudinal Studies: Investigating the long-term effects of selective friction on user behavior and cognitive skill development.
+Personalization: Exploring adaptive friction mechanisms that adjust based on individual user characteristics, task complexity, or real-time performance.
+Diverse Task Domains: Applying the concept of selective friction to other AI-assisted creative or analytical tasks.
+Multi-Modal Friction: Incorporating haptic, auditory, or visual feedback as forms of friction.
+Ethical Implications: Further research into the broader ethical considerations of nudging user behavior in AI systems.
+7. Conclusion
+"Encouraging Thought Before Completion" directly addresses a pressing challenge in the rapidly evolving landscape of human-AI interaction. By rigorously examining the role of selective friction, this project aims to contribute valuable empirical evidence and design principles that can guide the creation of more thoughtful, responsible, and effective AI-assisted tools. The goal is not to limit AI's power, but to design interfaces that empower users to engage with it critically, ensuring that human cognition remains central to the collaborative process.

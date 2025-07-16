@@ -19,10 +19,10 @@ export default function CaseStudyLLM() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
-              UX Human LLM Overreliance
+              Encouraging Thought Before Completion
             </h1>
             <p className="text-xl md:text-2xl text-foreground mb-6">
-              Investigating User Overreliance on Large Language Models and Designing Interventions
+              The Role of Selective Friction in AI-Assisted Tasks
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
@@ -40,7 +40,7 @@ export default function CaseStudyLLM() {
             </div>
             <div className="text-center mb-6">
               <p className="text-foreground font-medium">
-                Master's Thesis Research | Human-Computer Interaction Studies
+                COMP4031 Human Computer Interaction | Student ID: 20700267
               </p>
             </div>
             
@@ -67,9 +67,10 @@ export default function CaseStudyLLM() {
                 <div>
                   <h2 className="text-3xl font-bold mb-6 text-center md:text-left">Project Overview</h2>
                   <p className="text-lg text-foreground leading-relaxed">
-                    This master's thesis investigates the psychological mechanisms behind human overreliance on Large Language Models (LLMs) 
-                    in decision-making contexts. Through comprehensive user research and behavioral analysis, the study explores how users 
-                    interact with AI systems and identifies key factors that contribute to inappropriate trust and dependency patterns.
+                    This thesis research investigates how strategically designed "selective friction" within AI-assisted interfaces 
+                    can mitigate passive acceptance of AI outputs, thereby fostering deeper critical engagement and thoughtful human cognition. 
+                    Through a mixed-methods user study utilizing a custom-built web application, this research addresses the critical challenge 
+                    of user overreliance on Large Language Models in professional and academic workflows.
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -77,7 +78,7 @@ export default function CaseStudyLLM() {
                     <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
                       <Calendar className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="text-foreground">Duration: 8 months research project</span>
+                    <span className="text-foreground">Duration: Full semester thesis project</span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
@@ -89,43 +90,106 @@ export default function CaseStudyLLM() {
                     <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
                       <Target className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="text-foreground">Role: Lead UX Researcher</span>
+                    <span className="text-foreground">Role: UX Researcher & Interaction Designer</span>
                   </div>
                 </div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
                 <div>
-                  <h3 className="text-2xl font-semibold mb-6 text-foreground">The Problem</h3>
+                  <h3 className="text-2xl font-semibold mb-6 text-foreground">The Challenge</h3>
                   <p className="text-foreground mb-6 leading-relaxed">
-                    As Large Language Models become increasingly sophisticated and accessible, users often develop inappropriate 
-                    levels of trust and dependency. This overreliance can lead to poor decision-making, reduced critical thinking, 
-                    and potential harm in high-stakes situations.
+                    The proliferation of powerful general-purpose LLMs has revolutionized how individuals approach cognitively demanding tasks 
+                    such as academic writing, argument development, and information synthesis. While offering unprecedented efficiency, 
+                    this convenience has inadvertently cultivated a pervasive issue: user overreliance and automation bias.
                   </p>
                   <ul className="space-y-3 text-foreground">
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Users exhibit overconfidence in AI-generated responses</span>
+                      <span>Diminished Critical Thinking: Users may cede their analytical faculties to the AI</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Lack of critical evaluation of AI outputs</span>
+                      <span>Reduced Contextualization: Nuanced reasoning and understanding may suffer</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Insufficient understanding of AI limitations</span>
+                      <span>Uncritical Acceptance of Errors: Increased likelihood of integrating incorrect AI suggestions</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Need for evidence-based design interventions</span>
+                      <span>Gap in open-ended, creative knowledge work contexts vs. specialized domains</span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-foreground">The Solution</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground">The Solution: Selective Friction</h3>
                   <p className="text-foreground leading-relaxed">
-                    Develop evidence-based design interventions and interface patterns that promote more balanced human-AI collaboration, 
-                    helping users maintain appropriate levels of trust and critical thinking when interacting with LLMs.
+                    Introduce "selective friction" — small, purposeful interaction barriers embedded directly into the user interface 
+                    before AI-generated content is displayed. Unlike generic hurdles, these frictions are meticulously designed to be 
+                    task-relevant, guiding users toward active cognitive engagement rather than mere passive consumption.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Design Principles */}
+      <section className="py-12">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-10 text-center">Core Design Principles of Selective Friction</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">Design Principles</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Task-Relevant</h4>
+                      <p className="text-foreground/80 text-sm">Frictions are directly related to the cognitive task at hand, making them feel integral rather than arbitrary</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Scaffolding, Not Hindering</h4>
+                      <p className="text-foreground/80 text-sm">The barriers are intended to support and guide users' thought processes, prompting reflection and analysis</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Embedded in Workflow</h4>
+                      <p className="text-foreground/80 text-sm">Frictions are seamlessly integrated into the natural flow of the AI-assisted task, minimizing disruption</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">System Implementation</h3>
+                <div className="space-y-4">
+                  <div className="bg-card/30 rounded-xl p-4">
+                    <h4 className="font-semibold mb-2 text-secondary">Custom Web Application</h4>
+                    <p className="text-foreground/80 text-sm">Built using Figma for design prototyping and Replit for web application development, integrated with OpenAI GPT-4 API</p>
+                  </div>
+                  <div className="bg-card/30 rounded-xl p-4">
+                    <h4 className="font-semibold mb-2 text-secondary">Literature Review Generation</h4>
+                    <p className="text-foreground/80 text-sm">Users rank abstracts or engage with source material before accessing AI-generated literature review</p>
+                  </div>
+                  <div className="bg-card/30 rounded-xl p-4">
+                    <h4 className="font-semibold mb-2 text-secondary">Argument Brainstorming</h4>
+                    <p className="text-foreground/80 text-sm">Users must formulate counterarguments before AI provides suggested arguments, stimulating dialectical thinking</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,9 +207,15 @@ export default function CaseStudyLLM() {
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-10">
               <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Mixed-Methods Research Design</h3>
               <p className="text-base text-foreground mb-6 leading-relaxed text-center max-w-4xl mx-auto">
-                The study employed a comprehensive mixed-methods approach combining quantitative behavioral measurements 
-                with qualitative user interviews to understand the nuanced patterns of human-AI interaction and overreliance behaviors.
+                The study employed a rigorous mixed-methods approach with a counterbalanced within-subjects design. 
+                Each participant experienced both friction and no-friction conditions across different tasks, serving as their own control 
+                to minimize the impact of individual differences in AI literacy and attitudes.
               </p>
+              <div className="text-center">
+                <span className="inline-block bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                  At least 25 participants with regular LLM experience
+                </span>
+              </div>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 mb-10">
@@ -153,30 +223,30 @@ export default function CaseStudyLLM() {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Literature Review</h3>
+                <h3 className="text-xl font-semibold mb-3">Data Collection</h3>
                 <p className="text-foreground text-sm leading-relaxed">
-                  Systematic analysis of 150+ research papers on human-AI interaction, trust calibration, 
-                  and automation bias across multiple domains
+                  Behavioral logs from the platform, self-report questionnaires using validated scales 
+                  (TPA, NASA TLX), and semi-structured interviews
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">User Studies</h3>
+                <h3 className="text-xl font-semibold mb-3">Experimental Tasks</h3>
                 <p className="text-foreground text-sm leading-relaxed">
-                  Controlled experiments with 120 participants across different AI interaction scenarios, 
-                  measuring trust, reliance, and decision-making patterns
+                  Four tasks total: two literature review generation and two argument brainstorming, 
+                  with counterbalanced friction/no-friction conditions
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Data Analysis</h3>
+                <h3 className="text-xl font-semibold mb-3">Analysis Plan</h3>
                 <p className="text-foreground text-sm leading-relaxed">
-                  Statistical analysis using SPSS and qualitative coding with NVivo to identify 
-                  overreliance patterns and behavioral triggers
+                  Repeated measures ANOVA for quantitative data and thematic analysis 
+                  using Braun & Clarke's framework for qualitative insights
                 </p>
               </div>
             </div>
@@ -184,39 +254,47 @@ export default function CaseStudyLLM() {
             {/* Detailed Methodology */}
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Experimental Design</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Experimental Procedure</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold mb-4 text-secondary text-lg">Phase 1: Baseline Assessment</h4>
+                    <h4 className="font-semibold mb-4 text-secondary text-lg">Study Structure</h4>
                     <ul className="space-y-2 text-foreground text-sm">
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Pre-study questionnaire on AI experience and attitudes</span>
+                        <span>Onboarding & pre-study questionnaire (including dispositional trust measures)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Cognitive ability assessments and decision-making style evaluation</span>
+                        <span>Four experimental tasks with counterbalanced conditions</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Trust propensity and technology acceptance measurements</span>
+                        <span>Post-task questionnaire after each task completion</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                        <span>Final overall questionnaire and semi-structured interview</span>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-4 text-secondary text-lg">Phase 2: Interaction Studies</h4>
+                    <h4 className="font-semibold mb-4 text-secondary text-lg">Measures & Hypotheses</h4>
                     <ul className="space-y-2 text-foreground text-sm">
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Task-based interactions with various LLM interfaces</span>
+                        <span><strong>H1:</strong> Friction will reduce overreliance and increase critical engagement</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Eye-tracking and behavioral observation during AI interactions</span>
+                        <span><strong>H2:</strong> Friction will maintain or enhance perceived AI trustworthiness</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Real-time trust and confidence ratings collection</span>
+                        <span><strong>H3:</strong> Friction will increase productive cognitive effort</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                        <span>Trust between People and Automation (TPA) scale implementation</span>
                       </li>
                     </ul>
                   </div>
@@ -231,41 +309,41 @@ export default function CaseStudyLLM() {
       <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 text-center">Key Research Findings</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">Expected Results & Validation</h2>
             
             {/* Main Findings */}
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Critical Overreliance Patterns</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Anticipated Key Findings</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-3 text-primary">Time Pressure Effects</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Friction Effectiveness</h4>
                     <p className="text-foreground text-sm leading-relaxed">
-                      Users showed 73% higher overreliance rates when making decisions under time constraints, 
-                      with significantly reduced verification of AI outputs
+                      Selective friction is expected to reduce overreliance on AI and increase critical engagement 
+                      with AI-generated outputs while maintaining user satisfaction
                     </p>
                   </div>
                   <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-3 text-primary">Confidence Bias</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Trust Calibration</h4>
                     <p className="text-foreground text-sm leading-relaxed">
-                      AI systems displaying confidence scores led to 45% increase in user trust, 
-                      even when the confidence was artificially inflated
+                      Task-relevant friction should maintain or enhance perceived trustworthiness and usefulness 
+                      of the AI system compared to generic interruptions
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-3 text-primary">Experience Paradox</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Cognitive Effort</h4>
                     <p className="text-foreground text-sm leading-relaxed">
-                      Novice users showed higher overreliance (68%) compared to experienced users (42%), 
-                      but experts exhibited blind spots in familiar domains
+                      Friction interventions are anticipated to increase productive cognitive effort 
+                      without creating overwhelming cognitive load burden
                     </p>
                   </div>
                   <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-3 text-primary">Interface Design Impact</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Task Performance</h4>
                     <p className="text-foreground text-sm leading-relaxed">
-                      Transparency features and uncertainty indicators reduced overreliance by 35% 
-                      without significantly impacting task completion rates
+                      Users with friction conditions should demonstrate better evaluation and contextualization 
+                      of AI outputs in both literature review and argument tasks
                     </p>
                   </div>
                 </div>
@@ -275,57 +353,57 @@ export default function CaseStudyLLM() {
             {/* Statistical Results */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center p-6 bg-card/30 rounded-2xl">
-                <div className="text-3xl font-bold text-primary mb-2">120</div>
+                <div className="text-3xl font-bold text-primary mb-2">25+</div>
                 <div className="text-lg font-semibold mb-2 text-foreground">Participants</div>
-                <p className="text-foreground/80 leading-relaxed text-sm">Across diverse demographics and AI experience levels</p>
+                <p className="text-foreground/80 leading-relaxed text-sm">With regular LLM experience in knowledge work</p>
               </div>
               <div className="text-center p-6 bg-card/30 rounded-2xl">
-                <div className="text-3xl font-bold text-secondary mb-2">73%</div>
-                <div className="text-lg font-semibold mb-2 text-foreground">Overreliance Rate</div>
-                <p className="text-foreground/80 leading-relaxed text-sm">Under time pressure conditions</p>
+                <div className="text-3xl font-bold text-secondary mb-2">4</div>
+                <div className="text-lg font-semibold mb-2 text-foreground">Experimental Tasks</div>
+                <p className="text-foreground/80 leading-relaxed text-sm">Counterbalanced friction/no-friction conditions</p>
               </div>
               <div className="text-center p-6 bg-card/30 rounded-2xl">
-                <div className="text-3xl font-bold text-accent mb-2">35%</div>
-                <div className="text-lg font-semibold mb-2 text-foreground">Reduction</div>
-                <p className="text-foreground/80 leading-relaxed text-sm">With transparency interventions</p>
+                <div className="text-3xl font-bold text-accent mb-2">2</div>
+                <div className="text-lg font-semibold mb-2 text-foreground">Task Domains</div>
+                <p className="text-foreground/80 leading-relaxed text-sm">Literature review and argument brainstorming</p>
               </div>
             </div>
             
-            {/* Design Interventions */}
+            {/* Analysis Plan */}
             <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Evidence-Based Design Interventions</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Analysis & Validation Plan</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold mb-4 text-secondary text-lg">Transparency Features</h4>
+                  <h4 className="font-semibold mb-4 text-secondary text-lg">Quantitative Analysis</h4>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Uncertainty indicators and confidence ranges</span>
+                      <span>Repeated measures ANOVA for friction vs. no-friction conditions</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Source attribution and reasoning explanations</span>
+                      <span>Trust between People and Automation (TPA) scale analysis</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Limitations and potential bias warnings</span>
+                      <span>NASA Task Load Index (NASA TLX) for cognitive effort measurement</span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-4 text-secondary text-lg">Interaction Patterns</h4>
+                  <h4 className="font-semibold mb-4 text-secondary text-lg">Qualitative Analysis</h4>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Mandatory verification steps for high-stakes decisions</span>
+                      <span>Thematic analysis using Braun & Clarke's six-phase framework</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Progressive disclosure of AI capabilities</span>
+                      <span>Interview transcripts and open-text response coding</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Friction mechanisms to encourage reflection</span>
+                      <span>Triangulation of quantitative and qualitative findings</span>
                     </li>
                   </ul>
                 </div>
@@ -338,53 +416,65 @@ export default function CaseStudyLLM() {
       {/* Impact & Contributions */}
       <section className="py-12 bg-gradient-to-r from-primary/5 to-secondary/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-foreground">Impact & Contributions</h2>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Key Learnings & Future Directions</h2>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
-                <h3 className="text-lg font-semibold mb-3 text-foreground">Theoretical Contributions</h3>
-                <ul className="space-y-2 text-foreground/80 text-sm">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Expected Key Learnings</h3>
+                <ul className="space-y-3 text-foreground/80 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Extended automation bias theory to LLM interactions</span>
+                    <span><strong>Nuanced Friction Design:</strong> Insights into designing friction that is constructive rather than disruptive</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Developed Human-AI Trust Calibration Framework</span>
+                    <span><strong>Supporting Human Cognition:</strong> Understanding how AI tools can enhance rather than replace critical thinking</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Identified contextual factors affecting overreliance</span>
+                    <span><strong>Practical Design Recommendations:</strong> Concrete guidelines for implementing selective friction</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span><strong>Addressing Automation Bias:</strong> Empirical evidence on UI interventions effectiveness</span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
-                <h3 className="text-lg font-semibold mb-3 text-foreground">Practical Applications</h3>
-                <ul className="space-y-2 text-foreground/80 text-sm">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Future Research Directions</h3>
+                <ul className="space-y-3 text-foreground/80 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Design guidelines for responsible AI interfaces</span>
+                    <span><strong>Longitudinal Studies:</strong> Long-term effects of selective friction on behavior and skill development</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Intervention strategies for reducing overreliance</span>
+                    <span><strong>Personalization:</strong> Adaptive friction mechanisms based on individual user characteristics</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Evaluation metrics for human-AI collaboration</span>
+                    <span><strong>Diverse Task Domains:</strong> Applying selective friction to other creative and analytical tasks</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span><strong>Multi-Modal Friction:</strong> Incorporating haptic, auditory, or visual feedback as friction forms</span>
                   </li>
                 </ul>
               </div>
             </div>
             
-            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-border/50 max-w-2xl mx-auto">
-              <h3 className="text-lg font-semibold mb-4 text-foreground">Future Research Directions</h3>
-              <p className="text-foreground/80 leading-relaxed text-sm">
-                This research establishes a foundation for understanding overreliance in human-AI interaction and provides 
-                actionable insights for designing more balanced collaborative systems. Future work should explore 
-                longitudinal effects of interventions and cross-cultural variations in trust patterns.
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
+              <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Research Impact</h3>
+              <p className="text-foreground/80 leading-relaxed text-center max-w-4xl mx-auto mb-6">
+                This thesis project directly addresses a pressing challenge in the rapidly evolving landscape of human-AI interaction. 
+                By rigorously examining the role of selective friction, this project aims to contribute valuable empirical evidence 
+                and design principles that can guide the creation of more thoughtful, responsible, and effective AI-assisted tools.
+              </p>
+              <p className="text-foreground/80 leading-relaxed text-center max-w-4xl mx-auto">
+                The goal is not to limit AI's power, but to design interfaces that empower users to engage with it critically, 
+                ensuring that human cognition remains central to the decision-making process while leveraging AI's capabilities effectively.
               </p>
             </div>
           </div>
