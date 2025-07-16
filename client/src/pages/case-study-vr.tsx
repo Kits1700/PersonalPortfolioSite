@@ -101,17 +101,7 @@ export default function CaseStudyVR() {
               Traditional VR experiences often require large, unobstructed play spaces, limiting accessibility for users in smaller homes. My initial research focused on a ubiquitous yet spatially limited environment: the narrow domestic passage.
             </p>
             
-            {/* Hallway Passage Image */}
-            <div className="relative rounded-2xl overflow-hidden mb-8">
-              <img 
-                src={hallwayImage} 
-                alt="Narrow domestic hallway showing 3.81 feet width measurement with coat rack, door, and wooden interior"
-                className="w-full h-auto object-cover rounded-2xl"
-              />
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <p className="text-lg font-medium">Narrow domestic hallway - the target environment for VR transformation</p>
-              </div>
-            </div>
+
             
             {/* Hallway Analysis */}
             <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-2xl p-8 mb-8">
