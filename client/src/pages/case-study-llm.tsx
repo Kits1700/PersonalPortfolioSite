@@ -198,12 +198,12 @@ export default function CaseStudyLLM() {
                     <p className="text-foreground/80 text-sm mb-4">Built using Figma for design prototyping and Replit for web application development, integrated with OpenAI GPT-4 API</p>
                     
                     {/* App Design - Initial State */}
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 mb-4">
-                      <div className="bg-card/50 rounded-lg h-32 flex items-center justify-center border border-border/30">
+                    <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 mb-4 border border-primary/30">
+                      <div className="bg-card/80 rounded-lg h-40 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-2xl mb-2">📱</div>
-                          <p className="text-foreground/80 text-sm font-medium">App Design - Initial State</p>
-                          <p className="text-foreground/60 text-xs">Interface before AI interaction</p>
+                          <div className="text-4xl mb-3">📱</div>
+                          <p className="text-foreground font-semibold">App Design - Initial State</p>
+                          <p className="text-foreground/70 text-sm">Interface before AI interaction</p>
                         </div>
                       </div>
                     </div>
@@ -214,12 +214,12 @@ export default function CaseStudyLLM() {
                     <p className="text-foreground/80 text-sm mb-4">Users rank abstracts or engage with source material before accessing AI-generated literature review</p>
                     
                     {/* App Design - Friction Intervention */}
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 mb-4">
-                      <div className="bg-card/50 rounded-lg h-32 flex items-center justify-center border border-border/30">
+                    <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl p-6 mb-4 border border-secondary/30">
+                      <div className="bg-card/80 rounded-lg h-40 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-2xl mb-2">⚙️</div>
-                          <p className="text-foreground/80 text-sm font-medium">Friction Intervention in Progress</p>
-                          <p className="text-foreground/60 text-xs">User ranking abstracts before AI output</p>
+                          <div className="text-4xl mb-3">⚙️</div>
+                          <p className="text-foreground font-semibold">Friction Intervention in Progress</p>
+                          <p className="text-foreground/70 text-sm">User ranking abstracts before AI output</p>
                         </div>
                       </div>
                     </div>
@@ -230,12 +230,12 @@ export default function CaseStudyLLM() {
                     <p className="text-foreground/80 text-sm mb-4">Users must formulate counterarguments before AI provides suggested arguments, stimulating dialectical thinking</p>
                     
                     {/* App Design - Post-Friction AI Output */}
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4">
-                      <div className="bg-card/50 rounded-lg h-32 flex items-center justify-center border border-border/30">
+                    <div className="bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl p-6 border border-accent/30">
+                      <div className="bg-card/80 rounded-lg h-40 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-2xl mb-2">🤖</div>
-                          <p className="text-foreground/80 text-sm font-medium">Post-Friction AI Output Display</p>
-                          <p className="text-foreground/60 text-xs">AI content after friction task completion</p>
+                          <div className="text-4xl mb-3">🤖</div>
+                          <p className="text-foreground font-semibold">Post-Friction AI Output Display</p>
+                          <p className="text-foreground/70 text-sm">AI content after friction task completion</p>
                         </div>
                       </div>
                     </div>
@@ -360,28 +360,28 @@ export default function CaseStudyLLM() {
               <div className="mt-10">
                 <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">User Testing Sessions</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-card/30 rounded-2xl p-6 border border-border/50">
-                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl h-48 flex items-center justify-center mb-4">
+                  <div className="bg-card/40 rounded-3xl p-8 border border-border/50">
+                    <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-56 flex items-center justify-center mb-6 border-2 border-dashed border-primary/30">
                       <div className="text-center">
-                        <div className="text-4xl mb-2">👥</div>
-                        <p className="text-foreground font-medium">User Testing Session - Setup</p>
-                        <p className="text-foreground/70 text-sm">Participant engaging with web application</p>
+                        <div className="text-6xl mb-4">👥</div>
+                        <p className="text-foreground font-bold text-lg">User Testing Session - Setup</p>
+                        <p className="text-foreground/70">Participant engaging with web application</p>
                       </div>
                     </div>
-                    <p className="text-foreground/80 text-sm text-center">
+                    <p className="text-foreground text-center leading-relaxed">
                       Testing setup showing participant interaction with the custom web application during experimental tasks
                     </p>
                   </div>
                   
-                  <div className="bg-card/30 rounded-2xl p-6 border border-border/50">
-                    <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-xl h-48 flex items-center justify-center mb-4">
+                  <div className="bg-card/40 rounded-3xl p-8 border border-border/50">
+                    <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl h-56 flex items-center justify-center mb-6 border-2 border-dashed border-secondary/30">
                       <div className="text-center">
-                        <div className="text-4xl mb-2">🖥️</div>
-                        <p className="text-foreground font-medium">User Testing Session - Interaction</p>
-                        <p className="text-foreground/70 text-sm">Observing interface engagement patterns</p>
+                        <div className="text-6xl mb-4">🖥️</div>
+                        <p className="text-foreground font-bold text-lg">User Testing Session - Interaction</p>
+                        <p className="text-foreground/70">Observing interface engagement patterns</p>
                       </div>
                     </div>
-                    <p className="text-foreground/80 text-sm text-center">
+                    <p className="text-foreground text-center leading-relaxed">
                       Different angle showing user interaction with prototype interface elements during friction conditions
                     </p>
                   </div>
