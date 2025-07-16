@@ -47,15 +47,15 @@ export default function CaseStudyVR() {
             
             {/* Project Details */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
-              <div className="flex items-center gap-2 text-sm text-foreground/70">
+              <div className="flex items-center gap-2 text-sm text-foreground">
                 <Calendar className="w-4 h-4" />
                 <span>8 Weeks</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-foreground/70">
+              <div className="flex items-center gap-2 text-sm text-foreground">
                 <Users className="w-4 h-4" />
                 <span>UX Designer, XR Developer</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-foreground/70">
+              <div className="flex items-center gap-2 text-sm text-foreground">
                 <Wrench className="w-4 h-4" />
                 <span>Unity 2021.3.45f1, Meta Quest 2</span>
               </div>
@@ -80,13 +80,13 @@ export default function CaseStudyVR() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6">Overview & Project Goal</h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-foreground/80 leading-relaxed mb-6">
+            <p className="text-foreground leading-relaxed mb-6">
               "Survival of the Fittest" is a mixed reality exergaming prototype designed to transform a common household space – specifically a narrow domestic hallway – into an immersive, fitness-driven survival experience. The primary goal was to demonstrate how the physical constraints of a limited indoor environment could be leveraged, rather than overcome, to create an engaging and physically demanding virtual reality workout.
             </p>
             
             <div className="bg-primary/10 border-l-4 border-primary rounded-r-lg p-6 mb-8">
               <h3 className="text-xl font-semibold mb-3 text-foreground">Elevator Pitch</h3>
-              <p className="text-foreground/80 italic text-lg">
+              <p className="text-foreground italic text-lg">
                 "Train Hard. Outlast the Apocalypse. Experience a high-intensity, narrative-driven workout where your real-world hallway becomes the last stand against a collapsing city, pushing you to move, punch, and squat your way to survival."
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function CaseStudyVR() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-foreground">The Challenge: Transforming Constraint into Opportunity</h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-foreground/80 leading-relaxed mb-6">
+            <p className="text-foreground leading-relaxed mb-6">
               Traditional VR experiences often require large, unobstructed play spaces, limiting accessibility for users in smaller homes. My initial research focused on a ubiquitous yet spatially limited environment: the narrow domestic passage.
             </p>
             
@@ -109,7 +109,7 @@ export default function CaseStudyVR() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-foreground">Physical Constraints</h4>
-                  <ul className="space-y-2 text-foreground/80">
+                  <ul className="space-y-2 text-foreground">
                     <li>• Width: 3.2 ft (1m)</li>
                     <li>• Length: 10 ft (3m)</li>
                     <li>• Height: 8 ft (2.4m)</li>
@@ -136,7 +136,7 @@ export default function CaseStudyVR() {
 
             <div className="bg-secondary/10 border-l-4 border-secondary rounded-r-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-foreground">The Opportunity</h3>
-              <p className="text-foreground/80">
+              <p className="text-foreground">
                 Instead of seeing these as barriers, I aimed to design for these limitations. Could a constrained space enhance immersion and encourage specific, impactful physical interactions? This led to the core concept: a mixed reality experience that uses the hallway as a stage for a high-intensity, forward-only progression game.
               </p>
             </div>
@@ -157,12 +157,12 @@ export default function CaseStudyVR() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
-                <p className="text-foreground/80 font-medium">Ideation Cards</p>
-                <p className="text-foreground/60 text-sm mt-2">Design process visualization will be added here</p>
+                <p className="text-foreground font-medium">Ideation Cards</p>
+                <p className="text-foreground text-sm mt-2">Design process visualization will be added here</p>
               </div>
             </div>
             <div className="text-center">
-              <p className="text-foreground/80 italic">Opportunities, Questions, Challenges, and Player Actions mapping</p>
+              <p className="text-foreground italic">Opportunities, Questions, Challenges, and Player Actions mapping</p>
             </div>
           </div>
           
@@ -173,19 +173,19 @@ export default function CaseStudyVR() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground/80">Virtual Reality (VR)</span>
+                  <span className="text-foreground">Virtual Reality (VR)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                  <span className="text-foreground/80">Strong Narrative</span>
+                  <span className="text-foreground">Strong Narrative</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground/80">Compelling Audio</span>
+                  <span className="text-foreground">Compelling Audio</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                  <span className="text-foreground/80">Standing / Exergaming</span>
+                  <span className="text-foreground">Standing / Exergaming</span>
                 </div>
               </div>
             </div>
@@ -195,19 +195,19 @@ export default function CaseStudyVR() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground/80">Theme & Story</span>
+                  <span className="text-foreground">Theme & Story</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground/80">Experience Flow</span>
+                  <span className="text-foreground">Experience Flow</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground/80">Camera Viewpoint</span>
+                  <span className="text-foreground">Camera Viewpoint</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground/80">Role of Physicality</span>
+                  <span className="text-foreground">Role of Physicality</span>
                 </div>
               </div>
             </div>
@@ -220,29 +220,29 @@ export default function CaseStudyVR() {
               <div className="text-center">
                 <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M7 8C6.4 8 6 8.4 6 9C6 9.6 6.4 10 7 10H8V14H7C6.4 14 6 14.4 6 15C6 15.6 6.4 16 7 16H8V20C8 20.6 8.4 21 9 21C9.6 21 10 20.6 10 20V16H14V20C14 20.6 14.4 21 15 21C15.6 21 16 20.6 16 20V16H17C17.6 16 18 15.6 18 15C18 14.4 17.6 14 17 14H16V10H17C17.6 10 18 9.6 18 9C18 8.4 17.6 8 17 8H7M10 10H14V14H10V10Z"/>
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-foreground">Bodyweight Squats</h4>
-                <p className="text-sm text-foreground/70">Propel forward 1.5m in virtual world</p>
+                <p className="text-sm text-foreground">Propel forward 1.5m in virtual world</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-secondary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <svg className="w-10 h-10 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-2V2h-2v2H9V2H7v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M4 7C2.9 7 2 7.9 2 9C2 10.1 2.9 11 4 11C5.1 11 6 10.1 6 9C6 7.9 5.1 7 4 7M20 7C18.9 7 18 7.9 18 9C18 10.1 18.9 11 20 11C21.1 11 22 10.1 22 9C22 7.9 21.1 7 20 7M10 8C9.4 8 9 8.4 9 9V11C9 11.6 9.4 12 10 12C10.6 12 11 11.6 11 11V9C11 8.4 10.6 8 10 8M14 8C13.4 8 13 8.4 13 9V11C13 11.6 13.4 12 14 12C14.6 12 15 11.6 15 11V9C15 8.4 14.6 8 14 8M6 12C5.4 12 5 12.4 5 13V19C5 19.6 5.4 20 6 20C6.6 20 7 19.6 7 19V13C7 12.4 6.6 12 6 12M18 12C17.4 12 17 12.4 17 13V19C17 19.6 17.4 20 18 20C18.6 20 19 19.6 19 19V13C19 12.4 18.6 12 18 12M10 13C9.4 13 9 13.4 9 14V20C9 20.6 9.4 21 10 21C10.6 21 11 20.6 11 20V14C11 13.4 10.6 13 10 13M14 13C13.4 13 13 13.4 13 14V20C13 20.6 13.4 21 14 21C14.6 21 15 20.6 15 20V14C15 13.4 14.6 13 14 13"/>
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-foreground">Shadow Boxing</h4>
-                <p className="text-sm text-foreground/70">Break through collapsed walls</p>
+                <p className="text-sm text-foreground">Break through collapsed walls</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M5 7C3.9 7 3 7.9 3 9C3 10.1 3.9 11 5 11C6.1 11 7 10.1 7 9C7 7.9 6.1 7 5 7M19 7C17.9 7 17 7.9 17 9C17 10.1 17.9 11 19 11C20.1 11 21 10.1 21 9C21 7.9 20.1 7 19 7M6 12C5.4 12 5 12.4 5 13V19C5 19.6 5.4 20 6 20C6.6 20 7 19.6 7 19V13C7 12.4 6.6 12 6 12M18 12C17.4 12 17 12.4 17 13V19C17 19.6 17.4 20 18 20C18.6 20 19 19.6 19 19V13C18 12.4 17.6 12 18 12M10 8C9.4 8 9 8.4 9 9V11C9 11.6 9.4 12 10 12C10.6 12 11 11.6 11 11V9C11 8.4 10.6 8 10 8M14 8C13.4 8 13 8.4 13 9V11C13 11.6 13.4 12 14 12C14.6 12 15 11.6 15 11V9C15 8.4 14.6 8 14 8M12 13C11.4 13 11 13.4 11 14V20C11 20.6 11.4 21 12 21C12.6 21 13 20.6 13 20V14C13 13.4 12.6 13 12 13"/>
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-foreground">Jumping Jacks</h4>
-                <p className="text-sm text-foreground/70">Move forward 0.8m quickly</p>
+                <p className="text-sm text-foreground">Move forward 0.8m quickly</p>
               </div>
             </div>
           </div>
@@ -285,20 +285,20 @@ export default function CaseStudyVR() {
                   <svg className="w-12 h-12 text-primary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-foreground/80 font-medium">Scene 1 Video</p>
-                  <p className="text-foreground/60 text-sm mt-2">Warm-up sequence demonstration</p>
+                  <p className="text-foreground font-medium">Scene 1 Video</p>
+                  <p className="text-foreground text-sm mt-2">Warm-up sequence demonstration</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 mb-4">Introduction to the apocalyptic scenario with gentle movement prompts</p>
+              <p className="text-foreground mb-4">Introduction to the apocalyptic scenario with gentle movement prompts</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-foreground/70">Jumping Jacks → 0.8m forward</span>
+                  <span className="text-foreground">Jumping Jacks → 0.8m forward</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                  <span className="text-foreground/70">Squats → 1.5m forward</span>
+                  <span className="text-foreground">Squats → 1.5m forward</span>
                 </div>
               </div>
             </div>
@@ -312,20 +312,20 @@ export default function CaseStudyVR() {
                   <svg className="w-12 h-12 text-secondary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-foreground/80 font-medium">Scene 2 Video</p>
-                  <p className="text-foreground/60 text-sm mt-2">Main mission gameplay footage</p>
+                  <p className="text-foreground font-medium">Scene 2 Video</p>
+                  <p className="text-foreground text-sm mt-2">Main mission gameplay footage</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 mb-4">High-intensity survival sequence with wall-breaking mechanics</p>
+              <p className="text-foreground mb-4">High-intensity survival sequence with wall-breaking mechanics</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-foreground/70">Shadow Boxing → Break walls</span>
+                  <span className="text-foreground">Shadow Boxing → Break walls</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <span className="text-foreground/70">Escalating intensity</span>
+                  <span className="text-foreground">Escalating intensity</span>
                 </div>
               </div>
             </div>
