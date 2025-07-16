@@ -16,7 +16,7 @@ export default function CaseStudyVR() {
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/">
-              <button className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <button className="flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors">
                 <ArrowLeft className="w-5 h-5" />
                 Back to Portfolio
               </button>
@@ -41,21 +41,21 @@ export default function CaseStudyVR() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
               Survival of the Fittest
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-foreground/80 mb-8">
               Mixed Reality Exergame - Transforming Constraint into Opportunity
             </p>
             
             {/* Project Details */}
             <div className="flex flex-wrap justify-center gap-6 mb-8">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2 text-sm text-foreground/70">
                 <Calendar className="w-4 h-4" />
                 <span>8 Weeks</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2 text-sm text-foreground/70">
                 <Users className="w-4 h-4" />
                 <span>UX Designer, XR Developer</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2 text-sm text-foreground/70">
                 <Wrench className="w-4 h-4" />
                 <span>Unity 2021.3.45f1, Meta Quest 2</span>
               </div>
@@ -80,7 +80,7 @@ export default function CaseStudyVR() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6">Overview & Project Goal</h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-foreground/80 leading-relaxed mb-6">
               "Survival of the Fittest" is a mixed reality exergaming prototype designed to transform a common household space – specifically a narrow domestic hallway – into an immersive, fitness-driven survival experience. The primary goal was to demonstrate how the physical constraints of a limited indoor environment could be leveraged, rather than overcome, to create an engaging and physically demanding virtual reality workout.
             </p>
             
@@ -115,9 +115,10 @@ export default function CaseStudyVR() {
             
             {/* Hallway Analysis */}
             <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-2xl p-8 mb-8">
-              <div className="grid md:grid-cols-2 gap-6 items-center">
+              <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Spatial Analysis</h3>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Spatial Constraints</h3>
+                  <h4 className="text-lg font-semibold mb-4 text-foreground">Physical Constraints</h4>
                   <ul className="space-y-2 text-foreground/80">
                     <li>• Width: 3.2 ft (1m)</li>
                     <li>• Length: 10 ft (3m)</li>
@@ -127,10 +128,13 @@ export default function CaseStudyVR() {
                   </ul>
                 </div>
                 <div className="text-center">
-                  <div className="w-32 h-48 bg-muted/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-16 h-32 bg-primary/20 rounded"></div>
+                  <h4 className="text-lg font-semibold mb-4 text-foreground">Dimensional Visualization</h4>
+                  <div className="w-32 h-48 bg-muted/30 rounded-lg mx-auto mb-4 flex items-center justify-center border-2 border-primary/20">
+                    <div className="w-16 h-32 bg-primary/30 rounded flex items-center justify-center">
+                      <span className="text-xs text-foreground/70 rotate-90">3.2ft</span>
+                    </div>
                   </div>
-                  <p className="text-sm text-foreground/70">Hallway Dimensions & Analysis</p>
+                  <p className="text-sm text-foreground/70">Typical hallway proportions</p>
                 </div>
               </div>
             </div>
@@ -290,7 +294,7 @@ export default function CaseStudyVR() {
               <CheckCircle className="w-12 h-12 text-green-500" />
               <div>
                 <div className="text-4xl font-bold text-green-600">87.5/100</div>
-                <div className="text-sm text-muted-foreground">System Usability Scale (SUS) Score</div>
+                <div className="text-sm text-foreground/70">System Usability Scale (SUS) Score</div>
               </div>
             </div>
             <p className="text-foreground/80">Exceptionally good usability and user satisfaction</p>
