@@ -359,13 +359,13 @@ export default function CaseStudyVR() {
 
         {/* Navigation */}
         <div className="flex justify-between items-center pt-8 border-t border-border">
-          <Link href="/case-study-iot">
+          <Link href="/case-study/iot">
             <Button variant="outline" className="flex items-center gap-2">
               <ArrowLeft className="w-4 h-4" />
               IoT Case Study
             </Button>
           </Link>
-          <Link href="/case-study-llm">
+          <Link href="/case-study/llm">
             <Button variant="outline" className="flex items-center gap-2">
               LLM Case Study
               <ArrowRight className="w-4 h-4" />
