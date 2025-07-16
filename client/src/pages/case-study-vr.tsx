@@ -253,101 +253,87 @@ export default function CaseStudyVR() {
             </div>
           </div>
 
-          {/* Demo Video Section */}
-          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
-            <h3 className="text-2xl font-semibold mb-4 text-center text-foreground">Prototype Demo</h3>
-            <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-4">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </div>
-                <p className="text-foreground/80 font-medium">Demo Video Placeholder</p>
-                <p className="text-foreground/60 text-sm mt-2">Video will be added here showing the prototype in action</p>
-              </div>
-            </div>
-            <div className="text-center">
-              <p className="text-foreground/80 italic">Experience the hallway transformation from mundane passage to survival arena</p>
-            </div>
-          </div>
+
 
           {/* Scene Breakdown */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-card rounded-lg p-6 border">
-              <h4 className="font-semibold mb-3 text-foreground">Scene 1: Warm-up Sequence</h4>
+          <div className="space-y-8 mb-8">
+            <div className="bg-card rounded-lg p-8 border">
+              <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 1: Warm-up Sequence</h4>
               
               {/* Video Placeholder */}
-              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-primary/30 mb-4">
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-primary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-xs text-foreground/60">Scene 1 Video</p>
+                  <p className="text-foreground/80 font-medium">Scene 1 Video</p>
+                  <p className="text-foreground/60 text-sm mt-2">Warm-up sequence demonstration</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 text-sm mb-3">Introduction to the apocalyptic scenario with gentle movement prompts</p>
-              <div className="space-y-2">
+              <p className="text-foreground/80 mb-4">Introduction to the apocalyptic scenario with gentle movement prompts</p>
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Jumping Jacks → 0.8m forward</span>
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span className="text-foreground/70">Jumping Jacks → 0.8m forward</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Squats → 1.5m forward</span>
+                  <div className="w-3 h-3 bg-secondary rounded-full"></div>
+                  <span className="text-foreground/70">Squats → 1.5m forward</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-card rounded-lg p-6 border">
-              <h4 className="font-semibold mb-3 text-foreground">Scene 2: Main Mission</h4>
+            <div className="bg-card rounded-lg p-8 border">
+              <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 2: Main Mission</h4>
               
               {/* Video Placeholder */}
-              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-secondary/30 mb-4">
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-secondary/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-8 h-8 text-secondary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-secondary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-xs text-foreground/60">Scene 2 Video</p>
+                  <p className="text-foreground/80 font-medium">Scene 2 Video</p>
+                  <p className="text-foreground/60 text-sm mt-2">Main mission gameplay footage</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 text-sm mb-3">High-intensity survival sequence with wall-breaking mechanics</p>
-              <div className="space-y-2">
+              <p className="text-foreground/80 mb-4">High-intensity survival sequence with wall-breaking mechanics</p>
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Shadow Boxing → Break walls</span>
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-foreground/70">Shadow Boxing → Break walls</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Escalating intensity</span>
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <span className="text-foreground/70">Escalating intensity</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-card rounded-lg p-6 border">
-              <h4 className="font-semibold mb-3 text-foreground">Scene 3: Mission Accomplished</h4>
+            <div className="bg-card rounded-lg p-8 border">
+              <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 3: Mission Accomplished</h4>
               
               {/* Video Placeholder */}
-              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border border-dashed border-primary/30 mb-4">
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-primary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-xs text-foreground/60">Scene 3 Video</p>
+                  <p className="text-foreground/80 font-medium">Scene 3 Video</p>
+                  <p className="text-foreground/60 text-sm mt-2">Mission completion sequence</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 text-sm mb-3">Successful escape sequence with celebratory feedback</p>
-              <div className="space-y-2">
+              <p className="text-foreground/80 mb-4">Successful escape sequence with celebratory feedback</p>
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Achievement unlocked</span>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-foreground/70">Achievement unlocked</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-foreground/70 text-sm">Performance summary</span>
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-foreground/70">Performance summary</span>
                 </div>
               </div>
             </div>
