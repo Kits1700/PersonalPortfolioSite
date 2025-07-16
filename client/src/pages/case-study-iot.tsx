@@ -43,6 +43,17 @@ export default function CaseStudyIoT() {
                 Published at 2023 IEEE 8th International Conference for Convergence in Technology (I2CT), Pune, India
               </p>
             </div>
+            
+            {/* Hero Image Placeholder */}
+            <div className="bg-card/30 rounded-2xl p-8 border border-border/50 max-w-2xl mx-auto">
+              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-64 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🏠</div>
+                  <p className="text-foreground font-medium">Smart Environmental Monitoring Dashboard</p>
+                  <p className="text-foreground/70 text-sm">Real-time IoT system visualization</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -129,6 +140,18 @@ export default function CaseStudyIoT() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">Technical Architecture</h2>
+            
+            {/* Architecture Diagram Placeholder */}
+            <div className="bg-card/30 rounded-xl p-8 border border-border/50 mb-12">
+              <div className="bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg h-56 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🏗️</div>
+                  <p className="text-foreground font-medium">System Architecture Diagram</p>
+                  <p className="text-foreground/70 text-sm">IoT Sensors → Arduino → NodeMCU → Cloud Dashboard</p>
+                </div>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -179,11 +202,23 @@ export default function CaseStudyIoT() {
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">Hardware Development</h3>
-                <p className="text-foreground mb-4">
+                <p className="text-foreground mb-6">
                   The system architecture integrates multiple sensors with Arduino Uno as the central processing unit and 
                   NodeMCU ESP8266 for Wi-Fi connectivity. The hardware design enables simultaneous monitoring of electricity 
                   consumption, air quality parameters (CO2, NOx, NH3), and water quality metrics (pH, turbidity, temperature).
                 </p>
+                
+                {/* Hardware Setup Image Placeholder */}
+                <div className="bg-card/30 rounded-xl p-6 border border-border/50 mb-6">
+                  <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg h-48 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-3xl mb-2">🔌</div>
+                      <p className="text-foreground font-medium">IoT Hardware Setup</p>
+                      <p className="text-foreground/70 text-sm">Arduino Uno + NodeMCU + Sensor Array</p>
+                    </div>
+                  </div>
+                </div>
+                
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
                     <h4 className="font-semibold mb-2 text-primary">Electricity Monitoring</h4>
@@ -213,6 +248,17 @@ export default function CaseStudyIoT() {
                   Data flows from Arduino sensors through NodeMCU Wi-Fi to Google Sheets and Adafruit IO dashboards. 
                   Python handles data cleaning (PPM/NTU conversion, NaN handling) and ML model training on 400+ entries.
                 </p>
+                
+                {/* Dashboard Visualization Placeholder */}
+                <div className="bg-card/30 rounded-xl p-6 border border-border/50 mb-6">
+                  <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-lg h-48 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-3xl mb-2">📊</div>
+                      <p className="text-foreground font-medium">Real-time Environmental Dashboard</p>
+                      <p className="text-foreground/70 text-sm">Google Sheets API + Adafruit IO Integration</p>
+                    </div>
+                  </div>
+                </div>
                 
                 {/* ML Model Performance Comparison */}
                 <div className="bg-background/80 rounded-xl p-6 mb-6">
