@@ -15,16 +15,16 @@ export default function CaseStudyIoT() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-background to-accent/5">
+      <section className="py-16 bg-gradient-to-br from-background via-background to-accent/5">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
               Smart Environmental Monitoring System
             </h1>
-            <p className="text-xl md:text-2xl text-foreground mb-8">
+            <p className="text-xl md:text-2xl text-foreground mb-6">
               Leveraging IoT and Machine Learning for Sustainable Resource Management
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
               <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium">
                 IoT & Embedded Systems
               </span>
@@ -38,15 +38,15 @@ export default function CaseStudyIoT() {
                 Published Research
               </span>
             </div>
-            <div className="text-center mb-8">
+            <div className="text-center mb-6">
               <p className="text-foreground font-medium">
                 Published at 2023 IEEE 8th International Conference for Convergence in Technology (I2CT), Pune, India
               </p>
             </div>
             
             {/* Hero Image Placeholder */}
-            <div className="bg-card/30 rounded-2xl p-8 border border-border/50 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-64 flex items-center justify-center">
+            <div className="bg-card/30 rounded-2xl p-6 border border-border/50 max-w-2xl mx-auto">
+              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-48 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🏠</div>
                   <p className="text-foreground font-medium">Smart Environmental Monitoring Dashboard</p>
@@ -59,13 +59,13 @@ export default function CaseStudyIoT() {
       </section>
 
       {/* Project Overview */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-16 mb-20">
-              <div className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
+              <div className="space-y-6">
                 <div>
-                  <h2 className="text-4xl font-bold mb-8 text-center md:text-left">Project Overview</h2>
+                  <h2 className="text-3xl font-bold mb-6 text-center md:text-left">Project Overview</h2>
                   <p className="text-lg text-foreground leading-relaxed">
                     In response to escalating global challenges of urbanization, resource depletion, and environmental pollution, 
                     I developed a comprehensive smart monitoring system that integrates IoT sensors with advanced Machine Learning 
@@ -73,7 +73,7 @@ export default function CaseStudyIoT() {
                     and air quality, enabling users to make informed decisions about their environmental impact and resource consumption.
                   </p>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
                       <Calendar className="w-5 h-5 text-primary" />
@@ -94,7 +94,7 @@ export default function CaseStudyIoT() {
                   </div>
                 </div>
               </div>
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-10 border border-border space-y-8">
+              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold mb-6 text-foreground">The Problem</h3>
                   <p className="text-foreground mb-6 leading-relaxed">
@@ -185,56 +185,56 @@ export default function CaseStudyIoT() {
       </section>
 
       {/* Technical Architecture */}
-      <section className="py-20 bg-card/20">
+      <section className="py-12 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-16 text-center">Technical Architecture</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">Technical Architecture</h2>
             
             {/* Architecture Diagram Placeholder */}
-            <div className="bg-card/30 rounded-2xl p-12 border border-border/50 mb-16">
-              <div className="bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl h-64 flex items-center justify-center">
+            <div className="bg-card/30 rounded-2xl p-8 border border-border/50 mb-10">
+              <div className="bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl h-48 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-5xl mb-4">🏗️</div>
-                  <p className="text-foreground font-semibold text-xl mb-2">System Architecture Diagram</p>
-                  <p className="text-foreground/70 text-base">IoT Sensors → Arduino → NodeMCU → Cloud Dashboard</p>
+                  <div className="text-4xl mb-3">🏗️</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">System Architecture Diagram</p>
+                  <p className="text-foreground/70 text-sm">IoT Sensors → Arduino → NodeMCU → Cloud Dashboard</p>
                 </div>
               </div>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center group">
-                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
-                  <Wifi className="w-10 h-10 text-primary" />
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
+                  <Wifi className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Sensor Network</h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Sensor Network</h3>
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   Arduino Uno + NodeMCU collecting data from MQ135, ACS712, DHT11, pH sensors
                 </p>
               </div>
               <div className="text-center group">
-                <div className="w-20 h-20 bg-secondary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary/30 transition-colors">
-                  <Cpu className="w-10 h-10 text-secondary" />
+                <div className="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/30 transition-colors">
+                  <Cpu className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Data Processing</h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Data Processing</h3>
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   Python scripts for data cleaning, transformation, and ML model training
                 </p>
               </div>
               <div className="text-center group">
-                <div className="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/30 transition-colors">
-                  <BarChart3 className="w-10 h-10 text-accent" />
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 transition-colors">
+                  <BarChart3 className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Dashboard</h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Dashboard</h3>
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   Web application with Google Sheets API and Adafruit IO integration
                 </p>
               </div>
               <div className="text-center group">
-                <div className="w-20 h-20 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-500/30 transition-colors">
-                  <Shield className="w-10 h-10 text-green-500" />
+                <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500/30 transition-colors">
+                  <Shield className="w-8 h-8 text-green-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Machine Learning</h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Machine Learning</h3>
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   Random Forest Regressor for 7-day air and water quality forecasting
                 </p>
               </div>
@@ -244,113 +244,113 @@ export default function CaseStudyIoT() {
       </section>
 
       {/* Implementation Details */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-16 text-center">Implementation Details</h2>
-            <div className="space-y-12">
-              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-10">
-                <h3 className="text-3xl font-semibold mb-8 text-foreground text-center">Hardware Development</h3>
-                <p className="text-lg text-foreground mb-8 leading-relaxed text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-10 text-center">Implementation Details</h2>
+            <div className="space-y-8">
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Hardware Development</h3>
+                <p className="text-base text-foreground mb-6 leading-relaxed text-center max-w-4xl mx-auto">
                   The system architecture integrates multiple sensors with Arduino Uno as the central processing unit and 
                   NodeMCU ESP8266 for Wi-Fi connectivity. The hardware design enables simultaneous monitoring of electricity 
                   consumption, air quality parameters (CO2, NOx, NH3), and water quality metrics (pH, turbidity, temperature).
                 </p>
                 
                 {/* Hardware Setup Image Placeholder */}
-                <div className="bg-card/30 rounded-xl p-8 border border-border/50 mb-8">
-                  <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-56 flex items-center justify-center">
+                <div className="bg-card/30 rounded-xl p-6 border border-border/50 mb-6">
+                  <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-40 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-4xl mb-3">🔌</div>
-                      <p className="text-foreground font-semibold text-xl mb-2">IoT Hardware Setup</p>
-                      <p className="text-foreground/70 text-base">Arduino Uno + NodeMCU + Sensor Array</p>
+                      <div className="text-3xl mb-2">🔌</div>
+                      <p className="text-foreground font-semibold text-lg mb-1">IoT Hardware Setup</p>
+                      <p className="text-foreground/70 text-sm">Arduino Uno + NodeMCU + Sensor Array</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-primary text-lg">Electricity Monitoring</h4>
-                    <p className="text-foreground leading-relaxed">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-primary">Electricity Monitoring</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       ACS712 current sensor for real-time amperage measurement and consumption analysis
                     </p>
                   </div>
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-primary text-lg">Air Quality Sensing</h4>
-                    <p className="text-foreground leading-relaxed">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-primary">Air Quality Sensing</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       MQ135 gas sensor for detecting CO2, NOx, and ammonia with PPM conversion
                     </p>
                   </div>
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-primary text-lg">Water Quality Analysis</h4>
-                    <p className="text-foreground leading-relaxed">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-primary">Water Quality Analysis</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       pH sensors, turbidity measurement, and DHT11 for temperature monitoring
                     </p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-10">
-                <h3 className="text-3xl font-semibold mb-8 text-foreground text-center">Machine Learning & Data Pipeline</h3>
-                <p className="text-lg text-foreground mb-8 leading-relaxed text-center max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground text-center">Machine Learning & Data Pipeline</h3>
+                <p className="text-base text-foreground mb-6 leading-relaxed text-center max-w-4xl mx-auto">
                   The system integrates real-time IoT data with advanced ML algorithms for environmental forecasting. 
                   Data flows from Arduino sensors through NodeMCU Wi-Fi to Google Sheets and Adafruit IO dashboards. 
                   Python handles data cleaning (PPM/NTU conversion, NaN handling) and ML model training on 400+ entries.
                 </p>
                 
                 {/* Dashboard Visualization Placeholder */}
-                <div className="bg-card/30 rounded-xl p-8 border border-border/50 mb-8">
-                  <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl h-56 flex items-center justify-center">
+                <div className="bg-card/30 rounded-xl p-6 border border-border/50 mb-6">
+                  <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl h-40 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-4xl mb-3">📊</div>
-                      <p className="text-foreground font-semibold text-xl mb-2">Real-time Environmental Dashboard</p>
-                      <p className="text-foreground/70 text-base">Google Sheets API + Adafruit IO Integration</p>
+                      <div className="text-3xl mb-2">📊</div>
+                      <p className="text-foreground font-semibold text-lg mb-1">Real-time Environmental Dashboard</p>
+                      <p className="text-foreground/70 text-sm">Google Sheets API + Adafruit IO Integration</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* ML Model Performance Comparison */}
-                <div className="bg-background/80 rounded-xl p-8 mb-8">
-                  <h4 className="font-semibold mb-6 text-foreground text-xl text-center">Machine Learning Model Performance (MAE Comparison)</h4>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-primary/10 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-bold text-primary mb-3">15.53</div>
-                      <div className="text-base text-foreground font-semibold mb-1">Random Forest</div>
-                      <div className="text-sm text-foreground/70">Best Performance</div>
+                <div className="bg-background/80 rounded-xl p-6 mb-6">
+                  <h4 className="font-semibold mb-4 text-foreground text-lg text-center">Machine Learning Model Performance (MAE Comparison)</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-primary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-primary mb-2">15.53</div>
+                      <div className="text-sm text-foreground font-semibold mb-1">Random Forest</div>
+                      <div className="text-xs text-foreground/70">Best Performance</div>
                     </div>
-                    <div className="bg-secondary/10 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-bold text-secondary mb-3">38.34</div>
-                      <div className="text-base text-foreground font-semibold mb-1">ARIMA</div>
-                      <div className="text-sm text-foreground/70">Statistical Model</div>
+                    <div className="bg-secondary/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-secondary mb-2">38.34</div>
+                      <div className="text-sm text-foreground font-semibold mb-1">ARIMA</div>
+                      <div className="text-xs text-foreground/70">Statistical Model</div>
                     </div>
-                    <div className="bg-accent/10 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-bold text-accent mb-3">41.46</div>
-                      <div className="text-base text-foreground font-semibold mb-1">LSTM</div>
-                      <div className="text-sm text-foreground/70">Neural Network</div>
+                    <div className="bg-accent/10 rounded-xl p-4 text-center">
+                      <div className="text-2xl font-bold text-accent mb-2">41.46</div>
+                      <div className="text-sm text-foreground font-semibold mb-1">LSTM</div>
+                      <div className="text-xs text-foreground/70">Neural Network</div>
                     </div>
                   </div>
-                  <p className="text-base text-foreground/80 mt-6 text-center leading-relaxed">
+                  <p className="text-sm text-foreground/80 mt-4 text-center leading-relaxed">
                     Random Forest Regressor achieved the lowest Mean Absolute Error, demonstrating superior accuracy 
                     for environmental forecasting with limited datasets.
                   </p>
                 </div>
                 
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-secondary text-lg">Data Storage</h4>
-                    <p className="text-foreground leading-relaxed">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-secondary">Data Storage</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       Google Sheets API for dynamic dataset with real-time sensor values
                     </p>
                   </div>
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-secondary text-lg">Model Training</h4>
-                    <p className="text-foreground leading-relaxed">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-secondary">Model Training</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       Python libraries (Pandas, Scikit-learn) for data processing and ML implementation
                     </p>
                   </div>
-                  <div className="text-center p-6 bg-card/30 rounded-xl">
-                    <h4 className="font-semibold mb-4 text-secondary text-lg">Real-time Performance</h4>
-                    <p className="text-foreground leading-relaxed">
+                  <div className="text-center p-4 bg-card/30 rounded-xl">
+                    <h4 className="font-semibold mb-3 text-secondary">Real-time Performance</h4>
+                    <p className="text-foreground leading-relaxed text-sm">
                       0.5-second latency from sensor reading to dashboard display
                     </p>
                   </div>
@@ -362,29 +362,29 @@ export default function CaseStudyIoT() {
       </section>
 
       {/* Personal Impact */}
-      <section className="py-16 bg-card/20">
+      <section className="py-10 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Personal Impact & Motivation</h2>
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12">
-              <blockquote className="text-lg italic text-center mb-6">
+            <h2 className="text-3xl font-bold mb-8 text-center">Personal Impact & Motivation</h2>
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 mb-8">
+              <blockquote className="text-base italic text-center mb-4">
                 "I grew up watching my parents worry about high electricity bills and poor water quality, 
                 especially during the summer months. This project was my way of giving back—to design 
                 something that not only works but feels accessible and impactful for families like mine."
               </blockquote>
-              <p className="text-muted-foreground text-center">
+              <p className="text-muted-foreground text-center text-sm">
                 While testing the system at home, we noticed how poor the air quality was during cooking hours 
                 and how much electricity the refrigerator consumed overnight. My family began using the dashboard 
                 daily, and my parents were proud of what I built. That shift in behavior was the most rewarding part.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">System Validation & Research Impact</h3>
-                <p className="text-foreground mb-4">
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-6">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">System Validation & Research Impact</h3>
+                <p className="text-foreground mb-3 text-sm">
                   The system underwent comprehensive testing with real-world deployment scenarios. Key validation metrics included:
                 </p>
-                <ul className="space-y-3 text-foreground mb-6">
+                <ul className="space-y-2 text-foreground mb-4 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span><strong>Response Time:</strong> 0.5-second latency from sensor reading to dashboard display</span>
@@ -398,12 +398,12 @@ export default function CaseStudyIoT() {
                     <span><strong>Scalability:</strong> Successfully processed 400+ environmental monitoring entries</span>
                   </li>
                 </ul>
-                <p className="text-foreground mb-6">
+                <p className="text-foreground mb-4 text-sm">
                   The research contribution was recognized through publication at the IEEE I2CT 2023 conference, 
                   demonstrating the system's effectiveness in real-world environmental monitoring applications.
                 </p>
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">Key Research Insights</h3>
-                <ul className="space-y-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">Key Research Insights</h3>
+                <ul className="space-y-2 text-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>Random Forest Regressors excel at environmental forecasting with limited datasets compared to deep learning approaches</span>
@@ -422,9 +422,9 @@ export default function CaseStudyIoT() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">Tools & Technologies</h3>
-                <ul className="space-y-3 text-foreground">
+              <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-6">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">Tools & Technologies</h3>
+                <ul className="space-y-2 text-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <span>Arduino Uno, NodeMCU ESP8266, MQ135, ACS712, DHT11, pH sensors</span>
@@ -441,9 +441,9 @@ export default function CaseStudyIoT() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 mt-8">
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Future Research Directions</h3>
-              <ul className="space-y-3 text-foreground">
+            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-6 mt-6">
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Future Research Directions</h3>
+              <ul className="space-y-2 text-foreground text-sm">
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                   <span>Implement edge computing with microcontrollers for reduced latency and offline capabilities</span>
@@ -463,9 +463,9 @@ export default function CaseStudyIoT() {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl p-8 mt-8">
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Scalability & Impact Vision</h3>
-              <p className="text-foreground">
+            <div className="bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl p-6 mt-6">
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Scalability & Impact Vision</h3>
+              <p className="text-foreground text-sm">
                 This research demonstrates the potential for affordable IoT solutions in environmental monitoring. 
                 Future deployments could scale to smart city networks, providing comprehensive environmental data 
                 for urban planning and public health initiatives. The system's cost-effectiveness and modular design 
@@ -475,13 +475,13 @@ export default function CaseStudyIoT() {
             </div>
             
             {/* Research Results & Impact */}
-            <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl p-8 mb-12">
-              <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Research Results & IEEE Publication</h3>
+            <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl p-6 mb-8">
+              <h3 className="text-xl font-semibold mb-4 text-center text-foreground">Research Results & IEEE Publication</h3>
               
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="bg-background/80 rounded-xl p-6">
-                  <h4 className="font-semibold mb-4 text-foreground">Key Research Findings</h4>
-                  <ul className="space-y-3 text-foreground">
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-background/80 rounded-xl p-4">
+                  <h4 className="font-semibold mb-3 text-foreground">Key Research Findings</h4>
+                  <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                       <span>Achieved 0.5-second latency from sensor reading to dashboard display</span>
@@ -501,9 +501,9 @@ export default function CaseStudyIoT() {
                   </ul>
                 </div>
                 
-                <div className="bg-background/80 rounded-xl p-6">
-                  <h4 className="font-semibold mb-4 text-foreground">Technical Specifications</h4>
-                  <ul className="space-y-3 text-foreground">
+                <div className="bg-background/80 rounded-xl p-4">
+                  <h4 className="font-semibold mb-3 text-foreground">Technical Specifications</h4>
+                  <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                       <span><strong>Hardware:</strong> Arduino Uno, NodeMCU, ACS712, MQ135, DHT11, pH sensors</span>
@@ -525,31 +525,31 @@ export default function CaseStudyIoT() {
               </div>
               
               <div className="text-center">
-                <p className="text-foreground font-medium mb-2">
+                <p className="text-foreground font-medium mb-1 text-sm">
                   Published at IEEE 8th International Conference for Convergence in Technology (I2CT), 2023
                 </p>
-                <p className="text-foreground/70">
+                <p className="text-foreground/70 text-xs">
                   Contributing to the global knowledge base on sustainable IoT solutions for environmental monitoring
                 </p>
               </div>
             </div>
             
             {/* Performance Metrics */}
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-8 bg-card/30 rounded-2xl">
-                <div className="text-5xl font-bold text-primary mb-4">0.5s</div>
-                <div className="text-xl font-semibold mb-3 text-foreground">Response Time</div>
-                <p className="text-foreground/80 leading-relaxed">Sensor to dashboard latency</p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-card/30 rounded-2xl">
+                <div className="text-3xl font-bold text-primary mb-2">0.5s</div>
+                <div className="text-lg font-semibold mb-2 text-foreground">Response Time</div>
+                <p className="text-foreground/80 leading-relaxed text-sm">Sensor to dashboard latency</p>
               </div>
-              <div className="text-center p-8 bg-card/30 rounded-2xl">
-                <div className="text-5xl font-bold text-secondary mb-4">15.53</div>
-                <div className="text-xl font-semibold mb-3 text-foreground">Best MAE Score</div>
-                <p className="text-foreground/80 leading-relaxed">Random Forest model accuracy</p>
+              <div className="text-center p-6 bg-card/30 rounded-2xl">
+                <div className="text-3xl font-bold text-secondary mb-2">15.53</div>
+                <div className="text-lg font-semibold mb-2 text-foreground">Best MAE Score</div>
+                <p className="text-foreground/80 leading-relaxed text-sm">Random Forest model accuracy</p>
               </div>
-              <div className="text-center p-8 bg-card/30 rounded-2xl">
-                <div className="text-5xl font-bold text-accent mb-4">400+</div>
-                <div className="text-xl font-semibold mb-3 text-foreground">Training Dataset</div>
-                <p className="text-foreground/80 leading-relaxed">Environmental monitoring entries</p>
+              <div className="text-center p-6 bg-card/30 rounded-2xl">
+                <div className="text-3xl font-bold text-accent mb-2">400+</div>
+                <div className="text-lg font-semibold mb-2 text-foreground">Training Dataset</div>
+                <p className="text-foreground/80 leading-relaxed text-sm">Environmental monitoring entries</p>
               </div>
             </div>
           </div>
