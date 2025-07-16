@@ -119,11 +119,11 @@ export default function CaseStudyVR() {
                 </div>
                 <div className="text-center">
                   <h4 className="text-lg font-semibold mb-4 text-foreground">Target Environment</h4>
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="relative rounded-lg overflow-hidden max-w-xs mx-auto">
                     <img 
                       src={hallwayImage} 
                       alt="Narrow domestic hallway showing spatial constraints and real-world objects"
-                      className="w-full h-48 object-cover rounded-lg"
+                      className="w-full h-80 object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg" />
                     <div className="absolute bottom-2 left-2 right-2 text-white text-sm">
@@ -147,7 +147,26 @@ export default function CaseStudyVR() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Design Process & Ideation</h2>
           
-          {/* Ideation Cards */}
+          {/* Ideation Cards Placeholder */}
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
+            <h3 className="text-xl font-semibold mb-4 text-center text-foreground">Ideation Process</h3>
+            <div className="aspect-[4/3] bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-4">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <p className="text-foreground/80 font-medium">Ideation Cards</p>
+                <p className="text-foreground/60 text-sm mt-2">Design process visualization will be added here</p>
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-foreground/80 italic">Opportunities, Questions, Challenges, and Player Actions mapping</p>
+            </div>
+          </div>
+          
+          {/* Detailed Breakdown */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-card rounded-lg p-6 border">
               <h3 className="text-xl font-semibold mb-4 text-foreground">Core Opportunities</h3>
