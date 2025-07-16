@@ -7,6 +7,7 @@ export default function Hero() {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const typingTexts = [
     "UX Researcher",
@@ -16,14 +17,21 @@ export default function Hero() {
   ];
 
   useEffect(() => {
-    setIsVisible(true);
+    // Simulate loading complete
+    const loadTimer = setTimeout(() => {
+      setIsLoaded(true);
+      setIsVisible(true);
+    }, 500);
     
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearTimeout(loadTimer);
+    };
   }, []);
 
   useEffect(() => {

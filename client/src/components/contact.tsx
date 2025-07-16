@@ -63,7 +63,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="bg-card rounded-lg p-8 border border-border">
+        <div className="bg-card rounded-2xl p-8 border border-border hover-lift">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <Label htmlFor="name" className="text-sm font-medium text-muted-foreground">

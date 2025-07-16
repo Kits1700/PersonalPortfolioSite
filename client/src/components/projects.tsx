@@ -5,6 +5,8 @@ import { Link } from "wouter";
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
+  const [imageLoaded, setImageLoaded] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
