@@ -178,7 +178,7 @@ const AmbientAudio = () => {
   };
 
   return (
-    <div className="fixed top-6 right-6 z-50 bg-background/80 backdrop-blur-sm border border-border/50 rounded-lg p-3 shadow-lg">
+    <div className="fixed top-6 right-6 z-[100] bg-background/80 backdrop-blur-sm border border-border/50 rounded-lg p-3 shadow-lg">
       <div className="flex items-center gap-3">
         <button
           onClick={togglePlayPause}
