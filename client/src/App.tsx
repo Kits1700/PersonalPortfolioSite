@@ -14,8 +14,11 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/case-study/llm" component={CaseStudyLLM} />
+      <Route path="/case-study-llm" component={CaseStudyLLM} />
       <Route path="/case-study/vr" component={CaseStudyVR} />
+      <Route path="/case-study-vr" component={CaseStudyVR} />
       <Route path="/case-study/iot" component={CaseStudyIoT} />
+      <Route path="/case-study-iot" component={CaseStudyIoT} />
       <Route component={NotFound} />
     </Switch>
   );
