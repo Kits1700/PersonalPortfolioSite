@@ -111,23 +111,77 @@ export default function Navigation() {
       return oscillator;
     };
 
-    const osc1 = createOscillator(0.1, 'sine', 0.3);
-    const osc2 = createOscillator(0.07, 'sine', 0.2);
-    const osc3 = createOscillator(0.15, 'triangle', 0.1);
-    
-    oscillatorsRef.current = [osc1, osc2, osc3];
+    // Create indie ambient soundscape with warm chord progressions
+    const createIndieAmbientLayer = (baseFreq: number, gain: number) => {
+      // Create a warm fifth chord (root + perfect fifth)
+      const root = createOscillator(baseFreq, 'sine', gain * 0.6);
+      const fifth = createOscillator(baseFreq * 1.5, 'sine', gain * 0.3);
+      const octave = createOscillator(baseFreq * 2, 'triangle', gain * 0.2);
+      
+      // Add subtle vibrato for indie warmth
+      const lfo = audioContext.createOscillator();
+      const lfoGain = audioContext.createGain();
+      
+      lfo.frequency.value = 0.2; // Slow vibrato
+      lfoGain.gain.value = baseFreq * 0.005; // Subtle depth
+      
+      lfo.connect(lfoGain);
+      lfoGain.connect(root.frequency);
+      lfo.start();
+      
+      return [root, fifth, octave, lfo];
+    };
 
+    // Create indie ambient layers
+    const layer1 = createIndieAmbientLayer(65.4, 0.15); // C2
+    const layer2 = createIndieAmbientLayer(82.4, 0.12); // E2
+    const layer3 = createIndieAmbientLayer(98.0, 0.10); // G2
+    
+    // Add subtle breathing/pad effect
+    const breathingOsc = createOscillator(0.08, 'sine', 0.25);
+    const breathingGain = audioContext.createGain();
+    breathingOsc.disconnect();
+    breathingOsc.connect(breathingGain);
+    breathingGain.connect(gainNode);
+    
+    // Create breathing effect with gain automation
+    const breathingLfo = audioContext.createOscillator();
+    const breathingLfoGain = audioContext.createGain();
+    breathingLfo.frequency.value = 0.05; // Very slow breathing
+    breathingLfoGain.gain.value = 0.1;
+    
+    breathingLfo.connect(breathingLfoGain);
+    breathingLfoGain.connect(breathingGain.gain);
+    breathingLfo.start();
+    
+    // Flatten all oscillators for tracking
+    oscillatorsRef.current = [
+      ...layer1, 
+      ...layer2, 
+      ...layer3, 
+      breathingOsc, 
+      breathingLfo
+    ];
+
+    // Create warm vinyl-style noise for indie texture
     const noiseBuffer = createPinkNoise();
     if (noiseBuffer) {
       const noiseSource = audioContext.createBufferSource();
       const noiseGain = audioContext.createGain();
+      const noiseFilter = audioContext.createBiquadFilter();
       
       noiseSource.buffer = noiseBuffer;
       noiseSource.loop = true;
-      noiseGain.gain.value = 0.05;
+      noiseGain.gain.value = 0.02; // Much subtler noise
+      
+      // Add warm filtering like vinyl
+      noiseFilter.type = 'lowpass';
+      noiseFilter.frequency.value = 1200; // Warm, muffled sound
+      noiseFilter.Q.value = 0.7;
       
       noiseSource.connect(noiseGain);
-      noiseGain.connect(gainNode);
+      noiseGain.connect(noiseFilter);
+      noiseFilter.connect(gainNode);
       noiseSource.start();
       
       noiseNodeRef.current = noiseSource;
