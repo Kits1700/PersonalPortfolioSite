@@ -175,9 +175,6 @@ export default function Hero() {
         <div className={`mb-12 ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
             Bridging the gap between human needs and technological possibilities through thoughtful design and research.
-            I create digital experiences that are <span className="text-primary font-medium">intuitive</span>, 
-            <span className="text-secondary font-medium">transparent</span>, and grounded in 
-            <span className="text-orange-400 font-medium">empathy</span>.
           </p>
         </div>
 
