@@ -41,8 +41,8 @@ export default function CaseStudyLLM() {
 
             
             {/* Hero Image Placeholder */}
-            <div className="bg-card/30 rounded-3xl p-8 border border-border/50 max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl h-64 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-card/50 via-card/30 to-background/80 rounded-3xl p-8 border border-border/30 backdrop-blur-sm max-w-4xl mx-auto shadow-2xl">
+              <div className="bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/30 rounded-2xl h-64 flex items-center justify-center shadow-lg">
                 <div className="text-center">
                   <div className="text-6xl mb-4">🧠</div>
                   <p className="text-foreground font-semibold text-xl">Custom Web Application Interface</p>
@@ -68,7 +68,7 @@ export default function CaseStudyLLM() {
             
             {/* Project Details Cards */}
             <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Calendar className="w-10 h-10 text-primary" />
                 </div>
@@ -76,7 +76,7 @@ export default function CaseStudyLLM() {
                 <p className="text-foreground/80">Full semester thesis project</p>
               </div>
               
-              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-10 h-10 text-secondary" />
                 </div>
@@ -84,7 +84,7 @@ export default function CaseStudyLLM() {
                 <p className="text-foreground/80">Individual research</p>
               </div>
               
-              <div className="bg-card/30 rounded-3xl p-8 border border-border/50 text-center">
+              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Target className="w-10 h-10 text-accent" />
                 </div>

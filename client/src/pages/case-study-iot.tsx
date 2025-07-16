@@ -45,8 +45,8 @@ export default function CaseStudyIoT() {
             </div>
             
             {/* Hero Image Placeholder */}
-            <div className="bg-card/30 rounded-2xl p-6 border border-border/50 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl h-48 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-2xl p-6 border border-border/30 backdrop-blur-sm shadow-lg max-w-2xl mx-auto">
+              <div className="bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/30 rounded-xl h-48 flex items-center justify-center shadow-lg">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🏠</div>
                   <p className="text-foreground font-medium">Smart Environmental Monitoring Dashboard</p>

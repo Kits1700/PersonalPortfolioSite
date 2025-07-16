@@ -276,7 +276,7 @@ export default function CaseStudyVR() {
 
           {/* Scene Breakdown */}
           <div className="space-y-8 mb-8">
-            <div className="bg-card rounded-lg p-8 border">
+            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 1: Warm-up Sequence</h4>
               
               {/* Video Placeholder */}
@@ -303,7 +303,7 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            <div className="bg-card rounded-lg p-8 border">
+            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 2: Main Mission</h4>
               
               {/* Video Placeholder */}
@@ -330,7 +330,7 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            <div className="bg-card rounded-lg p-8 border">
+            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 3: Mission Accomplished</h4>
               
               {/* Video Placeholder */}
@@ -531,7 +531,7 @@ export default function CaseStudyVR() {
 
         {/* Project Tagline */}
         <section className="mb-16">
-          <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-2xl p-8 text-center border border-border/30 backdrop-blur-sm shadow-lg">
             <h2 className="text-2xl font-bold mb-4 text-foreground">Built for a hallway. Designed for survival.</h2>
             <p className="text-lg text-foreground/80 italic">Coming to a cramped space near you.</p>
           </div>
