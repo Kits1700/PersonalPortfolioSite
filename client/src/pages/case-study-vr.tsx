@@ -64,12 +64,20 @@ export default function CaseStudyVR() {
 
           {/* Hero Image */}
           <div className="relative rounded-2xl overflow-hidden mb-8">
-            <img 
-              src={gamePosterImage} 
-              alt="Survival of the Fittest - Mixed Reality Exergame showing a silhouette of a person in action pose against an apocalyptic cityscape"
-              className="w-full h-auto object-cover rounded-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
+            <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-8 border border-orange-500/20 relative overflow-hidden">
+              <img 
+                src={gamePosterImage} 
+                alt="Survival of the Fittest - Mixed Reality Exergame showing a silhouette of a person in action pose against an apocalyptic cityscape"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+              {/* VR/Gaming particles */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-8 left-8 w-4 h-4 bg-orange-400 rounded-full animate-bounce"></div>
+                <div className="absolute top-16 right-12 w-3 h-3 bg-red-400 rounded-full animate-bounce delay-100"></div>
+                <div className="absolute bottom-12 left-16 w-2 h-2 bg-amber-400 rounded-full animate-bounce delay-200"></div>
+                <div className="absolute bottom-8 right-8 w-3 h-3 bg-orange-400 rounded-full animate-bounce delay-300"></div>
+              </div>
+            </div>
             <div className="absolute bottom-4 left-4 right-4 text-white">
               <p className="text-lg font-medium">"Survival of the Fittest" - Core Concept Poster</p>
             </div>
@@ -276,7 +284,9 @@ export default function CaseStudyVR() {
 
           {/* Scene Breakdown */}
           <div className="space-y-8 mb-8">
-            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
+            <div className="bg-gradient-to-br from-orange-500/10 via-yellow-500/5 to-amber-500/10 rounded-lg p-8 border border-orange-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
+              <div className="absolute top-3 right-3 w-2 h-2 bg-orange-400/30 rounded-full animate-bounce"></div>
+              <div className="absolute bottom-3 left-3 w-1 h-1 bg-yellow-400/30 rounded-full animate-bounce delay-100"></div>
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 1: Warm-up Sequence</h4>
               
               {/* Video Placeholder */}
@@ -303,7 +313,9 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
+            <div className="bg-gradient-to-br from-red-500/10 via-orange-500/5 to-yellow-500/10 rounded-lg p-8 border border-red-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
+              <div className="absolute top-4 left-4 w-1 h-1 bg-red-400/30 rounded-full animate-bounce delay-150"></div>
+              <div className="absolute bottom-4 right-4 w-2 h-2 bg-orange-400/30 rounded-full animate-bounce delay-75"></div>
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 2: Main Mission</h4>
               
               {/* Video Placeholder */}
@@ -330,7 +342,9 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-lg p-8 border border-border/30 backdrop-blur-sm shadow-lg">
+            <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/5 to-teal-500/10 rounded-lg p-8 border border-green-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
+              <div className="absolute top-2 right-2 w-2 h-2 bg-green-400/30 rounded-full animate-bounce delay-200"></div>
+              <div className="absolute bottom-2 left-2 w-1 h-1 bg-emerald-400/30 rounded-full animate-bounce delay-50"></div>
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 3: Mission Accomplished</h4>
               
               {/* Video Placeholder */}

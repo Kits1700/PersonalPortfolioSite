@@ -42,7 +42,16 @@ export default function CaseStudyLLM() {
             
             {/* Hero Image Placeholder */}
             <div className="bg-gradient-to-br from-card/50 via-card/30 to-background/80 rounded-3xl p-8 border border-border/30 backdrop-blur-sm max-w-4xl mx-auto shadow-2xl">
-              <div className="bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/30 rounded-2xl h-64 flex items-center justify-center shadow-lg">
+              <div className="bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-indigo-500/30 rounded-2xl h-64 flex items-center justify-center shadow-lg relative overflow-hidden">
+                {/* Neural network pattern background */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute top-4 left-4 w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                  <div className="absolute top-12 right-8 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-100"></div>
+                  <div className="absolute bottom-8 left-12 w-2 h-2 bg-indigo-400 rounded-full animate-pulse delay-200"></div>
+                  <div className="absolute bottom-4 right-4 w-3 h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
+                  <div className="absolute top-20 left-20 w-1 h-1 bg-purple-400 rounded-full animate-pulse delay-150"></div>
+                  <div className="absolute bottom-20 right-20 w-1 h-1 bg-indigo-400 rounded-full animate-pulse delay-250"></div>
+                </div>
                 <div className="text-center">
                   <div className="text-6xl mb-4">🧠</div>
                   <p className="text-foreground font-semibold text-xl">Custom Web Application Interface</p>
@@ -68,25 +77,31 @@ export default function CaseStudyLLM() {
             
             {/* Project Details Cards */}
             <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Calendar className="w-10 h-10 text-primary" />
+              <div className="bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-purple-500/10 rounded-3xl p-8 border border-blue-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+                <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-2 left-2 w-1 h-1 bg-indigo-400/30 rounded-full animate-pulse delay-100"></div>
+                <div className="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Calendar className="w-10 h-10 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Duration</h3>
                 <p className="text-foreground/80">Full semester thesis project</p>
               </div>
               
-              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-10 h-10 text-secondary" />
+              <div className="bg-gradient-to-br from-purple-500/10 via-pink-500/5 to-violet-500/10 rounded-3xl p-8 border border-purple-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+                <div className="absolute top-3 left-3 w-1 h-1 bg-purple-400/30 rounded-full animate-pulse delay-150"></div>
+                <div className="absolute bottom-3 right-3 w-2 h-2 bg-pink-400/30 rounded-full animate-pulse delay-75"></div>
+                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-10 h-10 text-purple-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Team</h3>
                 <p className="text-foreground/80">Individual research</p>
               </div>
               
-              <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-3xl p-8 border border-border/30 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="w-10 h-10 text-accent" />
+              <div className="bg-gradient-to-br from-indigo-500/10 via-cyan-500/5 to-blue-500/10 rounded-3xl p-8 border border-indigo-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-1 h-1 bg-indigo-400/30 rounded-full animate-pulse delay-200"></div>
+                <div className="absolute bottom-4 left-4 w-2 h-2 bg-cyan-400/30 rounded-full animate-pulse delay-50"></div>
+                <div className="w-20 h-20 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="w-10 h-10 text-indigo-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Role</h3>
                 <p className="text-foreground/80">UX Researcher & Interaction Designer</p>

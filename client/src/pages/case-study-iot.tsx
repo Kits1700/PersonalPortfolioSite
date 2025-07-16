@@ -46,7 +46,21 @@ export default function CaseStudyIoT() {
             
             {/* Hero Image Placeholder */}
             <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-2xl p-6 border border-border/30 backdrop-blur-sm shadow-lg max-w-2xl mx-auto">
-              <div className="bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/30 rounded-xl h-48 flex items-center justify-center shadow-lg">
+              <div className="bg-gradient-to-br from-green-500/30 via-teal-500/20 to-emerald-500/30 rounded-xl h-48 flex items-center justify-center shadow-lg relative overflow-hidden">
+                {/* IoT sensor network pattern */}
+                <div className="absolute inset-0 opacity-15">
+                  <div className="absolute top-6 left-6 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <div className="absolute top-6 right-6 w-3 h-3 bg-teal-400 rounded-full animate-pulse delay-75"></div>
+                  <div className="absolute bottom-6 left-6 w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-150"></div>
+                  <div className="absolute bottom-6 right-6 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-225"></div>
+                  <div className="absolute top-12 left-1/2 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-300"></div>
+                  <div className="absolute bottom-12 left-1/2 w-2 h-2 bg-emerald-400 rounded-full animate-pulse delay-375"></div>
+                  {/* Connection lines */}
+                  <div className="absolute top-8 left-8 w-8 h-0.5 bg-green-400/30 rotate-45"></div>
+                  <div className="absolute top-8 right-16 w-8 h-0.5 bg-teal-400/30 rotate-[-45deg]"></div>
+                  <div className="absolute bottom-8 left-16 w-8 h-0.5 bg-emerald-400/30 rotate-[-45deg]"></div>
+                  <div className="absolute bottom-8 right-8 w-8 h-0.5 bg-green-400/30 rotate-45"></div>
+                </div>
                 <div className="text-center">
                   <div className="text-4xl mb-2">🏠</div>
                   <p className="text-foreground font-medium">Smart Environmental Monitoring Dashboard</p>
