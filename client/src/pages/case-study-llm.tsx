@@ -191,51 +191,148 @@ export default function CaseStudyLLM() {
               </div>
               
               <div className="bg-gradient-to-r from-secondary/10 to-accent/10 rounded-2xl p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground">System Implementation</h3>
-                <div className="space-y-6">
-                  <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-2 text-secondary">Custom Web Application</h4>
-                    <p className="text-foreground/80 text-sm mb-4">Built using Figma for design prototyping and Replit for web application development, integrated with OpenAI GPT-4 API</p>
-                    
-                    {/* App Design - Initial State */}
-                    <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-8 mb-6 border border-primary/30">
-                      <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
+                <h3 className="text-2xl font-semibold mb-8 text-foreground">Design Process & Screenshots</h3>
+                
+                {/* Initial Wireframes & Sketches */}
+                <div className="mb-12">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">Initial Wireframes & Sketches</h4>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div className="bg-gradient-to-r from-primary/15 to-secondary/15 rounded-xl p-6 border border-primary/30">
+                      <div className="bg-card/80 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-6xl mb-4">📱</div>
-                          <p className="text-foreground font-bold text-xl">App Design - Initial State</p>
-                          <p className="text-foreground/70 text-lg">Interface before AI interaction</p>
+                          <div className="text-4xl mb-3">✏️</div>
+                          <p className="text-foreground font-bold">Initial Sketches</p>
+                          <p className="text-foreground/70 text-sm">Concept exploration & ideation</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-secondary/15 to-accent/15 rounded-xl p-6 border border-secondary/30">
+                      <div className="bg-card/80 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-4xl mb-3">📐</div>
+                          <p className="text-foreground font-bold">Low-Fi Wireframes</p>
+                          <p className="text-foreground/70 text-sm">Task flow & information architecture</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-2 text-secondary">Literature Review Generation</h4>
-                    <p className="text-foreground/80 text-sm mb-4">Users rank abstracts or engage with source material before accessing AI-generated literature review</p>
-                    
-                    {/* App Design - Friction Intervention */}
-                    <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl p-8 mb-6 border border-secondary/30">
+                </div>
+
+                {/* User Journey & Flow */}
+                <div className="mb-12">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">User Journey & Task Flow</h4>
+                  <div className="bg-gradient-to-r from-accent/15 to-primary/15 rounded-xl p-8 mb-6 border border-accent/30">
+                    <div className="bg-card/80 rounded-lg h-56 flex items-center justify-center border-2 border-dashed border-border/50">
+                      <div className="text-center">
+                        <div className="text-5xl mb-4">🗺️</div>
+                        <p className="text-foreground font-bold text-xl">User Journey Map</p>
+                        <p className="text-foreground/70 text-lg">Task flow with friction intervention points</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* High-Fidelity Prototypes */}
+                <div className="mb-12">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">High-Fidelity Prototypes</h4>
+                  <div className="grid md:grid-cols-3 gap-6 mb-6">
+                    <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 border border-primary/30">
                       <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-6xl mb-4">⚙️</div>
-                          <p className="text-foreground font-bold text-xl">Friction Intervention in Progress</p>
-                          <p className="text-foreground/70 text-lg">User ranking abstracts before AI output</p>
+                          <div className="text-5xl mb-3">🏠</div>
+                          <p className="text-foreground font-bold">Landing Page</p>
+                          <p className="text-foreground/70 text-sm">Initial task selection interface</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-xl p-6 border border-secondary/30">
+                      <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-5xl mb-3">📋</div>
+                          <p className="text-foreground font-bold">Friction Task</p>
+                          <p className="text-foreground/70 text-sm">Abstract ranking interface</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl p-6 border border-accent/30">
+                      <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-5xl mb-3">🤖</div>
+                          <p className="text-foreground font-bold">AI Output</p>
+                          <p className="text-foreground/70 text-sm">Generated content display</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="bg-card/30 rounded-xl p-4">
-                    <h4 className="font-semibold mb-2 text-secondary">Argument Brainstorming</h4>
-                    <p className="text-foreground/80 text-sm mb-4">Users must formulate counterarguments before AI provides suggested arguments, stimulating dialectical thinking</p>
-                    
-                    {/* App Design - Post-Friction AI Output */}
-                    <div className="bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl p-8 mb-6 border border-accent/30">
-                      <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
+                </div>
+
+                {/* Interactive Prototype States */}
+                <div className="mb-12">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">Interactive Prototype States</h4>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div className="bg-gradient-to-r from-green-500/15 to-blue-500/15 rounded-xl p-6 border border-green-500/30">
+                      <div className="bg-card/80 rounded-lg h-56 flex items-center justify-center border-2 border-dashed border-border/50">
                         <div className="text-center">
-                          <div className="text-6xl mb-4">🤖</div>
-                          <p className="text-foreground font-bold text-xl">Post-Friction AI Output Display</p>
-                          <p className="text-foreground/70 text-lg">AI content after friction task completion</p>
+                          <div className="text-5xl mb-3">✅</div>
+                          <p className="text-foreground font-bold">Completed State</p>
+                          <p className="text-foreground/70 text-sm">Task completion feedback</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-orange-500/15 to-red-500/15 rounded-xl p-6 border border-orange-500/30">
+                      <div className="bg-card/80 rounded-lg h-56 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-5xl mb-3">⚠️</div>
+                          <p className="text-foreground font-bold">Error States</p>
+                          <p className="text-foreground/70 text-sm">Validation & error handling</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Before/After Comparison */}
+                <div className="mb-12">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">Before/After Comparison</h4>
+                  <div className="bg-gradient-to-r from-purple-500/15 to-pink-500/15 rounded-xl p-8 border border-purple-500/30">
+                    <div className="bg-card/80 rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-border/50">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">⚡</div>
+                        <p className="text-foreground font-bold text-xl">Interface Evolution</p>
+                        <p className="text-foreground/70 text-lg">Design iterations & improvements</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Responsive Views */}
+                <div className="mb-8">
+                  <h4 className="font-semibold mb-6 text-secondary text-lg">Mobile Responsive Design</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-gradient-to-r from-blue-500/15 to-cyan-500/15 rounded-xl p-4 border border-blue-500/30">
+                      <div className="bg-card/80 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-3xl mb-2">📱</div>
+                          <p className="text-foreground font-bold text-sm">Mobile View</p>
+                          <p className="text-foreground/70 text-xs">Touch-optimized interface</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-cyan-500/15 to-teal-500/15 rounded-xl p-4 border border-cyan-500/30">
+                      <div className="bg-card/80 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-3xl mb-2">💻</div>
+                          <p className="text-foreground font-bold text-sm">Tablet View</p>
+                          <p className="text-foreground/70 text-xs">Adaptive layout design</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-teal-500/15 to-green-500/15 rounded-xl p-4 border border-teal-500/30">
+                      <div className="bg-card/80 rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-border/50">
+                        <div className="text-center">
+                          <div className="text-3xl mb-2">🖥️</div>
+                          <p className="text-foreground font-bold text-sm">Desktop View</p>
+                          <p className="text-foreground/70 text-xs">Full-feature interface</p>
                         </div>
                       </div>
                     </div>
