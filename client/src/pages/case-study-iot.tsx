@@ -85,9 +85,9 @@ export default function CaseStudyIoT() {
                   <div className="absolute bottom-8 right-8 w-8 h-0.5 bg-green-400/30 rotate-45"></div>
                 </div>
                 <div className="text-center">
-                  <div className="text-6xl mb-4">🏠</div>
-                  <p className="text-foreground font-semibold text-xl">Smart Environmental Monitoring Dashboard</p>
-                  <p className="text-foreground/70 text-lg">Real-time IoT system visualization</p>
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded">IMAGE PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg">Smart Environmental Monitoring Dashboard</p>
+                  <p className="text-foreground/70 text-sm">Screenshot of real-time IoT dashboard showing sensor data</p>
                 </div>
               </div>
             </div>
@@ -327,6 +327,10 @@ export default function CaseStudyIoT() {
                 <div className="text-5xl font-bold text-purple-500 mb-4">IEEE</div>
                 <h3 className="text-xl font-semibold mb-2 text-foreground">Published Research</h3>
                 <p className="text-foreground/80">Published at 2023 IEEE 8th International Conference for Convergence in Technology (I2CT)</p>
+                <div className="mt-4">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                  <p className="text-foreground/70 text-sm">PDF screenshot of IEEE conference publication with IBM funding acknowledgment</p>
+                </div>
               </div>
             </div>
 
@@ -409,6 +413,15 @@ export default function CaseStudyIoT() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-foreground">Technical Implementation</h2>
             
+            {/* ML Performance Results Image Placeholder */}
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+              <div className="text-center">
+                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                <p className="text-foreground font-semibold text-lg mb-2">ML Model Performance Comparison Charts</p>
+                <p className="text-foreground/70 text-sm">Bar charts and scatter plots showing Random Forest vs LSTM vs ARIMA performance metrics (MAE, RMSE, MSE)</p>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-12">
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
                 <h3 className="text-2xl font-semibold mb-6 text-foreground">System Components</h3>
@@ -473,6 +486,25 @@ export default function CaseStudyIoT() {
                       <p className="text-foreground/80">Machine learning with Pandas for data processing and Random Forest implementation</p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Google Sheets & Adafruit Dashboard Screenshots */}
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+                <div className="text-center">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">Google Sheets Dataset</p>
+                  <p className="text-foreground/70 text-sm">Screenshot of Google Sheets showing real-time sensor data collection with 400+ entries</p>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+                <div className="text-center">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">Adafruit IO Dashboard</p>
+                  <p className="text-foreground/70 text-sm">Real-time electricity monitoring dashboard with live sensor feeds and graphs</p>
                 </div>
               </div>
             </div>
