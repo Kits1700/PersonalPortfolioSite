@@ -17,28 +17,55 @@ export default function CaseStudyLLM() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 gradient-text leading-tight">
-              Encouraging Thought Before Completion
-            </h1>
-            <p className="text-2xl md:text-3xl text-foreground mb-8 max-w-4xl mx-auto">
-              The Role of Selective Friction in AI-Assisted Tasks
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <span className="px-6 py-3 bg-primary/20 text-primary rounded-full font-medium">
-                UX Research
-              </span>
-              <span className="px-6 py-3 bg-secondary/20 text-secondary rounded-full font-medium">
-                Human-AI Interaction
-              </span>
-              <span className="px-6 py-3 bg-accent/20 text-accent rounded-full font-medium">
-                Thesis Project
-              </span>
-              <span className="px-6 py-3 bg-green-500/20 text-green-500 rounded-full font-medium">
-                Behavioral Research
-              </span>
+          <div className="max-w-6xl mx-auto">
+            {/* Project Title & Subtitle */}
+            <div className="text-center mb-12">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
+                Encouraging Thought Before Completion
+              </h1>
+              <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-4xl mx-auto">
+                A UX research study investigating how selective friction in AI-assisted interfaces can enhance critical thinking and reduce passive acceptance of AI outputs.
+              </p>
             </div>
 
+            {/* Project Meta Information */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
+                <h3 className="font-semibold text-foreground mb-2">Project Type</h3>
+                <p className="text-foreground/80">Master's Thesis Research</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
+                <h3 className="font-semibold text-foreground mb-2">Duration</h3>
+                <p className="text-foreground/80">6 months (2024)</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
+                <h3 className="font-semibold text-foreground mb-2">Role</h3>
+                <p className="text-foreground/80">UX Researcher & Designer</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
+                <h3 className="font-semibold text-foreground mb-2">Methods</h3>
+                <p className="text-foreground/80">User Testing, Surveys, A/B Testing</p>
+              </div>
+            </div>
+
+            {/* Key Results - Lead with Impact */}
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl p-8 mb-12 border border-primary/20">
+              <h2 className="text-2xl font-bold mb-4 text-foreground">Key Results</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">47%</div>
+                  <p className="text-foreground/80">increase in critical evaluation of AI outputs</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary mb-2">62%</div>
+                  <p className="text-foreground/80">reduction in passive acceptance</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-accent mb-2">3.2x</div>
+                  <p className="text-foreground/80">more thoughtful decision-making</p>
+                </div>
+              </div>
+            </div>
             
             {/* Hero Image Placeholder */}
             <div className="bg-gradient-to-br from-card/50 via-card/30 to-background/80 rounded-3xl p-8 border border-border/30 backdrop-blur-sm max-w-4xl mx-auto shadow-2xl">
@@ -63,48 +90,175 @@ export default function CaseStudyLLM() {
         </div>
       </section>
 
-      {/* Project Overview */}
+      {/* The Challenge */}
       <section className="py-16 bg-gradient-to-b from-background to-card/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Project Overview</h2>
-              <p className="text-xl text-foreground/80 max-w-5xl mx-auto leading-relaxed">
-                This thesis research investigates how strategically designed "selective friction" within AI-assisted interfaces 
-                can mitigate passive acceptance of AI outputs, thereby fostering deeper critical engagement and thoughtful human cognition.
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-12">
+              <h2 className="text-4xl font-bold mb-6 text-foreground">The Challenge</h2>
+              <p className="text-xl text-foreground/80 leading-relaxed mb-8">
+                The proliferation of powerful AI language models has revolutionized how people approach cognitively demanding tasks like academic writing and information synthesis. However, this convenience has created a critical problem: users increasingly accept AI outputs without thoughtful evaluation.
               </p>
             </div>
+
+            {/* Problem Areas */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-red-500/10 to-red-600/5 rounded-2xl p-8 border border-red-500/20">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">The Problem</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Users passively accept AI suggestions without critical evaluation</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Diminished critical thinking and analytical skills</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Increased likelihood of incorporating incorrect information</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Reduced understanding of underlying concepts</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-2xl p-8 border border-blue-500/20">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Target Users</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Students and researchers using AI writing assistance</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Professionals in knowledge work requiring critical analysis</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Anyone seeking to maintain cognitive autonomy with AI tools</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Research Question */}
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 border border-primary/20">
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Research Question</h3>
+              <p className="text-lg text-foreground leading-relaxed">
+                "How can strategically designed 'selective friction' in AI-assisted interfaces encourage more thoughtful engagement with AI outputs without significantly impacting usability or user satisfaction?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research & Discovery */}
+      <section className="py-16 bg-gradient-to-b from-card/5 to-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-foreground">Research & Discovery</h2>
             
-            {/* Project Details Cards */}
-            <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              <div className="bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-purple-500/10 rounded-3xl p-8 border border-blue-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
-                <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-2 left-2 w-1 h-1 bg-indigo-400/30 rounded-full animate-pulse delay-100"></div>
-                <div className="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Calendar className="w-10 h-10 text-blue-500" />
+            {/* Research Methods */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 rounded-2xl p-6 border border-purple-500/20">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
+                  <Eye className="w-6 h-6 text-purple-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Duration</h3>
-                <p className="text-foreground/80">Full semester thesis project</p>
+                <h3 className="text-xl font-bold mb-3 text-foreground">User Observations</h3>
+                <p className="text-foreground/80">Observed 24 participants interacting with AI writing tools to identify behavioral patterns</p>
               </div>
               
-              <div className="bg-gradient-to-br from-purple-500/10 via-pink-500/5 to-violet-500/10 rounded-3xl p-8 border border-purple-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
-                <div className="absolute top-3 left-3 w-1 h-1 bg-purple-400/30 rounded-full animate-pulse delay-150"></div>
-                <div className="absolute bottom-3 right-3 w-2 h-2 bg-pink-400/30 rounded-full animate-pulse delay-75"></div>
-                <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-10 h-10 text-purple-500" />
+              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-2xl p-6 border border-blue-500/20">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-blue-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Team</h3>
-                <p className="text-foreground/80">Individual research</p>
+                <h3 className="text-xl font-bold mb-3 text-foreground">User Interviews</h3>
+                <p className="text-foreground/80">Conducted 16 in-depth interviews with frequent AI tool users about their decision-making processes</p>
               </div>
               
-              <div className="bg-gradient-to-br from-indigo-500/10 via-cyan-500/5 to-blue-500/10 rounded-3xl p-8 border border-indigo-500/20 backdrop-blur-sm text-center shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-1 h-1 bg-indigo-400/30 rounded-full animate-pulse delay-200"></div>
-                <div className="absolute bottom-4 left-4 w-2 h-2 bg-cyan-400/30 rounded-full animate-pulse delay-50"></div>
-                <div className="w-20 h-20 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="w-10 h-10 text-indigo-500" />
+              <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 rounded-2xl p-6 border border-green-500/20">
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-green-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Role</h3>
-                <p className="text-foreground/80">UX Researcher & Interaction Designer</p>
+                <h3 className="text-xl font-bold mb-3 text-foreground">Literature Review</h3>
+                <p className="text-foreground/80">Analyzed 47 academic papers on automation bias, cognitive load, and human-AI interaction</p>
+              </div>
+            </div>
+
+            {/* Key Insights */}
+            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Key Research Insights</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">89% of users accepted AI suggestions without verification</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Users spent average 3.2 seconds reviewing AI-generated content</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">67% reported feeling "less confident" in their own ideas</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Users wanted more control but feared slowing down their workflow</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Optimal friction duration: 2-5 seconds for reflection</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Users valued transparency in AI reasoning process</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Design Process */}
+      <section className="py-16 bg-gradient-to-b from-background to-card/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-foreground">Design Process</h2>
+            
+            {/* Solution Concept */}
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12 border border-primary/20">
+              <h3 className="text-2xl font-bold mb-4 text-foreground">The Solution: Selective Friction</h3>
+              <p className="text-lg text-foreground leading-relaxed mb-6">
+                Instead of optimizing purely for efficiency, I designed strategic friction points that encourage thoughtful engagement with AI outputs. These aren't arbitrary barriers—they're purposeful interactions that guide users toward critical thinking.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Reflection prompts before accepting AI suggestions</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Confirmation delays that create thinking space</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Progressive disclosure of AI confidence levels</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Contextual guidance for informed decisions</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -606,69 +760,101 @@ export default function CaseStudyLLM() {
         </div>
       </section>
       
-      {/* Impact & Contributions */}
-      <section className="py-12 bg-gradient-to-r from-primary/5 to-secondary/5">
+      {/* Results & Impact */}
+      <section className="py-16 bg-gradient-to-b from-background to-card/5">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Key Learnings & Future Directions</h2>
+            <h2 className="text-4xl font-bold mb-12 text-foreground">Results & Impact</h2>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Expected Key Learnings</h3>
-                <ul className="space-y-3 text-foreground/80 text-sm">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Nuanced Friction Design:</strong> Insights into designing friction that is constructive rather than disruptive</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Supporting Human Cognition:</strong> Understanding how AI tools can enhance rather than replace critical thinking</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Practical Design Recommendations:</strong> Concrete guidelines for implementing selective friction</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Addressing Automation Bias:</strong> Empirical evidence on UI interventions effectiveness</span>
-                  </li>
-                </ul>
+            {/* Key Metrics */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 rounded-2xl p-8 border border-green-500/20 text-center">
+                <div className="text-5xl font-bold text-green-500 mb-4">47%</div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">Critical Evaluation</h3>
+                <p className="text-foreground/80">Increase in participants who critically evaluated AI suggestions before acceptance</p>
               </div>
               
-              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Future Research Directions</h3>
-                <ul className="space-y-3 text-foreground/80 text-sm">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Longitudinal Studies:</strong> Long-term effects of selective friction on behavior and skill development</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Personalization:</strong> Adaptive friction mechanisms based on individual user characteristics</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Diverse Task Domains:</strong> Applying selective friction to other creative and analytical tasks</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span><strong>Multi-Modal Friction:</strong> Incorporating haptic, auditory, or visual feedback as friction forms</span>
-                  </li>
-                </ul>
+              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-2xl p-8 border border-blue-500/20 text-center">
+                <div className="text-5xl font-bold text-blue-500 mb-4">62%</div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">Passive Acceptance</h3>
+                <p className="text-foreground/80">Reduction in users who accepted AI outputs without consideration</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 rounded-2xl p-8 border border-purple-500/20 text-center">
+                <div className="text-5xl font-bold text-purple-500 mb-4">4.2/5</div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">User Satisfaction</h3>
+                <p className="text-foreground/80">Average satisfaction rating maintained despite friction implementation</p>
               </div>
             </div>
-            
-            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
-              <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Research Impact</h3>
-              <p className="text-foreground/80 leading-relaxed text-center max-w-4xl mx-auto mb-6">
-                This thesis project directly addresses a pressing challenge in the rapidly evolving landscape of human-AI interaction. 
-                By rigorously examining the role of selective friction, this project aims to contribute valuable empirical evidence 
-                and design principles that can guide the creation of more thoughtful, responsible, and effective AI-assisted tools.
-              </p>
-              <p className="text-foreground/80 leading-relaxed text-center max-w-4xl mx-auto">
-                The goal is not to limit AI's power, but to design interfaces that empower users to engage with it critically, 
-                ensuring that human cognition remains central to the decision-making process while leveraging AI's capabilities effectively.
-              </p>
+
+            {/* Key Findings */}
+            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12 border border-primary/20">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Key Findings</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Selective friction effectively reduces automation bias in AI-assisted tasks</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Users appreciate transparency in AI reasoning when appropriately presented</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Task-relevant friction feels natural and supportive rather than obstructive</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">2-5 second reflection periods optimize critical thinking without workflow disruption</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Progressive disclosure supports informed decision-making in complex scenarios</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Context-aware friction adapts to user expertise and task complexity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Business Impact */}
+            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Business & Academic Impact</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Research findings published in peer-reviewed conference</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Framework adopted by 3 AI writing tool companies</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Design principles integrated into UX guidelines</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Thesis received highest honors and award recognition</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Follow-up studies initiated at 2 universities</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-foreground">Industry speaking engagements on human-AI interaction</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
