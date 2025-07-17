@@ -53,16 +53,16 @@ export default function CaseStudyIoT() {
               <h2 className="text-2xl font-bold mb-4 text-foreground">Key Results</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-500 mb-2">92%</div>
-                  <p className="text-foreground/80">prediction accuracy for resource consumption</p>
+                  <div className="text-3xl font-bold text-green-500 mb-2">15.53</div>
+                  <p className="text-foreground/80">MAE score - Random Forest outperformed LSTM (41.46) and ARIMA (38.34)</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-teal-500 mb-2">35%</div>
-                  <p className="text-foreground/80">reduction in energy waste through optimization</p>
+                  <div className="text-3xl font-bold text-teal-500 mb-2">0.5s</div>
+                  <p className="text-foreground/80">response time from sensor to dashboard display</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-500 mb-2">Real-time</div>
-                  <p className="text-foreground/80">monitoring of air & water quality</p>
+                  <div className="text-3xl font-bold text-emerald-500 mb-2">400+</div>
+                  <p className="text-foreground/80">training dataset entries for ML model validation</p>
                 </div>
               </div>
             </div>
@@ -326,7 +326,7 @@ export default function CaseStudyIoT() {
               <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 rounded-2xl p-8 border border-purple-500/20 text-center">
                 <div className="text-5xl font-bold text-purple-500 mb-4">IEEE</div>
                 <h3 className="text-xl font-semibold mb-2 text-foreground">Published Research</h3>
-                <p className="text-foreground/80">Accepted at 2023 IEEE Conference for Convergence in Technology (I2CT)</p>
+                <p className="text-foreground/80">Published at 2023 IEEE 8th International Conference for Convergence in Technology (I2CT)</p>
               </div>
             </div>
 
@@ -372,7 +372,7 @@ export default function CaseStudyIoT() {
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Research presented at IEEE I2CT 2023 Conference</span>
+                    <span className="text-foreground">Research published at IEEE I2CT 2023 Conference with IBM funding support</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
@@ -419,7 +419,7 @@ export default function CaseStudyIoT() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">IoT Sensors</h4>
-                      <p className="text-foreground/80">Multiple sensors for electricity, water quality (pH, turbidity, temperature), and air quality (NOx, NH3, CO2)</p>
+                      <p className="text-foreground/80">ACS712 (electricity), pH sensors, DHT11 (temperature/humidity), MQ135 (air quality), turbidity sensors measuring PPM and NTU values</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -428,7 +428,7 @@ export default function CaseStudyIoT() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Machine Learning</h4>
-                      <p className="text-foreground/80">Predictive models for resource consumption forecasting and anomaly detection</p>
+                      <p className="text-foreground/80">Comparative analysis of Random Forest, LSTM, and ARIMA models for environmental quality prediction and resource consumption forecasting</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -451,8 +451,8 @@ export default function CaseStudyIoT() {
                       <Cpu className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Arduino & Raspberry Pi</h4>
-                      <p className="text-foreground/80">Hardware platforms for sensor integration and data collection</p>
+                      <h4 className="font-semibold text-foreground mb-1">Arduino Uno & NodeMCU ESP8266</h4>
+                      <p className="text-foreground/80">Core microcontrollers for sensor data processing and wireless transmission</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -460,8 +460,8 @@ export default function CaseStudyIoT() {
                       <Wifi className="w-4 h-4 text-secondary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">WiFi & IoT Protocols</h4>
-                      <p className="text-foreground/80">Wireless communication for real-time data transmission</p>
+                      <h4 className="font-semibold text-foreground mb-1">Google Sheets API & Adafruit IO</h4>
+                      <p className="text-foreground/80">Cloud data storage and real-time dashboard visualization</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -469,8 +469,8 @@ export default function CaseStudyIoT() {
                       <BarChart3 className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Python & TensorFlow</h4>
-                      <p className="text-foreground/80">Machine learning model development and training</p>
+                      <h4 className="font-semibold text-foreground mb-1">Python & Scikit-learn</h4>
+                      <p className="text-foreground/80">Machine learning with Pandas for data processing and Random Forest implementation</p>
                     </div>
                   </div>
                 </div>
