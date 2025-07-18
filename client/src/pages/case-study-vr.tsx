@@ -64,12 +64,12 @@ export default function CaseStudyVR() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative rounded-2xl overflow-hidden mb-8">
-            <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-8 border border-orange-500/20 relative overflow-hidden">
+          <div className="relative rounded-2xl overflow-hidden mb-8 max-w-2xl mx-auto">
+            <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-6 border border-orange-500/20 relative overflow-hidden">
               <img 
                 src={hallwayGif} 
                 alt="Hallway dimensions showing the 3.2 feet width and 5 feet length constraints used for the VR game design"
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-auto object-cover rounded-lg shadow-lg max-h-96"
               />
               {/* VR/Gaming particles */}
               <div className="absolute inset-0 opacity-20">
