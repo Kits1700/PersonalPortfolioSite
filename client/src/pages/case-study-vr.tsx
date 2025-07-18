@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import gamePosterImage from "@assets/Group 12_1752654046089.png";
 import hallwayImage from "@assets/Group 9_1752654264666.png";
+import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -66,8 +67,8 @@ export default function CaseStudyVR() {
           <div className="relative rounded-2xl overflow-hidden mb-8">
             <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-8 border border-orange-500/20 relative overflow-hidden">
               <img 
-                src={gamePosterImage} 
-                alt="Survival of the Fittest - Mixed Reality Exergame showing a silhouette of a person in action pose against an apocalyptic cityscape"
+                src={hallwayGif} 
+                alt="Hallway dimensions showing the 3.2 feet width and 5 feet length constraints used for the VR game design"
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
               />
               {/* VR/Gaming particles */}
