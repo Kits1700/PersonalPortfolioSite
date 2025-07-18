@@ -1,545 +1,432 @@
-import { ArrowLeft, ExternalLink, Github, Calendar, Users, Target, Wifi, Shield, BarChart3, Cpu } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle, Zap, Droplets, Wind } from "lucide-react";
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+// IoT images temporarily disabled due to import path issues
+// import iotDashboardImage from "@assets/Screenshot 2025-07-10 at 3.03.56 PM_1752140043714.png";
+// import iotSystemImage from "@assets/Screenshot 2025-07-10 at 5.03.22 PM_1752147209652.png";
 
 export default function CaseStudyIoT() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-            Back to Portfolio
-          </Link>
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="max-w-4xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/">
+              <button className="flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors">
+                <ArrowLeft className="w-5 h-5" />
+                Back to Portfolio
+              </button>
+            </Link>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={scrollToTop}
+                className="p-2 rounded-lg hover:bg-card transition-colors"
+              >
+                <ArrowRight className="w-5 h-5 rotate-[-90deg]" />
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-background to-accent/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            {/* Project Title & Subtitle */}
-            <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
-                Smart Environmental Monitoring System
-              </h1>
-              <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-4xl mx-auto">
-                An integrated IoT and Machine Learning solution that provides real-time environmental monitoring and predictive analytics for sustainable resource management.
-              </p>
-            </div>
-
-            {/* Project Meta Information */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
-                <h3 className="font-semibold text-foreground mb-2">Project Type</h3>
-                <p className="text-foreground/80">IoT System & Research</p>
-              </div>
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
-                <h3 className="font-semibold text-foreground mb-2">Duration</h3>
-                <p className="text-foreground/80">6 months (2023)</p>
-              </div>
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
-                <h3 className="font-semibold text-foreground mb-2">Role</h3>
-                <p className="text-foreground/80">IoT Developer & ML Researcher</p>
-              </div>
-              <div className="bg-card/50 rounded-lg p-4 border border-border/30">
-                <h3 className="font-semibold text-foreground mb-2">Status</h3>
-                <p className="text-foreground/80">Published IEEE Conference</p>
-              </div>
-            </div>
-
-            {/* Key Results - Lead with Impact */}
-            <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 rounded-3xl p-8 mb-12 border border-green-500/20">
-              <h2 className="text-2xl font-bold mb-4 text-foreground">Key Results</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-green-500 mb-2">15.53</div>
-                  <p className="text-foreground/80">MAE score - Random Forest outperformed LSTM (41.46) and ARIMA (38.34)</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-teal-500 mb-2">0.5s</div>
-                  <p className="text-foreground/80">response time from sensor to dashboard display</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-500 mb-2">400+</div>
-                  <p className="text-foreground/80">training dataset entries for ML model validation</p>
-                </div>
-              </div>
-            </div>
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        {/* Hero Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+              Smart Resource Monitoring
+            </h1>
+            <p className="text-xl text-foreground/80 mb-8">
+              Revolutionizing Sustainability Through IoT and Machine Learning
+            </p>
             
-            {/* Hero Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 via-card/30 to-background/80 rounded-3xl p-8 border border-border/30 backdrop-blur-sm max-w-4xl mx-auto shadow-2xl">
-              <div className="bg-gradient-to-br from-green-500/30 via-teal-500/20 to-emerald-500/30 rounded-2xl h-64 flex items-center justify-center shadow-lg relative overflow-hidden">
-                {/* IoT sensor network pattern */}
-                <div className="absolute inset-0 opacity-15">
-                  <div className="absolute top-6 left-6 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <div className="absolute top-6 right-6 w-3 h-3 bg-teal-400 rounded-full animate-pulse delay-75"></div>
-                  <div className="absolute bottom-6 left-6 w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-150"></div>
-                  <div className="absolute bottom-6 right-6 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-225"></div>
-                  <div className="absolute top-12 left-1/2 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-300"></div>
-                  <div className="absolute bottom-12 left-1/2 w-2 h-2 bg-emerald-400 rounded-full animate-pulse delay-375"></div>
-                  {/* Connection lines */}
-                  <div className="absolute top-8 left-8 w-8 h-0.5 bg-green-400/30 rotate-45"></div>
-                  <div className="absolute top-8 right-16 w-8 h-0.5 bg-teal-400/30 rotate-[-45deg]"></div>
-                  <div className="absolute bottom-8 left-16 w-8 h-0.5 bg-emerald-400/30 rotate-[-45deg]"></div>
-                  <div className="absolute bottom-8 right-8 w-8 h-0.5 bg-green-400/30 rotate-45"></div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg">Smart Environmental Monitoring Dashboard</p>
-                  <p className="text-foreground/70 text-sm">Screenshot of real-time IoT dashboard showing sensor data</p>
-                </div>
+            {/* Project Details */}
+            <div className="flex flex-wrap justify-center gap-6 mb-8">
+              <div className="flex items-center gap-2 text-sm text-foreground">
+                <Calendar className="w-4 h-4" />
+                <span>28 Days Testing</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-foreground">
+                <Users className="w-4 h-4" />
+                <span>Lead Developer & Researcher</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-foreground">
+                <Wrench className="w-4 h-4" />
+                <span>IoT, ML, Arduino, NodeMCU</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* The Challenge */}
-      <section className="py-16 bg-gradient-to-b from-background to-card/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-12">
-              <h2 className="text-4xl font-bold mb-6 text-foreground">The Challenge</h2>
-              <p className="text-xl text-foreground/80 leading-relaxed mb-8">
-                Rapid urbanization and industrialization have created unprecedented environmental challenges. Traditional monitoring systems lack real-time capabilities and predictive insights needed for sustainable resource management.
-              </p>
-            </div>
-
-            {/* Problem Areas */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-red-500/10 to-red-600/5 rounded-2xl p-8 border border-red-500/20">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Environmental Problems</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Air quality deteriorating in urban areas</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Water contamination affecting public health</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Excessive energy consumption and waste</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Lack of real-time monitoring systems</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-2xl p-8 border border-blue-500/20">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Technical Gaps</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Limited integration between different monitoring systems</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Absence of predictive analytics for resource planning</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">High cost and complexity of existing solutions</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Lack of user-friendly interfaces for decision-making</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Research Question */}
-            <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 rounded-2xl p-8 border border-green-500/20">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Research Question</h3>
-              <p className="text-lg text-foreground leading-relaxed">
-                "How can we develop an integrated IoT and Machine Learning system that provides real-time environmental monitoring and predictive analytics to enable sustainable resource management in urban environments?"
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research & Discovery */}
-      <section className="py-16 bg-gradient-to-b from-card/5 to-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-foreground">Research & Discovery</h2>
-            
-            {/* Research Methods */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 rounded-2xl p-6 border border-green-500/20">
-                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="w-6 h-6 text-green-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Market Analysis</h3>
-                <p className="text-foreground/80">Analyzed existing environmental monitoring solutions and identified gaps in current market offerings</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-teal-500/10 to-teal-600/5 rounded-2xl p-6 border border-teal-500/20">
-                <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center mb-4">
-                  <Wifi className="w-6 h-6 text-teal-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Technical Research</h3>
-                <p className="text-foreground/80">Evaluated IoT sensor technologies, ML algorithms, and cloud platforms for optimal system architecture</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 rounded-2xl p-6 border border-emerald-500/20">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="w-6 h-6 text-emerald-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">Regulatory Study</h3>
-                <p className="text-foreground/80">Researched environmental regulations and compliance requirements for monitoring systems</p>
-              </div>
-            </div>
-
-            {/* Key Insights */}
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Key Research Insights</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Current systems lack integrated multi-parameter monitoring</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Machine learning can improve prediction accuracy by 40-60%</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">IoT sensors provide cost-effective real-time monitoring</span>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Cloud computing enables scalable data processing</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">User-friendly dashboards improve decision-making</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Integration with existing infrastructure is crucial</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Design Process */}
-      <section className="py-16 bg-gradient-to-b from-background to-card/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-foreground">Design Process</h2>
-            
-            {/* Solution Architecture */}
-            <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 rounded-2xl p-8 mb-12 border border-green-500/20">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">System Architecture</h3>
-              <p className="text-lg text-foreground leading-relaxed mb-6">
-                Designed a comprehensive three-tier architecture integrating IoT sensors, cloud computing, and machine learning for real-time environmental monitoring and predictive analytics.
-              </p>
-              
-              {/* Architecture Components */}
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-background/50 rounded-lg p-6 border border-border/30">
-                  <h4 className="font-bold text-foreground mb-3">Sensor Layer</h4>
-                  <p className="text-foreground/80 text-sm">IoT sensors for electricity, water quality, and air quality monitoring</p>
-                </div>
-                <div className="bg-background/50 rounded-lg p-6 border border-border/30">
-                  <h4 className="font-bold text-foreground mb-3">Processing Layer</h4>
-                  <p className="text-foreground/80 text-sm">Cloud-based data processing and machine learning analytics</p>
-                </div>
-                <div className="bg-background/50 rounded-lg p-6 border border-border/30">
-                  <h4 className="font-bold text-foreground mb-3">Application Layer</h4>
-                  <p className="text-foreground/80 text-sm">User-friendly dashboard and mobile applications</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Implementation Process */}
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Implementation Process</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Hardware selection and sensor calibration</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Cloud infrastructure setup and API development</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Machine learning model training and optimization</span>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Dashboard development and user interface design</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">System integration and testing</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Performance evaluation and optimization</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results & Impact */}
-      <section className="py-16 bg-gradient-to-b from-background to-card/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-foreground">Results & Impact</h2>
-            
-            {/* Key Metrics */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 rounded-2xl p-8 border border-green-500/20 text-center">
-                <div className="text-5xl font-bold text-green-500 mb-4">92%</div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Prediction Accuracy</h3>
-                <p className="text-foreground/80">Machine learning models achieved 92% accuracy in resource consumption forecasting</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 rounded-2xl p-8 border border-blue-500/20 text-center">
-                <div className="text-5xl font-bold text-blue-500 mb-4">35%</div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Energy Savings</h3>
-                <p className="text-foreground/80">Reduction in energy waste through predictive optimization and real-time monitoring</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 rounded-2xl p-8 border border-purple-500/20 text-center">
-                <div className="text-5xl font-bold text-purple-500 mb-4">IEEE</div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Published Research</h3>
-                <p className="text-foreground/80">Published at 2023 IEEE 8th International Conference for Convergence in Technology (I2CT)</p>
-                <div className="mt-4">
+          {/* Hero Image */}
+          <div className="relative rounded-2xl overflow-hidden mb-8">
+            <div className="bg-gradient-to-br from-green-500/40 via-blue-500/30 to-teal-500/40 rounded-2xl p-8 border border-green-500/20 relative overflow-hidden">
+              <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
+                <div className="text-center">
                   <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground/70 text-sm">PDF screenshot of IEEE conference publication with IBM funding acknowledgment</p>
+                  <p className="text-foreground font-semibold text-lg mb-2">IoT Dashboard</p>
+                  <p className="text-foreground/70 text-sm">Real-time monitoring interface showing electricity, water, and air quality metrics</p>
                 </div>
               </div>
-            </div>
-
-            {/* Key Findings */}
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12 border border-primary/20">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Key Findings</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Integrated IoT sensing significantly improves environmental monitoring precision</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Machine learning algorithms effectively predict resource consumption patterns</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Real-time data visualization improves decision-making for resource management</span>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Cloud-based processing enables scalable environmental monitoring</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Multi-parameter monitoring provides comprehensive environmental insights</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Cost-effective solution compared to traditional monitoring systems</span>
-                  </div>
-                </div>
+              {/* IoT particles */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-8 left-8 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-8 right-8 w-3 h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
+                <div className="absolute top-16 right-16 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-500"></div>
               </div>
             </div>
+          </div>
 
-            {/* Academic & Industry Impact */}
-            <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Academic & Industry Impact</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Research published at IEEE I2CT 2023 Conference with IBM funding support</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Framework adopted by smart city initiatives</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Open-source components shared with research community</span>
-                  </div>
+          {/* Hero Image Placeholder */}
+          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+            <div className="text-center">
+              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+              <p className="text-foreground font-semibold text-lg mb-2">Web Dashboard on Mobile</p>
+              <p className="text-foreground/70 text-sm">Web dashboard on smartphone displaying real-time electricity usage, water quality (NTU), and air quality (PPM) metrics</p>
+            </div>
+          </div>
+
+          {/* Quick Stats */}
+          <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="text-center p-4 bg-card/50 rounded-lg">
+              <div className="text-2xl font-bold text-primary mb-2">2.94</div>
+              <div className="text-sm text-foreground">RMSE Accuracy</div>
+            </div>
+            <div className="text-center p-4 bg-card/50 rounded-lg">
+              <div className="text-2xl font-bold text-secondary mb-2">0.58%</div>
+              <div className="text-sm text-foreground">Electricity Error</div>
+            </div>
+            <div className="text-center p-4 bg-card/50 rounded-lg">
+              <div className="text-2xl font-bold text-accent mb-2">~0.5s</div>
+              <div className="text-sm text-foreground">Update Delay</div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-foreground leading-relaxed">
+              As urbanization strains resources and degrades air and water quality, this IoT and machine learning system uses affordable sensors and a Random Forest Regressor to deliver real-time insights and predictive analytics, empowering sustainable resource management.
+            </p>
+          </div>
+        </div>
+
+        {/* My Role Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">My Role</h2>
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 border border-primary/20">
+            <p className="text-foreground leading-relaxed mb-6">
+              As <strong>lead developer and researcher</strong>, I designed the IoT architecture, integrated sensors with Arduino Uno and NodeMCU, and built the machine learning pipeline for forecasting. I conducted comparative model analysis (LSTM, ARIMA, Random Forest), developed the web application's backend, and ensured seamless data flow.
+            </p>
+            <p className="text-foreground leading-relaxed">
+              Collaborating with <strong>Dr. Anala M R</strong> under an IBM Shared University Research grant, I led the project from ideation to deployment, presenting our findings at the 2023 IEEE 8th International Conference for Convergence in Technology.
+            </p>
+          </div>
+        </section>
+
+        {/* The Challenge Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">The Challenge</h2>
+          <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl p-8 mb-8 border border-orange-500/20">
+            <p className="text-foreground leading-relaxed mb-6">
+              Manual resource monitoring is costly, error-prone, and lacks predictive capabilities, leaving users unaware of overconsumption or quality issues. The goal was to create a system that:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Monitors electricity, water, and air quality affordably and accurately</span>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">System architecture referenced in follow-up studies</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Collaboration opportunities with environmental agencies</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-foreground">Technical expertise gained in IoT and ML integration</span>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Predicts future trends for proactive management</span>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Provides intuitive, real-time insights via mobile and web interfaces</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Overcomes the high costs of traditional smart meters</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Technical Details */}
-      <section className="py-16 bg-gradient-to-b from-card/5 to-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-foreground">Technical Implementation</h2>
+        {/* The Design Process Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">The Design Process</h2>
+          
+          {/* Research & Insights */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Research & Insights</h3>
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
+              <p className="text-foreground leading-relaxed mb-6">
+                We analyzed Automated Meter Reading (AMR) and IoT-based systems, identifying gaps in multi-resource monitoring and user accessibility. Affordable sensors and cloud-based analytics offered opportunities to address health risks and economic losses from poor resource quality.
+              </p>
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <p className="text-foreground/80 text-sm">
+                  <strong>Key Insight:</strong> Our research aligned with global sustainability goals like the EU's energy efficiency plans, highlighting the need for accessible monitoring solutions that combine affordability with accuracy.
+                </p>
+              </div>
+            </div>
             
-            {/* ML Performance Results Image Placeholder */}
+            {/* Research Image Placeholder */}
             <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
               <div className="text-center">
                 <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">ML Model Performance Comparison Charts</p>
-                <p className="text-foreground/70 text-sm">Bar charts and scatter plots showing Random Forest vs LSTM vs ARIMA performance metrics (MAE, RMSE, MSE)</p>
+                <p className="text-foreground font-semibold text-lg mb-2">IoT System Architecture</p>
+                <p className="text-foreground/70 text-sm">Diagram showing sensors, NodeMCU, Google Sheets, and web dashboard integration</p>
               </div>
             </div>
+          </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground">System Components</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center mt-0.5">
-                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">IoT Sensors</h4>
-                      <p className="text-foreground/80">ACS712 (electricity), pH sensors, DHT11 (temperature/humidity), MQ135 (air quality), turbidity sensors measuring PPM and NTU values</p>
-                    </div>
+          {/* System Design */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">System Design</h3>
+            <div className="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-2xl p-8 mb-8 border border-secondary/20">
+              <p className="text-foreground leading-relaxed mb-6">
+                The system integrates comprehensive IoT framework and machine learning capabilities:
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-card/50 rounded-lg p-6 border border-border">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Zap className="w-6 h-6 text-yellow-500" />
+                    <h4 className="text-lg font-semibold text-foreground">IoT Framework</h4>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-teal-500/20 rounded-full flex items-center justify-center mt-0.5">
-                      <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Machine Learning</h4>
-                      <p className="text-foreground/80">Comparative analysis of Random Forest, LSTM, and ARIMA models for environmental quality prediction and resource consumption forecasting</p>
-                    </div>
+                  <p className="text-foreground/80 text-sm">ACS712 (electricity), MQ135 (air quality), pH, turbidity, and DHT11 sensors connect to Arduino Uno and NodeMCU, sending data to Google Sheets and Adafruit dashboards via APIs.</p>
+                </div>
+                <div className="bg-card/50 rounded-lg p-6 border border-border">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Target className="w-6 h-6 text-blue-500" />
+                    <h4 className="text-lg font-semibold text-foreground">Machine Learning</h4>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-emerald-500/20 rounded-full flex items-center justify-center mt-0.5">
-                      <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Cloud Infrastructure</h4>
-                      <p className="text-foreground/80">Scalable data processing and storage with real-time analytics</p>
-                    </div>
-                  </div>
+                  <p className="text-foreground/80 text-sm">Random Forest Regressor predicts air and water quality (PPM, NTU) for 7 days, trained on a dynamic dataset of ~400 entries with 2.94 RMSE accuracy.</p>
                 </div>
               </div>
-              
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border space-y-6">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground">Key Technologies</h3>
+            </div>
+            
+            {/* System Design Image Placeholder */}
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+              <div className="text-center">
+                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                <p className="text-foreground font-semibold text-lg mb-2">Hardware Setup</p>
+                <p className="text-foreground/70 text-sm">Arduino Uno, sensors, and NodeMCU in compact circuit configuration</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Implementation */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Implementation</h3>
+            <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl p-8 mb-8 border border-accent/20">
+              <p className="text-foreground leading-relaxed mb-6">
+                We deployed a comprehensive solution combining hardware, data processing, and user interfaces:
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-0.5">
-                      <Cpu className="w-4 h-4 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Arduino Uno & NodeMCU ESP8266</h4>
-                      <p className="text-foreground/80">Core microcontrollers for sensor data processing and wireless transmission</p>
-                    </div>
+                  <div className="bg-card/50 rounded-lg p-4 border border-border">
+                    <h4 className="text-lg font-semibold mb-2 text-foreground">Hardware</h4>
+                    <p className="text-foreground/80 text-sm">Cost-effective sensors and NodeMCU for real-time data collection</p>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center mt-0.5">
-                      <Wifi className="w-4 h-4 text-secondary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Google Sheets API & Adafruit IO</h4>
-                      <p className="text-foreground/80">Cloud data storage and real-time dashboard visualization</p>
-                    </div>
+                  <div className="bg-card/50 rounded-lg p-4 border border-border">
+                    <h4 className="text-lg font-semibold mb-2 text-foreground">Data Pipeline</h4>
+                    <p className="text-foreground/80 text-sm">Sensor data cleaned (removing NaN, converting to float/datetime) and stored securely via Google API</p>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mt-0.5">
-                      <BarChart3 className="w-4 h-4 text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Python & Scikit-learn</h4>
-                      <p className="text-foreground/80">Machine learning with Pandas for data processing and Random Forest implementation</p>
-                    </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-card/50 rounded-lg p-4 border border-border">
+                    <h4 className="text-lg font-semibold mb-2 text-foreground">Predictive Model</h4>
+                    <p className="text-foreground/80 text-sm">Random Forest outperformed LSTM (48.304 RMSE) and ARIMA (97.49 RMSE) with 2.94 RMSE</p>
+                  </div>
+                  <div className="bg-card/50 rounded-lg p-4 border border-border">
+                    <h4 className="text-lg font-semibold mb-2 text-foreground">Interface</h4>
+                    <p className="text-foreground/80 text-sm">Web dashboard displays real-time and predicted values with Adafruit dashboard for electricity</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            {/* Google Sheets & Adafruit Dashboard Screenshots */}
-            <div className="grid md:grid-cols-2 gap-8 mt-8">
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">Google Sheets Dataset</p>
-                  <p className="text-foreground/70 text-sm">Screenshot of Google Sheets showing real-time sensor data collection with 400+ entries</p>
-                </div>
-              </div>
-              
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">Adafruit IO Dashboard</p>
-                  <p className="text-foreground/70 text-sm">Real-time electricity monitoring dashboard with live sensor feeds and graphs</p>
-                </div>
+            {/* Implementation Image Placeholder */}
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+              <div className="text-center">
+                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                <p className="text-foreground font-semibold text-lg mb-2">Web Dashboard Screenshot</p>
+                <p className="text-foreground/70 text-sm">Line graph showing predicted vs. actual air quality values</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-border/50">
-        <div className="container mx-auto px-6 text-center">
-          <div className="flex justify-center gap-6">
-            <Link 
-              href="/" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Portfolio
-            </Link>
-            <a 
-              href="#" 
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:bg-card/50 transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-              View IEEE Paper
-            </a>
-            <a 
-              href="#" 
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:bg-card/50 transition-colors"
-            >
-              <Github className="w-4 h-4" />
-              GitHub Repository
-            </a>
+        {/* Validation Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Validation</h2>
+          
+          <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl p-8 mb-8 border border-green-500/20">
+            <div className="text-center mb-8">
+              <div className="text-6xl font-bold text-green-500 mb-4">28 Days</div>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Residential Testing Period</h3>
+              <p className="text-foreground/80">Comprehensive validation in real-world conditions</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-card/50 rounded-lg p-6 border border-border text-center">
+                <div className="text-3xl font-bold text-green-500 mb-2">~0.5s</div>
+                <h4 className="text-lg font-semibold mb-2 text-foreground">Update Delay</h4>
+                <p className="text-foreground/80 text-sm">Near-instantaneous updates for real-time monitoring</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border text-center">
+                <div className="text-3xl font-bold text-blue-500 mb-2">2.94</div>
+                <h4 className="text-lg font-semibold mb-2 text-foreground">RMSE Accuracy</h4>
+                <p className="text-foreground/80 text-sm">Random Forest model performance</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border text-center">
+                <div className="text-3xl font-bold text-purple-500 mb-2">0.58%</div>
+                <h4 className="text-lg font-semibold mb-2 text-foreground">Electricity Error</h4>
+                <p className="text-foreground/80 text-sm">High accuracy in electricity forecasting</p>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-background/50 rounded-lg">
+              <p className="text-foreground/80 text-sm">
+                <strong>Key Achievement:</strong> Users received instant alerts for threshold breaches, significantly enhancing resource control and enabling proactive management.
+              </p>
+            </div>
+          </div>
+          
+          {/* Validation Image Placeholder */}
+          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+            <div className="text-center">
+              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+              <p className="text-foreground font-semibold text-lg mb-2">Model Comparison</p>
+              <p className="text-foreground/70 text-sm">Scatter plot comparing Random Forest's predicted (green) vs. expected (red) air quality values</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Impact Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Impact</h2>
+          
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8 border border-primary/20">
+            <p className="text-foreground leading-relaxed mb-6">
+              With a <strong>2.94 RMSE for quality predictions</strong> and <strong>0.58% error for electricity</strong>, this system reduces costs, mitigates health risks, and promotes sustainable consumption. Its affordability and scalability make it ideal for homes and businesses, supporting global sustainability initiatives.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <Droplets className="w-12 h-12 text-blue-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Water Quality</h3>
+                <p className="text-foreground/80 text-sm">Real-time monitoring prevents health risks from contaminated water</p>
+              </div>
+              <div className="text-center">
+                <Wind className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Air Quality</h3>
+                <p className="text-foreground/80 text-sm">Predictive analytics enable proactive air quality management</p>
+              </div>
+              <div className="text-center">
+                <Zap className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Energy Efficiency</h3>
+                <p className="text-foreground/80 text-sm">Accurate electricity monitoring reduces consumption costs</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Impact Image Placeholder */}
+          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+            <div className="text-center">
+              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+              <p className="text-foreground font-semibold text-lg mb-2">Model Performance Comparison</p>
+              <p className="text-foreground/70 text-sm">Bar chart comparing RMSE of LSTM, ARIMA, and Random Forest, highlighting Random Forest's superior accuracy</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Learnings */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Key Learnings</h2>
+          
+          <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl p-8 mb-8 border border-accent/20">
+            <h3 className="text-xl font-semibold mb-4 text-foreground">IoT and Machine Learning Synergy</h3>
+            <p className="text-foreground leading-relaxed mb-6">
+              This project highlighted the powerful synergy of IoT and machine learning in solving real-world problems. <strong>Random Forest's robustness with small datasets</strong> was pivotal to our success, demonstrating that sophisticated analytics can work effectively with limited data.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Technical Insights</h4>
+                <p className="text-foreground/80 leading-relaxed">
+                  Random Forest's ensemble approach proved superior to LSTM and ARIMA for time-series prediction with limited data, achieving remarkable accuracy with only ~400 training samples.
+                </p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Design Principles</h4>
+                <p className="text-foreground/80 leading-relaxed">
+                  Affordable design and intuitive interfaces are critical for driving user adoption and sustainable behavior change in resource management systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Conclusion */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-2xl p-8 border border-green-500/20 text-center">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">Smart Today, Sustainable Tomorrow</h2>
+            <p className="text-foreground leading-relaxed text-lg mb-6">
+              The "Smart Electricity, Water, and Air Quality Monitoring System" redefines resource management with precise, accessible insights. By blending affordable hardware, predictive analytics, and user-friendly dashboards, it empowers sustainable living.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-8">
+              Future enhancements could include gas monitoring or smart grid integration, amplifying its global impact and contributing to a more sustainable world.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-500 mb-2">2.94</div>
+                <p className="text-foreground font-medium">RMSE Accuracy</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-500 mb-2">0.58%</div>
+                <p className="text-foreground font-medium">Electricity Error</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-500 mb-2">28</div>
+                <p className="text-foreground font-medium">Days Validated</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final Image Placeholder */}
+        <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+          <div className="text-center">
+            <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+            <p className="text-foreground font-semibold text-lg mb-2">Promotional Image</p>
+            <p className="text-foreground/70 text-sm">Household using the mobile app to monitor resources, with tagline: "Smart today, sustainable tomorrow."</p>
           </div>
         </div>
-      </footer>
+
+        {/* Navigation */}
+        <div className="flex justify-between items-center py-8 border-t border-border/30">
+          <Link href="/case-study-llm">
+            <Button variant="outline" className="flex items-center gap-2">
+              <ArrowLeft className="w-4 h-4" />
+              Previous: LLM Case Study
+            </Button>
+          </Link>
+          <Link href="/case-study-vr">
+            <Button variant="outline" className="flex items-center gap-2">
+              Next: VR Case Study
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
+        </div>
+      </main>
     </div>
   );
 }
