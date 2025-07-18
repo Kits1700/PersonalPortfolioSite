@@ -64,18 +64,18 @@ export default function CaseStudyVR() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative rounded-2xl overflow-hidden mb-8 max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-6 border border-orange-500/20 relative overflow-hidden">
+          <div className="relative rounded-2xl overflow-hidden mb-8 max-w-lg mx-auto">
+            <div className="bg-gradient-to-br from-orange-500/40 via-red-500/30 to-amber-500/40 rounded-2xl p-4 border border-orange-500/20 relative overflow-hidden">
               <img 
                 src={hallwayGif} 
                 alt="Hallway dimensions showing the 3.2 feet width and 5 feet length constraints used for the VR game design"
-                className="w-full h-auto object-cover rounded-lg shadow-lg max-h-96"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
               />
               {/* VR/Gaming particles */}
               <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-8 left-8 w-4 h-4 bg-orange-400 rounded-full animate-bounce"></div>
-                <div className="absolute bottom-8 right-8 w-3 h-3 bg-red-400 rounded-full animate-bounce delay-300"></div>
-                <div className="absolute top-16 right-16 w-2 h-2 bg-amber-400 rounded-full animate-bounce delay-500"></div>
+                <div className="absolute top-6 left-6 w-3 h-3 bg-orange-400 rounded-full animate-bounce"></div>
+                <div className="absolute bottom-6 right-6 w-2 h-2 bg-red-400 rounded-full animate-bounce delay-300"></div>
+                <div className="absolute top-12 right-12 w-2 h-2 bg-amber-400 rounded-full animate-bounce delay-500"></div>
               </div>
             </div>
           </div>
