@@ -1,0 +1,143 @@
+Encouraging Thought Before Completion: Redefining AI Interaction
+
+Introduction
+
+As large language models (LLMs) like ChatGPT dominate academic and professional workflows, overreliance risks undermining critical thinking. "Encouraging Thought Before Completion," an HCI project, introduces selective friction—task-specific interface barriers—to promote reflective engagement with AI outputs. Built using Figma, Replit, and the GPT-4 API, this web application requires users to rank abstracts or generate counterarguments before accessing AI content, fostering deeper thought in tasks like literature reviews and argument brainstorming.
+
+[Image Placeholder: Hero image of the web application’s home screen, showing a clean, intuitive interface with a “Start Task” button.]
+
+My Role
+
+As lead researcher and UX designer, I conceptualized the selective friction approach, developed the web application, and designed a mixed-methods user study. I crafted task protocols, integrated the GPT-4 API, and am currently conducting data collection with 25 participants. My work ensures the platform balances usability and cognitive engagement, with analysis pending to validate friction’s impact.
+
+The Challenge
+
+LLMs streamline tasks but often lead to uncritical acceptance of outputs, reducing thoughtful engagement. The challenge was to:
+
+
+
+
+
+Design task-specific frictions that enhance critical thinking without eroding trust.
+
+
+
+Create intuitive interfaces for literature reviews and argument brainstorming.
+
+
+
+Balance cognitive effort with usability in AI-assisted workflows.
+
+
+
+Validate the approach through a robust user study.
+
+The Design Process
+
+Research & Insights
+
+Literature on cognitive forcing functions showed generic frictions reduce overreliance but increase cognitive load. My approach innovates by embedding task-relevant frictions (e.g., ranking abstracts, formulating counterarguments) to scaffold thinking, tailored to open-ended creative tasks.
+
+[Image Placeholder: Diagram of the selective friction workflow, showing user tasks like abstract ranking before AI output display.]
+
+System Design
+
+I designed a web application using Figma for UX and Replit with the GPT-4 API. It supports two conditions:
+
+
+
+
+
+No-Friction (Control): Immediate AI assistance.
+
+
+
+Friction (Experimental): Users complete preparatory tasks before AI output is revealed.
+
+A pilot study with two participants validated usability and data logging.
+
+[Image Placeholder: Screenshot of the onboarding screen, showing informed consent and task instructions.]
+
+Implementation
+
+The app includes key screens:
+
+
+
+
+
+Onboarding: Guides users through consent and task setup.
+
+
+
+Literature Review Task: Users rank abstracts before AI-generated review.
+
+
+
+Argument Brainstorming Task: Users input counterarguments before AI suggestions.
+
+
+
+Results Screen: Displays AI output post-friction tasks.
+
+[Image Placeholder: Screenshot of the literature review task screen, showing abstract ranking interface.]
+
+[Image Placeholder: Screenshot of the argument brainstorming task screen, showing counterargument input field.]
+
+[Image Placeholder: Screenshot of the results screen, displaying AI-generated output after friction tasks.]
+
+User Study
+
+The ongoing study involves 25 LLM-experienced participants completing four tasks in a counterbalanced within-subjects design. Data collection includes:
+
+
+
+
+
+Behavioral Logs: Time spent on friction tasks.
+
+
+
+Questionnaires: Trust (TPA scale), cognitive effort (NASA-TLX), and custom overreliance metrics.
+
+
+
+Interviews: Qualitative insights on user experiences.
+
+[Image Placeholder: Photo of a user testing session, showing a participant interacting with the app on a laptop.]
+
+Analysis Plan
+
+Post-data collection, I’ll analyze:
+
+
+
+
+
+Quantitative: Repeated measures ANOVA for friction vs. no-friction conditions.
+
+
+
+Qualitative: Thematic analysis of interviews using Braun & Clarke’s framework.
+
+
+
+Triangulation: Combining metrics and themes to assess friction’s impact.
+
+[Image Placeholder: Mock-up chart of anticipated ANOVA results, comparing overreliance metrics across conditions.]
+
+Anticipated Impact
+
+This project hypothesizes that friction reduces overreliance, enhances critical engagement, and maintains trust (H1–H3). Pilot feedback suggests friction encourages reflection without compromising usability. If validated, this approach could redefine AI-assisted interfaces, promoting responsible collaboration in education and beyond.
+
+[Image Placeholder: Graph of preliminary pilot data, showing increased time spent on critical tasks in the friction condition.]
+
+Key Learnings
+
+Designing task-specific frictions highlighted the balance between usability and cognitive engagement. Pilot testing emphasized clear instructions to prevent frustration. This project underscores HCI’s role in ensuring AI tools amplify human agency, not replace it.
+
+Conclusion
+
+"Encouraging Thought Before Completion" pioneers selective friction to enhance human-AI collaboration. As data collection continues, this project promises to shape UX design for AI tools, with applications in education and professional workflows. Future work could explore adaptive frictions for diverse user expertise.
+
+[Image Placeholder: Promotional image of the app in use, with the tagline: “Think deeper, create smarter.”]
