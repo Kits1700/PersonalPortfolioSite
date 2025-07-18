@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import gamePosterImage from "@assets/Group 12_1752654046089.png";
 import hallwayImage from "@assets/Group 9_1752654264666.png";
 import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
+// Images temporarily disabled due to import path issues
 // import virtualEnvironmentImage from "@assets/Screenshot 2025-04-19 at 9.46.24 PM_1752845061684.png";
 // import unityEditorImage from "@assets/Screenshot 2025-04-19 at 9.47.01 PM_1752845061684.png";
 
