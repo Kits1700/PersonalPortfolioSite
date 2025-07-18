@@ -1,0 +1,54 @@
+Survival of the Fittest: A Mixed Reality Game Redefining Fitness
+
+Introduction
+Imagine turning a cramped hallway into a post-apocalyptic battleground where every squat and jump propels you through a collapsing city. "Survival of the Fittest" is a Virtual Reality (VR) survival game for the Meta Quest 2, blending intense physical activity with immersive storytelling. Built with Unity 2021.3.45f1 and the XR Interaction Toolkit, this project transforms fitness into an adrenaline-pumping adventure, demonstrating that limitations, such as a 4.61-foot hallway, can inspire groundbreaking design.
+[Image Placeholder: Hero image of the game’s post-apocalyptic city, with a player mid-squat in the virtual hallway, overlaid with the tagline: “Built for a hallway. Designed for survival.”]
+
+My Role
+As a lead designer and developer, I drove ideation, prototyped gameplay mechanics, and conducted user testing. I crafted physical-to-virtual interactions (e.g., squats advancing 1.5m in-game), integrated narrative elements, and refined the experience based on tester insights. Collaborating with the team, I ensured the game’s mechanics and story thrived within the hallway’s spatial constraints.
+The Challenge
+Fitness routines often feel like a chore, and VR games can falter due to cybersickness, unclear mechanics, or lacklustre engagement. Our goal was to create an MR game that:
+Makes exercise feel effortless through immersive gameplay.
+Fits seamlessly in a confined space, such as a hallway.
+Avoids VR pitfalls such as cybersickness or feature creep.
+Delivers a gripping narrative to keep players hooked.
+The Design Process
+Research & Discovery
+We analysed VR trends and exergaming principles to inform our design:
+Spatial Constraints: Precise measurements (11 ft, 4.25 ft, 3.2 ft) shaped a virtual environment tailored to a hallway (Page 41).
+Risk Assessment: Identified challenges like cybersickness, navigation confusion, and audio clarity in noisy settings (Page 8).
+Core Mechanics: Focused on Virtual Reality, Strong Narrative, Compelling Audio, Exergaming, and Time Pressure to drive engagement (Page 6).
+[Image Placeholder: Diagram illustrating the hallway’s dimensions mapped to the virtual environment, showing spatial design considerations.]
+
+Ideation
+We brainstormed mechanics to merge physicality and storytelling:
+Player Actions: Jumping jacks (0.8m forward), squats (1.5m forward), and shadow boxing (punching through walls) tied physical effort to in-game progress (Page 12).
+Narrative Hook: A collapsing city scenario urged players to “move fast to survive,” creating urgency (Page 9).
+Immersion: Mobile soundtracks, NPC avatars, and standing gameplay enhanced the experience (Page 6).
+[Image Placeholder: Concept art of the post-apocalyptic city with NPC avatars and dynamic audio cues, highlighting the narrative and environment.]
+Prototyping
+Using Unity 2021.3.45f1, Meta Quest 2, XR Interaction Toolkit, Mixamo animations, and Unity Asset Store assets, we built a three-scene prototype:
+Warm-Up: Introduced mechanics like jumping jacks and squats (Page 14).
+Primary Mission: Players navigated a collapsing city through physical actions (Page 19).
+Mission Accomplished: Rewarded success with narrative closure (Page 21). XR Origin Positioning ensured fluid movement in the hallway, with a post-apocalyptic setting that set the stage (Page 24).
+[Image Placeholder: In-game screenshot of the primary mission, showing a player mid-jump in the virtual collapsing city.]
+User Testing
+Two testers evaluated usability and immersion, yielding an average score of 87.5/100 (See Pages 29 and 34). Key feedback:
+Immersion: “I didn’t feel like I was working out—I was so engrossed in the environment” (Page 35).
+Usability: “It was intuitive overall,” though captions were suggested for noisy settings (Page 30).
+Engagement: Physical movements felt motivating, like a “real workout” that didn’t feel tedious (Page 30).
+[Image Placeholder: Photo of a tester wearing the Meta Quest 2, performing a squat in the hallway, with a feedback quote overlaid: “I forgot I was moving that much.”]
+Iterations & Recommendations
+Based on testing, we proposed:
+Enhanced Cues: Add captions for audio instructions to improve clarity in noisy environments (Page 36).
+Motivational Features: Introduce a leaderboard or countdown clock to amplify time pressure (Page 37).
+Refined Mechanics: Finalise punch interactions for smoother gameplay (Page 37).
+Impact
+"Survival of the Fittest" redefines fitness gaming by turning a hallway into a stage for survival. With an 87.5/100 tester rating, the game proved that physical constraints can fuel creativity, delivering an immersive experience where players forget they’re exercising. The project showcases how MR can merge fitness and fun, with potential for multiplayer roles or expanded environments in future iterations.
+[Image Placeholder: Bar chart showing tester scores (87.5/100) for immersion, usability, and engagement, highlighting the game’s success.]
+Key Learnings
+This project taught me that design excels when embracing limitations. The hallway’s 4.61-foot constraint inspired innovative mechanics, proving “design is often born out of limitations, not just possibilities” (Page 42). User testing revealed the power of embodiment, with one tester noting, “It didn’t feel like a boring gym workout” (Page 43). Balancing narrative, mechanics, and VR technology is crucial to creating seamless and engaging experiences.
+Conclusion
+"Survival of the Fittest" transforms cramped spaces into thrilling survival arenas, blending fitness and gaming in a way that feels effortless. Built for a hallway, designed for survival, this MR game is poised to inspire players in any constrained space. I’m excited to explore how this concept can evolve, bringing immersive exergaming to new audiences.
+[Image Placeholder: Final promotional image featuring the game’s tagline: “Built for a hallway. Designed for survival. Coming to a cramped space near you.”]
+
