@@ -80,14 +80,7 @@ export default function CaseStudyVR() {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Hero Image</p>
-              <p className="text-foreground/70 text-sm">Game's post-apocalyptic city with player mid-squat in virtual hallway. Tagline: "Built for a hallway. Designed for survival."</p>
-            </div>
-          </div>
+
 
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 mb-8">
