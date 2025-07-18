@@ -257,12 +257,28 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            {/* Prototyping Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Primary Mission Screenshot</p>
-                <p className="text-foreground/70 text-sm">In-game screenshot showing a player mid-jump in the virtual collapsing city</p>
+            {/* Prototype Videos */}
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+                <div className="text-center">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">Scene 1: Warm-Up</p>
+                  <p className="text-foreground/70 text-sm">Introduction to jumping jacks and squats mechanics</p>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+                <div className="text-center">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">Scene 2: Primary Mission</p>
+                  <p className="text-foreground/70 text-sm">Player navigating collapsing city through physical actions</p>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+                <div className="text-center">
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+                  <p className="text-foreground font-semibold text-lg mb-2">Scene 3: Mission Accomplished</p>
+                  <p className="text-foreground/70 text-sm">Success state with narrative closure and rewards</p>
+                </div>
               </div>
             </div>
           </div>
