@@ -1,0 +1,84 @@
+Survival of the Fittest: A Mixed Reality Exergaming Experience
+Project Overview
+Catchy Intro: Start with a hook. "In a world confined by limited spaces, how can we unlock exhilarating, full-body VR fitness?" or "Transforming the mundane into the menacing: Survival of the Fittest challenges players to outrun the apocalypse from their own hallway."
+[Image: Slide 1 - Project Title & Hero Visual]
+The Concept: Briefly introduce "Survival of the Fittest" as a mixed reality exergaming experience.
+Goal: To provide an intense, immersive workout that leverages small, familiar indoor spaces.
+Core Idea: Players perform real-world exercises (squats, jumping jacks, shadow boxing) that translate into progress through a collapsing, post-apocalyptic virtual world, overlaid onto their physical environment.
+Keywords: Mixed Reality, Exergaming, Spatial Computing, Context-Aware Design, Apocalypse Theme.
+My Role: Clearly state your responsibilities. (e.g., "Sole UX Designer, Interaction Designer, and Developer," or "Led concept development, spatial mapping, interaction design, prototyping, and user testing.")
+Tools Used:
+[Image: Slide 23 - Tools Used infographic]
+Unity 2021.3.45f1, Meta Quest 2, XR Interaction Toolkit, Mixamo, Unity Asset Store.
+The Challenge: Designing for Domestic Constraints
+Problem Statement: How can we create an engaging, active virtual reality experience that is accessible to users with limited physical space at home, transforming common indoor environments (like hallways) into dynamic play areas?
+Initial Observations:
+Highlight the "Narrow Domestic Passage" as your chosen setting, providing its dimensions.
+[Image: Slide 3 - Hallway Dimensions & Setting Rationale]
+Explain why this constraint was embraced: "Ubiquitous, mundane, spatially limited, but easily accessible for home-based design."
+Detail the inherent limitations discovered through observation: "Movement is heavily restricted, no room to turn or sidestep safely, real-world objects limit mobility."
+[Image: Slide 4 - Observational Insights Diagram]
+Key Insight: This project embraced these constraints, recognizing that not all VR experiences require large, open spaces. Instead, design could be born out of limitations, not just possibilities.
+Research & Ideation: Forging the Apocalypse
+Brainstorming Opportunities: Discuss the various opportunities explored to build a rich experience.
+[Image: Slide 6 - Opportunities Cards]
+Addressing Challenges:
+Briefly mention how key challenges (e.g., Cybersickness due to restricted movement, unclear instructions, unintended race) were considered during ideation.
+[Image: Slide 8 - Challenges Cards]
+Self-correction/Proactive Design: "Recognizing the spatial limitations, we consciously steered away from 'roaming VR' to focus on stationary, deliberate actions to mitigate cybersickness."
+Concept Development:
+Mixed Reality Vision: Detail the core mixed reality overlay – the physical hallway transforms into a collapsing city. Emphasize the sense of urgency conveyed by the narrative.
+[Image: Slide 9 - Hallway to Apocalypse Transition]
+Core Mechanics & Interaction Design:
+Explain the why behind the chosen exercises. "To overcome the fixed forward progression, we designed physically demanding actions that directly translated into virtual movement and obstacle interaction."
+Describe each core interaction: Jumping Jacks, Bodyweight Squats, and Shadow Boxing, and what they achieve in the virtual world.
+[Image: Slide 12 - Player Actions Infographic]
+[Image: Slide 10 - Squatting for Movement with In-Game Feedback]
+(Optional: If you have a specific shadow boxing visual, add it here. Slide 10 has a "shadow boxing" image on the right which is perfect).
+Gamification & Feedback: Explain the integration of exergaming elements like real-time coaching cues and post-workout stats to motivate users.
+[Image: Slide 11 - High Knees & Workout Stats Screen]
+Prototyping & Development: Building the Desolate Path
+Technical Implementation:
+Show the Unity development environment and how the post-apocalyptic world was built.
+[Image: Slide 24 - Behind the Scenes: Unity Editor View & Post Apocalyptic Passage Layout]
+Spatial Mapping & XR Origin Positioning: Explain how the physical hallway was mapped to the virtual environment, allowing for context-aware interactions. "The physical space directly informed the virtual constraints and expansions, creating a truly context-aware experience."
+Player Character & Animation: Briefly mention how Mixamo animations were used for player actions and how the animator sequence controlled movement feedback.
+Mixed Reality Integration: Emphasize how the real environment became the stage for performance, enhancing immersion and blending realities.
+[Image: Slide 40 - Context-Aware Design & Spatial Mapping Visual]
+[Image: Slide 41 - Mixed Reality Architecture & Narrative Flow Visual]
+Prototype Walkthrough (Online Portfolio Enhancement - Consider Video Here):
+[Video Snippet / Image Sequence: Scene 1: Warm Up Sequence (Slides 15-18)] - Show initial environment.
+[Video Snippet / Image Sequence: Scene 2: Main Mission Start (Slide 20)] - Show movement initiated by player actions.
+[Video Snippet / Image Sequence: Scene 3: Mission Accomplished (Slide 22)] - Show completion state.
+User Testing & Validation: Surviving the Feedback
+Methodology:
+Participants: (e.g., "Two individuals, representative of casual VR users interested in fitness.")
+Testing Environment: Conducted in a typical domestic hallway.
+Evaluation Tools: System Usability Scale (SUS) questionnaire for quantitative feedback, followed by qualitative interviews (Q&A) for deeper insights.
+[Image: Slide 2 - Research Zombie Placeholder] (Can be removed or adapted as a section break if not using the zombie motif throughout)
+Key Findings:
+Quantitative Feedback (SUS):
+Proudly display the consistent 87.5/100, indicating high usability and user satisfaction.
+[Image: Slide 29 - Tester 1 SUS Questionnaire Results]
+[Image: Slide 34 - Tester 2 SUS Questionnaire Results]
+Qualitative Insights:
+[Image: Slides 27, 28 - Side-by-side footage of Tester 1 in VR and real world]
+[Image: Slides 32, 33 - Side-by-side footage of Tester 2 in VR and real world]
+[Image: Slide 30 - Tester 1 Qualitative Feedback (camera icon beside quotes)]
+[Image: Slide 35 - Tester 2 Qualitative Feedback (camera icon beside quotes)]
+Embodiment & Presence: Users reported strong immersion. Quotes like, "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much." highlight the success of exergaming integration.
+[Image: Slide 39 - Embodiment & Presence Visual with Quote]
+Hallway as an Asset: The constrained space enhanced the experience. "It didn't feel limiting – it was designed to work with the space. It felt intentional, not restrictive." and "It added to the overall excitement. The confined space made it feel suspenseful, like I had to escape quickly." validated the core design choice.
+Clarity & Cues: Generally intuitive, but identified areas for improvement. "Mostly clear, but I think better cues — maybe more voice prompts or visual indicators – would help."
+Engagement: Users found the workout aspect motivating and immersive.
+Design Recommendations: Based on user feedback, outline the next steps to improve the experience.
+[Image: Slide 36 - Design Recommendations: Improve Cue Clarity, Add Subtitle Support]
+[Image: Slide 37 - Design Recommendations: Include Leaderboard/Progress, Finalize Punch Interaction]
+Reflections & Future Directions
+Core Learning: Reiterate your key takeaway: "Design is often born out of limitations, not just possibilities." Explain how this project exemplified that principle by turning a spatial constraint into a core design strength.
+[Image: Slide 42 - What I Learnt: Design from Limitations]
+Impact of Mixed Reality: Discuss the power of MR to blend physical and virtual realities, making experiences more accessible and immersive without the need for dedicated VR spaces.
+Embodiment in Exergaming: Emphasize how the project successfully integrated physical activity in a way that felt like an engaging game, not a chore.
+[Image: Slide 43 - What I Learnt: User Testing Quotes]
+Future Scope: Briefly mention potential expansions (e.g., more exercise types, different themes, multiplayer, adaptive difficulty based on user performance).
+[Image: Slide 44 - Built for a hallway. Designed for survival. (Concluding visual)]

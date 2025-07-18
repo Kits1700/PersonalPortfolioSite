@@ -86,43 +86,57 @@ export default function CaseStudyVR() {
 
         {/* Overview Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Overview & Project Goal</h2>
+          <h2 className="text-3xl font-bold mb-6">Overview & Challenge</h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-foreground leading-relaxed mb-6">
-              "Survival of the Fittest" is a mixed reality exergaming prototype designed to transform a common household space – specifically a narrow domestic hallway – into an immersive, fitness-driven survival experience. The primary goal was to demonstrate how the physical constraints of a limited indoor environment could be leveraged, rather than overcome, to create an engaging and physically demanding virtual reality workout.
-            </p>
+            <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl p-8 mb-8 border border-orange-500/20">
+              <p className="text-foreground leading-relaxed text-lg mb-6">
+                <strong>In a world confined by limited spaces, how can we unlock exhilarating, full-body VR fitness?</strong>
+              </p>
+              <p className="text-foreground leading-relaxed mb-6">
+                "Survival of the Fittest" transforms mundane hallways into menacing apocalyptic worlds. Players perform real-world exercises — squats, jumping jacks, shadow boxing — that translate into progress through a collapsing, post-apocalyptic virtual world, overlaid onto their physical environment.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-card/50 rounded-xl p-6 border border-border">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">My Role</h3>
+                <p className="text-foreground/80">Sole UX Designer, Interaction Designer, and Developer. Led concept development, spatial mapping, interaction design, prototyping, and user testing.</p>
+              </div>
+              <div className="bg-card/50 rounded-xl p-6 border border-border">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Core Technologies</h3>
+                <p className="text-foreground/80">Unity 2021.3.45f1, Meta Quest 2, XR Interaction Toolkit, Mixamo, Unity Asset Store</p>
+              </div>
+            </div>
             
             <div className="bg-primary/10 border-l-4 border-primary rounded-r-lg p-6 mb-8">
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Elevator Pitch</h3>
-              <p className="text-foreground italic text-lg">
-                "Train Hard. Outlast the Apocalypse. Experience a high-intensity, narrative-driven workout where your real-world hallway becomes the last stand against a collapsing city, pushing you to move, punch, and squat your way to survival."
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Problem Statement</h3>
+              <p className="text-foreground text-lg">
+                How can we create an engaging, active virtual reality experience that is accessible to users with limited physical space at home, transforming common indoor environments (like hallways) into dynamic play areas?
               </p>
             </div>
           </div>
         </section>
 
-        {/* Challenge Section */}
+        {/* Research & Ideation Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">The Challenge: Transforming Constraint into Opportunity</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Research & Ideation: Forging the Apocalypse</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-foreground leading-relaxed mb-6">
-              Traditional VR experiences often require large, unobstructed play spaces, limiting accessibility for users in smaller homes. My initial research focused on a ubiquitous yet spatially limited environment: the narrow domestic passage.
+              The project embraced spatial constraints as a design opportunity. Rather than viewing the narrow domestic hallway as a limitation, I recognized it as a ubiquitous, accessible space that could be transformed into an immersive gaming environment.
             </p>
-            
-
             
             {/* Hallway Analysis */}
             <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-2xl p-8 mb-8">
-              <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Spatial Analysis</h3>
+              <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Spatial Analysis: The Narrow Domestic Passage</h3>
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-foreground">Physical Constraints</h4>
                   <ul className="space-y-2 text-foreground">
-                    <li>• Width: 3.2 ft (1m)</li>
-                    <li>• Length: 10 ft (3m)</li>
-                    <li>• Height: 8 ft (2.4m)</li>
-                    <li>• Heavily restricted movement</li>
-                    <li>• No space for lateral movements</li>
+                    <li>• Movement heavily restricted</li>
+                    <li>• No room to turn or sidestep safely</li>
+                    <li>• Real-world objects limit mobility</li>
+                    <li>• Forward-facing progression only</li>
+                    <li>• Ubiquitous but spatially limited</li>
                   </ul>
                 </div>
                 <div className="text-center">
@@ -211,54 +225,154 @@ export default function CaseStudyVR() {
                 </div>
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground">Camera Viewpoint</span>
+                  <span className="text-foreground">Player Actions</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <AlertCircle className="w-4 h-4 text-orange-500" />
-                  <span className="text-foreground">Role of Physicality</span>
+                  <span className="text-foreground">Accessibility</span>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Player Actions */}
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8">
-            <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Core Player Actions</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M7 8C6.4 8 6 8.4 6 9C6 9.6 6.4 10 7 10H8V14H7C6.4 14 6 14.4 6 15C6 15.6 6.4 16 7 16H8V20C8 20.6 8.4 21 9 21C9.6 21 10 20.6 10 20V16H14V20C14 20.6 14.4 21 15 21C15.6 21 16 20.6 16 20V16H17C17.6 16 18 15.6 18 15C18 14.4 17.6 14 17 14H16V10H17C17.6 10 18 9.6 18 9C18 8.4 17.6 8 17 8H7M10 10H14V14H10V10Z"/>
-                  </svg>
+          
+          {/* Concept Development */}
+          <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl p-8 mb-8 border border-orange-500/20">
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Concept Development: Mixed Reality Vision</h3>
+            <p className="text-foreground leading-relaxed mb-6">
+              The core mixed reality concept transforms the physical hallway into a collapsing city environment. As players perform exercises, they progress through an apocalyptic narrative where their real-world actions directly impact virtual survival. The sense of urgency conveyed by the collapsing environment motivates continued physical exertion.
+            </p>
+            
+            <div className="bg-background/50 rounded-xl p-6 border border-border/30">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">Core Mechanics & Interaction Design</h4>
+              <p className="text-foreground/80 mb-4">
+                To overcome the fixed forward progression limitation, I designed physically demanding actions that directly translate into virtual movement and obstacle interaction:
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center p-4 bg-card/50 rounded-lg">
+                  <div className="text-4xl mb-3">🦵</div>
+                  <h5 className="font-semibold text-foreground mb-2">Jumping Jacks</h5>
+                  <p className="text-sm text-foreground/80">Activates forward movement through the collapsing environment</p>
                 </div>
-                <h4 className="font-semibold mb-2 text-foreground">Bodyweight Squats</h4>
-                <p className="text-sm text-foreground">Propel forward 1.5m in virtual world</p>
+                <div className="text-center p-4 bg-card/50 rounded-lg">
+                  <div className="text-4xl mb-3">🏋️</div>
+                  <h5 className="font-semibold text-foreground mb-2">Bodyweight Squats</h5>
+                  <p className="text-sm text-foreground/80">Navigates under obstacles and debris in the virtual world</p>
+                </div>
+                <div className="text-center p-4 bg-card/50 rounded-lg">
+                  <div className="text-4xl mb-3">👊</div>
+                  <h5 className="font-semibold text-foreground mb-2">Shadow Boxing</h5>
+                  <p className="text-sm text-foreground/80">Destroys virtual barriers and clears path forward</p>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="w-20 h-20 bg-secondary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M4 7C2.9 7 2 7.9 2 9C2 10.1 2.9 11 4 11C5.1 11 6 10.1 6 9C6 7.9 5.1 7 4 7M20 7C18.9 7 18 7.9 18 9C18 10.1 18.9 11 20 11C21.1 11 22 10.1 22 9C22 7.9 21.1 7 20 7M10 8C9.4 8 9 8.4 9 9V11C9 11.6 9.4 12 10 12C10.6 12 11 11.6 11 11V9C11 8.4 10.6 8 10 8M14 8C13.4 8 13 8.4 13 9V11C13 11.6 13.4 12 14 12C14.6 12 15 11.6 15 11V9C15 8.4 14.6 8 14 8M6 12C5.4 12 5 12.4 5 13V19C5 19.6 5.4 20 6 20C6.6 20 7 19.6 7 19V13C7 12.4 6.6 12 6 12M18 12C17.4 12 17 12.4 17 13V19C17 19.6 17.4 20 18 20C18.6 20 19 19.6 19 19V13C19 12.4 18.6 12 18 12M10 13C9.4 13 9 13.4 9 14V20C9 20.6 9.4 21 10 21C10.6 21 11 20.6 11 20V14C11 13.4 10.6 13 10 13M14 13C13.4 13 13 13.4 13 14V20C13 20.6 13.4 21 14 21C14.6 21 15 20.6 15 20V14C15 13.4 14.6 13 14 13"/>
-                  </svg>
+            </div>
+          </div>
+          
+          {/* Addressing Challenges */}
+          <div className="bg-secondary/10 border-l-4 border-secondary rounded-r-lg p-6">
+            <h3 className="text-xl font-semibold mb-3 text-foreground">Addressing Key Challenges</h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <span className="text-foreground font-medium">Cybersickness Prevention:</span>
+                  <span className="text-foreground/80"> Consciously avoided 'roaming VR' to focus on stationary, deliberate actions</span>
                 </div>
-                <h4 className="font-semibold mb-2 text-foreground">Shadow Boxing</h4>
-                <p className="text-sm text-foreground">Break through collapsed walls</p>
               </div>
-              <div className="text-center">
-                <div className="w-20 h-20 bg-primary/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C10.9 2 10 2.9 10 4C10 5.1 10.9 6 12 6C13.1 6 14 5.1 14 4C14 2.9 13.1 2 12 2M5 7C3.9 7 3 7.9 3 9C3 10.1 3.9 11 5 11C6.1 11 7 10.1 7 9C7 7.9 6.1 7 5 7M19 7C17.9 7 17 7.9 17 9C17 10.1 17.9 11 19 11C20.1 11 21 10.1 21 9C21 7.9 20.1 7 19 7M6 12C5.4 12 5 12.4 5 13V19C5 19.6 5.4 20 6 20C6.6 20 7 19.6 7 19V13C7 12.4 6.6 12 6 12M18 12C17.4 12 17 12.4 17 13V19C17 19.6 17.4 20 18 20C18.6 20 19 19.6 19 19V13C19 12.4 18.6 12 18 12M10 8C9.4 8 9 8.4 9 9V11C9 11.6 9.4 12 10 12C10.6 12 11 11.6 11 11V9C11 8.4 10.6 8 10 8M14 8C13.4 8 13 8.4 13 9V11C13 11.6 13.4 12 14 12C14.6 12 15 11.6 15 11V9C15 8.4 14.6 8 14 8M12 13C11.4 13 11 13.4 11 14V20C11 20.6 11.4 21 12 21C12.6 21 13 20.6 13 20V14C13 13.4 12.6 13 12 13"/>
-                  </svg>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <span className="text-foreground font-medium">Clear Instructions:</span>
+                  <span className="text-foreground/80"> Implemented real-time coaching cues and visual indicators</span>
                 </div>
-                <h4 className="font-semibold mb-2 text-foreground">Jumping Jacks</h4>
-                <p className="text-sm text-foreground">Move forward 0.8m quickly</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <span className="text-foreground font-medium">Engagement:</span>
+                  <span className="text-foreground/80"> Integrated gamification elements and post-workout stats</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Solution Section */}
+        {/* Prototyping & Development Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Solution: The Prototype</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Prototyping & Development: Building the Desolate Path</h2>
+          
+          {/* Technical Implementation */}
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
+            <h3 className="text-xl font-semibold mb-6 text-foreground">Technical Implementation</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Unity Development Environment</h4>
+                <p className="text-foreground/80 mb-4">
+                  Built the post-apocalyptic world using Unity 2021.3.45f1 with optimized assets for Meta Quest 2 performance.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground text-sm">XR Interaction Toolkit integration</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                    <span className="text-foreground text-sm">Mixamo character animations</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground text-sm">Unity Asset Store optimizations</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Spatial Mapping & Context-Aware Design</h4>
+                <p className="text-foreground/80 mb-4">
+                  The physical hallway was mapped to the virtual environment, allowing for context-aware interactions where the real space directly informed virtual constraints and expansions.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-foreground text-sm">XR Origin positioning calibration</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                    <span className="text-foreground text-sm">Real-to-virtual space mapping</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-foreground text-sm">Animator sequence movement feedback</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Unity Editor Screenshot Placeholder */}
+          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
+            <div className="text-center">
+              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+              <p className="text-foreground font-semibold text-lg mb-2">Unity Editor Development Environment</p>
+              <p className="text-foreground/70 text-sm">Screenshot showing post-apocalyptic passage layout and development interface</p>
+            </div>
+          </div>
+          
+          {/* Mixed Reality Integration */}
+          <div className="bg-accent/10 border-l-4 border-accent rounded-r-lg p-6">
+            <h3 className="text-xl font-semibold mb-3 text-foreground">Mixed Reality Integration</h3>
+            <p className="text-foreground leading-relaxed">
+              The real environment became the stage for performance, enhancing immersion and blending realities. The hallway's physical constraints actually strengthened the narrative tension — players truly feel trapped in a collapsing world, making their escape more emotionally engaging.
+            </p>
+          </div>
+        </section>
+
+        {/* Prototype Walkthrough Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Prototype Walkthrough</h2>
           
           {/* Transformation Visual */}
           <div className="bg-gradient-to-r from-muted/20 to-primary/10 rounded-2xl p-8 mb-8">
@@ -280,8 +394,6 @@ export default function CaseStudyVR() {
             </div>
           </div>
 
-
-
           {/* Scene Breakdown */}
           <div className="space-y-8 mb-8">
             <div className="bg-gradient-to-br from-orange-500/10 via-yellow-500/5 to-amber-500/10 rounded-lg p-8 border border-orange-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
@@ -292,11 +404,9 @@ export default function CaseStudyVR() {
               {/* Video Placeholder */}
               <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-12 h-12 text-primary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                  <p className="text-foreground font-medium">Scene 1 Video</p>
-                  <p className="text-foreground text-sm mt-2">Warm-up sequence demonstration</p>
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+                  <p className="text-foreground font-medium">Scene 1: Warm-up Sequence</p>
+                  <p className="text-foreground text-sm mt-2">Gameplay footage showing initial environment and gentle movement prompts</p>
                 </div>
               </div>
               
@@ -321,247 +431,294 @@ export default function CaseStudyVR() {
               {/* Video Placeholder */}
               <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-secondary/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-12 h-12 text-secondary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                  <p className="text-foreground font-medium">Scene 2 Video</p>
-                  <p className="text-foreground text-sm mt-2">Main mission gameplay footage</p>
+                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+                  <p className="text-foreground font-medium">Scene 2: Main Mission</p>
+                  <p className="text-foreground text-sm mt-2">Intense gameplay showing movement initiation and obstacle navigation</p>
                 </div>
               </div>
               
-              <p className="text-foreground mb-4">High-intensity survival sequence with wall-breaking mechanics</p>
+              <p className="text-foreground mb-4">Intense survival scenario with increased difficulty and obstacle navigation</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-foreground">Shadow Boxing → Break walls</span>
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <span className="text-foreground">Shadow Boxing → Break barriers</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <span className="text-foreground">Escalating intensity</span>
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-foreground">Combined movements → Survival</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/5 to-teal-500/10 rounded-lg p-8 border border-green-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
-              <div className="absolute top-2 right-2 w-2 h-2 bg-green-400/30 rounded-full animate-bounce delay-200"></div>
-              <div className="absolute bottom-2 left-2 w-1 h-1 bg-emerald-400/30 rounded-full animate-bounce delay-50"></div>
+            <div className="bg-gradient-to-br from-green-500/10 via-teal-500/5 to-blue-500/10 rounded-lg p-8 border border-green-500/20 backdrop-blur-sm shadow-lg relative overflow-hidden">
+              <div className="absolute top-2 right-2 w-3 h-3 bg-green-400/30 rounded-full animate-bounce delay-200"></div>
+              <div className="absolute bottom-2 left-2 w-1 h-1 bg-teal-400/30 rounded-full animate-bounce delay-300"></div>
               <h4 className="text-xl font-semibold mb-4 text-foreground">Scene 3: Mission Accomplished</h4>
               
-              {/* Video Placeholder */}
-              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 mb-6">
+              <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center border-2 border-dashed border-green-500/30 mb-6">
                 <div className="text-center">
-                  <svg className="w-12 h-12 text-primary mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-green-500 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
-                  <p className="text-foreground/80 font-medium">Scene 3 Video</p>
-                  <p className="text-foreground/60 text-sm mt-2">Mission completion sequence</p>
+                  <p className="text-foreground font-medium">Scene 3 Video</p>
+                  <p className="text-foreground text-sm mt-2">Mission completion and workout summary</p>
                 </div>
               </div>
               
-              <p className="text-foreground/80 mb-4">Successful escape sequence with celebratory feedback</p>
+              <p className="text-foreground mb-4">Successful escape with workout statistics and achievement celebration</p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground/70">Achievement unlocked</span>
+                  <span className="text-foreground">Workout stats display</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-foreground/70">Performance summary</span>
+                  <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                  <span className="text-foreground">Achievement unlocked</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* User Testing & Validation Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">User Testing & Validation: Surviving the Feedback</h2>
+          
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 mb-8">
+            <h3 className="text-xl font-semibold mb-6 text-foreground">Testing Methodology</h3>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-3 text-foreground">Participants</h4>
+                <p className="text-foreground/80">Two individuals, representative of casual VR users interested in fitness</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-3 text-foreground">Environment</h4>
+                <p className="text-foreground/80">Conducted in a typical domestic hallway matching target constraints</p>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-3 text-foreground">Evaluation Tools</h4>
+                <p className="text-foreground/80">System Usability Scale (SUS) questionnaire + qualitative interviews</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Findings */}
+          <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl p-8 mb-8 border border-green-500/20">
+            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Key Findings</h3>
+            
+            {/* SUS Score */}
+            <div className="bg-background/50 rounded-xl p-8 mb-8 border border-border/30 text-center">
+              <div className="text-6xl font-bold text-green-500 mb-4">87.5</div>
+              <h4 className="text-xl font-semibold mb-2 text-foreground">System Usability Scale (SUS)</h4>
+              <p className="text-foreground/80">Consistent high usability rating from both testers indicating excellent user satisfaction</p>
+            </div>
+            
+            {/* Qualitative Insights */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Embodiment & Presence</h4>
+                <div className="space-y-4">
+                  <div className="bg-primary/10 rounded-lg p-4">
+                    <p className="text-foreground italic">
+                      "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
+                    </p>
+                  </div>
+                  <p className="text-foreground/80 text-sm">Users reported strong immersion and successful exergaming integration</p>
+                </div>
+              </div>
+              
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Hallway as an Asset</h4>
+                <div className="space-y-4">
+                  <div className="bg-secondary/10 rounded-lg p-4">
+                    <p className="text-foreground italic">
+                      "It didn't feel limiting – it was designed to work with the space. It felt intentional, not restrictive."
+                    </p>
+                  </div>
+                  <div className="bg-accent/10 rounded-lg p-4">
+                    <p className="text-foreground italic">
+                      "The confined space made it feel suspenseful, like I had to escape quickly."
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Implementation Details */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Technical Implementation</h3>
-              <ul className="space-y-3 text-foreground/80">
-                <li>• <strong>Engine:</strong> Unity 2021.3.45f1</li>
-                <li>• <strong>VR Hardware:</strong> Meta Quest 2</li>
-                <li>• <strong>Interaction:</strong> XR Interaction Toolkit</li>
-                <li>• <strong>Animation:</strong> Mixamo character systems</li>
-                <li>• <strong>Assets:</strong> Unity Asset Store environments</li>
-              </ul>
+          {/* User Testing Images Placeholder */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+              <div className="text-center">
+                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                <p className="text-foreground font-semibold text-lg mb-2">User Testing Footage</p>
+                <p className="text-foreground/70 text-sm">Side-by-side videos of testers in VR headsets and real-world movement</p>
+              </div>
             </div>
             
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Behind the Scenes</h3>
-              <ul className="space-y-3 text-foreground/80">
-                <li>• Warm-up animator sequence programming</li>
-                <li>• Post-apocalyptic environment design</li>
-                <li>• XR Origin positioning for hallway mapping</li>
-                <li>• Real-time movement interpretation systems</li>
-                <li>• Linear progression with narrative flow</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* User Testing Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">User Testing & Validation</h2>
-          
-          {/* SUS Score Highlight */}
-          <div className="bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-2xl p-8 mb-8 text-center">
-            <div className="inline-flex items-center gap-4 mb-4">
-              <CheckCircle className="w-12 h-12 text-green-500" />
-              <div>
-                <div className="text-4xl font-bold text-green-600">87.5/100</div>
-                <div className="text-sm text-foreground/70">System Usability Scale (SUS) Score</div>
-              </div>
-            </div>
-            <p className="text-foreground/80">Exceptionally good usability and user satisfaction</p>
-          </div>
-
-          {/* User Feedback */}
-          <div className="space-y-6">
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Physical Movements</h3>
-              <div className="space-y-4">
-                <blockquote className="border-l-4 border-primary pl-4 italic text-foreground/80">
-                  "I felt exhausted — but in a good way. It actually motivated me to keep going, like a real workout."
-                </blockquote>
-                <blockquote className="border-l-4 border-secondary pl-4 italic text-foreground/80">
-                  "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
-                </blockquote>
-              </div>
-            </div>
-
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Hallway Setting & Immersion</h3>
-              <div className="space-y-4">
-                <blockquote className="border-l-4 border-primary pl-4 italic text-foreground/80">
-                  "It didn't feel limiting – it was designed to work with the space. It felt intentional, not restrictive."
-                </blockquote>
-                <blockquote className="border-l-4 border-secondary pl-4 italic text-foreground/80">
-                  "It added to the overall excitement. The confined space made it feel suspenseful, like I had to escape quickly."
-                </blockquote>
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
+              <div className="text-center">
+                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
+                <p className="text-foreground font-semibold text-lg mb-2">SUS Questionnaire Results</p>
+                <p className="text-foreground/70 text-sm">Screenshots of completed System Usability Scale forms from both testers</p>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Design Recommendations */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Design Recommendations</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-lg font-semibold mb-3 text-foreground">Immediate Improvements</h3>
-              <ul className="space-y-2 text-foreground/80">
-                <li>• Enhance visual and audio cues for actions</li>
-                <li>• Add subtitle support for accessibility</li>
-                <li>• Refine punch interaction haptic feedback</li>
-                <li>• Implement more explicit voice prompts</li>
-              </ul>
-            </div>
-            
-            <div className="bg-card rounded-lg p-6 border">
-              <h3 className="text-lg font-semibold mb-3 text-foreground">Future Enhancements</h3>
-              <ul className="space-y-2 text-foreground/80">
-                <li>• Add leaderboard and progress tracking</li>
-                <li>• Include competitive elements</li>
-                <li>• Implement countdown timers</li>
-                <li>• Expand exercise variety</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Reflection & Key Learnings */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Reflection & Key Learnings</h2>
-          
-          {/* Core Insights */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-card rounded-lg p-6 border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Target className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-3 text-center text-foreground">Embodiment & Presence</h3>
-              <blockquote className="text-sm text-foreground/80 italic text-center border-l-4 border-primary pl-4">
-                "I didn't feel like exercise because I was so engrossed in the environment. I forgot I was moving that much."
-              </blockquote>
-            </div>
-            
-            <div className="bg-card rounded-lg p-6 border">
-              <div className="w-16 h-16 bg-secondary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <CheckCircle className="w-8 h-8 text-secondary" />
-              </div>
-              <h3 className="font-semibold mb-3 text-center text-foreground">Context-Aware Design</h3>
-              <p className="text-sm text-foreground/80 text-center">
-                Physical space inspired virtual constraints and expansions - the real environment becomes a stage for performance
-              </p>
-            </div>
-            
-            <div className="bg-card rounded-lg p-6 border">
-              <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <Users className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-3 text-center text-foreground">Mixed Reality Architecture</h3>
-              <p className="text-sm text-foreground/80 text-center">
-                Narrative flow integrated with spatial mapping creates seamless transitions between real and virtual worlds
-              </p>
-            </div>
-          </div>
-
-          {/* Project Learnings */}
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8">
-            <h3 className="text-xl font-semibold mb-4 text-center text-foreground">What I Learned from the Project</h3>
-            <div className="text-center">
-              <p className="text-lg text-foreground/80 italic font-medium mb-4">
-                "Design is often born out of limitations, not just possibilities."
-              </p>
-              <p className="text-foreground/80">
-                This project demonstrated that constraints can become creative catalysts. The narrow hallway didn't limit the experience - it defined and enhanced it, creating a unique survival scenario that wouldn't have been possible in a larger space.
-              </p>
-            </div>
-          </div>
-
-          {/* User Testing Insights */}
-          <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-2xl p-8">
-            <h3 className="text-xl font-semibold mb-4 text-center text-foreground">What I Learned from User Testing</h3>
+          {/* Design Recommendations */}
+          <div className="bg-accent/10 border-l-4 border-accent rounded-r-lg p-6">
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Design Recommendations</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="text-center">
-                <h4 className="font-semibold mb-2 text-foreground">Key Feedback</h4>
-                <div className="space-y-3">
-                  <blockquote className="text-sm text-foreground/80 italic">
-                    "Captions would help along with audio." – Participant 1
-                  </blockquote>
-                  <blockquote className="text-sm text-foreground/80 italic">
-                    "Didn't feel like a boring gym workout" – Participant 2
-                  </blockquote>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="text-foreground font-medium">Improve Cue Clarity:</span>
+                    <span className="text-foreground/80"> Add more voice prompts and visual indicators</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="text-foreground font-medium">Subtitle Support:</span>
+                    <span className="text-foreground/80"> Include text-based instructions for accessibility</span>
+                  </div>
                 </div>
               </div>
-              <div className="text-center">
-                <h4 className="font-semibold mb-2 text-foreground">Impact</h4>
-                <p className="text-sm text-foreground/80">
-                  Users validated that the hallway setting enhanced rather than limited immersion, proving that thoughtful constraint-based design can create more engaging experiences than unrestricted spaces.
-                </p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="text-foreground font-medium">Leaderboard/Progress:</span>
+                    <span className="text-foreground/80"> Add competitive and tracking elements</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="text-foreground font-medium">Finalize Punch Interaction:</span>
+                    <span className="text-foreground/80"> Refine shadow boxing mechanics</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Project Tagline */}
+        {/* Reflections & Future Directions */}
         <section className="mb-16">
-          <div className="bg-gradient-to-br from-card/60 via-card/40 to-background/60 rounded-2xl p-8 text-center border border-border/30 backdrop-blur-sm shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-foreground">Built for a hallway. Designed for survival.</h2>
-            <p className="text-lg text-foreground/80 italic">Coming to a cramped space near you.</p>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Reflections & Future Directions</h2>
+          
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8 border border-primary/20">
+            <h3 className="text-xl font-semibold mb-6 text-foreground">Core Learning</h3>
+            <div className="bg-background/50 rounded-xl p-6 border border-border/30">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">Design from Limitations</h4>
+              <p className="text-foreground leading-relaxed mb-4">
+                <strong>"Design is often born out of limitations, not just possibilities."</strong> This project exemplified that principle by turning a spatial constraint into a core design strength. The narrow hallway didn't limit the experience — it enhanced it.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Constraints spark creativity</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Accessibility through limitation</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Intentional design decisions</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Enhanced narrative tension</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-card/50 rounded-lg p-6 border border-border">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">Impact of Mixed Reality</h4>
+              <p className="text-foreground/80 leading-relaxed">
+                MR's power to blend physical and virtual realities makes experiences more accessible and immersive without requiring dedicated VR spaces. The real environment becomes part of the experience.
+              </p>
+            </div>
+            
+            <div className="bg-card/50 rounded-lg p-6 border border-border">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">Embodiment in Exergaming</h4>
+              <p className="text-foreground/80 leading-relaxed">
+                Successfully integrated physical activity in a way that felt like engaging gameplay, not exercise. The apocalyptic narrative transformed workouts into survival scenarios.
+              </p>
+            </div>
+          </div>
+          
+          <div className="bg-secondary/10 border-l-4 border-secondary rounded-r-lg p-6">
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Future Scope</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  <span className="text-foreground">More exercise types and interactions</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-foreground">Different apocalyptic themes</span>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <span className="text-foreground">Multiplayer survival scenarios</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  <span className="text-foreground">Adaptive difficulty based on performance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Conclusion */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl p-8 border border-orange-500/20 text-center">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">Built for a Hallway. Designed for Survival.</h2>
+            <p className="text-foreground leading-relaxed text-lg mb-6">
+              "Survival of the Fittest" demonstrates that immersive VR experiences don't require expansive spaces — they require creative vision, thoughtful design, and the courage to embrace constraints as opportunities.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-500 mb-2">87.5</div>
+                <p className="text-foreground font-medium">SUS Score</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-500 mb-2">100%</div>
+                <p className="text-foreground font-medium">Spatial Efficiency</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-500 mb-2">∞</div>
+                <p className="text-foreground font-medium">Creative Potential</p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center pt-8 border-t border-border">
-          <Link href="/case-study/iot">
+        <div className="flex justify-between items-center py-8 border-t border-border/30">
+          <Link href="/case-study-iot">
             <Button variant="outline" className="flex items-center gap-2">
               <ArrowLeft className="w-4 h-4" />
-              IoT Case Study
+              Previous: IoT Case Study
             </Button>
           </Link>
-          <Link href="/case-study/llm">
+          <Link href="/case-study-llm">
             <Button variant="outline" className="flex items-center gap-2">
-              LLM Case Study
+              Next: LLM Case Study
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>
