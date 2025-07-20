@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import gamePosterImage from "@assets/Group 12_1752654046089.png";
 import hallwayImage from "@assets/Group 9_1752654264666.png";
 import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
-// Images temporarily disabled due to import path issues
-// import virtualEnvironmentImage from "@assets/Screenshot 2025-04-19 at 9.46.24 PM_1752845061684.png";
-// import unityEditorImage from "@assets/Screenshot 2025-04-19 at 9.47.01 PM_1752845061684.png";
+// Unity screenshots temporarily disabled due to file name import issues
+// import virtualEnvironmentImage from "@assets/Screenshot 2025-04-19 at 9.46.24 PM_1753009636408.png";
+// import unityEditorImage from "@assets/Screenshot 2025-04-19 at 9.47.01 PM_1753009636408.png";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -189,8 +189,9 @@ export default function CaseStudyVR() {
                 </div>
                 <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-8 min-h-[200px] flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                    <p className="text-foreground/70 text-sm">Virtual post-apocalyptic environment screenshot</p>
+                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">UNITY SCREENSHOT</div>
+                    <p className="text-foreground font-semibold text-lg mb-2">Virtual Environment</p>
+                    <p className="text-foreground/70 text-sm">Post-apocalyptic desert cityscape with buildings and structures mapped to hallway constraints</p>
                   </div>
                 </div>
               </div>
@@ -201,8 +202,9 @@ export default function CaseStudyVR() {
                 </div>
                 <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg p-8 min-h-[200px] flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                    <p className="text-foreground/70 text-sm">Unity Editor with XR Origin setup</p>
+                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">UNITY SCREENSHOT</div>
+                    <p className="text-foreground font-semibold text-lg mb-2">Unity Editor Setup</p>
+                    <p className="text-foreground/70 text-sm">Unity hierarchy showing XR Origin configuration with camera, character controller, and spatial tracking setup</p>
                   </div>
                 </div>
               </div>
