@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button";
 import gamePosterImage from "@assets/Group 12_1752654046089.png";
 import hallwayImage from "@assets/Group 9_1752654264666.png";
 import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
-// Unity screenshots temporarily disabled due to file name import issues
-// import virtualEnvironmentImage from "@assets/Screenshot 2025-04-19 at 9.46.24 PM_1753009636408.png";
-// import unityEditorImage from "@assets/Screenshot 2025-04-19 at 9.47.01 PM_1753009636408.png";
+import virtualEnvironmentImage from "@assets/virtual-env.png";
+import unityEditorImage from "@assets/unity-editor.png";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -187,12 +186,12 @@ export default function CaseStudyVR() {
                   <h4 className="text-lg font-semibold text-foreground mb-2">Virtual Environment</h4>
                   <p className="text-foreground/70 text-sm">Post-apocalyptic cityscape mapped to hallway constraints</p>
                 </div>
-                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-8 min-h-[200px] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">UNITY SCREENSHOT</div>
-                    <p className="text-foreground font-semibold text-lg mb-2">Virtual Environment</p>
-                    <p className="text-foreground/70 text-sm">Post-apocalyptic desert cityscape with buildings and structures mapped to hallway constraints</p>
-                  </div>
+                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-2 overflow-hidden">
+                  <img 
+                    src={virtualEnvironmentImage} 
+                    alt="Post-apocalyptic virtual environment showing desert landscape with buildings and structures"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
               <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-6 border border-border/30">
@@ -200,12 +199,12 @@ export default function CaseStudyVR() {
                   <h4 className="text-lg font-semibold text-foreground mb-2">Unity Editor Setup</h4>
                   <p className="text-foreground/70 text-sm">XR Origin positioning and spatial tracking configuration</p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg p-8 min-h-[200px] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">UNITY SCREENSHOT</div>
-                    <p className="text-foreground font-semibold text-lg mb-2">Unity Editor Setup</p>
-                    <p className="text-foreground/70 text-sm">Unity hierarchy showing XR Origin configuration with camera, character controller, and spatial tracking setup</p>
-                  </div>
+                <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg p-2 overflow-hidden">
+                  <img 
+                    src={unityEditorImage} 
+                    alt="Unity Editor interface showing hierarchy with XR Origin configuration, camera setup, and spatial tracking components"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
             </div>
