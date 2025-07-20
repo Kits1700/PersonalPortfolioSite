@@ -7,6 +7,7 @@ import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
 import virtualEnvironmentImage from "@assets/virtual-env.png";
 import unityEditorImage from "@assets/unity-editor.png";
 import conceptArtImage from "@assets/concept-art.jpg";
+import promotionalImage from "@assets/promotional-image.jpg";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -470,12 +471,18 @@ export default function CaseStudyVR() {
           </div>
         </section>
 
-        {/* Final Image Placeholder */}
-        <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-          <div className="text-center">
-            <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-            <p className="text-foreground font-semibold text-lg mb-2">Final Promotional Image</p>
-            <p className="text-foreground/70 text-sm">Game's tagline: "Built for a hallway. Designed for survival. Coming to a cramped space near you."</p>
+        {/* Final Promotional Image */}
+        <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-6 mb-8 border border-border/30">
+          <div className="text-center mb-4">
+            <h4 className="text-lg font-semibold text-foreground mb-2">Final Promotional Image</h4>
+            <p className="text-foreground/70 text-sm italic">"Built for a hallway. Designed for survival. Coming to a cramped space near you."</p>
+          </div>
+          <div className="bg-black rounded-lg p-4 overflow-hidden">
+            <img 
+              src={promotionalImage} 
+              alt="Promotional illustration showing a person in VR headset with blue digital elements flowing from their hand, representing the mixed reality exergaming experience"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
 
