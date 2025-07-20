@@ -1,68 +1,73 @@
 import { useEffect, useRef, useState } from 'react';
-import { Volume2, VolumeX } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ambientAudio from '@assets/ambient.mp3';
 
+// Global audio state - persists across component unmounts
+let globalAudio: HTMLAudioElement | null = null;
+let globalIsPlaying = false;
+let globalIsMuted = false;
+
 export default function GlobalAudio() {
+  const [isPlaying, setIsPlaying] = useState(globalIsPlaying);
+  const [isMuted, setIsMuted] = useState(globalIsMuted);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    // Set audio properties
-    audio.loop = true;
-    audio.volume = 0.3; // Set to 30% volume for ambient background
-    audio.preload = 'auto';
-
-    // Try to autoplay (will be blocked by most browsers until user interaction)
-    const tryAutoplay = async () => {
-      try {
-        await audio.play();
+    // Initialize or reuse global audio
+    if (!globalAudio) {
+      globalAudio = new Audio(ambientAudio);
+      globalAudio.loop = true;
+      globalAudio.volume = 0.3;
+      globalAudio.preload = 'auto';
+      
+      // Add event listeners
+      globalAudio.addEventListener('play', () => {
+        globalIsPlaying = true;
         setIsPlaying(true);
-      } catch (error) {
-        // Autoplay blocked, user needs to interact first
-        console.log('Autoplay blocked, waiting for user interaction');
-      }
-    };
+      });
+      
+      globalAudio.addEventListener('pause', () => {
+        globalIsPlaying = false;
+        setIsPlaying(false);
+      });
+    }
 
-    tryAutoplay();
+    // Sync component state with global state
+    setIsPlaying(globalIsPlaying);
+    setIsMuted(globalIsMuted);
 
-    // Add event listeners for user interaction to enable audio
-    const enableAudioOnInteraction = async () => {
-      if (!isPlaying && audio.paused) {
+    // Try to autoplay on first load
+    if (!globalIsPlaying) {
+      const enableAudioOnInteraction = async () => {
         try {
-          await audio.play();
-          setIsPlaying(true);
+          if (globalAudio && globalAudio.paused) {
+            await globalAudio.play();
+          }
         } catch (error) {
           console.log('Could not start audio:', error);
         }
-      }
-    };
+      };
 
-    // Listen for first user interaction
-    document.addEventListener('click', enableAudioOnInteraction, { once: true });
-    document.addEventListener('keydown', enableAudioOnInteraction, { once: true });
+      // Listen for first user interaction
+      document.addEventListener('click', enableAudioOnInteraction, { once: true });
+      document.addEventListener('keydown', enableAudioOnInteraction, { once: true });
 
-    return () => {
-      document.removeEventListener('click', enableAudioOnInteraction);
-      document.removeEventListener('keydown', enableAudioOnInteraction);
-    };
-  }, [isPlaying]);
+      return () => {
+        document.removeEventListener('click', enableAudioOnInteraction);
+        document.removeEventListener('keydown', enableAudioOnInteraction);
+      };
+    }
+  }, []);
 
   const togglePlay = async () => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    if (!globalAudio) return;
 
     try {
-      if (isPlaying) {
-        audio.pause();
-        setIsPlaying(false);
+      if (globalAudio.paused) {
+        await globalAudio.play();
       } else {
-        await audio.play();
-        setIsPlaying(true);
+        globalAudio.pause();
       }
     } catch (error) {
       console.log('Audio toggle error:', error);
@@ -70,53 +75,42 @@ export default function GlobalAudio() {
   };
 
   const toggleMute = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    if (!globalAudio) return;
 
-    audio.muted = !audio.muted;
-    setIsMuted(!isMuted);
+    globalAudio.muted = !globalAudio.muted;
+    globalIsMuted = globalAudio.muted;
+    setIsMuted(globalIsMuted);
   };
 
   return (
-    <>
-      {/* Hidden audio element */}
-      <audio
-        ref={audioRef}
-        src={ambientAudio}
-        preload="auto"
-        loop
-      />
+    <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-background/90 backdrop-blur-sm border border-border/50 rounded-lg p-2 shadow-lg">
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={togglePlay}
+        className="h-8 w-8 p-0 hover:bg-primary/20 transition-colors"
+        title={isPlaying ? 'Pause ambient audio' : 'Play ambient audio'}
+      >
+        {isPlaying ? (
+          <Pause className="w-4 h-4 text-primary" />
+        ) : (
+          <Play className="w-4 h-4 text-muted-foreground" />
+        )}
+      </Button>
       
-      {/* Audio controls - positioned in top right */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm border border-border/30 rounded-lg p-2">
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={togglePlay}
-          className="h-8 w-8 p-0 hover:bg-primary/20"
-          title={isPlaying ? 'Pause ambient audio' : 'Play ambient audio'}
-        >
-          {isPlaying ? (
-            <div className="w-3 h-3 bg-primary rounded-sm animate-pulse" />
-          ) : (
-            <div className="w-3 h-3 bg-muted-foreground rounded-sm" />
-          )}
-        </Button>
-        
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={toggleMute}
-          className="h-8 w-8 p-0 hover:bg-primary/20"
-          title={isMuted ? 'Unmute audio' : 'Mute audio'}
-        >
-          {isMuted ? (
-            <VolumeX className="w-4 h-4 text-muted-foreground" />
-          ) : (
-            <Volume2 className="w-4 h-4 text-primary" />
-          )}
-        </Button>
-      </div>
-    </>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={toggleMute}
+        className="h-8 w-8 p-0 hover:bg-primary/20 transition-colors"
+        title={isMuted ? 'Unmute audio' : 'Mute audio'}
+      >
+        {isMuted ? (
+          <VolumeX className="w-4 h-4 text-muted-foreground" />
+        ) : (
+          <Volume2 className="w-4 h-4 text-primary" />
+        )}
+      </Button>
+    </div>
   );
 }
