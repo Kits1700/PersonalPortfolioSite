@@ -21,53 +21,60 @@ export default function GlobalAudio() {
       globalAudio.volume = 0.3;
       globalAudio.preload = 'auto';
       
-      // Add event listeners
-      globalAudio.addEventListener('play', () => {
-        globalIsPlaying = true;
-        setIsPlaying(true);
-      });
+      // Add event listeners with state update functions
+      const updatePlayState = () => {
+        globalIsPlaying = !globalAudio!.paused;
+        setIsPlaying(globalIsPlaying);
+      };
       
-      globalAudio.addEventListener('pause', () => {
-        globalIsPlaying = false;
-        setIsPlaying(false);
-      });
+      globalAudio.addEventListener('play', updatePlayState);
+      globalAudio.addEventListener('pause', updatePlayState);
+      globalAudio.addEventListener('ended', updatePlayState);
     }
 
     // Sync component state with global state
-    setIsPlaying(globalIsPlaying);
-    setIsMuted(globalIsMuted);
+    setIsPlaying(!globalAudio.paused);
+    setIsMuted(globalAudio.muted);
 
-    // Try to autoplay on first load
-    if (!globalIsPlaying) {
-      const enableAudioOnInteraction = async () => {
-        try {
-          if (globalAudio && globalAudio.paused) {
-            await globalAudio.play();
-          }
-        } catch (error) {
-          console.log('Could not start audio:', error);
+    // Auto-start on first user interaction
+    const enableAudioOnInteraction = async (e: Event) => {
+      // Don't trigger on audio control clicks
+      if ((e.target as HTMLElement)?.closest('[data-audio-control]')) {
+        return;
+      }
+      
+      try {
+        if (globalAudio && globalAudio.paused && !globalIsPlaying) {
+          await globalAudio.play();
         }
-      };
+      } catch (error) {
+        console.log('Could not start audio:', error);
+      }
+    };
 
-      // Listen for first user interaction
-      document.addEventListener('click', enableAudioOnInteraction, { once: true });
-      document.addEventListener('keydown', enableAudioOnInteraction, { once: true });
+    // Listen for first user interaction
+    document.addEventListener('click', enableAudioOnInteraction, { once: true });
+    document.addEventListener('keydown', enableAudioOnInteraction, { once: true });
 
-      return () => {
-        document.removeEventListener('click', enableAudioOnInteraction);
-        document.removeEventListener('keydown', enableAudioOnInteraction);
-      };
-    }
+    return () => {
+      document.removeEventListener('click', enableAudioOnInteraction);
+      document.removeEventListener('keydown', enableAudioOnInteraction);
+    };
   }, []);
 
-  const togglePlay = async () => {
+  const togglePlay = async (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (!globalAudio) return;
 
     try {
       if (globalAudio.paused) {
         await globalAudio.play();
+        globalIsPlaying = true;
+        setIsPlaying(true);
       } else {
         globalAudio.pause();
+        globalIsPlaying = false;
+        setIsPlaying(false);
       }
     } catch (error) {
       console.log('Audio toggle error:', error);
@@ -83,13 +90,17 @@ export default function GlobalAudio() {
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-background/90 backdrop-blur-sm border border-border/50 rounded-lg p-2 shadow-lg">
+    <div 
+      className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-background/90 backdrop-blur-sm border border-border/50 rounded-lg p-2 shadow-lg"
+      data-audio-control
+    >
       <Button
         variant="ghost"
         size="sm"
         onClick={togglePlay}
         className="h-8 w-8 p-0 hover:bg-primary/20 transition-colors"
         title={isPlaying ? 'Pause ambient audio' : 'Play ambient audio'}
+        data-audio-control
       >
         {isPlaying ? (
           <Pause className="w-4 h-4 text-primary" />
@@ -104,6 +115,7 @@ export default function GlobalAudio() {
         onClick={toggleMute}
         className="h-8 w-8 p-0 hover:bg-primary/20 transition-colors"
         title={isMuted ? 'Unmute audio' : 'Mute audio'}
+        data-audio-control
       >
         {isMuted ? (
           <VolumeX className="w-4 h-4 text-muted-foreground" />
