@@ -6,6 +6,7 @@ import hallwayImage from "@assets/Group 9_1752654264666.png";
 import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
 import virtualEnvironmentImage from "@assets/virtual-env.png";
 import unityEditorImage from "@assets/unity-editor.png";
+import conceptArtImage from "@assets/concept-art.jpg";
 
 export default function CaseStudyVR() {
   const scrollToTop = () => {
@@ -236,12 +237,18 @@ export default function CaseStudyVR() {
               </div>
             </div>
             
-            {/* Ideation Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Concept Art</p>
-                <p className="text-foreground/70 text-sm">Post-apocalyptic city with NPC avatars and dynamic audio cues, highlighting the narrative and environment</p>
+            {/* Concept Art */}
+            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-6 mb-8 border border-border/30">
+              <div className="text-center mb-4">
+                <h4 className="text-lg font-semibold text-foreground mb-2">Concept Art</h4>
+                <p className="text-foreground/70 text-sm">Post-apocalyptic city with NPC avatars and dynamic audio cues</p>
+              </div>
+              <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-2 overflow-hidden">
+                <img 
+                  src={conceptArtImage} 
+                  alt="Post-apocalyptic cityscape with dramatic orange sky, damaged buildings, and an NPC character standing in the desert environment"
+                  className="w-full h-auto object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
