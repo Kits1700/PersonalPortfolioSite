@@ -9,6 +9,7 @@ import NotFound from "@/pages/not-found";
 import CaseStudyLLM from "@/pages/case-study-llm";
 import CaseStudyVR from "@/pages/case-study-vr";
 import CaseStudyIoT from "@/pages/case-study-iot";
+import AdminMessages from "@/pages/admin-messages";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/case-study-vr" component={CaseStudyVR} />
       <Route path="/case-study/iot" component={CaseStudyIoT} />
       <Route path="/case-study-iot" component={CaseStudyIoT} />
+      <Route path="/admin-messages" component={AdminMessages} />
       <Route component={NotFound} />
     </Switch>
   );
