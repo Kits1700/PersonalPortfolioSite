@@ -181,7 +181,7 @@ export default function Hero() {
         {/* Enhanced social links */}
         <div className={`flex justify-center space-x-8 mb-12 ${isVisible ? 'animate-scaleIn animate-delay-300' : 'opacity-0'}`}>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/saikeerthanaarun/"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
@@ -189,7 +189,7 @@ export default function Hero() {
             <Linkedin className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Kits1700"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
@@ -197,7 +197,7 @@ export default function Hero() {
             <Github className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:saikeerthana.arun@gmail.com"
             className="group p-4 rounded-full bg-card/50 border border-border hover:border-primary transition-all duration-300 hover-lift hover-glow"
           >
             <Mail className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />

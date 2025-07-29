@@ -10,7 +10,7 @@ export default function Footer() {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/saikeerthanaarun/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -18,7 +18,7 @@ export default function Footer() {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Kits1700"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -26,7 +26,7 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:saikeerthana.arun@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
               <Mail size={20} />

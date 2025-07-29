@@ -88,7 +88,7 @@ export default function Contact() {
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                placeholder="your.email@example.com"
+                placeholder="your.email@domain.com"
                 className="mt-2 bg-background border-border focus:ring-primary focus:border-primary"
                 required
               />
