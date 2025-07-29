@@ -517,6 +517,26 @@ export default function CaseStudyVR() {
               </div>
             </div>
           </div>
+          
+          {/* Development Process Video */}
+          <div className="bg-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
+            <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center gap-2">
+              <ExternalLink className="w-5 h-5" />
+              Development Process Video
+            </h3>
+            <p className="text-foreground/80 text-sm mb-3">
+              Watch the complete development journey from concept to final gameplay, showcasing the design process, Unity development, and actual VR gameplay footage.
+            </p>
+            <a 
+              href="https://drive.google.com/file/d/13QkVrxjNUChmFt4bVg-lUt3DwaNaCGc3/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Watch Full Development Process
+            </a>
+          </div>
         </section>
 
         {/* Final Promotional Image */}
