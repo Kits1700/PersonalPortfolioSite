@@ -4,6 +4,9 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import CustomCursor from "@/components/custom-cursor";
+import { MusicProvider } from "@/contexts/music-context";
+import VibeSelector from "@/components/vibe-selector";
+import MusicPlayer from "@/components/music-player";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import CaseStudyLLM from "@/pages/case-study-llm";
@@ -31,9 +34,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <CustomCursor />
-        <Toaster />
-        <Router />
+        <MusicProvider>
+          <CustomCursor />
+          <Toaster />
+          <VibeSelector />
+          <MusicPlayer />
+          <Router />
+        </MusicProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
