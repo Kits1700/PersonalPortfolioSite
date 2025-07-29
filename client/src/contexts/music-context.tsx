@@ -21,19 +21,19 @@ interface MusicContextType {
 
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
 
-// Music tracks for different vibes
+// Music tracks for different vibes - using accessible audio sources
 const musicTracks: Record<string, MusicTrack[]> = {
   indie: [
     {
       id: 'indie-1',
       name: 'Dreamy Afternoon',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Lullaby.mp3',
+      url: '/audio/ambient.mp3',
       genre: 'indie'
     },
     {
       id: 'indie-2', 
       name: 'Coffee Shop Vibes',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Late-Night-Radio.mp3',
+      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav',
       genre: 'indie'
     }
   ],
@@ -41,13 +41,13 @@ const musicTracks: Record<string, MusicTrack[]> = {
     {
       id: 'carnatic-1',
       name: 'Raga Yaman',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Space-Travel.mp3',
+      url: '/audio/ambient.mp3',
       genre: 'carnatic'
     },
     {
       id: 'carnatic-2',
       name: 'Bhajan Flow',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Equinox.mp3', 
+      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/PinkPanther30.wav', 
       genre: 'carnatic'
     }
   ],
@@ -55,13 +55,13 @@ const musicTracks: Record<string, MusicTrack[]> = {
     {
       id: 'mellow-1',
       name: 'Sunset Meditation',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Going-Home.mp3',
+      url: '/audio/ambient.mp3',
       genre: 'mellow'
     },
     {
       id: 'mellow-2',
       name: 'Rain on Glass',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Tender.mp3',
+      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav',
       genre: 'mellow'
     }
   ],
@@ -69,13 +69,13 @@ const musicTracks: Record<string, MusicTrack[]> = {
     {
       id: 'focus-1',
       name: 'Deep Work',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Lullaby.mp3',
+      url: '/audio/ambient.mp3',
       genre: 'focus'
     },
     {
       id: 'focus-2',
       name: 'Code Flow',
-      url: 'https://www.chosic.com/wp-content/uploads/2021/04/Purrple-Cat-Space-Travel.mp3',
+      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav',
       genre: 'focus'
     }
   ]

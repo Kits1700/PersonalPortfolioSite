@@ -70,18 +70,18 @@ export default function VibeSelector() {
           <Button
             onClick={() => setIsOpen(true)}
             variant="outline"
-            className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground shadow-lg transition-all duration-300 hover:scale-105"
+            size="sm"
+            className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground shadow-lg transition-all duration-300 hover:scale-110 w-12 h-12 p-0 rounded-full"
           >
-            <Music className="w-4 h-4 mr-2" />
-            <span className="hidden sm:inline">
-              {selectedVibe ? `${vibes.find(v => v.id === selectedVibe)?.name} vibes` : 'Pick your vibe'}
-            </span>
-            <span className="sm:hidden">Vibes</span>
+            <Music className={cn(
+              "w-5 h-5 transition-colors duration-200",
+              selectedVibe ? "text-primary animate-pulse" : "text-muted-foreground"
+            )} />
           </Button>
           
           {/* Floating hint */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-popover text-popover-foreground text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
-            Pick your vibe today
+          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-popover text-popover-foreground text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+            {selectedVibe ? `${vibes.find(v => v.id === selectedVibe)?.name} vibes` : 'Pick your vibe today'}
           </div>
         </div>
       ) : (
