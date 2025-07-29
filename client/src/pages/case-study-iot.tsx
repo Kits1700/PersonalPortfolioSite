@@ -120,7 +120,7 @@ export default function CaseStudyIoT() {
               As <strong>lead developer and researcher</strong>, I designed the IoT architecture, integrated sensors with Arduino Uno and NodeMCU, and built the machine learning pipeline for forecasting. I conducted comparative model analysis (LSTM, ARIMA, Random Forest), developed the web application's backend, and ensured seamless data flow.
             </p>
             <p className="text-foreground leading-relaxed">
-              Collaborating with <strong>Dr. Anala M R</strong> under an IBM Shared University Research grant, I led the project from ideation to deployment, presenting our findings at the 2023 IEEE 8th International Conference for Convergence in Technology.
+              Collaborating with <strong>Dr. Anala M R</strong> under an IBM Shared University Research grant, I led this project from ideation to deployment. Our research was published and presented at the <strong>2023 IEEE 8th International Conference for Convergence in Technology (I2CT)</strong>, demonstrating the system's significant contribution to sustainable resource management.
             </p>
           </div>
         </section>
@@ -418,6 +418,29 @@ export default function CaseStudyIoT() {
             <p className="text-foreground/80 leading-relaxed mb-8">
               Future enhancements could include gas monitoring or smart grid integration, amplifying its global impact and contributing to a more sustainable world.
             </p>
+            
+            {/* IEEE Publication */}
+            <div className="bg-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
+              <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center gap-2">
+                <ExternalLink className="w-5 h-5" />
+                Published Research
+              </h3>
+              <p className="text-foreground/80 text-sm mb-3">
+                <strong>Kamal, S., Keerthana Arun, S., Mamatha, T., & Anala, M. R.</strong> (2023). Smart Electricity, Water and Air Quality Monitoring System. <em>2023 IEEE 8th International Conference for Convergence in Technology (I2CT)</em>, Lonavla, India.
+              </p>
+              <a 
+                href="https://ieeexplore.ieee.org/abstract/document/10126191"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+              >
+                <ExternalLink className="w-4 h-4" />
+                View on IEEE Xplore
+              </a>
+              <p className="text-xs text-foreground/60 mt-2">
+                DOI: 10.1109/I2CT57861.2023.10126191
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
