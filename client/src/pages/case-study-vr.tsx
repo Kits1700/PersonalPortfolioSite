@@ -433,12 +433,30 @@ export default function CaseStudyVR() {
             </p>
           </div>
           
-          {/* Impact Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Success Metrics</p>
-              <p className="text-foreground/70 text-sm">Bar chart showing tester scores (87.5/100) for immersion, usability, and engagement, highlighting the game's success</p>
+          {/* Success Metrics - User Testing Results */}
+          <div className="space-y-6 mb-8">
+            <div className="rounded-xl overflow-hidden border border-border/30">
+              <img 
+                src="/images/sus-questionnaire.jpg" 
+                alt="SUS Questionnaire Results showing 87.5/100 score" 
+                className="w-full h-auto"
+              />
+              <div className="p-6 bg-card/50">
+                <h4 className="font-semibold text-foreground text-xl mb-2">SUS Questionnaire Results</h4>
+                <p className="text-foreground/70">System Usability Scale assessment showing 87.5/100 overall score across usability, learnability, and user satisfaction metrics</p>
+              </div>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden border border-border/30">
+              <img 
+                src="/images/user-feedback.jpg" 
+                alt="User feedback quotes about physical movements and immersion" 
+                className="w-full h-auto"
+              />
+              <div className="p-6 bg-card/50">
+                <h4 className="font-semibold text-foreground text-xl mb-2">User Feedback Highlights</h4>
+                <p className="text-foreground/70">Direct quotes from testers about physical engagement, spatial design, and immersive experience quality</p>
+              </div>
             </div>
           </div>
         </section>
