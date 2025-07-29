@@ -143,14 +143,7 @@ export default function CaseStudyLLM() {
               </div>
             </div>
             
-            {/* Research Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Selective Friction Workflow</p>
-                <p className="text-foreground/70 text-sm">Diagram showing user tasks like abstract ranking before AI output display</p>
-              </div>
-            </div>
+
           </div>
 
           {/* System Design */}
@@ -269,12 +262,12 @@ export default function CaseStudyLLM() {
                 <div className="rounded-lg overflow-hidden border border-border/30">
                   <img 
                     src="/images/screen9-argument.png" 
-                    alt="Argument Exploration Task" 
+                    alt="Brainstorming Task with Friction" 
                     className="w-full h-auto"
                   />
                   <div className="p-4 bg-card/50">
-                    <h4 className="font-semibold text-foreground mb-1">Argument Exploration Task</h4>
-                    <p className="text-foreground/70 text-sm">Initial thoughts and counterarguments input</p>
+                    <h4 className="font-semibold text-foreground mb-1">Brainstorming Task with Friction</h4>
+                    <p className="text-foreground/70 text-sm">Initial thoughts and counterarguments required before AI assistance</p>
                   </div>
                 </div>
               </div>
