@@ -64,30 +64,28 @@ export default function CaseStudyIoT() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative rounded-2xl overflow-hidden mb-8">
-            <div className="bg-gradient-to-br from-green-500/40 via-blue-500/30 to-teal-500/40 rounded-2xl p-8 border border-green-500/20 relative overflow-hidden">
-              <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg p-8 min-h-[300px] flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">IoT Dashboard</p>
-                  <p className="text-foreground/70 text-sm">Real-time monitoring interface showing electricity, water, and air quality metrics</p>
-                </div>
-              </div>
-              {/* IoT particles */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-8 left-8 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-8 right-8 w-3 h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
-                <div className="absolute top-16 right-16 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-500"></div>
-              </div>
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/images/webapp-dashboard.gif" 
+              alt="Smart Resource Monitoring Web Dashboard" 
+              className="w-full h-auto"
+            />
+            <div className="p-6 bg-card/50">
+              <h4 className="font-semibold text-foreground text-xl mb-2">Web Application Dashboard</h4>
+              <p className="text-foreground/70">Real-time monitoring interface showing electricity, water quality, and air quality metrics with live data visualization</p>
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Web Dashboard on Mobile</p>
-              <p className="text-foreground/70 text-sm">Web dashboard on smartphone displaying real-time electricity usage, water quality (NTU), and air quality (PPM) metrics</p>
+          {/* System Architecture */}
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/images/proposed-system.gif" 
+              alt="IoT System Architecture" 
+              className="w-full h-auto"
+            />
+            <div className="p-6 bg-card/50">
+              <h4 className="font-semibold text-foreground text-xl mb-2">System Architecture</h4>
+              <p className="text-foreground/70">Complete IoT system showing sensor integration, data flow through Google Sheets, machine learning model, and user interfaces</p>
             </div>
           </div>
 
@@ -177,12 +175,16 @@ export default function CaseStudyIoT() {
               </div>
             </div>
             
-            {/* Research Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">IoT System Architecture</p>
-                <p className="text-foreground/70 text-sm">Diagram showing sensors, NodeMCU, Google Sheets, and web dashboard integration</p>
+            {/* Circuit Diagram */}
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+              <img 
+                src="/images/circuit-diagram.gif" 
+                alt="IoT Circuit Diagram" 
+                className="w-full h-auto"
+              />
+              <div className="p-6 bg-card/50">
+                <h4 className="font-semibold text-foreground text-xl mb-2">Hardware Circuit Diagram</h4>
+                <p className="text-foreground/70">Complete circuit setup showing Arduino Uno, sensors, and NodeMCU connections for multi-resource monitoring</p>
               </div>
             </div>
           </div>
@@ -212,12 +214,16 @@ export default function CaseStudyIoT() {
               </div>
             </div>
             
-            {/* System Design Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Hardware Setup</p>
-                <p className="text-foreground/70 text-sm">Arduino Uno, sensors, and NodeMCU in compact circuit configuration</p>
+            {/* Sensor Data */}
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+              <img 
+                src="/images/sensor-data.gif" 
+                alt="Automatic Sensor Data Collection" 
+                className="w-full h-auto"
+              />
+              <div className="p-6 bg-card/50">
+                <h4 className="font-semibold text-foreground text-xl mb-2">Real-time Sensor Data</h4>
+                <p className="text-foreground/70">Automatic data collection showing temperature, humidity, air quality, and turbidity measurements over time</p>
               </div>
             </div>
           </div>
@@ -253,12 +259,16 @@ export default function CaseStudyIoT() {
               </div>
             </div>
             
-            {/* Implementation Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Web Dashboard Screenshot</p>
-                <p className="text-foreground/70 text-sm">Line graph showing predicted vs. actual air quality values</p>
+            {/* Electricity Dashboard */}
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+              <img 
+                src="/images/electricity-dashboard.gif" 
+                alt="Adafruit Electricity Dashboard" 
+                className="w-full h-auto"
+              />
+              <div className="p-6 bg-card/50">
+                <h4 className="font-semibold text-foreground text-xl mb-2">Electricity Monitoring Dashboard</h4>
+                <p className="text-foreground/70">Adafruit dashboard showing real-time electricity usage monitoring with gauge visualization</p>
               </div>
             </div>
           </div>
@@ -300,12 +310,16 @@ export default function CaseStudyIoT() {
             </div>
           </div>
           
-          {/* Validation Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Model Comparison</p>
-              <p className="text-foreground/70 text-sm">Scatter plot comparing Random Forest's predicted (green) vs. expected (red) air quality values</p>
+          {/* ARIMA Prediction Results */}
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/images/arima-prediction.gif" 
+              alt="ARIMA Predicted vs Expected Results" 
+              className="w-full h-auto"
+            />
+            <div className="p-6 bg-card/50">
+              <h4 className="font-semibold text-foreground text-xl mb-2">ARIMA Model Performance</h4>
+              <p className="text-foreground/70">Comparison of ARIMA predicted values vs expected results, showing model limitations with 97.49 RMSE</p>
             </div>
           </div>
         </section>
@@ -337,12 +351,16 @@ export default function CaseStudyIoT() {
             </div>
           </div>
           
-          {/* Impact Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Model Performance Comparison</p>
-              <p className="text-foreground/70 text-sm">Bar chart comparing RMSE of LSTM, ARIMA, and Random Forest, highlighting Random Forest's superior accuracy</p>
+          {/* Random Forest Results */}
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/images/random-forest.gif" 
+              alt="Random Forest Model Performance" 
+              className="w-full h-auto"
+            />
+            <div className="p-6 bg-card/50">
+              <h4 className="font-semibold text-foreground text-xl mb-2">Random Forest Model Performance</h4>
+              <p className="text-foreground/70">Superior performance with 2.94 RMSE, demonstrating Random Forest's effectiveness for IoT sensor data prediction</p>
             </div>
           </div>
         </section>
@@ -370,6 +388,19 @@ export default function CaseStudyIoT() {
                   Affordable design and intuitive interfaces are critical for driving user adoption and sustainable behavior change in resource management systems.
                 </p>
               </div>
+            </div>
+          </div>
+          
+          {/* Comprehensive ML Results */}
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/images/ml-results.gif" 
+              alt="Comprehensive Machine Learning Results" 
+              className="w-full h-auto"
+            />
+            <div className="p-6 bg-card/50">
+              <h4 className="font-semibold text-foreground text-xl mb-2">Complete ML Model Analysis</h4>
+              <p className="text-foreground/70">Comprehensive comparison of LSTM, ARIMA, and Random Forest models showing performance metrics and prediction accuracy</p>
             </div>
           </div>
         </section>
@@ -402,12 +433,25 @@ export default function CaseStudyIoT() {
           </div>
         </section>
 
-        {/* Final Image Placeholder */}
-        <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-          <div className="text-center">
-            <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-            <p className="text-foreground font-semibold text-lg mb-2">Promotional Image</p>
-            <p className="text-foreground/70 text-sm">Household using the mobile app to monitor resources, with tagline: "Smart today, sustainable tomorrow."</p>
+        {/* Project Impact Visual */}
+        <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="bg-gradient-to-br from-green-500/20 via-blue-500/20 to-teal-500/20 p-8 text-center">
+            <div className="text-2xl font-bold text-foreground mb-4">Smart Resource Monitoring</div>
+            <div className="text-foreground/80 text-lg mb-6">Revolutionizing Sustainability Through IoT and Machine Learning</div>
+            <div className="flex justify-center gap-8 text-sm">
+              <div className="flex items-center gap-2">
+                <Zap className="w-5 h-5 text-yellow-500" />
+                <span className="text-foreground">Real-time Monitoring</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Target className="w-5 h-5 text-blue-500" />
+                <span className="text-foreground">Predictive Analytics</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Droplets className="w-5 h-5 text-blue-400" />
+                <span className="text-foreground">Multi-resource Tracking</span>
+              </div>
+            </div>
           </div>
         </div>
 
