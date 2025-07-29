@@ -251,12 +251,12 @@ export default function CaseStudyLLM() {
                 <div className="rounded-lg overflow-hidden border border-border/30">
                   <img 
                     src="/images/screen5-literature.png" 
-                    alt="Literature Review Task" 
+                    alt="Literature Review without Friction" 
                     className="w-full h-auto"
                   />
                   <div className="p-4 bg-card/50">
-                    <h4 className="font-semibold text-foreground mb-1">Literature Review Task</h4>
-                    <p className="text-foreground/70 text-sm">Topic input before AI assistance</p>
+                    <h4 className="font-semibold text-foreground mb-1">Literature Review without Friction</h4>
+                    <p className="text-foreground/70 text-sm">Direct topic input with immediate AI assistance</p>
                   </div>
                 </div>
                 <div className="rounded-lg overflow-hidden border border-border/30">
