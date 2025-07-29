@@ -261,14 +261,25 @@ export default function CaseStudyLLM() {
                 </div>
                 <div className="rounded-lg overflow-hidden border border-border/30">
                   <img 
-                    src="/images/screen9-argument.png" 
-                    alt="Brainstorming Task with Friction" 
+                    src="/images/screen7-brainstorming-no-friction.png" 
+                    alt="Brainstorming Task without Friction" 
                     className="w-full h-auto"
                   />
                   <div className="p-4 bg-card/50">
-                    <h4 className="font-semibold text-foreground mb-1">Brainstorming Task with Friction</h4>
-                    <p className="text-foreground/70 text-sm">Initial thoughts and counterarguments required before AI assistance</p>
+                    <h4 className="font-semibold text-foreground mb-1">Brainstorming Task without Friction</h4>
+                    <p className="text-foreground/70 text-sm">Direct topic input with immediate AI assistance</p>
                   </div>
+                </div>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-border/30">
+                <img 
+                  src="/images/screen9-argument.png" 
+                  alt="Brainstorming Task with Friction" 
+                  className="w-full h-auto"
+                />
+                <div className="p-4 bg-card/50">
+                  <h4 className="font-semibold text-foreground mb-1">Brainstorming Task with Friction</h4>
+                  <p className="text-foreground/70 text-sm">Initial thoughts and counterarguments required before AI assistance</p>
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden border border-border/30">
