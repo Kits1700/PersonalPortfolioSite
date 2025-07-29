@@ -93,13 +93,15 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
-  // Update track when vibe changes
+  // Update track when vibe changes and auto-play
   useEffect(() => {
     if (selectedVibe && musicTracks[selectedVibe]) {
       const tracks = musicTracks[selectedVibe];
       setCurrentTrack(tracks[0]);
       setCurrentTrackIndex(0);
       localStorage.setItem('selectedVibe', selectedVibe);
+      // Auto-play when vibe is selected
+      setIsPlaying(true);
     }
   }, [selectedVibe]);
 

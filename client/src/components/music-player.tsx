@@ -21,7 +21,7 @@ export default function MusicPlayer() {
 
   return (
     <div className={cn(
-      "fixed bottom-6 right-6 z-50 bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-xl transition-all duration-300",
+      "fixed bottom-32 right-6 z-50 bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-xl transition-all duration-300",
       isExpanded ? "w-80 animate-in fade-in-0 zoom-in-95" : "w-16 hover:scale-105"
     )}>
       {isExpanded ? (
