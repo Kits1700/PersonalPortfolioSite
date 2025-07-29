@@ -4,7 +4,6 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import CustomCursor from "@/components/custom-cursor";
-import GlobalAudio from "@/components/global-audio";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import CaseStudyLLM from "@/pages/case-study-llm";
@@ -31,7 +30,6 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <CustomCursor />
-        <GlobalAudio />
         <Toaster />
         <Router />
       </TooltipProvider>
