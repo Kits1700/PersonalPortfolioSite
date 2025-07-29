@@ -284,23 +284,44 @@ export default function CaseStudyVR() {
             
             {/* Prototype Videos */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+              <div className="rounded-xl overflow-hidden border border-border/30">
+                <video 
+                  controls 
+                  className="w-full h-auto"
+                  poster=""
+                >
+                  <source src="/videos/warmup.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="p-4 bg-card/50">
                   <p className="text-foreground font-semibold text-lg mb-2">Scene 1: Warm-Up</p>
                   <p className="text-foreground/70 text-sm">Introduction to jumping jacks and squats mechanics</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+              <div className="rounded-xl overflow-hidden border border-border/30">
+                <video 
+                  controls 
+                  className="w-full h-auto"
+                  poster=""
+                >
+                  <source src="/videos/mission.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="p-4 bg-card/50">
                   <p className="text-foreground font-semibold text-lg mb-2">Scene 2: Primary Mission</p>
                   <p className="text-foreground/70 text-sm">Player navigating collapsing city through physical actions</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">VIDEO PLACEHOLDER</div>
+              <div className="rounded-xl overflow-hidden border border-border/30">
+                <video 
+                  controls 
+                  className="w-full h-auto"
+                  poster=""
+                >
+                  <source src="/videos/missiondone.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="p-4 bg-card/50">
                   <p className="text-foreground font-semibold text-lg mb-2">Scene 3: Mission Accomplished</p>
                   <p className="text-foreground/70 text-sm">Success state with narrative closure and rewards</p>
                 </div>
