@@ -64,9 +64,13 @@ export default function CaseStudyLLM() {
           <div className="rounded-xl overflow-hidden mb-8 border border-border/30">
             <img 
               src="/attached_assets/screen1-onboarding.png" 
-              alt="Research Application Onboarding Screen" 
+              alt="Research Application Home Screen" 
               className="w-full h-auto"
             />
+            <div className="p-4 bg-card/50 border-t border-border/30">
+              <h4 className="font-semibold text-foreground mb-1">Application Home Screen</h4>
+              <p className="text-foreground/70 text-sm">Welcome interface introducing the study purpose, tasks, and conditions with clear "Begin Study" call-to-action</p>
+            </div>
           </div>
 
           <div className="text-center">
