@@ -365,12 +365,19 @@ export default function CaseStudyVR() {
             </div>
           </div>
           
-          {/* User Testing Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">User Testing Photo</p>
-              <p className="text-foreground/70 text-sm">Tester wearing Meta Quest 2, performing a squat in the hallway, with feedback quote: "I forgot I was moving that much."</p>
+          {/* User Testing Video */}
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <video 
+              controls 
+              className="w-full h-auto"
+              poster=""
+            >
+              <source src="/videos/user-testing.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="p-6 bg-card/50">
+              <p className="text-foreground font-semibold text-xl mb-2">User Testing Session</p>
+              <p className="text-foreground/70">Tester wearing Meta Quest 2, performing physical movements in the hallway environment</p>
             </div>
           </div>
         </section>
