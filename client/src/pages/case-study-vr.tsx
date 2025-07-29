@@ -528,7 +528,7 @@ export default function CaseStudyVR() {
               Watch the complete development journey from concept to final gameplay, showcasing the design process, Unity development, and actual VR gameplay footage.
             </p>
             <a 
-              href="https://drive.google.com/file/d/13QkVrxjNUChmFt4bVg-lUt3DwaNaCGc3/view?usp=sharing"
+              href="https://youtu.be/o36PuYVcFFk"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
