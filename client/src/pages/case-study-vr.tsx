@@ -539,10 +539,8 @@ export default function CaseStudyVR() {
           </div>
         </section>
 
-        {/* Final Promotional Image */}
         <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-6 mb-8 border border-border/30">
           <div className="text-center mb-4">
-            <h4 className="text-lg font-semibold text-foreground mb-2">Final Promotional Image</h4>
             <p className="text-foreground/70 text-sm italic">"Built for a hallway. Designed for survival. Coming to a cramped space near you."</p>
           </div>
           <div className="bg-black rounded-lg p-4 overflow-hidden">
