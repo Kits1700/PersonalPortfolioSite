@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
+import { emailService } from "./email";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -25,7 +26,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
+      // Store the message
       const contactMessage = await storage.createContactMessage(validatedData);
+      
+      // Send email notification
+      try {
+        await emailService.sendContactEmail(validatedData);
+        console.log(`Contact form message sent to saikeerthana.arun@gmail.com from ${validatedData.name} (${validatedData.email})`);
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+        // Don't fail the request if email fails - still save the message
+      }
       
       res.status(201).json({ 
         message: "Message sent successfully",
