@@ -376,6 +376,25 @@ export default function CaseStudyLLM() {
               </p>
             </div>
             
+            {/* Participant Voices */}
+            <div className="bg-accent/5 rounded-lg p-6 mb-6 border border-accent/20">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">What Participants Said</h4>
+              <div className="space-y-4">
+                <blockquote className="border-l-4 border-primary pl-4 italic text-foreground/90">
+                  "Putting your own thoughts and like looking at stuff yourself... you're gonna be a lot more careful." 
+                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 25</cite>
+                </blockquote>
+                <blockquote className="border-l-4 border-green-500 pl-4 italic text-foreground/90">
+                  "I felt like it was trustworthy because I'd, like, done a bit of the pre work."
+                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 15</cite>
+                </blockquote>
+                <blockquote className="border-l-4 border-blue-500 pl-4 italic text-foreground/90">
+                  "It felt a little bit more like collaborating... in the first one I feel like I barely had to think."
+                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 28</cite>
+                </blockquote>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card/50 rounded-lg p-6 border border-border">
                 <div className="flex items-center gap-3 mb-4">
@@ -415,9 +434,13 @@ export default function CaseStudyLLM() {
                   <p className="text-yellow-600 font-medium">DIVERGENT RESULTS</p>
                 </div>
               </div>
-              <p className="text-foreground/80 text-sm">
+              <p className="text-foreground/80 text-sm mb-3">
                 Quantitative measures showed no significant differences, but qualitative data revealed strong evidence of enhanced critical thinking processes. This suggests process-level improvements that transcend scale-based measurement.
               </p>
+              <blockquote className="border-l-3 border-yellow-500 pl-3 italic text-foreground/90 text-sm">
+                "It made me to think more have my personal opinion, because usually I also do this with AI and sometimes I feel like... I kind of over rely on the thought of AI."
+                <cite className="block text-xs text-foreground/60 mt-1">— Participant 33</cite>
+              </blockquote>
             </div>
             
             {/* H2 - Trust */}
@@ -429,9 +452,13 @@ export default function CaseStudyLLM() {
                   <p className="text-green-600 font-medium">STRONGLY SUPPORTED</p>
                 </div>
               </div>
-              <p className="text-foreground/80 text-sm">
+              <p className="text-foreground/80 text-sm mb-3">
                 Large effect sizes across all trust dimensions (r=.48-.56). Friction builds trust through earned confidence - users trust outputs more when they contribute to the process.
               </p>
+              <blockquote className="border-l-3 border-green-500 pl-3 italic text-foreground/90 text-sm">
+                "Friction was a better choice according to me, because it was more relevant and it did increase my confidence in AI as well as in my own reasoning."
+                <cite className="block text-xs text-foreground/60 mt-1">— Participant 37</cite>
+              </blockquote>
             </div>
             
             {/* H3 - Cognitive Effort */}
@@ -443,9 +470,13 @@ export default function CaseStudyLLM() {
                   <p className="text-green-600 font-medium">FULLY SUPPORTED</p>
                 </div>
               </div>
-              <p className="text-foreground/80 text-sm">
+              <p className="text-foreground/80 text-sm mb-3">
                 Significant increases in mental demand (r=.79) and effort (r=.64) paired with increased satisfaction (r=.55). Users willingly invest mental resources when they perceive clear value.
               </p>
+              <blockquote className="border-l-3 border-green-500 pl-3 italic text-foreground/90 text-sm">
+                "Even though doing with steps was like the addition to was a little time consuming, but the final output was more in depth and detail."
+                <cite className="block text-xs text-foreground/60 mt-1">— Participant 26</cite>
+              </blockquote>
             </div>
           </div>
         </section>
