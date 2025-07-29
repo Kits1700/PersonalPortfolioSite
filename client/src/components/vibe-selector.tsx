@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Music, Headphones, Volume2, Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useMusic } from '@/contexts/music-context';
@@ -42,34 +42,59 @@ const vibes = [
 export default function VibeSelector() {
   const { selectedVibe, setSelectedVibe } = useMusic();
   const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const handleVibeSelect = (vibeId: string) => {
     setSelectedVibe(vibeId);
     setIsOpen(false);
   };
 
+  // Close when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [isOpen]);
+
   return (
-    <div className="fixed top-6 left-6 z-50">
+    <div ref={containerRef} className="fixed top-20 left-4 z-50">
       {!isOpen ? (
-        <Button
-          onClick={() => setIsOpen(true)}
-          variant="outline"
-          className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground"
-        >
-          <Music className="w-4 h-4 mr-2" />
-          {selectedVibe ? `${vibes.find(v => v.id === selectedVibe)?.name} vibes` : 'Pick your vibe today'}
-        </Button>
+        <div className="group">
+          <Button
+            onClick={() => setIsOpen(true)}
+            variant="outline"
+            className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <Music className="w-4 h-4 mr-2" />
+            <span className="hidden sm:inline">
+              {selectedVibe ? `${vibes.find(v => v.id === selectedVibe)?.name} vibes` : 'Pick your vibe'}
+            </span>
+            <span className="sm:hidden">Vibes</span>
+          </Button>
+          
+          {/* Floating hint */}
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-popover text-popover-foreground text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+            Pick your vibe today
+          </div>
+        </div>
       ) : (
-        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-lg p-4 w-80">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-xl p-4 w-80 animate-in fade-in-0 zoom-in-95 duration-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold text-foreground">Pick your vibe today</h3>
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(false)}
-              className="h-8 w-8 p-0"
+              className="h-8 w-8 p-0 hover:bg-muted/50"
             >
-              ×
+              <span className="text-lg">×</span>
             </Button>
           </div>
           
