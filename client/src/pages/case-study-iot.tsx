@@ -64,11 +64,11 @@ export default function CaseStudyIoT() {
           </div>
 
           {/* Hero Image */}
-          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-3xl mx-auto">
             <img 
               src="/images/webapp-dashboard.gif" 
               alt="Smart Resource Monitoring Web Dashboard" 
-              className="w-full h-auto"
+              className="w-full h-auto max-h-96 object-contain"
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">Web Application Dashboard</h4>
@@ -77,11 +77,11 @@ export default function CaseStudyIoT() {
           </div>
 
           {/* System Architecture */}
-          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
             <img 
               src="/images/proposed-system.gif" 
               alt="IoT System Architecture" 
-              className="w-full h-auto"
+              className="w-full h-auto max-h-80 object-contain"
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">System Architecture</h4>
@@ -176,11 +176,11 @@ export default function CaseStudyIoT() {
             </div>
             
             {/* Circuit Diagram */}
-            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
               <img 
                 src="/images/circuit-diagram.gif" 
                 alt="IoT Circuit Diagram" 
-                className="w-full h-auto"
+                className="w-full h-auto max-h-72 object-contain"
               />
               <div className="p-6 bg-card/50">
                 <h4 className="font-semibold text-foreground text-xl mb-2">Hardware Circuit Diagram</h4>
@@ -215,11 +215,11 @@ export default function CaseStudyIoT() {
             </div>
             
             {/* Sensor Data */}
-            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
               <img 
                 src="/images/sensor-data.gif" 
                 alt="Automatic Sensor Data Collection" 
-                className="w-full h-auto"
+                className="w-full h-auto max-h-72 object-contain"
               />
               <div className="p-6 bg-card/50">
                 <h4 className="font-semibold text-foreground text-xl mb-2">Real-time Sensor Data</h4>
@@ -260,11 +260,11 @@ export default function CaseStudyIoT() {
             </div>
             
             {/* Electricity Dashboard */}
-            <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+            <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
               <img 
                 src="/images/electricity-dashboard.gif" 
                 alt="Adafruit Electricity Dashboard" 
-                className="w-full h-auto"
+                className="w-full h-auto max-h-80 object-contain"
               />
               <div className="p-6 bg-card/50">
                 <h4 className="font-semibold text-foreground text-xl mb-2">Electricity Monitoring Dashboard</h4>
@@ -311,11 +311,11 @@ export default function CaseStudyIoT() {
           </div>
           
           {/* ARIMA Prediction Results */}
-          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
             <img 
               src="/images/arima-prediction.gif" 
               alt="ARIMA Predicted vs Expected Results" 
-              className="w-full h-auto"
+              className="w-full h-auto max-h-72 object-contain"
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">ARIMA Model Performance</h4>
@@ -352,11 +352,11 @@ export default function CaseStudyIoT() {
           </div>
           
           {/* Random Forest Results */}
-          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
             <img 
               src="/images/random-forest.gif" 
               alt="Random Forest Model Performance" 
-              className="w-full h-auto"
+              className="w-full h-auto max-h-72 object-contain"
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">Random Forest Model Performance</h4>
@@ -392,11 +392,11 @@ export default function CaseStudyIoT() {
           </div>
           
           {/* Comprehensive ML Results */}
-          <div className="rounded-xl overflow-hidden border border-border/30 mb-8">
+          <div className="rounded-xl overflow-hidden border border-border/30 mb-8 max-w-2xl mx-auto">
             <img 
               src="/images/ml-results.gif" 
               alt="Comprehensive Machine Learning Results" 
-              className="w-full h-auto"
+              className="w-full h-auto max-h-80 object-contain"
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">Complete ML Model Analysis</h4>
