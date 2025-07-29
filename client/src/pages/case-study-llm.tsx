@@ -615,6 +615,26 @@ export default function CaseStudyLLM() {
               </div>
             </div>
           </div>
+          
+          {/* Live Web Application */}
+          <div className="bg-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
+            <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center gap-2">
+              <ExternalLink className="w-5 h-5" />
+              Live Web Application
+            </h3>
+            <p className="text-foreground/80 text-sm mb-3">
+              Experience the research application firsthand. Try the selective friction interface and see how task-specific barriers can enhance critical thinking in AI-assisted workflows.
+            </p>
+            <a 
+              href="https://thesis-study-design-saikeerthanaarun.replit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Try the Interactive Application
+            </a>
+          </div>
         </section>
 
         {/* Navigation */}
