@@ -37,7 +37,6 @@ function App() {
         <MusicProvider>
           <CustomCursor />
           <Toaster />
-          <VibeSelector />
           <MusicPlayer />
           <Router />
         </MusicProvider>
