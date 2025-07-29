@@ -590,7 +590,9 @@ export default function CaseStudyLLM() {
         {/* Conclusion */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-2xl p-8 border border-green-500/20 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-foreground">Think Deeper, Create Smarter</h2>
+            <h2 className="text-3xl font-bold mb-4 text-foreground">Not All Lag Is Bad—Some of It Thinks</h2>
+            <h3 className="text-2xl font-semibold mb-6 text-primary">Think Deeper, Create Smarter</h3>
+            
             <p className="text-foreground leading-relaxed text-lg mb-6">
               "Encouraging Thought Before Completion" pioneers selective friction to enhance human-AI collaboration. As data collection continues, this project promises to shape UX design for AI tools, with applications in education and professional workflows.
             </p>
@@ -600,7 +602,7 @@ export default function CaseStudyLLM() {
             
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-500 mb-2">25</div>
+                <div className="text-3xl font-bold text-green-500 mb-2">41</div>
                 <p className="text-foreground font-medium">Participants</p>
               </div>
               <div className="text-center">
@@ -614,15 +616,6 @@ export default function CaseStudyLLM() {
             </div>
           </div>
         </section>
-
-        {/* Final Image Placeholder */}
-        <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-          <div className="text-center">
-            <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-            <p className="text-foreground font-semibold text-lg mb-2">Promotional Image</p>
-            <p className="text-foreground/70 text-sm">App in use with tagline: "Think deeper, create smarter."</p>
-          </div>
-        </div>
 
         {/* Navigation */}
         <div className="flex justify-between items-center py-8 border-t border-border/30">
