@@ -92,7 +92,7 @@ export default function CaseStudyIoT() {
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4 mb-8">
             <div className="text-center p-4 bg-card/50 rounded-lg">
-              <div className="text-2xl font-bold text-primary mb-2">2.94</div>
+              <div className="text-2xl font-bold text-primary mb-2">23.94</div>
               <div className="text-sm text-foreground">RMSE Accuracy</div>
             </div>
             <div className="text-center p-4 bg-card/50 rounded-lg">
@@ -252,7 +252,7 @@ export default function CaseStudyIoT() {
                 <div className="space-y-4">
                   <div className="bg-card/50 rounded-lg p-4 border border-border">
                     <h4 className="text-lg font-semibold mb-2 text-foreground">Predictive Model</h4>
-                    <p className="text-foreground/80 text-sm">Random Forest outperformed LSTM (48.304 RMSE) and ARIMA (97.49 RMSE) with 2.94 RMSE</p>
+                    <p className="text-foreground/80 text-sm">Random Forest outperformed LSTM (48.94 RMSE) and ARIMA (97.49 RMSE) with 23.94 RMSE</p>
                   </div>
                   <div className="bg-card/50 rounded-lg p-4 border border-border">
                     <h4 className="text-lg font-semibold mb-2 text-foreground">Interface</h4>
@@ -295,7 +295,7 @@ export default function CaseStudyIoT() {
                 <p className="text-foreground/80 text-sm">Near-instantaneous updates for real-time monitoring</p>
               </div>
               <div className="bg-card/50 rounded-lg p-6 border border-border text-center">
-                <div className="text-3xl font-bold text-blue-500 mb-2">2.94</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">23.94</div>
                 <h4 className="text-lg font-semibold mb-2 text-foreground">RMSE Accuracy</h4>
                 <p className="text-foreground/80 text-sm">Random Forest model performance</p>
               </div>
@@ -333,7 +333,7 @@ export default function CaseStudyIoT() {
           
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8 border border-primary/20">
             <p className="text-foreground leading-relaxed mb-6">
-              With a <strong>2.94 RMSE for quality predictions</strong> and <strong>0.58% error for electricity</strong>, this system reduces costs, mitigates health risks, and promotes sustainable consumption. Its affordability and scalability make it ideal for homes and businesses, supporting global sustainability initiatives.
+              With a <strong>23.94 RMSE for quality predictions</strong> and <strong>0.58% error for electricity</strong>, this system reduces costs, mitigates health risks, and promotes sustainable consumption. Its affordability and scalability make it ideal for homes and businesses, supporting global sustainability initiatives.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -363,7 +363,7 @@ export default function CaseStudyIoT() {
             />
             <div className="p-6 bg-card/50">
               <h4 className="font-semibold text-foreground text-xl mb-2">Random Forest Model Performance</h4>
-              <p className="text-foreground/70">Superior performance with 2.94 RMSE, demonstrating Random Forest's effectiveness for IoT sensor data prediction</p>
+              <p className="text-foreground/70">Superior performance with 23.94 RMSE, demonstrating Random Forest's effectiveness for IoT sensor data prediction</p>
             </div>
           </div>
         </section>
@@ -382,7 +382,7 @@ export default function CaseStudyIoT() {
               <div className="bg-card/50 rounded-lg p-6 border border-border">
                 <h4 className="text-lg font-semibold mb-4 text-foreground">Technical Insights</h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Random Forest's ensemble approach proved superior to LSTM and ARIMA for time-series prediction with limited data, achieving remarkable accuracy with only ~400 training samples.
+                  Random Forest's ensemble approach proved superior to LSTM (48.94 RMSE) and ARIMA (97.49 RMSE) for time-series prediction with limited data, achieving 23.94 RMSE accuracy with only ~400 training samples.
                 </p>
               </div>
               <div className="bg-card/50 rounded-lg p-6 border border-border">
@@ -421,7 +421,7 @@ export default function CaseStudyIoT() {
             
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-500 mb-2">2.94</div>
+                <div className="text-3xl font-bold text-green-500 mb-2">23.94</div>
                 <p className="text-foreground font-medium">RMSE Accuracy</p>
               </div>
               <div className="text-center">
