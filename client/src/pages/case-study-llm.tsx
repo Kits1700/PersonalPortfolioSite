@@ -63,7 +63,7 @@ export default function CaseStudyLLM() {
           {/* Hero Image */}
           <div className="rounded-xl overflow-hidden mb-8 border border-border/30">
             <img 
-              src="/attached_assets/screen1-onboarding.png" 
+              src="/images/screen1-onboarding.png" 
               alt="Research Application Home Screen" 
               className="w-full h-auto"
             />
@@ -187,7 +187,7 @@ export default function CaseStudyLLM() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="rounded-lg overflow-hidden border border-border/30">
                 <img 
-                  src="/attached_assets/screen2-notes.png" 
+                  src="/images/screen2-notes.png" 
                   alt="Important Notes Screen" 
                   className="w-full h-auto"
                 />
@@ -198,7 +198,7 @@ export default function CaseStudyLLM() {
               </div>
               <div className="rounded-lg overflow-hidden border border-border/30">
                 <img 
-                  src="/attached_assets/screen3-questionnaire.png" 
+                  src="/images/screen3-questionnaire.png" 
                   alt="Pre-Study Questionnaire" 
                   className="w-full h-auto"
                 />
@@ -245,7 +245,7 @@ export default function CaseStudyLLM() {
             <div className="space-y-6">
               <div className="rounded-lg overflow-hidden border border-border/30">
                 <img 
-                  src="/attached_assets/screen4-tasks.png" 
+                  src="/images/screen4-tasks.png" 
                   alt="Task Overview Screen" 
                   className="w-full h-auto"
                 />
@@ -257,7 +257,7 @@ export default function CaseStudyLLM() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="rounded-lg overflow-hidden border border-border/30">
                   <img 
-                    src="/attached_assets/screen5-literature.png" 
+                    src="/images/screen5-literature.png" 
                     alt="Literature Review Task" 
                     className="w-full h-auto"
                   />
@@ -268,7 +268,7 @@ export default function CaseStudyLLM() {
                 </div>
                 <div className="rounded-lg overflow-hidden border border-border/30">
                   <img 
-                    src="/attached_assets/screen9-argument.png" 
+                    src="/images/screen9-argument.png" 
                     alt="Argument Exploration Task" 
                     className="w-full h-auto"
                   />
@@ -280,7 +280,7 @@ export default function CaseStudyLLM() {
               </div>
               <div className="rounded-lg overflow-hidden border border-border/30">
                 <img 
-                  src="/attached_assets/screen8-friction-task.png" 
+                  src="/images/screen8-friction-task.png" 
                   alt="Friction Task Screen" 
                   className="w-full h-auto"
                 />
@@ -344,7 +344,7 @@ export default function CaseStudyLLM() {
           {/* User Study Screenshots */}
           <div className="rounded-lg overflow-hidden border border-border/30 mb-8">
             <img 
-              src="/attached_assets/post-task-questionnaire.png" 
+              src="/images/post-task-questionnaire.png" 
               alt="Post-Task Questionnaire" 
               className="w-full h-auto"
             />
