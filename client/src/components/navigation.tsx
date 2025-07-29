@@ -70,7 +70,7 @@ export default function Navigation() {
                 onClick={() => handleNavClick("#home")}
                 className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
               >
-                Portfolio
+                SKA
               </button>
             </div>
 
