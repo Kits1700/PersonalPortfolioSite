@@ -60,13 +60,13 @@ export default function CaseStudyLLM() {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Web Application Home Screen</p>
-              <p className="text-foreground/70 text-sm">Clean, intuitive interface with "Start Task" button for selective friction research platform</p>
-            </div>
+          {/* Hero Image */}
+          <div className="rounded-xl overflow-hidden mb-8 border border-border/30">
+            <img 
+              src="/attached_assets/screen1-onboarding.png" 
+              alt="Research Application Onboarding Screen" 
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="text-center">
@@ -179,12 +179,29 @@ export default function CaseStudyLLM() {
               </div>
             </div>
             
-            {/* System Design Image Placeholder */}
-            <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-              <div className="text-center">
-                <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                <p className="text-foreground font-semibold text-lg mb-2">Onboarding Screen</p>
-                <p className="text-foreground/70 text-sm">Informed consent and task instructions interface</p>
+            {/* System Design Screenshots */}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="rounded-lg overflow-hidden border border-border/30">
+                <img 
+                  src="/attached_assets/screen2-notes.png" 
+                  alt="Important Notes Screen" 
+                  className="w-full h-auto"
+                />
+                <div className="p-4 bg-card/50">
+                  <h4 className="font-semibold text-foreground mb-1">Important Notes Screen</h4>
+                  <p className="text-foreground/70 text-sm">Guidelines for optimal research experience</p>
+                </div>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-border/30">
+                <img 
+                  src="/attached_assets/screen3-questionnaire.png" 
+                  alt="Pre-Study Questionnaire" 
+                  className="w-full h-auto"
+                />
+                <div className="p-4 bg-card/50">
+                  <h4 className="font-semibold text-foreground mb-1">Pre-Study Questionnaire</h4>
+                  <p className="text-foreground/70 text-sm">AI familiarity and demographic data collection</p>
+                </div>
               </div>
             </div>
           </div>
@@ -220,27 +237,52 @@ export default function CaseStudyLLM() {
               </div>
             </div>
             
-            {/* Implementation Image Placeholders */}
+            {/* Implementation Screenshots */}
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">Literature Review Task Screen</p>
-                  <p className="text-foreground/70 text-sm">Abstract ranking interface before AI review display</p>
+              <div className="rounded-lg overflow-hidden border border-border/30">
+                <img 
+                  src="/attached_assets/screen4-tasks.png" 
+                  alt="Task Overview Screen" 
+                  className="w-full h-auto"
+                />
+                <div className="p-4 bg-card/50">
+                  <h4 className="font-semibold text-foreground mb-1">Task Overview Screen</h4>
+                  <p className="text-foreground/70 text-sm">Counterbalanced task order with friction conditions</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">Argument Brainstorming Screen</p>
-                  <p className="text-foreground/70 text-sm">Counterargument input field interface</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="rounded-lg overflow-hidden border border-border/30">
+                  <img 
+                    src="/attached_assets/screen5-literature.png" 
+                    alt="Literature Review Task" 
+                    className="w-full h-auto"
+                  />
+                  <div className="p-4 bg-card/50">
+                    <h4 className="font-semibold text-foreground mb-1">Literature Review Task</h4>
+                    <p className="text-foreground/70 text-sm">Topic input before AI assistance</p>
+                  </div>
+                </div>
+                <div className="rounded-lg overflow-hidden border border-border/30">
+                  <img 
+                    src="/attached_assets/screen9-argument.png" 
+                    alt="Argument Exploration Task" 
+                    className="w-full h-auto"
+                  />
+                  <div className="p-4 bg-card/50">
+                    <h4 className="font-semibold text-foreground mb-1">Argument Exploration Task</h4>
+                    <p className="text-foreground/70 text-sm">Initial thoughts and counterarguments input</p>
+                  </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 border border-border/30">
-                <div className="text-center">
-                  <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-                  <p className="text-foreground font-semibold text-lg mb-2">Results Screen</p>
-                  <p className="text-foreground/70 text-sm">AI-generated output display after friction tasks</p>
+              <div className="rounded-lg overflow-hidden border border-border/30">
+                <img 
+                  src="/attached_assets/screen8-friction-task.png" 
+                  alt="Friction Task Screen" 
+                  className="w-full h-auto"
+                />
+                <div className="p-4 bg-card/50">
+                  <h4 className="font-semibold text-foreground mb-1">Literature Review with Friction</h4>
+                  <p className="text-foreground/70 text-sm">Abstract ranking and evaluation before AI review generation</p>
                 </div>
               </div>
             </div>
@@ -295,12 +337,16 @@ export default function CaseStudyLLM() {
             </div>
           </div>
           
-          {/* User Study Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">User Testing Session</p>
-              <p className="text-foreground/70 text-sm">Participant interacting with the app on laptop during research protocol</p>
+          {/* User Study Screenshots */}
+          <div className="rounded-lg overflow-hidden border border-border/30 mb-8">
+            <img 
+              src="/attached_assets/post-task-questionnaire.png" 
+              alt="Post-Task Questionnaire" 
+              className="w-full h-auto"
+            />
+            <div className="p-4 bg-card/50">
+              <h4 className="font-semibold text-foreground mb-1">Post-Task Questionnaire</h4>
+              <p className="text-foreground/70 text-sm">Comprehensive assessment of trust, cognitive effort, and user experience metrics</p>
             </div>
           </div>
         </section>
