@@ -21,61 +21,37 @@ interface MusicContextType {
 
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
 
-// Music tracks for different vibes - using accessible audio sources
+// Music tracks for different vibes - using your custom audio files
 const musicTracks: Record<string, MusicTrack[]> = {
   indie: [
     {
       id: 'indie-1',
-      name: 'Dreamy Afternoon',
-      url: '/audio/ambient.mp3',
-      genre: 'indie'
-    },
-    {
-      id: 'indie-2', 
-      name: 'Coffee Shop Vibes',
-      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav',
+      name: 'Indie Vibes',
+      url: '/audio/indie.mp3',
       genre: 'indie'
     }
   ],
   carnatic: [
     {
       id: 'carnatic-1',
-      name: 'Raga Yaman',
-      url: '/audio/ambient.mp3',
-      genre: 'carnatic'
-    },
-    {
-      id: 'carnatic-2',
-      name: 'Bhajan Flow',
-      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/PinkPanther30.wav', 
+      name: 'Carnatic Sounds',
+      url: '/audio/carnatic.mp3',
       genre: 'carnatic'
     }
   ],
   mellow: [
     {
       id: 'mellow-1',
-      name: 'Sunset Meditation',
-      url: '/audio/ambient.mp3',
-      genre: 'mellow'
-    },
-    {
-      id: 'mellow-2',
-      name: 'Rain on Glass',
-      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav',
+      name: 'Mellow Tunes',
+      url: '/audio/mellow.mp3',
       genre: 'mellow'
     }
   ],
   focus: [
     {
       id: 'focus-1',
-      name: 'Deep Work',
-      url: '/audio/ambient.mp3',
-      genre: 'focus'
-    },
-    {
-      id: 'focus-2',
-      name: 'Code Flow',
-      url: 'https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav',
+      name: 'Deep Focus',
+      url: '/audio/deepfocus.mp3',
       genre: 'focus'
     }
   ]

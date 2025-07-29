@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack portfolio website built with React and Express, featuring a modern single-page application with a contact form. The application showcases personal information, projects, and allows visitors to send messages through a contact form.
+This is a full-stack portfolio website built with React and Express, featuring a modern single-page application with a contact form and immersive music experience. The application showcases personal information, projects, allows visitors to send messages through a contact form, and provides ambient music that enhances the browsing experience across all pages.
 
 ## User Preferences
 
@@ -39,6 +39,9 @@ Preferred communication style: Simple, everyday language.
 - **Projects Section**: Showcase of relevant work
 - **Contact Form**: Interactive form for visitor messages
 - **Navigation**: Smooth scrolling navigation with mobile support
+- **Music System**: Ambient music player with vibe selection (Indie, Carnatic, Mellow, Focus)
+- **Vibe Selector**: Collapsible music icon for selecting background music
+- **Music Player**: Floating player with volume controls and track navigation
 
 ### Backend Components
 - **API Routes**: RESTful endpoints for contact form submission
