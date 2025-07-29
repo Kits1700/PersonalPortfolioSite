@@ -184,7 +184,10 @@ export default function CaseStudyIoT() {
               />
               <div className="p-6 bg-card/50">
                 <h4 className="font-semibold text-foreground text-xl mb-2">Hardware Circuit Diagram</h4>
-                <p className="text-foreground/70">Complete circuit setup showing Arduino Uno, sensors, and NodeMCU connections for multi-resource monitoring</p>
+                <p className="text-foreground/70 mb-3">Complete circuit setup showing Arduino Uno, sensors, and NodeMCU connections for multi-resource monitoring</p>
+                <div className="text-sm text-foreground/60 bg-background/50 rounded p-3">
+                  <strong>Component Labels:</strong> (A) Air Quality Sensor; (B) DHT11 Temperature Humidity Sensor; (C) OLED display; (D) ACS712 Electricity sensor; (E) Arduino Uno; (F) Turbidity Sensor; (G) pH Sensor; (H) WiFi Module (NodeMCU)
+                </div>
               </div>
             </div>
           </div>
