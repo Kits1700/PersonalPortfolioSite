@@ -51,7 +51,7 @@ export default function CaseStudyLLM() {
               </div>
               <div className="flex items-center gap-2 text-sm text-foreground">
                 <Users className="w-4 h-4" />
-                <span>25 Participants</span>
+                <span>41 Participants</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-foreground">
                 <Wrench className="w-4 h-4" />
@@ -81,10 +81,10 @@ export default function CaseStudyLLM() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">My Role</h2>
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 border border-primary/20">
             <p className="text-foreground leading-relaxed mb-6">
-              As <strong>lead researcher and UX designer</strong>, I conceptualized the selective friction approach, developed the web application, and designed a mixed-methods user study. I crafted task protocols, integrated the GPT-4 API, and am currently conducting data collection with 25 participants.
+              As <strong>lead researcher and UX designer</strong>, I conceptualized the selective friction approach, developed the web application, and designed a convergent parallel mixed-methods study with 41 participants. I crafted task protocols, integrated the GPT-4 API, and conducted comprehensive data collection and analysis.
             </p>
             <p className="text-foreground leading-relaxed">
-              My work ensures the platform balances usability and cognitive engagement, with analysis pending to validate friction's impact on critical thinking in AI-assisted workflows.
+              My work balanced usability and cognitive engagement, employing triangulation methodology to validate friction's impact on trust, critical thinking, and user experience in AI-assisted workflows.
             </p>
           </div>
         </section>
@@ -253,9 +253,9 @@ export default function CaseStudyLLM() {
           
           <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl p-8 mb-8 border border-green-500/20">
             <div className="text-center mb-8">
-              <div className="text-6xl font-bold text-green-500 mb-4">25</div>
+              <div className="text-6xl font-bold text-green-500 mb-4">41</div>
               <h3 className="text-xl font-semibold mb-2 text-foreground">LLM-Experienced Participants</h3>
-              <p className="text-foreground/80">Counterbalanced within-subjects design</p>
+              <p className="text-foreground/80">Convergent parallel mixed-methods design</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -305,85 +305,172 @@ export default function CaseStudyLLM() {
           </div>
         </section>
 
-        {/* Analysis Plan Section */}
+        {/* Research Results Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Analysis Plan</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Research Results</h2>
           
           <div className="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-2xl p-8 mb-8 border border-secondary/20">
             <p className="text-foreground leading-relaxed mb-6">
-              Post-data collection, I'll conduct comprehensive analysis combining quantitative metrics with qualitative insights:
+              The triangulated mixed-methods analysis revealed complex interactions between friction, trust, and cognitive engagement:
             </p>
+            
+            {/* Key Meta-Inference */}
+            <div className="bg-primary/10 rounded-lg p-6 mb-6 border border-primary/20">
+              <h4 className="text-lg font-semibold mb-3 text-foreground">Key Meta-Inference</h4>
+              <p className="text-foreground leading-relaxed">
+                <strong>Friction functions as a cognitive scaffolding mechanism</strong> that enhances AI interaction quality when users maintain control over its application, supporting both quantitative improvements in trust metrics and qualitative experiences of enhanced critical evaluation.
+              </p>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card/50 rounded-lg p-6 border border-border">
                 <div className="flex items-center gap-3 mb-4">
                   <TrendingUp className="w-6 h-6 text-blue-500" />
-                  <h4 className="text-lg font-semibold text-foreground">Quantitative Analysis</h4>
+                  <h4 className="text-lg font-semibold text-foreground">Quantitative Findings</h4>
                 </div>
-                <p className="text-foreground/80 text-sm">Repeated measures ANOVA for friction vs. no-friction conditions, analyzing overreliance and trust metrics</p>
+                <ul className="space-y-2 text-foreground/80 text-sm">
+                  <li>• <strong>Trust significantly increased:</strong> Dependable (r=.49), Confident (r=.48), Usefulness (r=.56)</li>
+                  <li>• <strong>Cognitive effort enhanced:</strong> Mental Demand (r=.79), Effort (r=.64)</li>
+                  <li>• <strong>UX maintained</strong> despite increased cognitive load</li>
+                </ul>
               </div>
               <div className="bg-card/50 rounded-lg p-6 border border-border">
                 <div className="flex items-center gap-3 mb-4">
                   <MessageSquare className="w-6 h-6 text-green-500" />
-                  <h4 className="text-lg font-semibold text-foreground">Qualitative Analysis</h4>
+                  <h4 className="text-lg font-semibold text-foreground">Qualitative Themes</h4>
                 </div>
-                <p className="text-foreground/80 text-sm">Thematic analysis of interviews using Braun & Clarke's framework for user experience insights</p>
+                <ul className="space-y-2 text-foreground/80 text-sm">
+                  <li>• <strong>Cognitive Scaffolding:</strong> Enhanced careful thinking processes</li>
+                  <li>• <strong>Trust Through Transparency:</strong> Users trust output they contributed to</li>
+                  <li>• <strong>User Agency:</strong> Choice in friction application prevents negative UX</li>
+                </ul>
               </div>
-            </div>
-            <div className="mt-6 bg-background/50 rounded-lg p-4">
-              <p className="text-foreground/80 text-sm">
-                <strong>Triangulation:</strong> Combining behavioral metrics with thematic insights to comprehensively assess friction's impact on critical thinking and AI interaction patterns.
-              </p>
             </div>
           </div>
           
-          {/* Analysis Plan Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">ANOVA Results Mock-up</p>
-              <p className="text-foreground/70 text-sm">Chart comparing overreliance metrics across friction conditions</p>
+          {/* Hypothesis Results */}
+          <div className="space-y-6 mb-8">
+            <h3 className="text-2xl font-semibold text-foreground">Hypothesis-by-Hypothesis Results</h3>
+            
+            {/* H1 - Critical Engagement */}
+            <div className="bg-yellow-500/10 rounded-lg p-6 border border-yellow-500/20">
+              <div className="flex items-start gap-3 mb-4">
+                <AlertCircle className="w-6 h-6 text-yellow-500 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground">H1: Critical Engagement</h4>
+                  <p className="text-yellow-600 font-medium">DIVERGENT RESULTS</p>
+                </div>
+              </div>
+              <p className="text-foreground/80 text-sm">
+                Quantitative measures showed no significant differences, but qualitative data revealed strong evidence of enhanced critical thinking processes. This suggests process-level improvements that transcend scale-based measurement.
+              </p>
+            </div>
+            
+            {/* H2 - Trust */}
+            <div className="bg-green-500/10 rounded-lg p-6 border border-green-500/20">
+              <div className="flex items-start gap-3 mb-4">
+                <CheckCircle className="w-6 h-6 text-green-500 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground">H2: Trust Enhancement</h4>
+                  <p className="text-green-600 font-medium">STRONGLY SUPPORTED</p>
+                </div>
+              </div>
+              <p className="text-foreground/80 text-sm">
+                Large effect sizes across all trust dimensions (r=.48-.56). Friction builds trust through earned confidence - users trust outputs more when they contribute to the process.
+              </p>
+            </div>
+            
+            {/* H3 - Cognitive Effort */}
+            <div className="bg-green-500/10 rounded-lg p-6 border border-green-500/20">
+              <div className="flex items-start gap-3 mb-4">
+                <CheckCircle className="w-6 h-6 text-green-500 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground">H3: Productive Cognitive Effort</h4>
+                  <p className="text-green-600 font-medium">FULLY SUPPORTED</p>
+                </div>
+              </div>
+              <p className="text-foreground/80 text-sm">
+                Significant increases in mental demand (r=.79) and effort (r=.64) paired with increased satisfaction (r=.55). Users willingly invest mental resources when they perceive clear value.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Anticipated Impact Section */}
+        {/* Design Implications Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Anticipated Impact</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Design Implications</h2>
           
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8 border border-primary/20">
             <p className="text-foreground leading-relaxed mb-6">
-              This project hypothesizes that <strong>friction reduces overreliance, enhances critical engagement, and maintains trust</strong> (H1–H3). Pilot feedback suggests friction encourages reflection without compromising usability.
+              The triangulated findings reveal that <strong>friction creates productive tension rather than simple barriers</strong>. The research supports design recommendations that prioritize user agency and contextual application.
             </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <Shield className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Reduced Overreliance</h3>
-                <p className="text-foreground/80 text-sm">Users develop more critical evaluation skills for AI outputs</p>
-              </div>
-              <div className="text-center">
-                <Brain className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Enhanced Engagement</h3>
-                <p className="text-foreground/80 text-sm">Selective friction promotes deeper cognitive processing</p>
-              </div>
-              <div className="text-center">
-                <CheckCircle className="w-12 h-12 text-purple-500 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Maintained Trust</h3>
-                <p className="text-foreground/80 text-sm">Thoughtful barriers preserve user confidence in AI systems</p>
+            
+            {/* Cognitive Scaffolding Model */}
+            <div className="bg-accent/10 rounded-lg p-6 mb-6 border border-accent/20">
+              <h4 className="text-lg font-semibold mb-3 text-foreground">Cognitive Scaffolding Model</h4>
+              <p className="text-foreground leading-relaxed mb-4">
+                Friction operates through three validated mechanisms:
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="text-center">
+                  <Shield className="w-10 h-10 text-blue-500 mx-auto mb-3" />
+                  <h5 className="font-semibold text-foreground mb-2">Transparency Enhancement</h5>
+                  <p className="text-foreground/80 text-sm">Makes AI reasoning visible → Increases dependability</p>
+                </div>
+                <div className="text-center">
+                  <Brain className="w-10 h-10 text-green-500 mx-auto mb-3" />
+                  <h5 className="font-semibold text-foreground mb-2">Strategic Engagement</h5>
+                  <p className="text-foreground/80 text-sm">Requires cognitive investment → Enhances satisfaction</p>
+                </div>
+                <div className="text-center">
+                  <CheckCircle className="w-10 h-10 text-purple-500 mx-auto mb-3" />
+                  <h5 className="font-semibold text-foreground mb-2">User Agency</h5>
+                  <p className="text-foreground/80 text-sm">Maintains control → Preserves positive UX</p>
+                </div>
               </div>
             </div>
-            <div className="mt-8 bg-background/50 rounded-lg p-6">
-              <p className="text-foreground/80 text-sm">
-                <strong>Future Applications:</strong> If validated, this approach could redefine AI-assisted interfaces, promoting responsible collaboration in education, professional workflows, and creative tasks.
-              </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Validated Design Principles</h4>
+                <ul className="space-y-3 text-foreground/80 text-sm">
+                  <li>• <strong>Adaptive Friction Systems:</strong> User-controlled friction levels based on task importance</li>
+                  <li>• <strong>Transparency Features:</strong> Clear AI reasoning trails and source attribution</li>
+                  <li>• <strong>Choice Architecture:</strong> Optional features rather than mandatory barriers</li>
+                  <li>• <strong>Progressive Disclosure:</strong> Users choose their level of AI process engagement</li>
+                </ul>
+              </div>
+              <div className="bg-card/50 rounded-lg p-6 border border-border">
+                <h4 className="text-lg font-semibold mb-4 text-foreground">Behavioral Insights</h4>
+                <ul className="space-y-3 text-foreground/80 text-sm">
+                  <li>• <strong>Trust Through Contribution:</strong> Users trust outputs more when they participate in the process</li>
+                  <li>• <strong>Acceptable Cognitive Cost:</strong> Mental effort is welcomed when justified by quality improvements</li>
+                  <li>• <strong>Context-Dependent Application:</strong> Domain expertise influences friction effectiveness</li>
+                  <li>• <strong>Process Over Scale Measures:</strong> Critical evaluation improvements occur at process level</li>
+                </ul>
+              </div>
             </div>
           </div>
           
-          {/* Impact Image Placeholder */}
-          <div className="bg-gradient-to-br from-card/50 to-background/80 rounded-xl p-8 mb-8 border border-border/30">
-            <div className="text-center">
-              <div className="text-xs text-foreground/60 mb-2 bg-foreground/10 px-3 py-1 rounded inline-block">IMAGE PLACEHOLDER</div>
-              <p className="text-foreground font-semibold text-lg mb-2">Pilot Data Preview</p>
-              <p className="text-foreground/70 text-sm">Graph showing increased time spent on critical tasks in friction condition</p>
+          {/* Future Applications */}
+          <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-xl p-8 border border-green-500/20">
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Future Applications</h3>
+            <p className="text-foreground leading-relaxed mb-4">
+              This research establishes a foundation for <strong>responsible human-AI collaboration</strong> across multiple domains:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="bg-background/30 rounded-lg p-4">
+                <h4 className="font-semibold text-foreground mb-2">Educational Tools</h4>
+                <p className="text-foreground/80 text-sm">AI tutors with scaffolded friction to promote critical thinking</p>
+              </div>
+              <div className="bg-background/30 rounded-lg p-4">
+                <h4 className="font-semibold text-foreground mb-2">Professional Workflows</h4>
+                <p className="text-foreground/80 text-sm">Context-aware friction in code review and document analysis</p>
+              </div>
+              <div className="bg-background/30 rounded-lg p-4">
+                <h4 className="font-semibold text-foreground mb-2">Creative Applications</h4>
+                <p className="text-foreground/80 text-sm">User-controlled friction in brainstorming and ideation tools</p>
+              </div>
             </div>
           </div>
         </section>
