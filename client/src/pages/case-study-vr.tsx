@@ -27,10 +27,11 @@ export default function CaseStudyVR() {
                 Back to Portfolio
               </button>
             </Link>
-            <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4">
               <button
                 onClick={scrollToTop}
                 className="p-2 rounded-lg hover:bg-card transition-colors"
+                title="Scroll to top"
               >
                 <ArrowRight className="w-5 h-5 rotate-[-90deg]" />
               </button>
