@@ -4,8 +4,17 @@ export default function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const [isClicking, setIsClicking] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    // Check if device supports hover (desktop)
+    const checkIfDesktop = () => {
+      setIsDesktop(window.matchMedia('(hover: hover) and (pointer: fine)').matches);
+    };
+
+    checkIfDesktop();
+    window.addEventListener('resize', checkIfDesktop);
+
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -34,8 +43,12 @@ export default function CustomCursor() {
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mousedown', handleMouseDown);
       document.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('resize', checkIfDesktop);
     };
   }, []);
+
+  // Only render cursor on desktop devices
+  if (!isDesktop) return null;
 
   return (
     <>

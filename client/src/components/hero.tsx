@@ -105,7 +105,7 @@ export default function Hero() {
       <div className="text-center max-w-5xl mx-auto px-6 relative z-10">
         {/* Main heading with staggered animation */}
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-heading mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-heading mb-6 leading-tight">
             <span className="gradient-text">Sai Keerthana</span>
             <br />
             <span className="text-foreground">Arun</span>
@@ -115,7 +115,7 @@ export default function Hero() {
         {/* Dynamic typewriter effect */}
         <div className="mb-8">
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <div className="text-3xl md:text-4xl font-semibold text-primary min-h-[48px] flex items-center">
+            <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-primary min-h-[48px] flex items-center">
               <span className="typewriter-text">
                 {typingTexts[textIndex].slice(0, charIndex)}
               </span>
@@ -126,13 +126,13 @@ export default function Hero() {
 
         {/* Description with improved typography */}
         <div className="mb-12">
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
             From user insights to usable interfaces, then I code them too.
           </p>
         </div>
 
         {/* Enhanced social links */}
-        <div className="flex justify-center space-x-8 mb-12">
+        <div className="flex justify-center space-x-4 sm:space-x-8 mb-12">
           <a
             href="https://www.linkedin.com/in/saikeerthanaarun/"
             target="_blank"
