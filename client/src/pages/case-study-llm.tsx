@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle, Brain, Eye, Shield, BarChart3, TrendingUp, MessageSquare } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import ImageZoom from "@/components/image-zoom";
 
 export default function CaseStudyLLM() {
   const scrollToTop = () => {
@@ -638,16 +639,16 @@ export default function CaseStudyLLM() {
         </section>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center py-8 border-t border-border/30">
-          <Link href="/case-study-vr">
-            <Button variant="outline" className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-8 border-t border-border/30">
+          <Link href="/case-study-vr" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
               <ArrowLeft className="w-4 h-4" />
-              Previous: VR Case Study
+              <span className="text-sm">Previous: VR Case Study</span>
             </Button>
           </Link>
-          <Link href="/case-study-iot">
-            <Button variant="outline" className="flex items-center gap-2">
-              Next: IoT Case Study
+          <Link href="/case-study-iot" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
+              <span className="text-sm">Next: IoT Case Study</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>

@@ -74,7 +74,7 @@ export default function MusicPlayer() {
   }, [isExpanded]);
 
   return (
-    <div ref={containerRef} className="fixed bottom-32 right-6 z-50">
+    <div ref={containerRef} className="fixed bottom-20 right-4 md:bottom-32 md:right-6 z-50">
       {/* Main music button - collapsed state */}
       {!isExpanded && (
         <div className="group">
@@ -82,10 +82,10 @@ export default function MusicPlayer() {
             onClick={() => setIsExpanded(true)}
             variant="outline"
             size="sm"
-            className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground shadow-xl transition-all duration-300 hover:scale-110 w-12 h-12 p-0 rounded-full"
+            className="bg-card/95 backdrop-blur-sm border-border hover:bg-card/90 text-foreground shadow-2xl transition-all duration-300 hover:scale-110 w-14 h-14 md:w-12 md:h-12 p-0 rounded-full ring-2 ring-primary/30"
           >
             <Music className={cn(
-              "w-5 h-5 transition-colors duration-200",
+              "w-6 h-6 md:w-5 md:h-5 transition-colors duration-200",
               selectedVibe ? "text-primary animate-pulse" : "text-muted-foreground"
             )} />
           </Button>
@@ -98,7 +98,7 @@ export default function MusicPlayer() {
 
       {/* Expanded music player with vibe selector and controls */}
       {isExpanded && (
-        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-xl p-4 w-80 animate-in fade-in-0 zoom-in-95 duration-200">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-lg shadow-xl p-4 w-72 md:w-80 animate-in fade-in-0 zoom-in-95 duration-200">
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold text-foreground">Music Controls</h3>
@@ -179,7 +179,15 @@ export default function MusicPlayer() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-2 mb-3">
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={previousTrack}
+                    className="h-8 w-8 p-0"
+                  >
+                    <SkipBack className="h-4 w-4" />
+                  </Button>
                   <Button
                     variant="ghost"
                     size="sm"
@@ -191,6 +199,14 @@ export default function MusicPlayer() {
                     ) : (
                       <Play className="h-4 w-4" />
                     )}
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={nextTrack}
+                    className="h-8 w-8 p-0"
+                  >
+                    <SkipForward className="h-4 w-4" />
                   </Button>
                 </div>
                 

@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle, Zap, Droplets, Wind } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import ImageZoom from "@/components/image-zoom";
 // IoT images temporarily disabled due to import path issues
 // import iotDashboardImage from "@assets/Screenshot 2025-07-10 at 3.03.56 PM_1752140043714.png";
 // import iotSystemImage from "@assets/Screenshot 2025-07-10 at 5.03.22 PM_1752147209652.png";
@@ -482,16 +483,16 @@ export default function CaseStudyIoT() {
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center py-8 border-t border-border/30">
-          <Link href="/case-study-llm">
-            <Button variant="outline" className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-8 border-t border-border/30">
+          <Link href="/case-study-llm" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
               <ArrowLeft className="w-4 h-4" />
-              Previous: LLM Case Study
+              <span className="text-sm">Previous: LLM Case Study</span>
             </Button>
           </Link>
-          <Link href="/case-study-vr">
-            <Button variant="outline" className="flex items-center gap-2">
-              Next: VR Case Study
+          <Link href="/case-study-vr" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
+              <span className="text-sm">Next: VR Case Study</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>

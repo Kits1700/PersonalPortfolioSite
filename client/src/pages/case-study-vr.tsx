@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ExternalLink, Github, Calendar, Users, Wrench, Target, CheckCircle, AlertCircle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import ImageZoom from "@/components/image-zoom";
 import gamePosterImage from "@assets/Group 12_1752654046089.png";
 import hallwayImage from "@assets/Group 9_1752654264666.png";
 import hallwayGif from "@assets/ezgif-4a330d431ea5db_1752844784535.gif";
@@ -189,7 +190,7 @@ export default function CaseStudyVR() {
                   <p className="text-foreground/70 text-sm">Post-apocalyptic cityscape mapped to hallway constraints</p>
                 </div>
                 <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-2 overflow-hidden">
-                  <img 
+                  <ImageZoom 
                     src={virtualEnvironmentImage} 
                     alt="Post-apocalyptic virtual environment showing desert landscape with buildings and structures"
                     className="w-full h-auto object-cover rounded-lg shadow-lg"
@@ -202,7 +203,7 @@ export default function CaseStudyVR() {
                   <p className="text-foreground/70 text-sm">XR Origin positioning and spatial tracking configuration</p>
                 </div>
                 <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg p-2 overflow-hidden">
-                  <img 
+                  <ImageZoom 
                     src={unityEditorImage} 
                     alt="Unity Editor interface showing hierarchy with XR Origin configuration, camera setup, and spatial tracking components"
                     className="w-full h-auto object-cover rounded-lg shadow-lg"
@@ -245,7 +246,7 @@ export default function CaseStudyVR() {
                 <p className="text-foreground/70 text-sm">Post-apocalyptic city with NPC avatars and dynamic audio cues</p>
               </div>
               <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg p-2 overflow-hidden">
-                <img 
+                <ImageZoom 
                   src={conceptArtImage} 
                   alt="Post-apocalyptic cityscape with dramatic orange sky, damaged buildings, and an NPC character standing in the desert environment"
                   className="w-full h-auto object-cover rounded-lg shadow-lg"
@@ -553,16 +554,16 @@ export default function CaseStudyVR() {
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center py-8 border-t border-border/30">
-          <Link href="/case-study-iot">
-            <Button variant="outline" className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-8 border-t border-border/30">
+          <Link href="/case-study-iot" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
               <ArrowLeft className="w-4 h-4" />
-              Previous: IoT Case Study
+              <span className="text-sm">Previous: IoT Case Study</span>
             </Button>
           </Link>
-          <Link href="/case-study-llm">
-            <Button variant="outline" className="flex items-center gap-2">
-              Next: LLM Case Study
+          <Link href="/case-study-llm" className="w-full sm:w-auto">
+            <Button variant="outline" className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2">
+              <span className="text-sm">Next: LLM Case Study</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>
