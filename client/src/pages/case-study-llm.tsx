@@ -382,15 +382,15 @@ export default function CaseStudyLLM() {
               <div className="space-y-4">
                 <blockquote className="border-l-4 border-primary pl-4 italic text-foreground/90">
                   "Putting your own thoughts and like looking at stuff yourself... you're gonna be a lot more careful." 
-                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 25</cite>
+                  <cite className="block text-sm text-foreground/60 mt-1">Participant 25</cite>
                 </blockquote>
                 <blockquote className="border-l-4 border-green-500 pl-4 italic text-foreground/90">
                   "I felt like it was trustworthy because I'd, like, done a bit of the pre work."
-                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 15</cite>
+                  <cite className="block text-sm text-foreground/60 mt-1">Participant 15</cite>
                 </blockquote>
                 <blockquote className="border-l-4 border-blue-500 pl-4 italic text-foreground/90">
                   "It felt a little bit more like collaborating... in the first one I feel like I barely had to think."
-                  <cite className="block text-sm text-foreground/60 mt-1">— Participant 28</cite>
+                  <cite className="block text-sm text-foreground/60 mt-1">Participant 28</cite>
                 </blockquote>
               </div>
             </div>
@@ -439,7 +439,7 @@ export default function CaseStudyLLM() {
               </p>
               <blockquote className="border-l-3 border-yellow-500 pl-3 italic text-foreground/90 text-sm">
                 "It made me to think more have my personal opinion, because usually I also do this with AI and sometimes I feel like... I kind of over rely on the thought of AI."
-                <cite className="block text-xs text-foreground/60 mt-1">— Participant 33</cite>
+                <cite className="block text-xs text-foreground/60 mt-1">Participant 33</cite>
               </blockquote>
             </div>
             
@@ -457,7 +457,7 @@ export default function CaseStudyLLM() {
               </p>
               <blockquote className="border-l-3 border-green-500 pl-3 italic text-foreground/90 text-sm">
                 "Friction was a better choice according to me, because it was more relevant and it did increase my confidence in AI as well as in my own reasoning."
-                <cite className="block text-xs text-foreground/60 mt-1">— Participant 37</cite>
+                <cite className="block text-xs text-foreground/60 mt-1">Participant 37</cite>
               </blockquote>
             </div>
             
@@ -475,7 +475,7 @@ export default function CaseStudyLLM() {
               </p>
               <blockquote className="border-l-3 border-green-500 pl-3 italic text-foreground/90 text-sm">
                 "Even though doing with steps was like the addition to was a little time consuming, but the final output was more in depth and detail."
-                <cite className="block text-xs text-foreground/60 mt-1">— Participant 26</cite>
+                <cite className="block text-xs text-foreground/60 mt-1">Participant 26</cite>
               </blockquote>
             </div>
           </div>
@@ -590,7 +590,7 @@ export default function CaseStudyLLM() {
         {/* Conclusion */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-2xl p-8 border border-green-500/20 text-center">
-            <h2 className="text-3xl font-bold mb-4 text-foreground">Not All Lag Is Bad—Some of It Thinks</h2>
+            <h2 className="text-3xl font-bold mb-4 text-foreground">Not All Lag Is Bad, Some of It Thinks</h2>
             <h3 className="text-2xl font-semibold mb-6 text-primary">Think Deeper, Create Smarter</h3>
             
             <p className="text-foreground leading-relaxed text-lg mb-6">

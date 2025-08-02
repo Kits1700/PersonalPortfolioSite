@@ -347,7 +347,7 @@ export default function CaseStudyVR() {
               <div className="bg-card/50 rounded-lg p-6 border border-border">
                 <h4 className="text-lg font-semibold mb-4 text-foreground">Immersion</h4>
                 <blockquote className="text-foreground/80 italic">
-                  "I didn't feel like I was working out—I was so engrossed in the environment"
+                  "I didn't feel like I was working out, I was so engrossed in the environment"
                 </blockquote>
               </div>
               <div className="bg-card/50 rounded-lg p-6 border border-border">
