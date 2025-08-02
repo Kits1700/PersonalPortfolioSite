@@ -105,7 +105,7 @@ export default function Hero() {
       <div className="text-center max-w-5xl mx-auto px-6 relative z-10">
         {/* Main heading with staggered animation */}
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-heading mb-6 leading-tight">
             <span className="gradient-text">Sai Keerthana</span>
             <br />
             <span className="text-foreground">Arun</span>

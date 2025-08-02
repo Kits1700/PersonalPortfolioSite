@@ -82,7 +82,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-heading mb-6">
             About <span className="gradient-text">Me</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />

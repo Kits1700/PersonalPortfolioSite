@@ -14,6 +14,7 @@ Preferred communication style: Simple, everyday language.
 - **Framework**: React with TypeScript
 - **Build Tool**: Vite for fast development and optimized builds
 - **Styling**: Tailwind CSS with shadcn/ui component library
+- **Typography**: Space Grotesk font family for modern, professional appearance
 - **Animations**: Disabled for performance optimization on mobile devices
 - **State Management**: TanStack Query for server state management
 - **Routing**: Wouter for lightweight client-side routing

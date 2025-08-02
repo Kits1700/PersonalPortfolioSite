@@ -57,7 +57,7 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-heading mb-4">Let's Connect</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Interested in collaborating or have a question about my work? I'd love to hear from you.
           </p>
