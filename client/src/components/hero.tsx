@@ -127,7 +127,7 @@ export default function Hero() {
         {/* Description with improved typography */}
         <div className="mb-12">
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
-            Bridging the gap between human needs and technological possibilities through thoughtful design and research.
+            From user insights to usable interfaces, then I code them too.
           </p>
         </div>
 
