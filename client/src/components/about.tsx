@@ -91,7 +91,7 @@ export default function About() {
         {/* Hero quote */}
         <div className="mb-16">
           <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-2xl p-8 border border-primary/20 backdrop-blur-sm">
-            <blockquote className="text-2xl md:text-3xl font-light text-center italic leading-relaxed">
+            <blockquote className="text-lg md:text-xl font-light text-center italic leading-relaxed">
               "I design technology that listens, adapts, and respects the people who use it."
             </blockquote>
           </div>
