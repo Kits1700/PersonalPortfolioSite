@@ -103,7 +103,7 @@ export default function About() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary mb-4">Background</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With a background in <span className="text-primary font-semibold">Computer Science</span> and a <span className="text-secondary font-semibold">Master's in Human-Computer Interaction</span>, I work at the intersection of UX research, software development, machine learning, and IoT, bridging the human and technical to build systems that are not only functional but also deeply intentional.
+                Rooted in Computer Science and Human-Computer Interaction, my work unites UX research, development, ML, and IoT to create technology that serves real people: intentionally and effectively.
               </p>
             </div>
             
