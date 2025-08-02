@@ -63,18 +63,18 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-primary/10 animate-pulse-subtle" />
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-secondary/10 animate-pulse-subtle" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-primary/10" />
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-secondary/10" />
       </div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <div className={`w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6 ${isVisible ? 'animate-scaleIn animate-delay-100' : 'opacity-0'}`} />
-          <p className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed ${isVisible ? 'animate-fadeInUp animate-delay-200' : 'opacity-0'}`}>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A selection of projects that demonstrate my approach to human-centered technology design.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group relative bg-card/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover-lift ${isVisible ? `animate-fadeInUp animate-delay-${300 + index * 100}` : 'opacity-0'}`}
+              className="group relative bg-card/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover-lift"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
