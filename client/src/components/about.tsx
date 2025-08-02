@@ -113,13 +113,7 @@ export default function About() {
                 My work spans interactive language learning platforms, immersive VR experiences, IoT-based safety systems, and explainable AI interfaces. I've led mixed-methods research, modelled user behaviour, and developed feedback pipelines that embed human insight into every stage of design and development.
               </p>
             </div>
-            
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-primary mb-4">Philosophy</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My passion lies in aligning emerging technologies with real-world needs, building digital experiences that are <span className="text-primary font-semibold">intuitive</span>, <span className="text-secondary font-semibold">transparent</span>, and grounded in empathy. I believe that innovation means nothing if it isn't meaningful, and my mission is to make that meaning felt in every interaction.
-              </p>
-            </div>
+
           </div>
         </div>
 
