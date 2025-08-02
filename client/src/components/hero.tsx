@@ -161,14 +161,14 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
             onClick={() => handleNavClick('#projects')}
-            className="group px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover-lift hover:shadow-lg hover:shadow-primary/25"
+            className="group px-8 py-4 bg-primary text-primary-foreground rounded-full text-lg hover:bg-primary/90 transition-all duration-300 hover-lift hover:shadow-lg hover:shadow-primary/25"
           >
             View My Work
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
           </button>
           <button
             onClick={() => handleNavClick('#contact')}
-            className="group px-8 py-4 bg-transparent border-2 border-primary text-primary rounded-full font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="group px-8 py-4 bg-transparent border-2 border-primary text-primary rounded-full text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
           >
             Get In Touch
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>

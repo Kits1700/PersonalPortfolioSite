@@ -101,7 +101,7 @@ export default function Projects() {
                 {/* Hover overlay with case study link */}
                 <div className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-all duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
                   <Link href={project.link}>
-                    <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors hover:scale-105 transform duration-200">
+                    <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors hover:scale-105 transform duration-200">
                       View Case Study
                     </button>
                   </Link>

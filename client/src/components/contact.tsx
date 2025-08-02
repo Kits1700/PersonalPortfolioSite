@@ -111,7 +111,7 @@ export default function Contact() {
               <Button
                 type="submit"
                 disabled={mutation.isPending}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-8 rounded-lg transition-colors duration-200"
               >
                 {mutation.isPending ? "Sending..." : "Send Message"}
               </Button>
