@@ -12,7 +12,7 @@ export default function Hero() {
   const typingTexts = [
     "UX Researcher",
     "Software Developer",
-    "Human-Centered Designer",
+    "Human Centered Designer",
     "Technology Storyteller"
   ];
 

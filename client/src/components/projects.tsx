@@ -29,8 +29,8 @@ export default function Projects() {
   const projects = [
     {
       title: "UX Human LLM Overreliance Thesis",
-      description: "Research investigating user overreliance on large language models and designing interventions to promote more balanced human-AI collaboration.",
-      tags: ["UX Research", "Human-AI Interaction", "Thesis"],
+      description: "Research investigating user overreliance on large language models and designing interventions to promote more balanced human AI collaboration.",
+      tags: ["UX Research", "Human AI Interaction", "Thesis"],
       gradient: "from-primary via-primary/80 to-primary/60",
       icon: "🧠",
       link: "/case-study/llm",
@@ -39,7 +39,7 @@ export default function Projects() {
     },
     {
       title: "VR Game: Survival of the Fittest",
-      description: "Immersive virtual reality game exploring evolutionary concepts through interactive gameplay and user-centered design principles.",
+      description: "Immersive virtual reality game exploring evolutionary concepts through interactive gameplay and user centered design principles.",
       tags: ["VR/AR", "Game Design", "Unity"],
       gradient: "from-purple-500 via-violet-500 to-indigo-500",
       icon: "🎮",
@@ -49,7 +49,7 @@ export default function Projects() {
     },
     {
       title: "Smart Environmental Monitoring System",
-      description: "IoT-based environmental monitoring system providing real-time data and insights for sustainable resource management.",
+      description: "IoT based environmental monitoring system providing real time data and insights for sustainable resource management.",
       tags: ["IoT", "Environmental Tech", "Data Analytics"],
       gradient: "from-secondary via-secondary/80 to-secondary/60",
       icon: "🌱",
@@ -123,7 +123,7 @@ export default function Projects() {
                     <span
                       key={tagIndex}
                       className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 ${
-                        tag === "UX Research" || tag === "Human-AI Interaction" || tag === "Thesis"
+                        tag === "UX Research" || tag === "Human AI Interaction" || tag === "Thesis"
                           ? "bg-primary/20 text-primary hover:bg-primary/30"
                           : tag === "VR/AR" || tag === "Game Design" || tag === "Unity"
                           ? "bg-purple-500/20 text-purple-400 hover:bg-purple-500/30"

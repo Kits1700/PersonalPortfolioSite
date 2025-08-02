@@ -26,14 +26,14 @@ export default function About() {
   const skills = [
     {
       icon: <Microscope className="w-8 h-8" />,
-      title: "UX Research & Human-Centered Design",
+      title: "UX Research & Human Centered Design",
       description: "Mixed-methods research and intuitive design that puts people first",
       color: "hsl(158, 64%, 70%)"
     },
     {
       icon: <Bot className="w-8 h-8" />,
-      title: "Human-AI Interaction",
-      description: "Designing transparent, safe, and human-aligned AI experiences",
+      title: "Human AI Interaction",
+      description: "Designing transparent, safe, and human aligned AI experiences",
       color: "hsl(195, 100%, 85%)"
     },
     {
@@ -53,11 +53,11 @@ export default function About() {
   const highlights = [
     {
       icon: <Users className="w-5 h-5" />,
-      text: "User-centered approach"
+      text: "User centered approach"
     },
     {
       icon: <Brain className="w-5 h-5" />,
-      text: "Research-driven decisions"
+      text: "Research driven decisions"
     },
     {
       icon: <Zap className="w-5 h-5" />,
@@ -65,7 +65,7 @@ export default function About() {
     },
     {
       icon: <Target className="w-5 h-5" />,
-      text: "Goal-oriented solutions"
+      text: "Goal oriented solutions"
     }
   ];
 
